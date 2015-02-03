@@ -1,0 +1,21 @@
+- text: Breweries
+  url: /breweries/
+
+- text: Venue
+  url: /venue/
+
+- text: Food
+  url: /food/
+
+- text: Info
+  url: /info/
+
+- text: About
+  url: /about/
+
+  subitems:
+    - text: Organizers
+      url: /about/organizers/
+
+- text: Contact
+  url: /contact/
