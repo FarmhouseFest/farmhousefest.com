@@ -5,18 +5,19 @@ $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$text-colour:           #111;
+$text-colour-reversed:  #fff;
+$background-colour:     #fdfdfd;
+$brand-colour:          #9a605a;
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$grey-colour:           #828282;
+$grey-colour-light:     lighten($grey-colour, 40%);
+$grey-colour-dark:      darken($grey-colour, 25%);
 
 
 
 // Width of the content area on desktop
-$content-width:    960px;
+$full-width:    960px;
 
 
 
