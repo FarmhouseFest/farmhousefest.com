@@ -27,8 +27,5 @@
         </a>
     </li>
 
-    {% if item.subitems and navurl contains item.url %}
-        {% include nav.html nav=item.subitems wrapper="sub-nav" %}
-    {% endif %}
 {% endfor %}
 </ul>

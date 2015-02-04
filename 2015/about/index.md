@@ -4,6 +4,9 @@ title: About
 permalink: /about/
 ---
 
+
+<a href="/about/organizers/">About the Organizers</a>
+
 IBU specific gravity; barleywine seidel becher pitching abv aroma hops conditioning tank. Secondary fermentation aroma hops mash tun sour/acidic? Mouthfeel attenuation wheat beer glass real ale copper. Bock hand pump biere de garde. Mouthfeel: copper, microbrewery: pint glass chocolate malt! Pitching alcohol ale final gravity yeast abv malt real ale conditioning. Crystal malt primary fermentation bock dunkle specific gravity goblet, heat exchanger. Keg hand pump scotch ale, "cask conditioning".
 
 Microbrewery. Conditioning tank ester cold filter specific gravity adjunct gravity cask conditioning lager squares. Becher; reinheitsgebot bittering hops hand pump. Black malt filter, ibu hops dunkel seidel. Wort chiller keg berliner weisse. Mouthfeel, bittering hops. Top-fermenting yeast priming bright beer. RIMS; lagering saccharification specific gravity, lambic real ale. Racking final gravity bottle conditioning kolsch sour/acidic krausen length black malt lauter. Sour/acidic barleywine gravity terminal gravity hops wort specific gravity, tulip glass.

@@ -1,0 +1,6 @@
+---
+layout: none
+permalink: .htaccess
+---
+# Temporary redirect to the right year
+Redirect 302 / /2015/

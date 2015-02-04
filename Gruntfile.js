@@ -4,7 +4,7 @@ module.exports = function(grunt) {
     cssmin: {
       target: {
         files: {
-          'css/main.css': 'css/main.css'
+          'css/main-2015.css': 'css/main-2015.css'
         }
       }
     },
@@ -13,7 +13,7 @@ module.exports = function(grunt) {
         browsers: ['last 2 versions']
       },
       single_file: {
-        src: 'css/main.css'
+        src: 'css/main-2015.css'
       }
 
     }

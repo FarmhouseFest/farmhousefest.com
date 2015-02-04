@@ -1,0 +1,76 @@
+$base-font-family: Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+
+
+// Width of the content area on desktop
+$content-width:    960px;
+
+
+
+
+
+
+
+/*
+
+    Base media query mixins
+
+*/
+
+$xxsmall: 320px;
+$xsmall: 480px;
+$small: 640px;
+$medium: 800px;
+$large: 960px;
+$xlarge: 1120px;
+$xxlarge: 1280px;
+
+@mixin screen-xxlarge {
+  @media (min-width: #{$xxlarge + 1px}) {
+    @content;
+  }
+}
+@mixin screen-xlarge {
+  @media (min-width: #{$xlarge + 1px}) {
+    @content;
+  }
+}
+@mixin screen-large {
+  @media (min-width: #{$large + 1px}) {
+    @content;
+  }
+}
+
+@mixin screen-medium {
+  @media (min-width: #{$medium + 1px}) {
+    @content;
+  }
+}
+@mixin screen-small {
+  @media (min-width: #{$small + 1px}) {
+    @content;
+  }
+}
+@mixin screen-xsmall {
+  @media (min-width: #{$xsmall + 1px}) {
+    @content;
+  }
+}
+@mixin screen-xxsmall {
+  @media (min-width: #{$xxsmall + 1px}) {
+    @content;
+  }
+}
