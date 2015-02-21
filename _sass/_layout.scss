@@ -144,6 +144,9 @@
 
 // future partials
 
+
+
+// header
 .site-header {
     background: $brand-colour;
 }
@@ -155,5 +158,30 @@
     img {
         width: 100px;
         padding: 1rem 0;
+    }
+}
+
+
+
+// sponsors
+.sponsor-list {
+
+}
+.sponsors-small {
+ 
+    @include screen-medium {
+       display: flex;
+ 
+        .sponsor {
+            flex: 1 1 auto;
+
+            margin: 0;
+            list-style: none;
+
+            img {
+                width: 80px;
+                max-height: 80px;
+            }
+        }
     }
 }

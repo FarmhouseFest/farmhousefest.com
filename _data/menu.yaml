@@ -1,21 +1,18 @@
-- text: Breweries
-  url: /breweries/
+- text: Home
+  url: /home/
 
-- text: Venue
-  url: /venue/
+- text: The Festival
+  url: /festival/
 
-- text: Food
-  url: /food/
+- text: The Beer
+  url: /beer/
 
-- text: Info
-  url: /info/
-
-- text: About
-  url: /about/
-
-  subitems:
-    - text: Organizers
-      url: /about/organizers/
+- text: Location
+  url: /location/
 
 - text: Contact
   url: /contact/
+
+- text: Buy Tickets
+  class: nav-tickets
+  url: /tickets/

@@ -172,3 +172,14 @@ a {
   .site-title img {
     width: 100px;
     padding: 1rem 0; }
+
+@media (min-width: 801px) {
+  .sponsors-small {
+    display: flex; }
+    .sponsors-small .sponsor {
+      flex: 1 1 auto;
+      margin: 0;
+      list-style: none; }
+      .sponsors-small .sponsor img {
+        width: 80px;
+        max-height: 80px; } }

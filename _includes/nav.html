@@ -21,7 +21,7 @@
     {% endif %}
 
 
-    <li class="site-nav-item{{ navClass }}">
+    <li class="site-nav-item{{ navClass }}{% if item.class %} {{ item.class }}{% endif %}">
         <a href="{{ item.url }}">
             {{ item.text }}
         </a>

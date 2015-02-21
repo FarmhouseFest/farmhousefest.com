@@ -1,0 +1,57 @@
+{
+    "breweries": [
+        {
+            "name" : "Brassneck",
+            "url" : "http://www.brassneck.ca/",
+            "logo" : "/images/breweries/brassneck.svg"
+        },
+        {
+            "name" : "Strange Fellows",
+            "url" : "http://www.strangefellowsbrewing.com/",
+            "logo" : "/images/breweries/strange-fellows.png"
+        },
+        {
+            "name" : "Four Winds",
+            "url" : "http://www.fourwindsbrewing.ca/",
+            "logo" : "/images/breweries/four-winds.png"
+        },
+
+        {
+            "name" : "Brewery 4",
+            "url" : "#",
+            "logo" : "/images/sponsors/tmp.png"
+        },
+        {
+            "name" : "Brewery 5",
+            "url" : "#",
+            "logo" : "/images/sponsors/tmp.png"
+        },
+        {
+            "name" : "Brewery 6",
+            "url" : "#",
+            "logo" : "/images/sponsors/tmp.png"
+        },
+        {
+            "name" : "Brewery 7",
+            "url" : "#",
+            "logo" : "/images/sponsors/tmp.png"
+        },
+        {
+            "name" : "Brewery 8",
+            "url" : "#",
+            "logo" : "/images/sponsors/tmp.png"
+        },
+        {
+            "name" : "Brewery 9",
+            "url" : "#",
+            "logo" : "/images/sponsors/tmp.png"
+        },
+        {
+            "name" : "Brewery 10",
+            "url" : "#",
+            "logo" : "/images/sponsors/tmp.png"
+        },
+
+
+    ]
+}
