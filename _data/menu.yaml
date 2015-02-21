@@ -1,18 +1,23 @@
 - text: Home
-  url: /home/
+  class: nav-home
+  url: /2015/
 
 - text: The Festival
-  url: /festival/
+  class: nav-festival
+  url: /2015/festival/
 
 - text: The Beer
-  url: /beer/
+  class: nav-beer
+  url: /2015/beer/
 
 - text: Location
-  url: /location/
+  class: nav-location
+  url: /2015/location/
 
 - text: Contact
-  url: /contact/
+  class: nav-contact
+  url: /2015/contact/
 
 - text: Buy Tickets
   class: nav-tickets
-  url: /tickets/
+  url: #tickets

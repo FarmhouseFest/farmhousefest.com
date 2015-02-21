@@ -3,25 +3,7 @@
     Base responsive layout
 
 */
-.site-header {
 
-    width: 100%;
-    margin: 0 0 2rem 0;
-
-    .wrapper {
-
-        text-align: center;
-
-        @include screen-xsmall {
-            margin: 0 40px;
-        }
-        @include screen-xlarge {
-            width: $full-width;
-            margin: 0 auto;
-        }
-    }
-
-}
 .page-heading {
 
     @include screen-medium {
@@ -47,119 +29,10 @@
 
 
 
-.site-nav {
-
-    .menu-icon {
-        display: none;
-    }
-
-    @media (max-width: $small) {
-        position: absolute;
-        top: 9px;
-        right: 30px;
-
-        border: 1px solid $grey-colour-light;
-        border-radius: 5px;
-
-        background-color: $background-colour;
-        text-align: right;
-
-        .menu-icon {
-            display: block;
-            float: right;
-            width: 36px;
-            height: 36px;
-            line-height: 0;
-            padding-top: 10px;
-            text-align: center;
-
-            > svg {
-                width: 18px;
-                height: 15px;
-
-                path {
-                    fill: $grey-colour-dark;
-                }
-            }
-        }
-
-        .trigger {
-            clear: both;
-            display: none;
-        }
-
-        &:hover .trigger, &:focus .trigger {
-            display: block;
-        }
-
-        .site-nav-wrapper {
-            padding: 0.25rem 0;
-            margin: 0;
-            text-align: left;
-        }
-        .site-nav-item {
-            padding: 0.25rem 1rem;
-            list-style: none;
-        }
-    }
-
-
-    @include screen-small {
-
-        padding: 1rem 0;
-        margin: 0;
-
-        text-align: center;
-
-        .site-nav-wrapper {
-            margin: 1rem 0;
-            text-align: justify;
-
-            &::after {
-                display: inline-block;
-                content: "";
-                position: relative;
-                width: 100%;
-                height: 0;
-            }
-
-        }
-
-        .site-nav-item {
-            display: inline-block;
-            margin: 0;
-            list-style: none;
-
-            a {
-                color: $text-colour-reversed;
-            }
-
-        }
-
-    }
-
-}
 
 
 
 // future partials
-
-
-
-// header
-.site-header {
-    background: $brand-colour;
-}
-.site-title {
-
-    display: inline-block;
-    color: $text-colour-reversed;
-
-    img {
-        width: 100px;
-        padding: 1rem 0;
-    }
-}
 
 
 
