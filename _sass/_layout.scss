@@ -4,57 +4,18 @@
 
 */
 
-.page-heading {
+.page {
+    @extend %fixed-centered;
+}
+
+.page-header {
+    padding-top: 1rem;
+    text-align: center;
 
     @include screen-medium {
+        padding-top: 2rem;
         text-align: left;
     }
 }
-.page-content, .site-footer {
-    width: 100%;
-
-    .wrapper {
-        margin: 0 20px;
-
-        @include screen-xsmall {
-            margin: 0 40px;
-        }
-        @include screen-xlarge {
-            width: $full-width;
-            margin: 0 auto;
-        }
-    }
-}
 
 
-
-
-
-
-
-// future partials
-
-
-
-// sponsors
-.sponsor-list {
-
-}
-.sponsors-small {
- 
-    @include screen-medium {
-       display: flex;
- 
-        .sponsor {
-            flex: 1 1 auto;
-
-            margin: 0;
-            list-style: none;
-
-            img {
-                width: 80px;
-                max-height: 80px;
-            }
-        }
-    }
-}

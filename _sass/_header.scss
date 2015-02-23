@@ -6,50 +6,72 @@
 
 
 .site-header {
-    padding: 1px 0;
-    background: $brand-colour;
+
+    // temp styling
+    background-color: $background-colour;
+    background-image: url(/images/photos/glass.min.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
 
     @include screen-medium {
         text-align: center;
     }
 
     .wrapper {
-        @include screen-xsmall {
-            margin: 1rem 40px;
-        }
+        padding: 1rem 0;
+        margin: 0 0 0 1rem;
 
         @include screen-large {
             display: block;
             width: $full-width;
-            padding: 0.5rem 0;
-            margin: 1rem auto;
+            padding: 1rem 0;
+            margin: 0 auto;
         }
     }
 }
 
 
 
-.site-nav {
+.site-nav-wrapper {
+    margin: 0;
+}
 
+.site-nav-item {
+    margin: 0;
+    list-style: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+
+    a {
+        border-radius: 4px;
+        color: rgba($text-colour-reversed, 0.8);
+
+        &:hover, &:focus {
+            text-decoration: none;
+            color: $text-colour-reversed;
+            background: rgba(255, 255, 255, 0.2);
+        }
+    }
+}
+
+
+.site-nav {    
     .menu-icon {
         display: none;
     }
 
     @media (max-width: $medium) {
-        position: absolute;
-        top: 9px;
-        right: 30px;
-
         text-align: right;
 
         .menu-icon {
             display: block;
             float: right;
-            width: 44px;
-            height: 44px;
+            width: 68px;
+            height: 58px;
             line-height: 0;
-            padding-top: 1rem;
-            text-align: center;
+            padding: 0.5rem 1rem 0.5rem 0;
+            text-align: right;
 
             > svg {
                 width: 27px;
@@ -61,63 +83,58 @@
             }
         }
 
-        .site-nav {
-            clear: both;
+        .site-nav-wrapper {
             display: none;
-            background: $brand-colour;
+            position: absolute;
+            top: 74px;
+            left: 0;
+            width: 100%;
+            padding: 1rem 0 0.25rem 0;
+            margin: 0;
+            clear: both;
+            text-align: left;
+            background: rgba($background-colour, 0.95);
         }
 
-        &:hover .site-nav, &:focus .site-nav {
+        &:hover .site-nav-wrapper, &:focus .site-nav-wrapper {
             display: block;
         }
 
-        .site-nav-wrapper {
-            padding: 0.25rem 0;
-            margin: 0;
-            text-align: left;
-        }
         .site-nav-item {
-            padding: 0.25rem 1rem;
-            list-style: none;
-        }
-    }
-
-
-    @include screen-small {
-
-        .site-nav-item {
-            display: inline-block;
-            margin: 0;
-            list-style: none;
+            display: block;
 
             a {
-                color: $text-colour-reversed;
+                display: block;
+                border-radius: 0;
+                padding: 0.5rem 1rem;
+
+                &:hover, &:focus {
+                    text-decoration: none;
+                    background: rgba(255, 255, 255, 0.05);
+                }
             }
-
         }
-
     }
 
 }
 
-.site-nav-wrapper {
-    margin: 0;
-}
 
-
-
-.site-nav-item {
-    margin: 0;
-    white-space: nowrap;
-}
-
+// arrange the nav elements to straddle the logo on larger screens
 .nav-home, .nav-festival, .nav-beer {
-    float: left;
-    padding: 0.5rem 2rem 0.5rem 0;
+    a {
+        @include screen-medium {
+            float: left;
+            padding: 0.5rem 1rem;
+        }
+    }
 }
 .nav-location, .nav-contact, .nav-tickets {
-    float: right;
-    padding: 0.5rem 0 0.5rem 2rem;
+    a {
+        @include screen-medium {
+            float: right;
+            padding: 0.5rem 1rem;
+        }
+    }
 }
 
 
@@ -130,7 +147,24 @@
 
     img {
         width: 60px;
+        opacity: 0.95;
+
+        &:hover, &:focus {
+            opacity: 1;
+        }
     }
 }
 
+
+// gotta get them tickets
+.nav-tickets {
+    a {
+        color: #fff;
+        background: rgba($brand-colour, 0.4);
+
+        &:hover, &:focus {
+            background: rgba($brand-colour, 0.6);
+        }
+    }
+}
 

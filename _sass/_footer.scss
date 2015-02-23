@@ -1,0 +1,45 @@
+/*
+
+    main footer layout
+
+*/
+
+
+.site-footer {
+
+    padding: 3rem 0 0 0;
+
+    .sponsor-title {
+        text-align: center;
+    }
+
+    .sponsors.hide {
+        display: none;
+    }
+
+}
+
+.site-footer-extras {
+    padding-top: 1rem;
+    margin-top: 3rem;
+    color: $text-colour-reversed;
+    background: $background-colour;
+
+    .wrapper {
+        @extend %fixed-centered;
+        @extend %clearfix;
+    }
+
+    .copyright {
+        float: left;
+    }
+    .social-media-list {
+        float: right;
+
+        a {
+            display: inline-block;
+            margin-left: 2rem;
+            color: $text-colour-reversed;
+        }
+    }
+}

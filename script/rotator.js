@@ -36,7 +36,7 @@ function get_random(max) {
 
 
 
-var numImages = 6;
+var numImages = 8;
 
 // image controls
 var parent = "ul.sponsors-small";

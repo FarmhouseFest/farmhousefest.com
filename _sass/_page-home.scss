@@ -1,0 +1,39 @@
+/*
+
+    Home Page Variations
+
+*/
+
+
+.site-header.home {
+
+    .site-title-large {
+        display: none;
+    }
+
+    @include screen-medium {
+
+        padding: 4.5rem 0 4rem 0;
+
+        .site-title {
+            display: none;
+        }
+        .site-title-large {
+            display: block;
+            img {
+                width: 120px;
+            }
+        }
+
+        .site-nav-item a {
+            margin-top: 5.5rem;
+        }
+
+    }
+
+}
+
+
+.page-content.home {
+
+}

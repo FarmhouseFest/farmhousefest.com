@@ -1,0 +1,25 @@
+/*
+
+    Brewery Page Layout
+
+*/
+
+
+.brewery-list {
+
+    padding-top: 2rem;
+
+    .brewery {
+        position: relative;
+        padding-left: 10rem;
+        padding-bottom: 2rem;
+        list-style: none;
+    }
+    .logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 6rem;
+    }
+
+}

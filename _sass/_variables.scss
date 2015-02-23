@@ -7,8 +7,9 @@ $spacing-unit:     30px;
 
 $text-colour:           #111;
 $text-colour-reversed:  #fff;
-$background-colour:     #fdfdfd;
-$brand-colour:          #9a605a;
+$background-colour:     #27371b;
+$background-colour-light: #e0e2da;
+$brand-colour:          #607a00;
 
 $grey-colour:           #828282;
 $grey-colour-light:     lighten($grey-colour, 40%);
@@ -73,5 +74,31 @@ $xxlarge: 1280px;
 @mixin screen-xxsmall {
   @media (min-width: #{$xxsmall + 1px}) {
     @content;
+  }
+}
+
+
+// silent class to fix a centered width at larger screen sizes
+%fixed-centered {
+
+  width: 100%;
+
+  @include screen-medium {
+      margin: 0 2rem;
+  }
+  @include screen-large {
+      width: $full-width;
+      padding: 0 1rem;
+      margin: 0 auto;
+  }
+
+}
+
+// silent class for clearfixing
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
   }
 }

@@ -3,55 +3,81 @@
         {
             "name" : "Brassneck",
             "url" : "http://www.brassneck.ca/",
-            "logo" : "/images/breweries/brassneck.svg"
+            "logo" : "/images/breweries/brassneck.svg",
+            "description" : "Microbrewery. Conditioning tank ester cold filter specific gravity adjunct gravity cask conditioning lager squares. Becher; reinheitsgebot bittering hops hand pump. Black malt filter, ibu hops dunkel seidel. Wort chiller keg berliner weisse."
         },
         {
-            "name" : "Strange Fellows",
-            "url" : "http://www.strangefellowsbrewing.com/",
-            "logo" : "/images/breweries/strange-fellows.png"
+            "name" : "Category 12 Brewing",
+            "url" : "http://category12beer.com/",
+            "logo" : "/images/breweries/category12.png",
+            "description" : "Mouthfeel, bittering hops. Top-fermenting yeast priming bright beer. RIMS; lagering saccharification specific gravity, lambic real ale. Racking final gravity bottle conditioning kolsch sour/acidic krausen length black malt lauter."
         },
         {
-            "name" : "Four Winds",
+            "name" : "Dageraad Brewing",
+            "url" : "http://dageraadbrewing.com/",
+            "logo" : "/images/breweries/dageraad.png",
+            "description" : "Sour/acidic barleywine gravity terminal gravity hops wort specific gravity, tulip glass. Wit units of bitterness heat exchanger? Malt pitching, black malt, lambic wort attenuation cask reinheitsgebot! Amber scotch ale trappist black malt lambic."
+        },
+        {
+            "name" : "Driftwood Brewing",
+            "url" : "http://driftwoodbeer.com/",
+            "logo" : "/images/breweries/driftwood.png",
+            "description" : "RIMS lauter tun hard cider carboy -- original gravity bunghole. Dry hopping noble hops; microbrewery acid rest filter. All-malt brew kettle cask dry hopping saccharification gravity length bottom fermenting yeast. Conditioning dunkel imperial: lauter tun."
+        },
+        {
+            "name" : "Four Winds Brewing",
             "url" : "http://www.fourwindsbrewing.ca/",
-            "logo" : "/images/breweries/four-winds.png"
-        },
-
-        {
-            "name" : "Brewery 4",
-            "url" : "#",
-            "logo" : "/images/sponsors/tmp.png"
+            "logo" : "/images/breweries/four-winds.png",
+            "description" : "Microbrewery. Conditioning tank ester cold filter specific gravity adjunct gravity cask conditioning lager squares. Becher; reinheitsgebot bittering hops hand pump. Black malt filter, ibu hops dunkel seidel. Wort chiller keg berliner weisse."
         },
         {
-            "name" : "Brewery 5",
-            "url" : "#",
-            "logo" : "/images/sponsors/tmp.png"
+            "name" : "Lighthouse Brewing",
+            "url" : "http://www.lighthousebrewing.ca/",
+            "logo" : "/images/breweries/lighthouse.png",
+            "description" : "Mouthfeel, bittering hops. Top-fermenting yeast priming bright beer. RIMS; lagering saccharification specific gravity, lambic real ale. Racking final gravity bottle conditioning kolsch sour/acidic krausen length black malt lauter."
         },
         {
-            "name" : "Brewery 6",
-            "url" : "#",
-            "logo" : "/images/sponsors/tmp.png"
+            "name" : "Main Street Brewing",
+            "url" : "http://mainstreetbeer.ca/",
+            "logo" : "/images/breweries/mainstreet.png",
+            "description" : "Sour/acidic barleywine gravity terminal gravity hops wort specific gravity, tulip glass. Wit units of bitterness heat exchanger? Malt pitching, black malt, lambic wort attenuation cask reinheitsgebot! Amber scotch ale trappist black malt lambic."
         },
         {
-            "name" : "Brewery 7",
-            "url" : "#",
-            "logo" : "/images/sponsors/tmp.png"
+            "name" : "Moon Brewpub",
+            "url" : "http://www.moonunderwater.ca/",
+            "logo" : "/images/breweries/moon.png",
+            "description" : "RIMS lauter tun hard cider carboy -- original gravity bunghole. Dry hopping noble hops; microbrewery acid rest filter. All-malt brew kettle cask dry hopping saccharification gravity length bottom fermenting yeast. Conditioning dunkel imperial: lauter tun."
         },
         {
-            "name" : "Brewery 8",
-            "url" : "#",
-            "logo" : "/images/sponsors/tmp.png"
+            "name" : "Persephone Brewing",
+            "url" : "http://www.persephonebrewing.com/",
+            "logo" : "/images/breweries/persephone.svg",
+            "description" : "Microbrewery. Conditioning tank ester cold filter specific gravity adjunct gravity cask conditioning lager squares. Becher; reinheitsgebot bittering hops hand pump. Black malt filter, ibu hops dunkel seidel. Wort chiller keg berliner weisse."
         },
         {
-            "name" : "Brewery 9",
-            "url" : "#",
-            "logo" : "/images/sponsors/tmp.png"
+            "name" : "Powell Street Brewing",
+            "url" : "http://www.powellbeer.com/",
+            "logo" : "/images/breweries/powellstreet.png",
+            "description" : "Mouthfeel, bittering hops. Top-fermenting yeast priming bright beer. RIMS; lagering saccharification specific gravity, lambic real ale. Racking final gravity bottle conditioning kolsch sour/acidic krausen length black malt lauter."
         },
         {
-            "name" : "Brewery 10",
-            "url" : "#",
-            "logo" : "/images/sponsors/tmp.png"
+            "name" : "Steel &amp; Oak Brewing",
+            "url" : "http://steelandoak.ca/",
+            "logo" : "/images/breweries/steeloak.png",
+            "description" : "Sour/acidic barleywine gravity terminal gravity hops wort specific gravity, tulip glass. Wit units of bitterness heat exchanger? Malt pitching, black malt, lambic wort attenuation cask reinheitsgebot! Amber scotch ale trappist black malt lambic."
         },
-
+        {
+            "name" : "Strange Fellows Brewing",
+            "url" : "http://www.strangefellowsbrewing.com/",
+            "logo" : "/images/breweries/strange-fellows.png",
+            "description" : "RIMS lauter tun hard cider carboy -- original gravity bunghole. Dry hopping noble hops; microbrewery acid rest filter. All-malt brew kettle cask dry hopping saccharification gravity length bottom fermenting yeast. Conditioning dunkel imperial: lauter tun."
+        },
+        {
+            "name" : "Yellow Dog Brewing",
+            "url" : "http://www.yellowdogbeer.com/",
+            "logo" : "/images/breweries/yellowdog.png",
+            "description" : "Mouthfeel, bittering hops. Top-fermenting yeast priming bright beer. RIMS; lagering saccharification specific gravity, lambic real ale. Racking final gravity bottle conditioning kolsch sour/acidic krausen length black malt lauter."
+        }
 
     ]
 }

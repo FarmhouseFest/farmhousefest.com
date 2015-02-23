@@ -1,0 +1,129 @@
+/*
+
+    panels & variations
+
+*/
+
+
+.panel-container {
+
+	&.one-up {
+		.panel {
+			padding: 0 1rem;
+		}
+	}
+
+
+
+	@include screen-medium {
+
+		&.two-up {
+			display: flex;
+
+			.panel {
+				flex: 1 1 50%;
+				align-items: center;
+
+				&:first-child {
+					padding-right: 2rem;
+				}
+				&:last-child {
+					padding-left: 2rem;
+				}
+			}
+		}
+
+
+		&.three-up {
+			display: flex;
+
+			.panel {
+				flex: 1 1 33%;
+				align-items: center;
+			}
+
+		}
+	}
+
+
+
+	// specific panels
+
+	// home page: site intro 3-up
+	&.site-intro {
+
+		@extend %fixed-centered;
+
+		.panel {
+			flex: 1 1 33%;
+			padding: 3rem 2rem;
+			align-items: center;
+
+			&:nth-child(2) {
+				color: $text-colour-reversed;
+				background: $background-colour;
+			}
+
+			h2 {
+				margin: 0;
+			}
+		}
+
+
+		@include screen-medium {
+			.panel {
+				position: relative;
+				padding: 3rem 2rem 6rem 2rem;
+			}
+			.button {
+				position: absolute;
+				left: 20%;
+				bottom: 3rem;
+				width: 60%;
+			}
+		}
+
+	}
+
+	// home page: about the festival
+	&.festival-description {
+
+		background: $background-colour-light;
+
+		.panel {
+			@extend %fixed-centered;
+			padding: 4rem 6rem;
+			text-align: center;
+
+			p {
+				text-align: left;
+			}
+		}
+	}
+
+
+	// beer page extra info
+	&.beerpage {
+		.panel {
+
+			padding: 2rem;
+			text-align: center;
+
+			&:first-child {
+				background: $background-colour-light;
+			}
+
+			@include screen-medium {
+				h2, p {
+					text-align: left;
+				}
+			}
+		}
+	}
+
+
+}
+
+.panel.centered {
+	text-align: center;
+}

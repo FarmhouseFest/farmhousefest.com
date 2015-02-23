@@ -1,0 +1,26 @@
+/*
+
+    buttons & variations
+
+*/
+
+
+.button, a.button {
+
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    border-radius: 4px;
+
+    color: rgba($text-colour-reversed, 0.9);
+    background: rgba($brand-colour, 0.95);
+
+    text-transform: uppercase;
+    white-space: nowrap;
+
+    &:hover, &:focus {
+        color: $text-colour-reversed;
+        background: #648000;
+        text-decoration: none;
+    }
+
+}

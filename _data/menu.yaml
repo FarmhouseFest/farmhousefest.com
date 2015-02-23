@@ -10,14 +10,14 @@
   class: nav-beer
   url: /2015/beer/
 
-- text: Location
-  class: nav-location
-  url: /2015/location/
+- text: Buy Tickets
+  class: nav-tickets
+  url: #tickets
 
 - text: Contact
   class: nav-contact
   url: /2015/contact/
 
-- text: Buy Tickets
-  class: nav-tickets
-  url: #tickets
+- text: Location
+  class: nav-location
+  url: /2015/location/
