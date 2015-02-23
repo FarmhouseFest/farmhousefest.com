@@ -24,22 +24,33 @@
     margin-top: 3rem;
     color: $text-colour-reversed;
     background: $background-colour;
+    text-align: center;
 
     .wrapper {
         @extend %fixed-centered;
         @extend %clearfix;
     }
 
-    .copyright {
-        float: left;
-    }
     .social-media-list {
-        float: right;
-
+        padding-bottom: 1rem;
         a {
             display: inline-block;
-            margin-left: 2rem;
+            margin: 0 1rem;
             color: $text-colour-reversed;
         }
     }
+
+    @include screen-medium {
+        .copyright {
+            float: left;
+        }
+        .social-media-list {
+            float: right;
+
+            a {
+                margin-left: 2rem;
+            }
+        }
+    }
+
 }

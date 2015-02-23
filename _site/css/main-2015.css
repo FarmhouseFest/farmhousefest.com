@@ -327,15 +327,21 @@ a {
   padding-top: 1rem;
   margin-top: 3rem;
   color: #fff;
-  background: #27371b; }
-  .site-footer-extras .copyright {
-    float: left; }
+  background: #27371b;
+  text-align: center; }
   .site-footer-extras .social-media-list {
-    float: right; }
+    padding-bottom: 1rem; }
     .site-footer-extras .social-media-list a {
       display: inline-block;
-      margin-left: 2rem;
+      margin: 0 1rem;
       color: #fff; }
+  @media (min-width: 801px) {
+    .site-footer-extras .copyright {
+      float: left; }
+    .site-footer-extras .social-media-list {
+      float: right; }
+      .site-footer-extras .social-media-list a {
+        margin-left: 2rem; } }
 
 /*
 
