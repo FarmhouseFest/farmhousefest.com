@@ -3,15 +3,14 @@
     Base media query mixins
 
 */
-.page, .panel-container.site-intro, .panel-container.festival-description .panel, .site-footer-extras .wrapper {
+.page, .site-intro .contents, .festival-description .panel, .site-footer-extras .wrapper {
   width: 100%; }
   @media (min-width: 801px) {
-    .page, .panel-container.site-intro, .panel-container.festival-description .panel, .site-footer-extras .wrapper {
+    .page, .site-intro .contents, .festival-description .panel, .site-footer-extras .wrapper {
       margin: 0 2rem; } }
   @media (min-width: 961px) {
-    .page, .panel-container.site-intro, .panel-container.festival-description .panel, .site-footer-extras .wrapper {
+    .page, .site-intro .contents, .festival-description .panel, .site-footer-extras .wrapper {
       width: 960px;
-      padding: 0 1rem;
       margin: 0 auto; } }
 
 .site-footer-extras .wrapper:after {
@@ -76,7 +75,9 @@ h1, h2, h3, h4, h5, h6 {
 .styled {
   font-family: "Amatic SC", "Arial Narrow", sans-serif;
   font-size: 41.6px;
-  text-transform: uppercase; }
+  line-height: 1;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem; }
 
 /**
  * Links
@@ -121,14 +122,16 @@ a {
   padding: 0.5rem 2rem;
   border-radius: 4px;
   color: rgba(255, 255, 255, 0.9);
-  background: rgba(162, 110, 107, 0.95);
+  background-color: rgba(162, 110, 107, 0.95);
+  background-image: url(/images/papertexture.min.png);
   font-family: "Amatic SC", "Arial Narrow", sans-serif;
   font-size: 26px;
+  text-align: center;
   text-transform: uppercase;
   white-space: nowrap; }
   .button:hover, .button:focus, a.button:hover, a.button:focus {
     color: #fff;
-    background: #a26e6b;
+    background-color: #a26e6b;
     text-decoration: none; }
 
 /*
@@ -136,57 +139,79 @@ a {
     panels & variations
 
 */
+.panel.brand {
+  background: #a26e6b; }
+  .panel.brand a.button {
+    background-color: #373c40; }
+.panel.dark {
+  color: #d3beaa;
+  background-color: #373c40; }
+  .panel.dark a.button {
+    color: #373c40;
+    background-color: #d3beaa; }
+.panel.light {
+  background-color: #d3beaa; }
+
 .panel-container.one-up .panel {
   padding: 0 1rem; }
 @media (min-width: 801px) {
-  .panel-container.two-up {
+  .panel-container.two-up .contents {
     display: flex; }
-    .panel-container.two-up .panel {
-      flex: 1 1 50%;
-      align-items: center; }
-      .panel-container.two-up .panel:first-child {
-        padding-right: 2rem; }
-      .panel-container.two-up .panel:last-child {
-        padding-left: 2rem; }
+  .panel-container.two-up .panel {
+    flex: 1 1 50%;
+    align-items: center; }
+    .panel-container.two-up .panel:first-child {
+      padding-left: 0;
+      padding-right: 2rem; }
+    .panel-container.two-up .panel:last-child {
+      padding-left: 2rem; }
   .panel-container.three-up {
     display: flex; }
     .panel-container.three-up .panel {
       flex: 1 1 33%;
       align-items: center; } }
-.panel-container.site-intro .panel {
-  flex: 1 1 33%;
+
+.site-intro .panel {
   padding: 3rem 2rem;
   align-items: center; }
-  .panel-container.site-intro .panel:nth-child(2) {
-    background: #d3beaa; }
-  .panel-container.site-intro .panel h2 {
-    margin: 0; }
 @media (min-width: 801px) {
-  .panel-container.site-intro .panel {
-    position: relative;
-    padding: 3rem 2rem 6rem 2rem; }
-  .panel-container.site-intro .button {
-    position: absolute;
-    left: 20%;
-    bottom: 3rem;
-    width: 60%; } }
-.panel-container.festival-description {
-  background: #e0e2da; }
-  .panel-container.festival-description .panel {
+  .site-intro {
+    background-color: #373c40;
+    background-image: url(/images/photos/tmp/left.jpg), url(/images/photos/tmp/right.jpg);
+    background-position: -10% top, 110% top;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 55% auto, 55% auto; }
+    .site-intro .panel {
+      position: relative;
+      padding: 3rem 2rem 8rem 2rem;
+      background-color: transparent; }
+      .site-intro .panel:last-child .button {
+        left: 2rem; }
+    .site-intro .button {
+      position: absolute;
+      left: 0;
+      bottom: 3rem;
+      width: 10rem; } }
+
+.festival-description {
+  background-color: #d3beaa;
+  background-image: url(/images/papertexture.min.png); }
+  .festival-description .panel {
     padding: 3rem 2rem;
     text-align: center; }
-    .panel-container.festival-description .panel p {
+    .festival-description .panel p {
       text-align: left; }
     @media (min-width: 801px) {
-      .panel-container.festival-description .panel {
+      .festival-description .panel {
         padding: 4rem 6rem; } }
-.panel-container.beerpage .panel {
+
+.beerpage .panel {
   padding: 2rem;
   text-align: center; }
-  .panel-container.beerpage .panel:first-child {
+  .beerpage .panel:first-child {
     background: #e0e2da; }
   @media (min-width: 801px) {
-    .panel-container.beerpage .panel h2, .panel-container.beerpage .panel p {
+    .beerpage .panel h2, .beerpage .panel p {
       text-align: left; } }
 
 .panel.centered {
@@ -286,7 +311,7 @@ a {
       margin: 0;
       clear: both;
       text-align: left;
-      background: rgba(211, 190, 170, 0.95); }
+      background-color: rgba(211, 190, 170, 0.95); }
     .site-nav:hover .site-nav-wrapper, .site-nav:focus .site-nav-wrapper {
       display: block; }
     .site-nav .site-nav-item {
@@ -351,15 +376,16 @@ a {
 .site-footer-extras {
   padding-top: 1rem;
   margin-top: 3rem;
-  color: #fff;
-  background: #d3beaa;
+  color: #d3beaa;
+  background-color: #373c40;
+  background-image: url(/images/papertexture.min.png);
   text-align: center; }
   .site-footer-extras .social-media-list {
     padding-bottom: 1rem; }
     .site-footer-extras .social-media-list a {
       display: inline-block;
       margin: 0 1rem;
-      color: #fff; }
+      color: #d3beaa; }
   @media (min-width: 801px) {
     .site-footer-extras .copyright {
       float: left; }

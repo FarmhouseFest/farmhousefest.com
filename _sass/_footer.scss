@@ -22,8 +22,9 @@
 .site-footer-extras {
     padding-top: 1rem;
     margin-top: 3rem;
-    color: $text-colour-reversed;
-    background: $background-colour;
+    color: $background-colour;
+    background-color: $text-colour;
+    background-image: $texture;
     text-align: center;
 
     .wrapper {
@@ -36,7 +37,7 @@
         a {
             display: inline-block;
             margin: 0 1rem;
-            color: $text-colour-reversed;
+            color: $background-colour;
         }
     }
 

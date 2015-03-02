@@ -12,17 +12,19 @@
     border-radius: 4px;
 
     color: rgba($text-colour-reversed, 0.9);
-    background: rgba($brand-colour, 0.95);
+    background-color: rgba($brand-colour, 0.95);
+    background-image: $texture;
 
     font-family: $alt-font-family;
-    font-size: $alt-font-size;    
+    font-size: $alt-font-size;
 
+    text-align: center;
     text-transform: uppercase;
     white-space: nowrap;
 
     &:hover, &:focus {
         color: $text-colour-reversed;
-        background: $brand-colour;
+        background-color: $brand-colour;
         text-decoration: none;
     }
 
