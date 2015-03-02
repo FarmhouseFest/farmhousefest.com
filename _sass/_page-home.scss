@@ -13,7 +13,7 @@
 
     @include screen-medium {
 
-        min-height: 400px;
+        min-height: 450px;
 
         .site-title {
             display: none;
@@ -29,6 +29,41 @@
 
 }
 
+
+.home-details {
+
+    font-family: $alt-font-family;
+    font-size: $alt-font-size;
+    text-decoration: uppercase;
+
+    h2 {
+        color: $text-colour;
+        margin: 0;     
+    }
+    p {
+        color: $text-colour-reversed;
+        margin: 0;     
+    }
+
+
+    @include screen-medium {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 300px;
+
+        .first, .second {
+            text-align: center;
+            flex: 0 1 300px;
+        }
+        .first h2 {
+            font-size: $alt-font-size * 2.2;
+            line-height: 1;
+        }
+
+    }
+
+}
 
 .page-content.home {
 

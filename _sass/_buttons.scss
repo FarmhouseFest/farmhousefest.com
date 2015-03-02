@@ -22,7 +22,7 @@
 
     &:hover, &:focus {
         color: $text-colour-reversed;
-        background: #648000;
+        background: $brand-colour;
         text-decoration: none;
     }
 

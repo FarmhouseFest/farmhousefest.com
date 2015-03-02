@@ -91,11 +91,15 @@
 
 		.panel {
 			@extend %fixed-centered;
-			padding: 4rem 6rem;
+			padding: 3rem 2rem;
 			text-align: center;
 
 			p {
 				text-align: left;
+			}
+
+			@include screen-medium {
+				padding: 4rem 6rem;
 			}
 		}
 	}

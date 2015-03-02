@@ -10,14 +10,14 @@
   class: nav-beer
   url: /2015/beer/
 
-- text: Buy Tickets
-  class: nav-tickets
-  url: #tickets
+- text: Location
+  class: nav-location
+  url: /2015/location/
 
 - text: Contact
   class: nav-contact
   url: /2015/contact/
 
-- text: Location
-  class: nav-location
-  url: /2015/location/
+- text: Buy Tickets
+  class: nav-tickets
+  url: http://farmhousefest2015.brownpapertickets.com/

@@ -37,7 +37,7 @@ dl, dd, ol, ul, figure {
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure {
-  margin-bottom: 15px; }
+  margin-bottom: 0.5rem; }
 
 /*
 
@@ -58,7 +58,7 @@ img {
   vertical-align: middle; }
 
 ul, ol {
-  margin-left: 30px; }
+  margin-left: 1rem; }
 
 li > ul,
 li > ol {
@@ -75,14 +75,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .styled {
   font-family: "Amatic SC", "Arial Narrow", sans-serif;
-  font-size: 26px;
+  font-size: 41.6px;
   text-transform: uppercase; }
 
 /**
  * Links
  */
 a {
-  color: #a26e6a;
+  color: #a26e6b;
   text-decoration: none; }
   a:visited {
     color: #764d4a; }
@@ -121,14 +121,14 @@ a {
   padding: 0.5rem 2rem;
   border-radius: 4px;
   color: rgba(255, 255, 255, 0.9);
-  background: rgba(162, 110, 106, 0.95);
+  background: rgba(162, 110, 107, 0.95);
   font-family: "Amatic SC", "Arial Narrow", sans-serif;
   font-size: 26px;
   text-transform: uppercase;
   white-space: nowrap; }
   .button:hover, .button:focus, a.button:hover, a.button:focus {
     color: #fff;
-    background: #648000;
+    background: #a26e6b;
     text-decoration: none; }
 
 /*
@@ -173,10 +173,13 @@ a {
 .panel-container.festival-description {
   background: #e0e2da; }
   .panel-container.festival-description .panel {
-    padding: 4rem 6rem;
+    padding: 3rem 2rem;
     text-align: center; }
     .panel-container.festival-description .panel p {
       text-align: left; }
+    @media (min-width: 801px) {
+      .panel-container.festival-description .panel {
+        padding: 4rem 6rem; } }
 .panel-container.beerpage .panel {
   padding: 2rem;
   text-align: center; }
@@ -219,7 +222,7 @@ a {
 .site-header {
   background-color: #d3beaa;
   background-image: url(/images/photos/header.min.jpg);
-  background-position: center center;
+  background-position: center bottom;
   background-repeat: no-repeat;
   background-size: 100%; }
   @media (min-width: 801px) {
@@ -251,6 +254,9 @@ a {
     .site-nav-item a:hover, .site-nav-item a:focus {
       text-decoration: none;
       background: rgba(255, 255, 255, 0.2); }
+    @media (min-width: 801px) {
+      .site-nav-item a {
+        padding: 0.25rem 0.5rem; } }
 
 .site-nav .menu-icon {
   display: none; }
@@ -292,18 +298,28 @@ a {
         .site-nav .site-nav-item a:hover, .site-nav .site-nav-item a:focus {
           text-decoration: none;
           background: rgba(255, 255, 255, 0.05); } }
-
 @media (min-width: 801px) {
-  .nav-home a, .nav-festival a, .nav-beer a {
-    float: left;
-    padding: 0.25rem 0.75rem;
-    margin: 0 0.5rem 0 0; } }
-
-@media (min-width: 801px) {
-  .nav-location a, .nav-contact a, .nav-tickets a {
-    float: right;
-    padding: 0.25rem 0.75rem;
-    margin: 0 0 0 0.5rem; } }
+  .site-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    .site-nav .site-nav-item {
+      flex: 1 1 123px; }
+      .site-nav .site-nav-item:nth-child(2) {
+        order: 1; }
+      .site-nav .site-nav-item:nth-child(3) {
+        order: 2; }
+      .site-nav .site-nav-item:nth-child(4) {
+        order: 3; }
+      .site-nav .site-nav-item:nth-child(5) {
+        order: 5; }
+      .site-nav .site-nav-item:nth-child(6) {
+        order: 6; }
+      .site-nav .site-nav-item:nth-child(7) {
+        order: 7; }
+    .site-nav .site-title-large {
+      flex: 0 1 220px;
+      order: 4; } }
 
 .site-title {
   display: inline-block;
@@ -361,13 +377,36 @@ a {
   display: none; }
 @media (min-width: 801px) {
   .site-header.home {
-    min-height: 400px; }
+    min-height: 450px; }
     .site-header.home .site-title {
       display: none; }
     .site-header.home .site-title-large {
       display: inline-block; }
       .site-header.home .site-title-large img {
         width: 140px; } }
+
+.home-details {
+  font-family: "Amatic SC", "Arial Narrow", sans-serif;
+  font-size: 26px;
+  text-decoration: uppercase; }
+  .home-details h2 {
+    color: #373c40;
+    margin: 0; }
+  .home-details p {
+    color: #fff;
+    margin: 0; }
+  @media (min-width: 801px) {
+    .home-details {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 300px; }
+      .home-details .first, .home-details .second {
+        text-align: center;
+        flex: 0 1 300px; }
+      .home-details .first h2 {
+        font-size: 57.2px;
+        line-height: 1; } }
 
 /*
 

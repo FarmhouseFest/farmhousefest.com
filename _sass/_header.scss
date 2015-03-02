@@ -10,7 +10,7 @@
     // temp styling
     background-color: $background-colour;
     background-image: url(/images/photos/header.min.jpg);
-    background-position: center center;
+    background-position: center bottom;
     background-repeat: no-repeat;
     background-size: 100%;
 
@@ -54,11 +54,17 @@
             text-decoration: none;
             background: rgba(255, 255, 255, 0.2);
         }
+
+        @include screen-medium {
+            padding: 0.25rem 0.5rem;
+        }
+
     }
 }
 
 
 .site-nav {    
+
     .menu-icon {
         display: none;
     }
@@ -118,27 +124,44 @@
         }
     }
 
-}
+
+    @include screen-medium {
+
+        // nav flexbox
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        .site-nav-item {
+            flex: 1 1 123px;
+            &:nth-child(2) {
+                order: 1;
+            }
+            &:nth-child(3) {
+                order: 2;
+            }
+            &:nth-child(4) {
+                order: 3;
+            }
+
+            &:nth-child(5) {
+                order: 5;
+            }
+            &:nth-child(6) {
+                order: 6;
+            }
+            &:nth-child(7) {
+                order: 7;
+            }
+        }
+        .site-title-large {
+            flex: 0 1 220px;
+            order: 4;
+        }
 
 
-// arrange the nav elements to straddle the logo on larger screens
-.nav-home, .nav-festival, .nav-beer {
-    a {
-        @include screen-medium {
-            float: left;
-            padding: 0.25rem 0.75rem;
-            margin: 0 0.5rem 0 0;
-        }
     }
-}
-.nav-location, .nav-contact, .nav-tickets {
-    a {
-        @include screen-medium {
-            float: right;
-            padding: 0.25rem 0.75rem;
-            margin: 0 0 0 0.5rem;
-        }
-    }
+
 }
 
 

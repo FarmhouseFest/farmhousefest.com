@@ -11,16 +11,31 @@
         </svg>
       </a>
 
-      {% include nav.html nav=site.data.menu wrapper="site-nav-wrapper" %}
+      {% include nav.html nav=site.data.menu %}
+
+      <a class="site-title" href="{{ site.baseurl }}/2015/">
+        <img src="/images/logo-2015-sm.min.png" alt="{{ site.title }}" />
+      </a>
+      <a class="site-title-large" href="{{ site.baseurl }}/2015/">
+        <img src="/images/logo-2015-med-dark.min.png" alt="{{ site.title }}" />
+      </a>
 
     </nav>
 
-    <a class="site-title" href="{{ site.baseurl }}/2015/">
-      <img src="/images/logo-2015-sm.min.png" alt="{{ site.title }}" />
-    </a>
-    <a class="site-title-large" href="{{ site.baseurl }}/2015/">
-      <img src="/images/logo-2015-med-dark.min.png" alt="{{ site.title }}" />
-    </a>
+
+    <div class="home-details">
+      <div class="first">
+        <p>Vancouver's First</p>
+        <h2>Saison &amp; Wild Ale Festival</h2>
+      </div>
+      <div class="second">
+        <h2>June 27, 2015 1-6pm</h2>
+        <p>@UBC Farm</p>
+        <a class="button" href="http://farmhousefest2015.brownpapertickets.com/">
+          Buy Tickets
+        </a>
+      </div>
+    </div>
 
   </div>
 
