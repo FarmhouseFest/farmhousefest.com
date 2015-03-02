@@ -9,7 +9,7 @@
 
     // temp styling
     background-color: $background-colour;
-    background-image: url(/images/photos/glass.min.jpg);
+    background-image: url(/images/photos/header.min.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -40,20 +40,18 @@
 .site-nav-item {
     margin: 0;
     list-style: none;
-    text-transform: uppercase;
-    white-space: nowrap;
 
     a {
         border-radius: 4px;
-        color: rgba($text-colour-reversed, 0.8);
+        color: $text-colour;
 
         font-family: $alt-font-family;
         font-size: $alt-font-size;
-        line-height: 1;
+        text-transform: uppercase;
+        white-space: nowrap;
 
         &:hover, &:focus {
             text-decoration: none;
-            color: $text-colour-reversed;
             background: rgba(255, 255, 255, 0.2);
         }
     }
@@ -110,7 +108,7 @@
             a {
                 display: block;
                 border-radius: 0;
-                padding: 0.5rem 1rem;
+                padding: 0.25rem 0.5rem;
 
                 &:hover, &:focus {
                     text-decoration: none;
@@ -128,7 +126,8 @@
     a {
         @include screen-medium {
             float: left;
-            padding: 0.5rem 1rem;
+            padding: 0.25rem 0.75rem;
+            margin: 0 0.5rem 0 0;
         }
     }
 }
@@ -136,7 +135,8 @@
     a {
         @include screen-medium {
             float: right;
-            padding: 0.5rem 1rem;
+            padding: 0.25rem 0.75rem;
+            margin: 0 0 0 0.5rem;
         }
     }
 }
@@ -164,10 +164,10 @@
 .nav-tickets {
     a {
         color: #fff;
-        background: rgba($brand-colour, 0.4);
+        background: $text-colour;
 
         &:hover, &:focus {
-            background: rgba($brand-colour, 0.6);
+            background: rgba($text-colour, 0.8);
         }
     }
 }

@@ -13,20 +13,16 @@
 
     @include screen-medium {
 
-        padding: 4.5rem 0 4rem 0;
+        min-height: 400px;
 
         .site-title {
             display: none;
         }
         .site-title-large {
-            display: block;
+            display: inline-block;
             img {
-                width: 120px;
+                width: 140px;
             }
-        }
-
-        .site-nav-item a {
-            margin-top: 5.5rem;
         }
 
     }
