@@ -45,7 +45,7 @@ ul, ol, dl, figure {
 
 */
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Slabo 13px", georgia, serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 300;
@@ -72,6 +72,10 @@ section {
  */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 300; }
+
+.styled {
+  font-family: "Amatic SC", "Arial Narrow", sans-serif;
+  font-size: 32px; }
 
 /**
  * Links
@@ -239,7 +243,10 @@ a {
   white-space: nowrap; }
   .site-nav-item a {
     border-radius: 4px;
-    color: rgba(255, 255, 255, 0.8); }
+    color: rgba(255, 255, 255, 0.8);
+    font-family: "Amatic SC", "Arial Narrow", sans-serif;
+    font-size: 32px;
+    line-height: 1; }
     .site-nav-item a:hover, .site-nav-item a:focus {
       text-decoration: none;
       color: #fff;

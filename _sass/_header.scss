@@ -47,6 +47,10 @@
         border-radius: 4px;
         color: rgba($text-colour-reversed, 0.8);
 
+        font-family: $alt-font-family;
+        font-size: $alt-font-size;
+        line-height: 1;
+
         &:hover, &:focus {
             text-decoration: none;
             color: $text-colour-reversed;
