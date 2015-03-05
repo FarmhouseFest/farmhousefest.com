@@ -7,21 +7,24 @@
 
 .site-footer {
 
-    padding: 3rem 0 0 0;
+    padding: 0;
 
     .sponsor-title {
         text-align: center;
+        margin-bottom: 2rem;
     }
 
-    .sponsors.hide {
-        display: none;
+    .sponsors {
+        padding: 3rem 0;
+        .hide {
+            display: none;
+        }
     }
 
 }
 
 .site-footer-extras {
     padding-top: 1rem;
-    margin-top: 3rem;
     color: $background-colour;
     background-color: $text-colour;
     background-image: $texture;

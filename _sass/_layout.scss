@@ -4,11 +4,9 @@
 
 */
 
-.page {
-    @extend %fixed-centered;
-}
 
 .page-header {
+    @extend %fixed-centered;
     padding-top: 1rem;
     text-align: center;
 
@@ -17,5 +15,3 @@
         text-align: left;
     }
 }
-
-

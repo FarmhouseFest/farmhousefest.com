@@ -16,11 +16,11 @@
 	}
 
 	&.dark {
-		color: $background-colour;
+		color: $background-colour-light;
 		background-color: $text-colour;
 		a.button {
 			color: $text-colour;
-			background-color: $background-colour;
+			background-color: $background-colour-light;
 		}
 	}
 
@@ -34,19 +34,25 @@
 // panel layouts
 .panel-container {
 
-	&.one-up {
-		.panel {
-			padding: 0 1rem;
-		}
+	.fixed-contents {
+		@extend %fixed-centered;
 	}
 
-
+	.panel {
+		padding: 3rem 2rem;			
+	}
 
 	@include screen-medium {
 
+		&.one-up {
+			.panel {
+				padding: 3rem 0;			
+			}
+		}
+
 		&.two-up {
 
-			.contents {
+			.contents, .fixed-contents {
 				display: flex;
 			}
 
@@ -62,6 +68,25 @@
 					padding-left: 2rem;
 				}
 			}
+
+			@include screen-medium {
+
+				.panel {
+					position: relative;
+					padding: 3rem 2rem 8rem 2rem;
+					&:last-child {
+						.button {
+							left: 2rem;
+						}
+					}
+				}
+				.button {
+					position: absolute;
+					left: 0;
+					bottom: 3rem;
+				}
+			}
+
 		}
 
 
@@ -81,50 +106,44 @@
 // specific panels
 
 // home page: site intro 2-up
-.site-intro {
+.page-home-2up {
 
-	.contents {
-		@extend %fixed-centered;
-	}
+	@extend %panel-two-up;
 
 	.panel {
-		padding: 3rem 2rem;
-		align-items: center;
+		&:first-child {
+			background-image: 
+				url(/images/photos/tmp/left.jpg);
+		}
 	}
 
-
 	@include screen-medium {
-
 		background-color: $text-colour;
 		background-image: 
 			url(/images/photos/tmp/left.jpg),
 			url(/images/photos/tmp/right.jpg);
-		background-position:
-			-10% top,
-			110% top;
-		background-repeat: 
-			no-repeat,
-			no-repeat;
-		background-size: 
-			55% auto,
-			55% auto;
+	}
 
-		.panel {
-			position: relative;
-			padding: 3rem 2rem 8rem 2rem;
-			background-color: transparent;
-			&:last-child {
-				.button {
-					left: 2rem;
-				}
-			}
+}
+
+
+// general details 2-up
+.details-2up {
+
+	@extend %panel-two-up;
+
+	.panel {
+		&:first-child {
+			background-image: 
+				url(/images/photos/tmp/left.jpg);
 		}
-		.button {
-			position: absolute;
-			left: 0;
-			bottom: 3rem;
-			width: 10rem;
-		}
+	}
+
+	@include screen-medium {
+		background-color: $text-colour;
+		background-image: 
+			url(/images/photos/tmp/left.jpg),
+			url(/images/photos/tmp/right.jpg);
 	}
 
 }
@@ -151,25 +170,6 @@
 	}
 }
 
-
-// beer page extra info
-.beerpage {
-	.panel {
-
-		padding: 2rem;
-		text-align: center;
-
-		&:first-child {
-			background: $background-colour-light;
-		}
-
-		@include screen-medium {
-			h2, p {
-				text-align: left;
-			}
-		}
-	}
-}
 
 
 

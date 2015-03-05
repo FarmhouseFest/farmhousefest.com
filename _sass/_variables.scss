@@ -14,7 +14,7 @@ $text-colour:           #373c40;
 $text-colour-reversed:  #fff;
 
 $background-colour:     #d3beaa;
-$background-colour-light: #e0e2da;
+$background-colour-light: #e3ceba;
 
 $brand-colour:          #a26e6b;
 
@@ -108,4 +108,40 @@ $xxlarge: 1280px;
     display: table;
     clear: both;
   }
+}
+
+
+// silent class mixin for two-up responsive images
+%panel-two-up {
+  .panel {
+    &:first-child, &:last-child {
+      background-position:
+        center center;
+      background-repeat: 
+        no-repeat;
+      background-size: 
+        110% auto;
+    }
+  }  
+
+  @include screen-medium {
+
+    background-position:
+      -10% top,
+      110% top;
+    background-repeat: 
+      no-repeat,
+      no-repeat;
+    background-size: 
+      55% auto,
+      55% auto;
+
+    .panel {
+      background-color: transparent;
+      &:first-child, &:last-child {
+        background: none;
+      }
+    }
+  }
+
 }

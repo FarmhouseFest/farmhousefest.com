@@ -9,10 +9,6 @@
 
     // temp styling
     background-color: $background-colour;
-    background-image: url(/images/photos/header.min.jpg);
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: 100%;
 
     @include screen-medium {
         text-align: center;
@@ -42,7 +38,6 @@
     list-style: none;
 
     a {
-        border-radius: 4px;
         color: $text-colour;
 
         font-family: $alt-font-family;
@@ -69,8 +64,15 @@
         display: none;
     }
 
+
+    &.is-active .site-nav-item {
+        @media (max-width: $medium) {
+            display: block;
+        }
+    }
+
+
     @media (max-width: $medium) {
-        text-align: right;
 
         .menu-icon {
             display: block;
@@ -104,12 +106,8 @@
             background-color: rgba($background-colour, 0.95);
         }
 
-        &:hover .site-nav-wrapper, &:focus .site-nav-wrapper {
-            display: block;
-        }
-
         .site-nav-item {
-            display: block;
+            display: none;
 
             a {
                 display: block;
@@ -152,6 +150,10 @@
             }
             &:nth-child(7) {
                 order: 7;
+            }
+
+            a {
+                border-radius: 4px;
             }
         }
         .site-title-large {
