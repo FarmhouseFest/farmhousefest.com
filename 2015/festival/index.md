@@ -22,6 +22,7 @@ permalink: /2015/festival/
 <div class="panel-container one-up">
 
 	<div class="fixed-contents">
+		<div class="panel">
 
 		Doesn’t sound like any beer festival you’ve ever beer to, does it? Well, maybe you’ve just been going to the wrong festivals. How is Farmhouse Festival different? Well, let’s start with the beer.
 
@@ -30,6 +31,8 @@ permalink: /2015/festival/
 		What about the breweries? Hand selected by a collection of beer nerds as picky as you are. Only breweries with the chops to produce great on style beer were even invited.
 
 		Even the location was carefully selected to maximize beer drinking pleasure. Not only is the UBC a beautiful grass field surrounded by forest and an apple orchard, it’s also huge. Farmhouse Festival will boost the most square feet per festival-goer of any local beer festival. You can even bring a picnic blanket and spread out for the day.
+
+		</div>
 
 	</div>
 

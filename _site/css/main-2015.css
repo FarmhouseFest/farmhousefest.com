@@ -311,7 +311,7 @@ a {
       width: 27px;
       height: auto; }
       .site-nav .menu-icon > svg path {
-        fill: #fff; }
+        fill: #373c40; }
   .site-nav .site-nav-wrapper {
     display: none;
     position: absolute;
@@ -353,6 +353,8 @@ a {
         order: 7; }
       .site-nav .site-nav-item a {
         border-radius: 4px; }
+    .site-nav .site-title {
+      order: 4; }
     .site-nav .site-title-large {
       flex: 0 1 220px;
       order: 4; } }
@@ -378,8 +380,8 @@ a {
 
 */
 .site-footer {
-  text-align: center;
-  padding: 0; }
+  padding: 0;
+  text-align: center; }
   .site-footer .sponsor-title {
     text-align: center;
     margin-bottom: 2rem; }
@@ -389,37 +391,37 @@ a {
       display: none; }
 
 .site-footer-extras {
-  padding-top: 1rem;
+  padding: 2rem 0 1rem 0;
   color: #d3beaa;
   background-color: #373c40;
   background-image: url(/images/papertexture.min.png);
-  text-align: center; }
+  text-align: left; }
   .site-footer-extras .copyright {
-    display: inline-block; }
+    display: inline-block;
+    padding-top: 0.25rem;
+    font-size: 1.25rem; }
 
-.social-media-list {
-  padding-bottom: 1rem; }
-  .social-media-list li {
-    display: inline-block;
-    margin: 0 1rem;
-    list-style: none; }
-  .social-media-list a {
-    display: inline-block;
-    width: 32px;
-    height: 32px;
-    padding-left: 32px;
-    overflow: hidden;
-    background-size: 32px 32px; }
-  .social-media-list .social-twitter a {
-    background-image: url(/images/svg/twitter.svg); }
-  .social-media-list .social-facebook a {
-    background-image: url(/images/svg/facebook.svg); }
-  .social-media-list .social-instagram a {
-    background-image: url(/images/svg/instagram.svg); }
-  @media (min-width: 801px) {
-    .social-media-list {
-      float: right;
-      margin-left: 2rem; } }
+.social-media-list li {
+  display: inline-block;
+  margin: 0 1rem;
+  list-style: none; }
+.social-media-list a {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  padding-left: 32px;
+  overflow: hidden;
+  background-size: 32px 32px; }
+.social-media-list .social-twitter a {
+  background-image: url(/images/svg/twitter.svg); }
+.social-media-list .social-facebook a {
+  background-image: url(/images/svg/facebook.svg); }
+.social-media-list .social-instagram a {
+  background-image: url(/images/svg/instagram.svg); }
+@media (min-width: 801px) {
+  .social-media-list {
+    float: right;
+    margin-left: 2rem; } }
 
 /*
 

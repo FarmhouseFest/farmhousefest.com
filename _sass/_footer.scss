@@ -7,8 +7,8 @@
 
 .site-footer {
 
-    text-align: center;
     padding: 0;
+    text-align: center;
 
     .sponsor-title {
         text-align: center;
@@ -25,11 +25,11 @@
 }
 
 .site-footer-extras {
-    padding-top: 1rem;
+    padding: 2rem 0 1rem 0;
     color: $background-colour;
     background-color: $text-colour;
     background-image: $texture;
-    text-align: center;
+    text-align: left;
 
     .wrapper {
         @extend %fixed-centered;
@@ -39,12 +39,13 @@
 
     .copyright {
         display: inline-block;
+        padding-top: 0.25rem;
+        font-size: 1.25rem;
     }
 
 }
 
 .social-media-list {
-    padding-bottom: 1rem;
 
     li {
         display: inline-block;
