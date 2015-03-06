@@ -164,7 +164,8 @@ a {
     color: #373c40;
     background-color: #e3ceba; }
 .panel.light {
-  background-color: #d3beaa; }
+  background-color: #d3beaa;
+  background-image: url(/images/papertexture.min.png); }
 
 .panel-container .panel {
   padding: 3rem 2rem; }
@@ -207,10 +208,14 @@ a {
 
 .details-2up .panel:first-child {
   background-image: url(/images/photos/tmp/left.jpg); }
+.details-2up .panel:nth-child(2) {
+  background-image: url(/images/photos/tmp/right.jpg); }
 @media (min-width: 801px) {
   .details-2up {
     background-color: #373c40;
-    background-image: url(/images/photos/tmp/left.jpg), url(/images/photos/tmp/right.jpg); } }
+    background-image: url(/images/photos/tmp/left.jpg), url(/images/photos/tmp/right.jpg); }
+    .details-2up .panel:first-child, .details-2up .panel:nth-child(2) {
+      background-image: none; } }
 
 .festival-description {
   background-color: #d3beaa;
@@ -373,6 +378,7 @@ a {
 
 */
 .site-footer {
+  text-align: center;
   padding: 0; }
   .site-footer .sponsor-title {
     text-align: center;
@@ -388,19 +394,32 @@ a {
   background-color: #373c40;
   background-image: url(/images/papertexture.min.png);
   text-align: center; }
-  .site-footer-extras .social-media-list {
-    padding-bottom: 1rem; }
-    .site-footer-extras .social-media-list a {
-      display: inline-block;
-      margin: 0 1rem;
-      color: #d3beaa; }
+  .site-footer-extras .copyright {
+    display: inline-block; }
+
+.social-media-list {
+  padding-bottom: 1rem; }
+  .social-media-list li {
+    display: inline-block;
+    margin: 0 1rem;
+    list-style: none; }
+  .social-media-list a {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    padding-left: 32px;
+    overflow: hidden;
+    background-size: 32px 32px; }
+  .social-media-list .social-twitter a {
+    background-image: url(/images/svg/twitter.svg); }
+  .social-media-list .social-facebook a {
+    background-image: url(/images/svg/facebook.svg); }
+  .social-media-list .social-instagram a {
+    background-image: url(/images/svg/instagram.svg); }
   @media (min-width: 801px) {
-    .site-footer-extras .copyright {
-      float: left; }
-    .site-footer-extras .social-media-list {
-      float: right; }
-      .site-footer-extras .social-media-list a {
-        margin-left: 2rem; } }
+    .social-media-list {
+      float: right;
+      margin-left: 2rem; } }
 
 /*
 
@@ -413,7 +432,7 @@ a {
   background-repeat: no-repeat; }
   @media (min-width: 801px) {
     .site-header.home {
-      background-size: auto 120%; } }
+      background-size: 115% auto; } }
   .site-header.home .site-title-large {
     display: none; }
   @media (min-width: 801px) {

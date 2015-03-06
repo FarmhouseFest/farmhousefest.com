@@ -7,6 +7,7 @@
 
 .site-footer {
 
+    text-align: center;
     padding: 0;
 
     .sponsor-title {
@@ -35,26 +36,43 @@
         @extend %clearfix;
     }
 
-    .social-media-list {
-        padding-bottom: 1rem;
-        a {
-            display: inline-block;
-            margin: 0 1rem;
-            color: $background-colour;
-        }
+
+    .copyright {
+        display: inline-block;
+    }
+
+}
+
+.social-media-list {
+    padding-bottom: 1rem;
+
+    li {
+        display: inline-block;
+        margin: 0 1rem;
+        list-style: none;
+    }
+
+    a {
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        padding-left: 32px;
+        overflow: hidden;
+        background-size: 32px 32px;
+    }
+
+    .social-twitter a {
+        background-image: url(/images/svg/twitter.svg);
+    }
+    .social-facebook a {
+        background-image: url(/images/svg/facebook.svg);
+    }
+    .social-instagram a {
+        background-image: url(/images/svg/instagram.svg);
     }
 
     @include screen-medium {
-        .copyright {
-            float: left;
-        }
-        .social-media-list {
-            float: right;
-
-            a {
-                margin-left: 2rem;
-            }
-        }
+        float: right;
+        margin-left: 2rem;
     }
-
 }

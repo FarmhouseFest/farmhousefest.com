@@ -11,7 +11,12 @@ permalink: /2015/beer/
 		<div class="fixed-contents">
 		    <h1 class="page-title">{{ page.title }}</h1>
 
-			IBU specific gravity; barleywine seidel becher pitching abv aroma hops conditioning tank. Secondary fermentation aroma hops mash tun sour/acidic? Mouthfeel attenuation wheat beer glass real ale copper. Bock hand pump biere de garde. Mouthfeel: copper, microbrewery: pint glass chocolate malt! Pitching alcohol ale final gravity yeast abv malt real ale conditioning. Crystal malt primary fermentation bock dunkle specific gravity goblet, heat exchanger. Keg hand pump scotch ale, "cask conditioning".
+			<p>You know the drill. At every beer festival you’ve ever attended the routine is the same. Line up. Get tickets and glass. Get program. Pick out the two or three great beers you want to try. Do that. Peruse program for something else great to drink. Give up and try something at random.</p>
+
+			<p>It’s not you. It’s the beer. Most festivals throw open their doors for every and any brewery to bring every and any beer they brew. The result is a whole lot of random beer that, on average, really isn’t that great. How much did it cost to get in here, again?</p>
+
+			<p>Farmhouse Festival is different. First off, only three styles are allow: Saisons, Wild Ales and Sours. Second, only breweries selected by a panel of beer geeks were invited. Just look at this list!</p>
+
 		</div>
 
 	</div>

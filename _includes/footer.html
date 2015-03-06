@@ -22,27 +22,33 @@
         <p class="copyright">
           &copy;Copyright 2015, our company name
         </p>
-        <div class="social-media-list">
+        <ul class="social-media-list">
 
           {% if site.twitter_username %}
-            <a href="https://twitter.com/{{ site.twitter_username }}">
-              @{{ site.twitter_username }}
-            </a>
+            <li class="social-twitter">
+              <a href="https://twitter.com/{{ site.twitter_username }}">
+                @{{ site.twitter_username }}
+              </a>
+            </li>
           {% endif %}
 
           {% if site.facebook_username %}
-            <a href="https://facebook.com/{{ site.facebook_username }}">
-              Facebook
-            </a>
+            <li class="social-facebook">
+              <a href="https://facebook.com/{{ site.facebook_username }}">
+                Facebook
+              </a>
+            </li>
           {% endif %}
 
           {% if site.instagram_username %}
-            <a href="https://instagram.com/{{ site.instagram_username }}">
-              Instagram
-            </a>
+            <li class="social-instagram">
+              <a href="https://instagram.com/{{ site.instagram_username }}">
+                Instagram
+              </a>
+            </li>
           {% endif %}
 
-        </div>
+        </ul>
       </div>
     </div>
 

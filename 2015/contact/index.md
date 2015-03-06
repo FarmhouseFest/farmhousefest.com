@@ -12,7 +12,8 @@ permalink: /2015/contact/
 		<div class="fixed-contents">
 		    <h1 class="page-title">{{ page.title }}</h1>
 
-			IBU specific gravity; barleywine seidel becher pitching abv aroma hops conditioning tank. Secondary fermentation aroma hops mash tun sour/acidic? Mouthfeel attenuation wheat beer glass real ale copper. Bock hand pump biere de garde. Mouthfeel: copper, microbrewery: pint glass chocolate malt! Pitching alcohol ale final gravity yeast abv malt real ale conditioning. Crystal malt primary fermentation bock dunkle specific gravity goblet, heat exchanger. Keg hand pump scotch ale, "cask conditioning".
+			Questions? We got answers. Answers? We can probably come up with some questions for you.
+			
 		</div>
 
 	</div>
