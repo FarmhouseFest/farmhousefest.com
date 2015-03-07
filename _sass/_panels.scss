@@ -9,23 +9,25 @@
 .panel {
 
 	&.brand {
-		background: $brand-colour;
+		color: $color-darkgrey;
+		background: $color-salmon;
 		a.button {
-			background-color: $text-colour;
+			background-color: $color-darkgrey;
 		}
 	}
 
 	&.dark {
-		color: $background-colour-light;
-		background-color: $text-colour;
+		color: $color-tan-light;
+		background-color: $color-darkgrey;
 		a.button {
-			color: $text-colour;
-			background-color: $background-colour-light;
+			color: $color-darkgrey;
+			background-color: $color-tan-light;
 		}
 	}
 
 	&.light {
-		background-color: $background-colour;
+		color: $color-darkgrey;
+		background-color: $color-tan;
 	    background-image: $texture;
 	}
 
@@ -116,13 +118,23 @@
 			background-image: 
 				url(/images/photos/tmp/left.jpg);
 		}
+		&:nth-child(2) {
+			background-image: 
+				url(/images/photos/tmp/right.jpg);
+		}
 	}
 
 	@include screen-medium {
-		background-color: $text-colour;
+		background-color: $color-darkgrey;
 		background-image: 
 			url(/images/photos/tmp/left.jpg),
 			url(/images/photos/tmp/right.jpg);
+
+		.panel {
+			&:first-child, &:nth-child(2) {
+				background-image: none;
+			}
+		}
 	}
 
 }
@@ -132,28 +144,24 @@
 .details-2up {
 
 	@extend %panel-two-up;
+	background-color: $color-tan;
 
 	.panel {
-		&:first-child {
-			background-image: 
-				url(/images/photos/tmp/left.jpg);
-		}
 		&:nth-child(2) {
 			background-image: 
-				url(/images/photos/tmp/right.jpg);
+				url(/images/photos/tmp/left.jpg);
 		}
 	}
 
 	@include screen-medium {
+		background-image: 
+			none,
+			url(/images/photos/tmp/left.jpg);
 		.panel {
 			&:first-child, &:nth-child(2) {
 				background-image: none;
 			}
 		}
-		background-color: $text-colour;
-		background-image: 
-			url(/images/photos/tmp/left.jpg),
-			url(/images/photos/tmp/right.jpg);
 	}
 
 }
@@ -162,7 +170,7 @@
 // home page: about the festival
 .festival-description {
 
-	background-color: $background-colour;
+	background-color: $color-tan;
 	background-image: $texture;
 
 	.panel {

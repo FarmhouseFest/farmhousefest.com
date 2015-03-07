@@ -8,7 +8,7 @@
 .site-header {
 
     // temp styling
-    background-color: $background-colour;
+    background-color: $color-tan;
 
     @include screen-medium {
         text-align: center;
@@ -38,7 +38,7 @@
     list-style: none;
 
     a {
-        color: $text-colour;
+        color: $color-darkgrey;
 
         font-family: $alt-font-family;
         font-size: $alt-font-size;
@@ -88,7 +88,7 @@
                 height: auto;
 
                 path {
-                    fill: $text-colour;
+                    fill: $color-darkgrey;
                 }
             }
         }
@@ -103,7 +103,7 @@
             margin: 0;
             clear: both;
             text-align: left;
-            background-color: rgba($background-colour, 0.95);
+            background-color: rgba($color-tan, 0.95);
         }
 
         .site-nav-item {
@@ -175,7 +175,7 @@
 .site-title {
 
     display: inline-block;
-    color: $text-colour-reversed;
+    color: $color-white;
 
     img {
         width: 60px;
@@ -192,10 +192,10 @@
 .nav-tickets {
     a {
         color: #fff;
-        background: $text-colour;
+        background: $color-darkgrey;
 
         &:hover, &:focus {
-            background: rgba($text-colour, 0.8);
+            background: rgba($color-darkgrey, 0.8);
         }
     }
 }

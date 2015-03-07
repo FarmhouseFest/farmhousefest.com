@@ -11,8 +11,8 @@
     padding: 0.5rem 2rem;
     border-radius: 4px;
 
-    color: rgba($text-colour-reversed, 0.9);
-    background-color: rgba($brand-colour, 0.95);
+    color: rgba($color-white, 0.9);
+    background-color: rgba($color-salmon, 0.95);
     background-image: $texture;
 
     font-family: $alt-font-family;
@@ -23,8 +23,8 @@
     white-space: nowrap;
 
     &:hover, &:focus {
-        color: $text-colour-reversed;
-        background-color: $brand-colour;
+        color: $color-white;
+        background-color: $color-salmon;
         text-decoration: none;
     }
 

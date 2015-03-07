@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Contact
+title: Get in Touch
 permalink: /2015/contact/
 ---
 
@@ -41,5 +41,7 @@ permalink: /2015/contact/
 	</div>
 
 </div>
+
+
 
 {% include details.html %}

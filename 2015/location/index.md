@@ -34,6 +34,3 @@ permalink: /2015/location/
 	</div>
 
 </div>
-
-
-{% include details.html %}
