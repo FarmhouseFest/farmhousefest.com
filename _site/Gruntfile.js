@@ -1,6 +1,7 @@
 module.exports = function(grunt) {
 
   grunt.initConfig({
+
     cssmin: {
       target: {
         files: {
@@ -8,6 +9,7 @@ module.exports = function(grunt) {
         }
       }
     },
+
     autoprefixer: {
       options: {
         browsers: ['last 2 versions']
@@ -15,12 +17,23 @@ module.exports = function(grunt) {
       single_file: {
         src: '_site/css/main-2015.css'
       }
+    },
 
-    }
+    smarttext: {
+      options: {},
+      files: [{
+        'expand': true,
+        'cwd': 'test/fixtures',
+        'src': ['_site/**/*.html'],
+        'dest': 'tmp'
+      }],
+    },
+
   });
 
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-autoprefixer');
+  grunt.loadNpmTasks('grunt-smarttext');
 
   grunt.registerTask('default', ['cssmin', 'autoprefixer']);
 };

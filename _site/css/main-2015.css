@@ -7,7 +7,7 @@
   width: 100%; }
   @media (min-width: 801px) {
     .page-header, .panel-container .fixed-contents, .festival-description .panel, .site-footer-extras .wrapper {
-      margin: 0 2rem; } }
+      padding: 0 2rem; } }
   @media (min-width: 961px) {
     .page-header, .panel-container .fixed-contents, .festival-description .panel, .site-footer-extras .wrapper {
       width: 960px;
@@ -18,19 +18,42 @@
   display: table;
   clear: both; }
 
+.location-intro-2up, .beer-intro-2up, .festival-intro-2up, .site-header.home {
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: auto 100%; }
+  @media (min-width: 801px) {
+    .location-intro-2up, .beer-intro-2up, .festival-intro-2up, .site-header.home {
+      background-size: auto 100%; } }
+
 .page-home-2up .panel:first-child, .details-2up .panel:first-child, .page-home-2up .panel:last-child, .details-2up .panel:last-child {
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: 110% auto; }
+  background-size: auto 100%; }
+  @media (min-width: 641px) {
+    .page-home-2up .panel:first-child, .details-2up .panel:first-child, .page-home-2up .panel:last-child, .details-2up .panel:last-child {
+      background-size: 100% auto; } }
 @media (min-width: 801px) {
   .page-home-2up, .details-2up {
-    background-position: -10% top, 110% top;
-    background-repeat: no-repeat, no-repeat;
-    background-size: 55% auto, 55% auto; }
+    background-position: -400% top, 400% top;
+    background-size: 90% 100%, 90% 100%;
+    background-repeat: no-repeat, no-repeat; }
     .page-home-2up .panel, .details-2up .panel {
       background-color: transparent; }
       .page-home-2up .panel:first-child, .details-2up .panel:first-child, .page-home-2up .panel:last-child, .details-2up .panel:last-child {
         background: none; } }
+@media (min-width: 1121px) {
+  .page-home-2up, .details-2up {
+    background-position: -42% top, 142% top;
+    background-size: 65% 100%, 65% 100%; } }
+@media (min-width: 1281px) {
+  .page-home-2up, .details-2up {
+    background-position: -10% top, 110% top;
+    background-size: 55% 110%, 55% 110%; } }
+@media (min-width: 1401px) {
+  .page-home-2up, .details-2up {
+    background-position: -10% top, 110% top;
+    background-size: 55% auto, 55% auto; } }
 
 /*
 
@@ -63,7 +86,7 @@ body {
   line-height: 1.5;
   font-weight: 300;
   color: #fff;
-  background-color: #373c40;
+  background-color: #2f3841;
   background-image: url(/images/papertexture.min.png);
   -webkit-text-size-adjust: 100%; }
 
@@ -94,6 +117,10 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   margin-bottom: 0.5rem; }
 
+.secondary {
+  color: #a26e6b;
+  font-size: 26px; }
+
 /**
  * Links
  */
@@ -103,7 +130,7 @@ a {
   a:visited {
     color: #764d4a; }
   a:hover {
-    color: #373c40;
+    color: #2f3841;
     text-decoration: underline; }
 
 /**
@@ -155,23 +182,38 @@ a {
 
 */
 .panel.brand {
-  color: #373c40;
-  background: #a26e6b; }
+  color: #2f3841; }
   .panel.brand a.button {
-    background-color: #373c40; }
+    background-color: #2f3841; }
+    .panel.brand a.button:hover, .panel.brand a.button:focus {
+      background-color: #333b45; }
 .panel.dark {
-  color: #e3ceba;
-  background-color: #373c40; }
+  color: #e3ceba; }
   .panel.dark a.button {
-    color: #373c40;
+    color: #2f3841;
     background-color: #e3ceba; }
+    .panel.dark a.button:hover, .panel.dark a.button:focus {
+      background-color: #e8d5c4; }
 .panel.light {
-  color: #373c40;
-  background-color: #d3beaa;
-  background-image: url(/images/papertexture.min.png); }
+  color: #2f3841; }
+  .panel.light a.button:hover, .panel.light a.button:focus {
+    background-color: #a77571; }
+.panel.centered {
+  text-align: center; }
+.panel.silent {
+  display: none; }
+  @media (min-width: 801px) {
+    .panel.silent {
+      display: block; } }
 
+.panel-container .fixed-contents {
+  display: flex;
+  flex-wrap: wrap; }
 .panel-container .panel {
   padding: 3rem 2rem; }
+.panel-container .full-width {
+  width: 100%;
+  text-align: center; }
 @media (min-width: 801px) {
   .panel-container.one-up .panel {
     padding: 3rem 0; }
@@ -187,10 +229,11 @@ a {
       padding-left: 2rem; } }
 @media (min-width: 801px) and (min-width: 801px) {
   .panel-container.two-up .panel {
-    position: relative;
-    padding: 3rem 2rem 8rem 2rem; }
+    position: relative; }
     .panel-container.two-up .panel:last-child .button {
       left: 2rem; }
+    .panel-container.two-up .panel.with-button {
+      padding-bottom: 8rem; }
   .panel-container.two-up .button {
     position: absolute;
     left: 0;
@@ -203,28 +246,30 @@ a {
       align-items: center; } }
 
 .page-home-2up .panel:first-child {
-  background-image: url(/images/photos/tmp/left.jpg); }
+  background-image: url(/images/photos/cta-about.min.jpg); }
 .page-home-2up .panel:nth-child(2) {
-  background-image: url(/images/photos/tmp/right.jpg); }
+  background-image: url(/images/photos/cta-location.min.jpg); }
 @media (min-width: 801px) {
   .page-home-2up {
-    background-color: #373c40;
-    background-image: url(/images/photos/tmp/left.jpg), url(/images/photos/tmp/right.jpg); }
+    background-color: #2f3841;
+    background-image: url(/images/photos/cta-about.min.jpg), url(/images/photos/cta-location.min.jpg); }
     .page-home-2up .panel:first-child, .page-home-2up .panel:nth-child(2) {
       background-image: none; } }
 
 .details-2up {
-  background-color: #d3beaa; }
+  background-color: #d5beac; }
+  .details-2up .panel:first-child {
+    background-image: url(/images/photos/cta-tickets.min.jpg); }
   .details-2up .panel:nth-child(2) {
-    background-image: url(/images/photos/tmp/left.jpg); }
+    background-image: url(/images/photos/cta-about.min.jpg); }
   @media (min-width: 801px) {
     .details-2up {
-      background-image: none, url(/images/photos/tmp/left.jpg); }
+      background-image: url(/images/photos/cta-tickets.min.jpg), url(/images/photos/cta-about.min.jpg); }
       .details-2up .panel:first-child, .details-2up .panel:nth-child(2) {
         background-image: none; } }
 
 .festival-description {
-  background-color: #d3beaa;
+  background-color: #d5beac;
   background-image: url(/images/papertexture.min.png); }
   .festival-description .panel {
     padding: 3rem 2rem;
@@ -235,8 +280,72 @@ a {
       .festival-description .panel {
         padding: 4rem 6rem; } }
 
-.panel.centered {
-  text-align: center; }
+.location-intro-2up {
+  color: #2f3841;
+  background-color: #d5beac;
+  background-image: url(/images/photos/header-location.min.jpg);
+  background-position: top center; }
+
+.location-photos-3up {
+  background-color: #2f3841;
+  background-image: url(/images/photos/location-image-left.min.jpg), url(/images/photos/location-image-center.min.jpg), url(/images/photos/location-image-right.min.jpg);
+  background-position: 0% top, 50% top, 100% top;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 33.4% 100%, 33.4% 100%, 33.4% 100%;
+  min-height: 100px; }
+  @media (min-width: 481px) {
+    .location-photos-3up {
+      min-height: 150px; } }
+  @media (min-width: 801px) {
+    .location-photos-3up {
+      min-height: 200px; } }
+  @media (min-width: 1121px) {
+    .location-photos-3up {
+      min-height: 300px; } }
+
+.location-gettinghome-3up {
+  padding-top: 3rem;
+  color: #2f3841;
+  background-color: #d5beac; }
+
+.contact-intro-2up {
+  color: #2f3841;
+  background-color: #d5beac; }
+
+.contact-photos-1up {
+  background-color: #2f3841;
+  background-image: url(/images/papertexture.min.png);
+  background-repeat: repeat; }
+  @media (min-width: 801px) {
+    .contact-photos-1up {
+      min-height: 300px; } }
+
+.beer-intro-2up {
+  color: #d5beac;
+  background-color: #2f3841;
+  background-image: url(/images/photos/header-beer.jpg); }
+
+.beer-listing-1up {
+  color: #2f3841;
+  background-color: #d5beac; }
+
+.festival-intro-2up {
+  color: #2f3841;
+  background-color: #d5beac;
+  background-image: url(/images/photos/header-festival.min.jpg); }
+
+.festival-description-2up {
+  padding: 3rem 2rem;
+  color: #d5beac; }
+  .festival-description-2up .panel {
+    padding: 0.5rem 0; }
+    @media (min-width: 801px) {
+      .festival-description-2up .panel {
+        padding: 3rem 0; } }
+
+.festival-beer-2up {
+  background-color: #d5beac;
+  background-image: url(/images/papertexture.min.png); }
 
 /*
 
@@ -266,13 +375,13 @@ a {
 
 */
 .site-header {
-  background-color: #d3beaa; }
+  background-color: #d5beac; }
   @media (min-width: 801px) {
     .site-header {
       text-align: center; } }
   .site-header .wrapper {
     padding: 1rem 0;
-    margin: 0 0 0 1rem; }
+    margin: 0; }
     @media (min-width: 961px) {
       .site-header .wrapper {
         display: block;
@@ -287,7 +396,7 @@ a {
   margin: 0;
   list-style: none; }
   .site-nav-item a {
-    color: #373c40;
+    color: #2f3841;
     font-family: "Amatic SC", "Arial Narrow", sans-serif;
     font-size: 26px;
     text-transform: uppercase;
@@ -298,12 +407,16 @@ a {
     @media (min-width: 801px) {
       .site-nav-item a {
         padding: 0.25rem 0.5rem; } }
+  .site-nav-item.is-selected a {
+    color: #a26e6b; }
 
 .site-nav .menu-icon {
   display: none; }
 @media (max-width: 800px) {
   .site-nav.is-active .site-nav-item {
-    display: block; } }
+    visibility: hidden; } }
+.site-nav .nav-home, .site-nav .nav-festival, .site-nav .nav-beer, .site-nav .nav-location, .site-nav .nav-contact, .site-nav .nav-tickets {
+  transform: translate(-10px 0); }
 @media (max-width: 800px) {
   .site-nav .menu-icon {
     display: block;
@@ -311,13 +424,13 @@ a {
     width: 68px;
     height: 58px;
     line-height: 0;
-    padding: 0.5rem 1rem 0.5rem 0;
+    padding: 0.25rem 1rem 0.5rem 0;
     text-align: right; }
     .site-nav .menu-icon > svg {
       width: 27px;
       height: auto; }
       .site-nav .menu-icon > svg path {
-        fill: #373c40; }
+        fill: #2f3841; }
   .site-nav .site-nav-wrapper {
     display: none;
     position: absolute;
@@ -328,16 +441,38 @@ a {
     margin: 0;
     clear: both;
     text-align: left;
-    background-color: rgba(211, 190, 170, 0.95); }
+    background-color: rgba(213, 190, 172, 0.95); }
   .site-nav .site-nav-item {
-    display: none; }
+    visibility: visible; }
     .site-nav .site-nav-item a {
       display: block;
       border-radius: 0;
       padding: 0.25rem 0.5rem; }
       .site-nav .site-nav-item a:hover, .site-nav .site-nav-item a:focus {
         text-decoration: none;
-        background: rgba(255, 255, 255, 0.05); } }
+        background: rgba(255, 255, 255, 0.05); }
+  .site-nav .nav-home, .site-nav .nav-festival, .site-nav .nav-beer, .site-nav .nav-location, .site-nav .nav-contact, .site-nav .nav-tickets {
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    transform: translate(0 0);
+    transition: transform(transform ease-out 0.2s);
+    background: #a26e6b; }
+    .site-nav .nav-home a, .site-nav .nav-festival a, .site-nav .nav-beer a, .site-nav .nav-location a, .site-nav .nav-contact a, .site-nav .nav-tickets a {
+      color: #fff;
+      text-align: center; }
+  .site-nav .nav-home {
+    top: 64px; }
+  .site-nav .nav-festival {
+    top: 111px; }
+  .site-nav .nav-beer {
+    top: 158px; }
+  .site-nav .nav-location {
+    top: 205px; }
+  .site-nav .nav-contact {
+    top: 252px; }
+  .site-nav .nav-tickets {
+    top: 299px; } }
 @media (min-width: 801px) {
   .site-nav {
     display: flex;
@@ -367,18 +502,22 @@ a {
 
 .site-title {
   display: inline-block;
+  padding: 0 1rem;
   color: #fff; }
   .site-title img {
-    width: 60px;
+    width: 50px;
     opacity: 0.95; }
     .site-title img:hover, .site-title img:focus {
       opacity: 1; }
+  @media (min-width: 801px) {
+    .site-title {
+      padding: 0 3rem; } }
 
 .nav-tickets a {
   color: #fff;
-  background: #373c40; }
+  background: #2f3841; }
   .nav-tickets a:hover, .nav-tickets a:focus {
-    background: rgba(55, 60, 64, 0.8); }
+    background: rgba(47, 56, 65, 0.8); }
 
 /*
 
@@ -387,23 +526,28 @@ a {
 */
 .site-footer {
   padding: 0;
-  color: #d3beaa;
+  color: #d5beac;
   text-align: center; }
   .site-footer .sponsor-title {
     text-align: center;
     margin-bottom: 2rem; }
   .site-footer .sponsors {
-    padding: 3rem 0; }
-    .site-footer .sponsors.hide {
-      display: none; }
+    display: none; }
+    .site-footer .sponsors.show {
+      display: block;
+      padding: 3rem 0;
+      background-color: #d5beac;
+      background-image: url(/images/papertexture.min.png); }
 
 .site-footer-extras {
-  padding: 2rem 0 1rem 0;
-  text-align: left; }
+  padding: 2rem 0 1rem 0; }
   .site-footer-extras .copyright {
     display: inline-block;
     padding-top: 0.25rem;
     font-size: 1.25rem; }
+    @media (min-width: 801px) {
+      .site-footer-extras .copyright {
+        float: left; } }
 
 .social-media-list li {
   display: inline-block;
@@ -429,57 +573,7 @@ a {
 
 /*
 
-    Home Page Variations
-
-*/
-.site-header.home {
-  background-image: url(/images/photos/header.min.jpg);
-  background-position: center bottom;
-  background-repeat: no-repeat; }
-  @media (min-width: 801px) {
-    .site-header.home {
-      background-size: 115% auto; } }
-  .site-header.home .site-title-large {
-    display: none; }
-  @media (min-width: 801px) {
-    .site-header.home {
-      min-height: 450px; }
-      .site-header.home .site-title {
-        display: none; }
-      .site-header.home .site-title-large {
-        display: inline-block; }
-        .site-header.home .site-title-large img {
-          width: 140px; } }
-
-.home-details {
-  font-family: "Amatic SC", "Arial Narrow", sans-serif;
-  font-size: 26px;
-  text-decoration: uppercase; }
-  .home-details h2 {
-    color: #373c40;
-    margin: 0; }
-  .home-details p {
-    color: #fff;
-    margin: 0; }
-  @media (min-width: 801px) {
-    .home-details {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      min-height: 300px; }
-      .home-details .first, .home-details .second {
-        text-align: center;
-        flex: 0 1 300px; }
-      .home-details .first h2 {
-        font-size: 57.2px;
-        line-height: 1; } }
-
-.page-content.home {
-  padding: 0; }
-
-/*
-
-    Brewery Page Layout
+    Beer Page Layout
 
 */
 .brewery-list {
@@ -494,3 +588,88 @@ a {
     top: 0;
     left: 0;
     width: 6rem; }
+
+/*
+
+    Festival Page Layout
+
+*/
+.brewery-logos .brewery {
+  display: inline-block;
+  padding: 1rem;
+  list-style: none; }
+.brewery-logos .logo {
+  width: 4rem; }
+
+.festival-beer-2up .beer {
+  text-align: center; }
+
+/*
+
+    Home Page Variations
+
+*/
+.site-header.home {
+  background-color: #ddc8b3;
+  background-image: url(/images/photos/header-home.min.jpg); }
+  .site-header.home .site-title-large {
+    display: none; }
+  @media (min-width: 801px) {
+    .site-header.home {
+      min-height: 450px; }
+      .site-header.home .site-title {
+        display: none; }
+      .site-header.home .site-title-large {
+        display: inline-block; }
+        .site-header.home .site-title-large img {
+          width: 140px; } }
+
+.home-details {
+  padding: 1rem 2rem 3rem 2rem;
+  margin: 0 1rem;
+  font-family: "Amatic SC", "Arial Narrow", sans-serif;
+  font-size: 26px;
+  text-decoration: uppercase;
+  text-align: center; }
+  .home-details h2 {
+    color: #2f3841;
+    margin: 0; }
+  .home-details p {
+    color: #fff;
+    margin: 0; }
+  .home-details .button {
+    margin-top: 1rem; }
+  @media (min-width: 801px) {
+    .home-details {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 300px;
+      padding: 0; }
+      .home-details .first, .home-details .second {
+        text-align: center;
+        flex: 0 1 300px; }
+      .home-details .first h2 {
+        font-size: 57.2px;
+        line-height: 1; }
+      .home-details .button {
+        margin-top: 0; } }
+
+.page-content.home {
+  padding: 0; }
+
+/*
+
+    Location Page Layout
+
+*/
+.location-intro-2up {
+  padding-top: 5rem; }
+
+.map {
+  width: 100%;
+  height: 300px;
+  padding: 0;
+  margin: 0 0 -10px 0;
+  border: none;
+  background-color: #d5beac; }

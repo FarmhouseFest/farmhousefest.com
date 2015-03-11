@@ -10,25 +10,43 @@
 
 	&.brand {
 		color: $color-darkgrey;
-		background: $color-salmon;
 		a.button {
 			background-color: $color-darkgrey;
+			&:hover, &:focus {
+				background-color: $color-darkgrey-hover;
+			}
 		}
 	}
 
 	&.dark {
 		color: $color-tan-light;
-		background-color: $color-darkgrey;
 		a.button {
 			color: $color-darkgrey;
 			background-color: $color-tan-light;
+			&:hover, &:focus {
+				background-color: $color-tan-light-hover;
+			}
 		}
 	}
 
 	&.light {
 		color: $color-darkgrey;
-		background-color: $color-tan;
-	    background-image: $texture;
+		a.button {
+			&:hover, &:focus {
+				background-color: $color-salmon-hover;
+			}
+		}
+	}
+
+	&.centered {
+		text-align: center;
+	}
+
+	&.silent {
+		display: none;
+		@include screen-medium {
+			display: block;
+		}
 	}
 
 }
@@ -39,10 +57,17 @@
 
 	.fixed-contents {
 		@extend %fixed-centered;
+		display: flex;
+		flex-wrap: wrap;
 	}
 
 	.panel {
 		padding: 3rem 2rem;			
+	}
+
+	.full-width {
+		width: 100%;
+		text-align: center;
 	}
 
 	@include screen-medium {
@@ -76,11 +101,13 @@
 
 				.panel {
 					position: relative;
-					padding: 3rem 2rem 8rem 2rem;
 					&:last-child {
 						.button {
 							left: 2rem;
 						}
+					}
+					&.with-button {
+						padding-bottom: 8rem;
 					}
 				}
 				.button {
@@ -106,7 +133,11 @@
 }
 
 
+
+//
 // specific panels
+//
+
 
 // home page: site intro 2-up
 .page-home-2up {
@@ -116,19 +147,19 @@
 	.panel {
 		&:first-child {
 			background-image: 
-				url(/images/photos/tmp/left.jpg);
+				url(/images/photos/cta-about.min.jpg);
 		}
 		&:nth-child(2) {
 			background-image: 
-				url(/images/photos/tmp/right.jpg);
+				url(/images/photos/cta-location.min.jpg);
 		}
 	}
 
 	@include screen-medium {
 		background-color: $color-darkgrey;
 		background-image: 
-			url(/images/photos/tmp/left.jpg),
-			url(/images/photos/tmp/right.jpg);
+			url(/images/photos/cta-about.min.jpg),
+			url(/images/photos/cta-location.min.jpg);
 
 		.panel {
 			&:first-child, &:nth-child(2) {
@@ -147,16 +178,20 @@
 	background-color: $color-tan;
 
 	.panel {
+		&:first-child {
+			background-image: 
+				url(/images/photos/cta-tickets.min.jpg);
+		}
 		&:nth-child(2) {
 			background-image: 
-				url(/images/photos/tmp/left.jpg);
+				url(/images/photos/cta-about.min.jpg);
 		}
 	}
 
 	@include screen-medium {
 		background-image: 
-			none,
-			url(/images/photos/tmp/left.jpg);
+			url(/images/photos/cta-tickets.min.jpg),
+			url(/images/photos/cta-about.min.jpg);
 		.panel {
 			&:first-child, &:nth-child(2) {
 				background-image: none;
@@ -189,8 +224,115 @@
 }
 
 
+// location page intro, photos & getting home
+.location-intro-2up {
+
+    @extend %panel-header;    
+	color: $color-darkgrey;
+	background-color: $color-tan;
+	background-image: url(/images/photos/header-location.min.jpg);
+	background-position: top center;
+
+}
+.location-photos-3up {
+
+	background-color: $color-darkgrey;
+	background-image: 
+		url(/images/photos/location-image-left.min.jpg),
+		url(/images/photos/location-image-center.min.jpg),
+		url(/images/photos/location-image-right.min.jpg);
+
+    background-position:
+      0% top,
+      50% top,
+      100% top;
+    background-repeat: 
+      no-repeat,
+      no-repeat,
+      no-repeat;
+    background-size: 
+      33.4% 100%,
+      33.4% 100%,
+      33.4% 100%;
+
+	min-height: 100px;
+
+	@include screen-xsmall {
+		min-height: 150px;
+	}
+	@include screen-medium {
+		min-height: 200px;
+	}
+	@include screen-xlarge {
+		min-height: 300px;
+	}
+}
+.location-gettinghome-3up {
+
+	padding-top: 3rem;
+	color: $color-darkgrey;
+	background-color: $color-tan;
+
+}
 
 
-.panel.centered {
-	text-align: center;
+// contact page intro & photos
+.contact-intro-2up {
+	color: $color-darkgrey;
+	background-color: $color-tan;
+}
+.contact-photos-1up {
+
+	background-color: $color-darkgrey;
+	background-image: $texture;
+    background-repeat: 
+      repeat;
+
+	@include screen-medium {
+		min-height: 300px;
+	}
+}
+
+
+// beer page intro & listing
+.beer-intro-2up {
+
+    @extend %panel-header;    
+	color: $color-tan;
+	background-color: $color-darkgrey;
+	background-image: url(/images/photos/header-beer.jpg);
+
+}
+.beer-listing-1up {
+
+	color: $color-darkgrey;
+	background-color: $color-tan;
+
+}
+
+// festival page intro, description & beer
+.festival-intro-2up {
+
+	@extend %panel-header;
+	color: $color-darkgrey;
+	background-color: $color-tan;
+	background-image: url(/images/photos/header-festival.min.jpg);
+
+}
+.festival-description-2up {
+	padding: 3rem 2rem;
+	color: $color-tan;
+
+	.panel {
+		padding: 0.5rem 0;
+		@include screen-medium {
+			padding: 3rem 0;
+		}
+	}
+}
+.festival-beer-2up {
+
+	background-color: $color-tan;
+	background-image: $texture;
+
 }

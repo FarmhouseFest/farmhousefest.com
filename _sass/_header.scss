@@ -5,6 +5,8 @@
 */
 
 
+$site-nav-height: 47px;
+
 .site-header {
 
     // temp styling
@@ -16,7 +18,7 @@
 
     .wrapper {
         padding: 1rem 0;
-        margin: 0 0 0 1rem;
+        margin: 0;
 
         @include screen-large {
             display: block;
@@ -55,6 +57,10 @@
         }
 
     }
+
+    &.is-selected a {
+        color: $color-salmon;        
+    }
 }
 
 
@@ -67,8 +73,13 @@
 
     &.is-active .site-nav-item {
         @media (max-width: $medium) {
-            display: block;
+            visibility: hidden;
         }
+    }
+
+
+    .nav-home, .nav-festival, .nav-beer, .nav-location, .nav-contact, .nav-tickets {
+        transform: translate(-10px 0);
     }
 
 
@@ -80,7 +91,7 @@
             width: 68px;
             height: 58px;
             line-height: 0;
-            padding: 0.5rem 1rem 0.5rem 0;
+            padding: 0.25rem 1rem 0.5rem 0;
             text-align: right;
 
             > svg {
@@ -107,7 +118,7 @@
         }
 
         .site-nav-item {
-            display: none;
+            visibility: visible;
 
             a {
                 display: block;
@@ -119,6 +130,39 @@
                     background: rgba(255, 255, 255, 0.05);
                 }
             }
+        }
+
+        .nav-home, .nav-festival, .nav-beer, .nav-location, .nav-contact, .nav-tickets {
+            position: absolute;
+            width: 100%;
+            z-index: 100;
+            transform: translate(0 0);
+            transition: transform(transform ease-out 0.2s);
+
+            background: $color-salmon;
+
+            a {
+                color: $color-white;
+                text-align: center;
+            }
+        }
+        .nav-home {
+            top: 64px;
+        }
+        .nav-festival {
+            top: 64px + $site-nav-height;
+        }
+        .nav-beer {
+            top: 64px + $site-nav-height * 2;
+        }
+        .nav-location {
+            top: 64px + $site-nav-height * 3;
+        }
+        .nav-contact {
+            top: 64px + $site-nav-height * 4;
+        }
+        .nav-tickets {
+            top: 64px + $site-nav-height * 5;
         }
     }
 
@@ -175,15 +219,20 @@
 .site-title {
 
     display: inline-block;
+    padding: 0 1rem;
     color: $color-white;
 
     img {
-        width: 60px;
+        width: 50px;
         opacity: 0.95;
 
         &:hover, &:focus {
             opacity: 1;
         }
+    }
+
+    @include screen-medium {
+        padding: 0 3rem;
     }
 }
 

@@ -7,18 +7,15 @@
 
 .site-header.home {
 
-    background-image: url(/images/photos/header.min.jpg);
-    background-position: center bottom;
-    background-repeat: no-repeat;
+    @extend %panel-header;
 
-    @include screen-medium {
-        background-size: 115% auto;
-    }
-
+    background-color: #ddc8b3;
+    background-image: url(/images/photos/header-home.min.jpg);
 
     .site-title-large {
         display: none;
     }
+
 
     @include screen-medium {
 
@@ -41,9 +38,12 @@
 
 .home-details {
 
+    padding: 1rem 2rem 3rem 2rem;
+    margin: 0 1rem;
     font-family: $alt-font-family;
     font-size: $alt-font-size;
     text-decoration: uppercase;
+    text-align: center;
 
     h2 {
         color: $color-darkgrey;
@@ -53,6 +53,9 @@
         color: $color-white;
         margin: 0;     
     }
+    .button {
+        margin-top: 1rem;
+    }
 
 
     @include screen-medium {
@@ -60,6 +63,7 @@
         justify-content: space-between;
         align-items: center;
         min-height: 300px;
+        padding: 0;
 
         .first, .second {
             text-align: center;
@@ -68,6 +72,9 @@
         .first h2 {
             font-size: $alt-font-size * 2.2;
             line-height: 1;
+        }
+        .button {
+            margin-top: 0;
         }
 
     }

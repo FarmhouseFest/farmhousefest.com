@@ -17,9 +17,12 @@
     }
 
     .sponsors {
-        padding: 3rem 0;
-        &.hide {
-            display: none;
+        display: none;
+        &.show {
+            display: block;
+            padding: 3rem 0;
+            background-color: $color-tan;
+            background-image: $texture;
         }
     }
 
@@ -27,11 +30,10 @@
 
 .site-footer-extras {
     padding: 2rem 0 1rem 0;
-    text-align: left;
 
     .wrapper {
-        @extend %fixed-centered;
         @extend %clearfix;
+        @extend %fixed-centered;
     }
 
 
@@ -39,6 +41,10 @@
         display: inline-block;
         padding-top: 0.25rem;
         font-size: 1.25rem;
+
+        @include screen-medium {
+            float: left;
+        }
     }
 
 }

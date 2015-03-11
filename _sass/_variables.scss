@@ -10,13 +10,17 @@ $alt-line-height:       1.5;
 
 $spacing-unit:          1rem;
 
-$color-darkgrey:           #373c40;
+$color-darkgrey:           #2f3841;
+$color-darkgrey-hover:     #333b45;
+
 $color-white:  #fff;
 
-$color-tan:     #d3beaa;
+$color-tan:     #d5beac;
 $color-tan-light: #e3ceba;
+$color-tan-light-hover: #e8d5c4;
 
 $color-salmon:          #a26e6b;
+$color-salmon-hover:    #a77571;
 
 $grey-colour:           #828282;
 $grey-colour-light:     lighten($grey-colour, 40%);
@@ -47,7 +51,13 @@ $medium: 800px;
 $large: 960px;
 $xlarge: 1120px;
 $xxlarge: 1280px;
+$xxxlarge: 1400px;
 
+@mixin screen-xxxlarge {
+  @media (min-width: #{$xxxlarge + 1px}) {
+    @content;
+  }
+}
 @mixin screen-xxlarge {
   @media (min-width: #{$xxlarge + 1px}) {
     @content;
@@ -92,7 +102,7 @@ $xxlarge: 1280px;
   width: 100%;
 
   @include screen-medium {
-      margin: 0 2rem;
+      padding: 0 2rem;
   }
   @include screen-large {
       width: $full-width;
@@ -111,6 +121,17 @@ $xxlarge: 1280px;
 }
 
 
+// silent class mixin for header responsive images
+%panel-header {
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+
+    @include screen-medium {
+        background-size: auto 100%;
+    }
+}
+
 // silent class mixin for two-up responsive images
 %panel-two-up {
   .panel {
@@ -120,21 +141,25 @@ $xxlarge: 1280px;
       background-repeat: 
         no-repeat;
       background-size: 
-        110% auto;
+        auto 100%;
+
+      @include screen-small {
+        background-size: 
+          100% auto;        
+      }
     }
   }  
 
   @include screen-medium {
-
     background-position:
-      -10% top,
-      110% top;
+      -400% top,
+      400% top;
+    background-size: 
+      90% 100%,
+      90% 100%;
     background-repeat: 
       no-repeat,
       no-repeat;
-    background-size: 
-      55% auto,
-      55% auto;
 
     .panel {
       background-color: transparent;
@@ -142,6 +167,33 @@ $xxlarge: 1280px;
         background: none;
       }
     }
+  }
+
+  @include screen-xlarge {
+    background-position:
+      -42% top,
+      142% top;
+    background-size: 
+      65% 100%,
+      65% 100%;
+  }
+
+  @include screen-xxlarge {
+    background-position:
+      -10% top,
+      110% top;
+    background-size: 
+      55% 110%,
+      55% 110%;
+  }
+
+  @include screen-xxxlarge {
+    background-position:
+      -10% top,
+      110% top;
+    background-size: 
+      55% auto,
+      55% auto;
   }
 
 }

@@ -4,12 +4,12 @@ title: Let's Talk About Beer
 permalink: /2015/beer/
 ---
 
-<div class="panel-container one-up">
+<div class="panel-container two-up beer-intro-2up">
 
-	<div class="panel dark">
+	<div class="fixed-contents">
+		<div class="panel">
 
-		<div class="fixed-contents">
-		    <h1 class="page-title">{{ page.title }}</h1>
+		    <h1 class="page-title" class="styled">{{ page.title }}</h1>
 
 			<p>You know the drill. At every beer festival you’ve ever attended the routine is the same. Line up. Get tickets and glass. Get program. Pick out the two or three great beers you want to try. Do that. Peruse program for something else great to drink. Give up and try something at random.</p>
 
@@ -19,11 +19,14 @@ permalink: /2015/beer/
 
 		</div>
 
+		<div class="panel silent">
+
+		</div>
 	</div>
 </div>
 
 
-<div class="panel-container one-up">
+<div class="panel-container one-up beer-listing-1up">
 
 	<div class="fixed-contents">
 		<ul class="brewery-list">
@@ -34,7 +37,7 @@ permalink: /2015/beer/
 						<img class="logo" src="{{ brewery.logo }}" alt="{{ brewery.name }}" />
 					</a>
 					<a href="{{ brewery.url }}">
-						<h2>{{ brewery.name }}</h2>
+						<h2 class="styled">{{ brewery.name }}</h2>
 					</a>
 					<p>
 						{{ brewery.description }}
