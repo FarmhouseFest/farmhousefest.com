@@ -29,9 +29,6 @@ $grey-colour-dark:      darken($grey-colour, 25%);
 $texture:               url(/images/papertexture.min.png);
 
 
-// Width of the content area on desktop
-$full-width:    960px;
-
 
 
 
@@ -96,6 +93,28 @@ $xxxlarge: 1400px;
 }
 
 
+
+// silent class for clearfixing
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+
+// silent class for setting upper boundaries
+%set-screen-width {
+  @include screen-large {
+    width: 960px;
+  }
+  @include screen-xxlarge {
+    width: 1200px;
+  }
+}
+
+
 // silent class to fix a centered width at larger screen sizes
 %fixed-centered {
 
@@ -105,18 +124,11 @@ $xxxlarge: 1400px;
       padding: 0 2rem;
   }
   @include screen-large {
-      width: $full-width;
+      width: 960px;
       margin: 0 auto;
   }
-
-}
-
-// silent class for clearfixing
-%clearfix {
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
+  @include screen-xxlarge {
+    width: 1200px;
   }
 }
 

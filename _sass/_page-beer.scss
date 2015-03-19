@@ -10,16 +10,36 @@
     padding-top: 2rem;
 
     .brewery {
-        position: relative;
-        padding-left: 10rem;
         padding-bottom: 2rem;
         list-style: none;
+        text-align: center;
     }
     .logo {
-        position: absolute;
-        top: 0;
-        left: 0;
+        display: inline-block;
         width: 6rem;
+        margin: 0 auto 1rem auto;
+    }
+    .details {
+        text-align: left;
     }
 
+    @include screen-xsmall {
+        .brewery {
+            position: relative;
+            padding-left: 10rem;
+        }
+        .logo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin: 0;
+        }
+    }
+}
+
+.beer-listing-1up {
+    .secondary {
+        width: 100%;
+        padding: 2rem 0;
+    }
 }

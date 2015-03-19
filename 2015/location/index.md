@@ -8,15 +8,19 @@ permalink: /2015/location/
 
 	<div class="fixed-contents">
 
+	    <h1 class="page-title styled main">{{ page.title }}</h1>
+
 		<div class="panel">
 
-		    <h1 class="page-title styled">{{ page.title }}</h1>
-			<p>The UBC Farm is a 24 hectare teaching and learning farm located on the south end of UBC’s main Point Grey campus. It’s easy to get to by car, bike or transit (route C20 connects the UBC Loop to the Farm Gates every 30 minutes).</p>
-			<p>Plus, there will be a Farmers’ Market held there immediately before the Farmhouse Festival. Peruse the market, buy some lunch, then wander over to try some beers and have a picnic.</p>
+			<p>It wouldn’t make sense to host a Farmhouse Festival anywhere but on an actual farm. Luckily UBC has one, so that’s where Farmhouse Fest will be.</p>
+			<p>The UBC Farm is a 24 hectare teaching and learning farm located on the south end of UBC’s main Point Grey campus.</p>
 
 		</div>
 
-		<div class="panel silent">
+		<div class="panel">
+
+			<p>The field playing host to Farmhouse Festival is a large, grassy area including a small apple orchard, surrounded by towering conifer forest. We encourage you to bring a blanket, and spread out to enjoy your afternoon.</p>
+			<p>Plus, there will be a Farmers’ Market held adjacently immediately before the Farmhouse Fest. Peruse the market then wander over to try some beers and have a picnic.</p>
 
 		</div>
 
@@ -28,7 +32,11 @@ permalink: /2015/location/
 
 </div>
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10417.24644213209!2d-123.23762866137699!3d49.25153938323279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548672d4799fae1f%3A0xe9b92d59922eb0d!2sUBC+Farm!5e0!3m2!1sen!2sca!4v1425853587319" height="320" frameborder="0" class="map"></iframe>
+<div class="map">
+	<a href="https://www.google.ca/maps/place/UBC+Farm/@49.250699,-123.237457,17z/data=!3m1!4b1!4m2!3m1!1s0x548672d4799fae1f:0xe9b92d59922eb0d">
+		Map
+	</a>
+</div>
 
 <div class="panel-container three-up location-gettinghome-3up">
 
@@ -38,17 +46,17 @@ permalink: /2015/location/
 
 		<div class="panel">
 			<h3 class="styled secondary">Designated Drivers</h3>
-			<p>Microbrewery. Conditioning tank ester cold filter specific gravity adjunct gravity cask conditioning lager squares. Becher; reinheitsgebot bittering hops hand pump. Black malt filter, ibu hops dunkel seidel.</p>
+			<p>Designated Driver tickets are available for a fraction of the whole price. Be cool and make sure your friends get home safe.</p>
 		</div>
 
 		<div class="panel">
 			<h3 class="styled secondary">Taking Transit</h3>
-			<p>Microbrewery. Conditioning tank ester cold filter specific gravity adjunct gravity cask conditioning lager squares. Becher; reinheitsgebot bittering hops hand pump. Black malt filter, ibu hops dunkel seidel.</p>
+			<p>Route C20 services the UBC Farm gate every 30 minutes, taking you to the UBC Loop, where connections are available to a wide array of bus routes.</p>
 		</div>
 
 		<div class="panel">
-			<h3 class="styled secondary">Free Shuttle</h3>
-			<p>Microbrewery. Conditioning tank ester cold filter specific gravity adjunct gravity cask conditioning lager squares. Becher; reinheitsgebot bittering hops hand pump. Black malt filter, ibu hops dunkel seidel.</p>
+			<h3 class="styled secondary">Shuttle</h3>
+			<p>A shuttle to bring you from the farm to the main UBC bus loop is in the works. Details to be confirmed, watch this space.</p>
 		</div>
 	</div>
 </div>

@@ -1,7 +1,3 @@
-- text: Home
-  class: nav-home
-  url: /2015/
-
 - text: The Festival
   class: nav-festival
   url: /2015/festival/
@@ -18,6 +14,10 @@
   class: nav-contact
   url: /2015/contact/
 
+- text: FAQ
+  class: nav-faq
+  url: /2015/faq/
+
 - text: Buy Tickets
   class: nav-tickets
-  url: http://farmhousefest2015.brownpapertickets.com/
+  url: /2015/tickets/

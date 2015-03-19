@@ -38,10 +38,6 @@
 		}
 	}
 
-	&.centered {
-		text-align: center;
-	}
-
 	&.silent {
 		display: none;
 		@include screen-medium {
@@ -147,7 +143,7 @@
 	.panel {
 		&:first-child {
 			background-image: 
-				url(/images/photos/cta-about.min.jpg);
+				url(/images/photos/cta-festival.min.jpg);
 		}
 		&:nth-child(2) {
 			background-image: 
@@ -184,7 +180,7 @@
 		}
 		&:nth-child(2) {
 			background-image: 
-				url(/images/photos/cta-about.min.jpg);
+				url(/images/photos/cta-festival.min.jpg);
 		}
 	}
 
@@ -263,7 +259,7 @@
 	@include screen-medium {
 		min-height: 200px;
 	}
-	@include screen-xlarge {
+	@include screen-xxxlarge {
 		min-height: 300px;
 	}
 }
@@ -272,6 +268,7 @@
 	padding-top: 3rem;
 	color: $color-darkgrey;
 	background-color: $color-tan;
+	background-image: $texture;
 
 }
 
@@ -280,13 +277,15 @@
 .contact-intro-2up {
 	color: $color-darkgrey;
 	background-color: $color-tan;
+	background-image: $texture;
 }
 .contact-photos-1up {
 
+	@extend %panel-header;
 	background-color: $color-darkgrey;
-	background-image: $texture;
-    background-repeat: 
-      repeat;
+	background-image: url(/images/photos/contact-footer.min.jpg);
+	background-size: 110% auto;
+	background-position: top center;
 
 	@include screen-medium {
 		min-height: 300px;
@@ -305,8 +304,11 @@
 }
 .beer-listing-1up {
 
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 	color: $color-darkgrey;
 	background-color: $color-tan;
+	background-image: $texture;
 
 }
 
@@ -314,19 +316,47 @@
 .festival-intro-2up {
 
 	@extend %panel-header;
+
 	color: $color-darkgrey;
 	background-color: $color-tan;
 	background-image: url(/images/photos/header-festival.min.jpg);
+	background-position: bottom center;
+	background-size: 110% auto;
 
+	@include screen-large {
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+	}
 }
 .festival-description-2up {
+
+	@extend %panel-header;
 	padding: 3rem 2rem;
 	color: $color-tan;
+	background-image: url(/images/photos/festival-content.min.jpg);
 
 	.panel {
 		padding: 0.5rem 0;
 		@include screen-medium {
 			padding: 3rem 0;
+		}
+		&:nth-child(2) {
+			padding-right: 1rem;
+		}
+		&:nth-child(3) {
+			padding-left: 1rem;
+		}
+	}
+
+	.full-width {
+		text-align: left;
+		h3 {
+			display: inline;
+			font-size: 1rem;
+			font-weight: bold;
+		}
+		p {
+			display: inline;
 		}
 	}
 }
@@ -335,4 +365,21 @@
 	background-color: $color-tan;
 	background-image: $texture;
 
+}
+
+
+// FAQ
+.faq-1up {
+	color: $color-darkgrey;
+	background-color: $color-tan;
+	background-image: $texture;
+}
+
+// temp tickets page
+.tickets-1up {
+	padding: 4rem 0 3rem 0;
+
+	color: $color-darkgrey;
+	background-color: $color-tan;
+	background-image: $texture;
 }

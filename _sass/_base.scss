@@ -77,6 +77,13 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1;
     text-transform: uppercase;
     margin-bottom: 0.5rem;
+
+    &.main {
+        @include screen-large {
+            font-size: $alt-font-size * 2.2;
+            margin-bottom: 1rem;
+        }        
+    }
 }
 
 .secondary {
@@ -84,6 +91,21 @@ h1, h2, h3, h4, h5, h6 {
     font-size: $alt-font-size;
 }
 
+.page-title {
+    width: 100%;
+}
+
+
+
+/**
+ * Block control
+ */
+.block {
+    margin-bottom: 1rem;
+}
+.centered {
+    text-align: center;
+}
 
 
 /**

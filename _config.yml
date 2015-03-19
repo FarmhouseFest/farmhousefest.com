@@ -2,12 +2,14 @@
 title: Farmhouse Saison and Wild Ale Festival
 email: info@farmhousefest.com
 description: > 
-  Farmhouse Fest is a saison and wild ale festival, the first style-forward beer festival in BC.
+  Farmhouse Fest is a saison and wild ale festival, a unique style-forward beer festival in Vancouver.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://farmhousefest.com" # the base hostname & protocol for your site
 twitter_username: farmhousefest
 instagram_username: farmhousefest
-facebook_username: FarmhouseFestival
+facebook_username: FarmhouseFest
+# ticket_link: https://www.eventbrite.ca/e/farmhouse-saison-wild-ale-festival-tickets-16113101721
+ticket_link: /2015/tickets/
 
 # Build settings
 markdown: kramdown

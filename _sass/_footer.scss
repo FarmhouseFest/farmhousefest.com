@@ -59,11 +59,15 @@
 
     a {
         display: inline-block;
+        opacity: 0.8;
         width: 32px;
         height: 32px;
         padding-left: 32px;
         overflow: hidden;
         background-size: 32px 32px;
+        &:hover, &:focus {
+            opacity: 1;
+        }
     }
 
     .social-twitter a {

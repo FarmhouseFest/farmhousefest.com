@@ -9,6 +9,7 @@ $site-nav-height: 47px;
 
 .site-header {
 
+
     // temp styling
     background-color: $color-tan;
 
@@ -17,12 +18,13 @@ $site-nav-height: 47px;
     }
 
     .wrapper {
+        @extend %set-screen-width;
+
         padding: 1rem 0;
         margin: 0;
 
         @include screen-large {
             display: block;
-            width: $full-width;
             padding: 1rem 0;
             margin: 0 auto;
         }
@@ -61,6 +63,14 @@ $site-nav-height: 47px;
     &.is-selected a {
         color: $color-salmon;        
     }
+
+    @include screen-xxlarge {
+        padding-top: 0.75rem;
+        a {
+            padding: 0.5rem 0.75rem;
+        }
+    }
+
 }
 
 
@@ -73,13 +83,13 @@ $site-nav-height: 47px;
 
     &.is-active .site-nav-item {
         @media (max-width: $medium) {
-            visibility: hidden;
+            visibility: visible;
+
+            &.nav-festival, &.nav-beer, &.nav-location, &.nav-contact, &.nav-faq, &.nav-tickets {
+                transform: translate(0, 0);
+                opacity: 1;
+            }
         }
-    }
-
-
-    .nav-home, .nav-festival, .nav-beer, .nav-location, .nav-contact, .nav-tickets {
-        transform: translate(-10px 0);
     }
 
 
@@ -118,7 +128,7 @@ $site-nav-height: 47px;
         }
 
         .site-nav-item {
-            visibility: visible;
+            visibility: hidden;
 
             a {
                 display: block;
@@ -129,15 +139,17 @@ $site-nav-height: 47px;
                     text-decoration: none;
                     background: rgba(255, 255, 255, 0.05);
                 }
+
             }
         }
 
-        .nav-home, .nav-festival, .nav-beer, .nav-location, .nav-contact, .nav-tickets {
+        .nav-festival, .nav-beer, .nav-location, .nav-contact, .nav-faq, .nav-tickets {
             position: absolute;
             width: 100%;
             z-index: 100;
-            transform: translate(0 0);
-            transition: transform(transform ease-out 0.2s);
+            transform: translate(0, -10px);
+            transition: all ease-out 0.2s;
+            opacity: 0;
 
             background: $color-salmon;
 
@@ -146,19 +158,19 @@ $site-nav-height: 47px;
                 text-align: center;
             }
         }
-        .nav-home {
+        .nav-festival {
             top: 64px;
         }
-        .nav-festival {
+        .nav-beer {
             top: 64px + $site-nav-height;
         }
-        .nav-beer {
+        .nav-location {
             top: 64px + $site-nav-height * 2;
         }
-        .nav-location {
+        .nav-contact {
             top: 64px + $site-nav-height * 3;
         }
-        .nav-contact {
+        .nav-faq {
             top: 64px + $site-nav-height * 4;
         }
         .nav-tickets {
@@ -234,18 +246,30 @@ $site-nav-height: 47px;
     @include screen-medium {
         padding: 0 3rem;
     }
+
+    @include screen-xxlarge {
+        img {
+            width: 80px;
+        }
+    }
+
 }
 
 
 // gotta get them tickets
 .nav-tickets {
     a {
-        color: #fff;
+        color: rgba(255, 255, 255, 0.8);
         background: $color-darkgrey;
 
         &:hover, &:focus {
-            background: rgba($color-darkgrey, 0.8);
+            color: #fff;
+            background-color: $color-darkgrey-hover;
         }
+
+    }
+    &.is-selected a {
+        color: rgba(255, 255, 255, 0.8);
     }
 }
 

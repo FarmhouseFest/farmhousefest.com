@@ -9,13 +9,9 @@ permalink: /2015/beer/
 	<div class="fixed-contents">
 		<div class="panel">
 
-		    <h1 class="page-title" class="styled">{{ page.title }}</h1>
+		    <h1 class="page-title" class="styled main">{{ page.title }}</h1>
 
-			<p>You know the drill. At every beer festival you’ve ever attended the routine is the same. Line up. Get tickets and glass. Get program. Pick out the two or three great beers you want to try. Do that. Peruse program for something else great to drink. Give up and try something at random.</p>
-
-			<p>It’s not you. It’s the beer. Most festivals throw open their doors for every and any brewery to bring every and any beer they brew. The result is a whole lot of random beer that, on average, really isn’t that great. How much did it cost to get in here, again?</p>
-
-			<p>Farmhouse Festival is different. First off, only three styles are allow: Saisons, Wild Ales and Sours. Second, only breweries selected by a panel of beer geeks were invited. Just look at this list!</p>
+			<p>Farmhouse Fest is different from most festivals. First off, only three styles are allowed: Saisons, Wild Ales and Sours. Second, to ensure the quality and selection we are striving for, only select breweries who brew these styles were invited. We want to showcase new and unique beers and because of this, we hand-picked the beers from each brewery.</p>
 
 		</div>
 
@@ -36,16 +32,20 @@ permalink: /2015/beer/
 					<a href="{{ brewery.url }}">
 						<img class="logo" src="{{ brewery.logo }}" alt="{{ brewery.name }}" />
 					</a>
-					<a href="{{ brewery.url }}">
-						<h2 class="styled">{{ brewery.name }}</h2>
-					</a>
-					<p>
-						{{ brewery.description }}
-					</p>
+					<div class="details">
+						<a href="{{ brewery.url }}">
+							<h2 class="styled">{{ brewery.name }}</h2>
+						</a>
+						<p>
+							{{ brewery.description }}
+						</p>
+					</div>
 				</li>
 			{% endfor %}
 
 		</ul> 
+
+		<h3 class="styled secondary centered">And more coming soon...</h3>
 	</div>
 
 </div>

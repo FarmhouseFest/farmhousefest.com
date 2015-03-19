@@ -1,0 +1,127 @@
+{
+    "breweries": [
+        {
+            "name" : "Beerthirst",
+            "url" : "http://www.beerthirst.com/",
+            "logo" : "/images/breweries/beerthirst.min.png",
+            "description" : "tbd"
+        },
+        {
+            "name" : "Brassneck",
+            "url" : "http://www.brassneck.ca/",
+            "logo" : "/images/breweries/brassneck.min.svg",
+            "description" : "The Alibi Room's Nigel Springthorpe teamed up with Steamworks' Conrad Gmoser to open Brassneck way back in 2013, and already it's considered one of BC's premier beer factories. The recent addition of BC's first Foeder (pronounced &#8220;giant wooden tank in which one makes awesome beer&#8221;) has local sour and wild fanatics whipped into a frenzy."
+        },
+        {
+            "name" : "Bravo Beer Co",
+            "url" : "http://www.bravobeerco.com/",
+            "logo" : "/images/breweries/bravo.min.png",
+            "description" : "Bravo Beer Co focuses on premium, specialty beer. Bringing in a wide range of European beer with a focus on traditional Belgian breweries, we can all look forward to some classic farmhouse ales to provide a refreshing counterpoint to the more modern interpretations we'll see from BC breweries."
+        },
+        {
+            "name" : "Category 12 Brewing",
+            "url" : "http://category12beer.com/",
+            "logo" : "/images/breweries/category12.min.png",
+            "description" : "The new kids on the block. Category 12 has been making beer on the Saanich Peninsula just shy of six months, but so far everything they've produced has been stellar. With each running selling out locally in Victoria almost as soon as it's done fermenting, it has taken a while for their excellent ales to start appearing in Vancouver's bottle shops, but this past winter a few cases began to slip past the hungry capital hoards."
+        },
+        {
+            "name" : "Copper &amp; Theory",
+            "url" : "http://copperandtheory.com/",
+            "logo" : "/images/breweries/coppertheory.min.png",
+            "description" : "Being a Certified Cicerone wasn't enough for Adam Henderson. He had to go the extra mile and apply that high trained palate to searching out unique and interesting breweries around the globe and convince their owners that, of all the places on the planet, they absolutely had to import to BC."
+        },
+        {
+            "name" : "Craft Beer Importers",
+            "url" : "http://www.craftbeerimports.ca/craft/",
+            "logo" : "/images/breweries/craft.min.png",
+            "description" : "Founded with the vision of bringing only the best beers in the world to the Canadian market, Craft has an impressive portfolio ranging from Belgium to New Zealand to Oklahoma and beyond. Expect some interesting contrasts of old world and new pouring at the Craft booth."
+        },
+        {
+            "name" : "Dageraad Brewing",
+            "url" : "http://dageraadbrewing.com/",
+            "logo" : "/images/breweries/dageraad.min.png",
+            "description" : "It seems every brewery dabbles in a Belgian beer from time to time, but it also seems that it's not often one dedicates full commitment to these styles. Enter homebrewer Ben Coli, whose many trips abroad let him hankering for some truly authentic brews. And that is exactly what he produces in his tiny brewery: Belgian beer so authentic you could easily serve it at a cafe on the brewery's namesake Dageraadplaats in Antwerp."
+        },
+        {
+            "name" : "Driftwood Brewing",
+            "url" : "http://driftwoodbeer.com/",
+            "logo" : "/images/breweries/driftwood.min.png",
+            "description" : "People forget that there was a time before Fat Tug. When Driftwood entered the market in 2008 they didn't even brew an IPA. Instead, their sales came from a renegade lineup including a Wit and an Altbier. It didn't take long for them to branch out into local malt Belgians, wild ales and sours. Fat what?"
+        },
+        {
+            "name" : "Four Winds Brewing",
+            "url" : "http://www.fourwindsbrewing.ca/",
+            "logo" : "/images/breweries/four-winds.min.png",
+            "description" : "You know how, every few months, there's an almost-riot at your local beer store? The only evidence that remains after the tide of Plaid-wearing bearded blokes retreats is a few torn and trampled cardboard cases with a cryptic &#8220;Four Winds&#8221; logo. Throwing a Farmhouse Festival without inviting the yeast wranglers from Delta would be unthinkable."
+        },
+        {
+            "name" : "Goose Island Brewery",
+            "url" : "http://www.gooseisland.com/",
+            "logo" : "/images/breweries/gooseisland.min.png",
+            "description" : "Almost 30 years ago, Goose Island founder John Hall went on a trip to Europe. Trying what was, at that time, exotic and excellent beer led him to conclude “America deserves some damn fine beer like this, too.” Upon his return to Chicago, Goose Island was born, and John began delivering on his dream."
+        },
+
+        {
+            "name" : "Lighthouse Brewing",
+            "url" : "http://www.lighthousebrewing.ca/",
+            "logo" : "/images/breweries/lighthouse.min.png",
+            "description" : "Founded in 1998, Lighthouse has been quietly brewing great craft ales for the lower half of Vancouver island since before craft beer was a thing. If you've only seen them in six packs or on draft, you might not be familiar with their more experimental beers, including lots of alternate yeast and fermentable products."
+        },
+        {
+            "name" : "Main Street Brewing",
+            "url" : "http://mainstreetbeer.ca/",
+            "logo" : "/images/breweries/mainstreet.min.png",
+            "description" : "Their brewery on 7th Ave boasts an open floorplan, exposed wooden beams, red brick, skylights and a giant cool basement. What goes on in that basement, anyways? Experimentation, often with collaboration with local home brewers, that's what, cask by painstaking cask."
+        },
+        {
+            "name" : "Moon Brewpub",
+            "url" : "http://www.moonunderwater.ca/",
+            "logo" : "/images/breweries/moon.min.png",
+            "description" : "Known informally as the brewpub where brewers go for lunch, The Moon has recently re-devoted themselves to authentic continental styles, including Weizens, Dunkels, and Berliner Weisses."
+        },
+        {
+            "name" : "Persephone Brewing",
+            "url" : "http://www.persephonebrewing.com/",
+            "logo" : "/images/breweries/persephone.min.svg",
+            "description" : "You can't have a beer festival on a farm without inviting Persephone, who actually grows their own hops onsite. Throw onto that fact their reputation for producing amazing beer after amazing beer, and you can see why they're here."
+        },
+        {
+            "name" : "Powell Street Brewing",
+            "url" : "http://www.powellbeer.com/",
+            "logo" : "/images/breweries/powellstreet.min.png",
+            "description" : "It’s everyone's dream to quit their job and start a brewery, right? Well, husband and wife team David Bowkett and Nicole Stefanopoulos did exactly that. Starting from a true 350 litre nano brewhouse, they accumulated enough awards and accolades to force a move to their new, larger brewery down Powell Street."
+        },
+        {
+            "name" : "Steel &amp; Oak Brewing",
+            "url" : "http://steelandoak.ca/",
+            "logo" : "/images/breweries/steeloak.min.png",
+            "description" : "Most breweries take a few months to get up and running. For this reason, most beer drinkers give breweries around six months to iron out the kinks of brewing on a new system. Steel &amp; Oak needed no such leeway. They began producing excellent beer with their very first batch and have only improved from there."
+        },
+        {
+            "name" : "Strange Fellows Brewing",
+            "url" : "http://www.strangefellowsbrewing.com/",
+            "logo" : "/images/breweries/strange-fellows.min.png",
+            "description" : "Every sour beer geek is keenly eyeing up the huge stack of barrels visible from Strange Fellows' tasting room. Brewer Iain Hill's famous Oud Bruin is already bubbling away in that oak, but there are dozens of barrels left to receive some potentially amazing new beers."
+        },
+        {
+            "name" : "UnTapped Craft Imports",
+            "url" : "http://www.untapped.ca/",
+            "logo" : "/images/breweries/untapped.min.png",
+            "description" : "tbd"
+        },
+        {
+            "name" : "Westbier",
+            "url" : "http://www.westbier.com/",
+            "logo" : "/images/breweries/westbier.min.png",
+            "description" : "If there’s one thing Gerry West loves more than Belgian beer, it’s sharing that love with friends. Upon discovering that many of the beers he discovered in Europe weren’t available locally, he started Westbier to correct that oversight."
+        },
+
+        {
+            "name" : "Yellow Dog Brewing",
+            "url" : "http://www.yellowdogbeer.com/",
+            "logo" : "/images/breweries/yellowdog.min.png",
+            "description" : "Some breweries produce great beer in their first year. Some win an award for Best Beer in BC, and grab the attention and imagination of the local craft beer crowd."
+        }
+
+    ]
+}
