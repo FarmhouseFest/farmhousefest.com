@@ -9,11 +9,13 @@
 
 }
 .sponsors-small {
-    margin: 0;
+
+    @extend %set-screen-width;
+    margin: 0 auto;
     text-align: center;
 
     .sponsor {
-        display: inline;
+        display: inline-block;
         list-style: none;
 
         img {
@@ -23,12 +25,6 @@
             margin: 0 1rem 1rem 1rem;
         }
     }
- 
-    @include screen-small {
-       display: flex;
- 
-        .sponsor {
-            flex: 1 1 auto;
-        }
-    }
+
+
 }
