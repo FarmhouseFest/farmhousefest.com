@@ -28,7 +28,7 @@ permalink: /2015/beer/
 		<ul class="brewery-list">
 
 			{% for brewery in site.data.breweries.breweries %}
-				<li class="brewery">
+				<li class="brewery" id="{{ brewery.id }}">
 					<a href="{{ brewery.url }}">
 						<img class="logo" src="{{ brewery.logo }}" alt="{{ brewery.name }}" />
 					</a>
@@ -45,7 +45,7 @@ permalink: /2015/beer/
 
 		</ul> 
 
-		<h3 class="styled secondary centered">And more coming soon...</h3>
+		<h3 class="styled secondary centered">Even more coming soon...</h3>
 	</div>
 
 </div>

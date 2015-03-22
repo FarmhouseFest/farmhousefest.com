@@ -8,7 +8,7 @@
       <ul class="sponsor-list sponsors-small">
         {% for brewery in site.data.breweries.breweries %}
           <li class="sponsor">
-            <a href="{{ brewery.url }}">
+            <a href="/2015/beer/#{{ brewery.id }}">
               <img src="{{ brewery.logo }}" alt="{{ brewery.name }}" />
             </a>
           </li>

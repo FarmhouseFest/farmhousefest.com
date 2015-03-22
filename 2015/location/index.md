@@ -38,7 +38,7 @@ permalink: /2015/location/
 	</a>
 </div>
 
-<div class="panel-container three-up location-gettinghome-3up">
+<div class="panel-container two-up location-gettinghome-2up">
 
 	<div class="fixed-contents">
 
@@ -54,9 +54,5 @@ permalink: /2015/location/
 			<p>Route C20 services the UBC Farm gate every 30 minutes, taking you to the UBC Loop, where connections are available to a wide array of bus routes.</p>
 		</div>
 
-		<div class="panel">
-			<h3 class="styled secondary">Shuttle</h3>
-			<p>A shuttle to bring you from the farm to the main UBC bus loop is in the works. Details to be confirmed, watch this space.</p>
-		</div>
 	</div>
 </div>
