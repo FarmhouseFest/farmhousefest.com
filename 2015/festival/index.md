@@ -68,9 +68,9 @@ permalink: /2015/festival/
 		</div>
 
 		<div class="panel light">
-			<h2 class="styled">We Picked Good Beer</h2>
+			<h2 class="styled">We Chose Good Beer</h2>
 
-			<p>Being a style-forward festival, we’re focusing only on Saisons, Wild-Ales and Sours. That means you won’t find IPAs, Lagers or Stouts at this Fest.</p>
+			<p>Being a style-forward festival, we’re focusing only on Saisons, Wild-Ales and Sours. Don't expect to find your typical IPAs, Lagers or Stouts at this Fest.</p>
 
 			<p>What about the breweries? Hand picked by a collection of beer nerds as picky as you are. Only breweries with the chops to produce great on-style beer were invited.</p>
 		</div>

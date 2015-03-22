@@ -1,6 +1,13 @@
 {
     "breweries": [
         {
+            "name" : "Beerthirst",
+            "id" : "beerthirst",
+            "url" : "http://www.beerthirst.com/",
+            "logo" : "/images/breweries/beerthirst.min.png",
+            "description" : "Obsessed with craft beer, Beerthirst is all about finding great beers from around the world and bringing them back to Canada for everyone to enjoy. Expect an especially strong showing from west coast breweries at the Beerthirst tent this year."
+        },
+        {
             "name" : "Brassneck",
             "id" : "brassneck",
             "url" : "http://www.brassneck.ca/",
@@ -33,7 +40,7 @@
             "id" : "craftbeerimports",
             "url" : "http://www.craftbeerimports.ca/craft/",
             "logo" : "/images/breweries/craft.min.png",
-            "description" : "Founded with the vision of bringing only the best beers in the world to the Canadian market, Craft has an impressive portfolio ranging from Belgium to New Zealand to Oklahoma and beyond. Expect some interesting contrasts of Old World and New pouring at the Craft booth."
+            "description" : "Founded with the vision of bringing only the best beers in the world to the Canadian market, Craft has an impressive portfolio ranging from Belgium to New Zealand to Oklahoma and beyond. Expect some interesting contrasts of Old World and New pouring at the Craft tent."
         },
         {
             "name" : "Dageraad Brewing",
