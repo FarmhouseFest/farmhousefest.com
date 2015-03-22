@@ -12,7 +12,7 @@ permalink: /2015/contact/
 
 		    <h1 class="page-title styled main">{{ page.title }}</h1>
 
-			<p class="block">For general inquiries, fire us an email at <a href="mailto:info@farmhousefest.com">info@farmhousefest.com</a>. We'll try to turn around an answer in a reasonably quick time frame, but bear with us if it takes a bit longer cause we're a small crew.</p>
+			<p class="block">For general enquiries, fire us an email at <a href="mailto:info@farmhousefest.com">info@farmhousefest.com</a>. We'll try to turn around an answer in a reasonably quick time frame, but bear with us if it takes a bit longer cause we're a small crew.</p>
 
 			
 		</div>
