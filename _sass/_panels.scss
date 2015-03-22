@@ -321,11 +321,12 @@
 	background-color: $color-tan;
 	background-image: url(/images/photos/header-festival.min.jpg);
 	background-position: bottom center;
-	background-size: 110% auto;
+	background-size: auto 100%;
 
 	@include screen-large {
 		padding-top: 3rem;
 		padding-bottom: 3rem;
+		background-size: 110% auto;
 	}
 }
 .festival-description-2up {
