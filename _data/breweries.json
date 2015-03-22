@@ -64,6 +64,12 @@
             "description" : "You know how, every few months, there's an almost-riot at your local beer store? The only evidence that remains after the tide of Plaid-wearing, likely-bearded hoard retreats is a few torn and trampled cardboard cases with a cryptic &#8220;Four Winds&#8221; logo. Throwing a Farmhouse Festival without inviting the yeast wranglers from Delta would be unthinkable."
         },
         {
+            "name" : "Goose Island Brewery",
+            "url" : "http://www.gooseisland.com/",
+            "logo" : "/images/breweries/gooseisland.min.png",
+            "description" : "Almost 30 years ago, Goose Island founder John Hall went on a trip to Europe. Trying what was, at that time, exotic and excellent beer led him to conclude “America deserves some damn fine beer like this, too.” Upon his return to Chicago, Goose Island was born, and John began delivering on his dream."
+        },
+        {
             "name" : "Lighthouse Brewing",
             "id" : "lighthouse",
             "url" : "http://www.lighthousebrewing.ca/",
