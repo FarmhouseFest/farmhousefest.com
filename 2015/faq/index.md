@@ -43,6 +43,15 @@ permalink: /2015/faq/
 		    <h2>Will you be serving food?</h2>
 			<p class="block">Yes, there will be food options at the festival. No outside food or beverages will be permitted on site, with the exception of sealed or empty water bottles. More info and specific vendors will be added when we know more.</p>
 
+		    <h2>Are there in &amp; out privileges?</h2>
+			<p class="block">Yes. Your wristband allows you to come and go from the Fest as you please. But it must be on your wrist to get back in. And we'd hope this goes without saying, but you are not allowed to leave the venue with open beer.</p>
+
+		    <h2>Can I smoke at Farmhouse Fest?</h2>
+			<p class="block">UBC Farm is a strict no smoking venue. If you do feel the need to light up, please use the designated smoking area outside the venue, and dispose of your used cigarette butts in the provided bins.</p>
+
+		    <h2>What happens if it rains?</h2>
+			<p class="block">Farmhouse Fest will go ahead rain or shine. In addition to plentiful open air seating, some covered seating will be provided (mainly, we hope, to allow a break from the sun). If the weather looks uncertain, make sure to bring an umbrella.</p>
+
 		    <h2>Who's running this thing?</h2>
 		    <p class="block">Your friendly neighbourhood organizing crew consists of <a href="https://twitter.com/JonnyBeers">@jonnybeers</a>, <a href="https://twitter.com/mezzoblue">@mezzoblue</a>, <a href="https://twitter.com/HopsCanary">@hopscanary</a>, <a href="https://twitter.com/kump">@kump</a>, <a href="https://twitter.com/Barley_Mowat">@barley_mowat</a> and <a href="https://twitter.com/foodandbier">@foodandbier</a>.</p>
 
