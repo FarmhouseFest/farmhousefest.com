@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default-festival
 title: The Festival
 permalink: /2015/festival/
 ---
@@ -53,7 +53,7 @@ permalink: /2015/festival/
 
 		<div class="panel light beers">
 
-			<ul class="beer-logos">
+			<ul class="participating">
 
 				{% for brewery in site.data.breweries.breweries %}
 					<li class="beer">
@@ -64,7 +64,9 @@ permalink: /2015/festival/
 				{% endfor %}
 
 			</ul>
-			<h3 class="styled secondary full-width"><a href="/2015/beer/">And Even More!</a></h3>
+			<h3 class="styled secondary full-width">
+				<a href="/2015/beer/">And Even More!</a>
+			</h3>
 		</div>
 
 		<div class="panel light">

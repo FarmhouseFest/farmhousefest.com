@@ -1,61 +1,53 @@
-/* 
-	Get unique random number array
-	Created by: Barry Pranklin, adapted from http://javascript.internet.com
-*/
-
-var Found = false;
-var Count = 0;
-
-function GetUnique(max, num) {
-	for (i = 0; Count < num; Count++) {
-		Found = false;
-		var rndValue = get_random(max);
-		var j = 0;
-		for (j = 0; j < control.length; j++) {
-			if (control[j] == rndValue) {
-				Found = true;
-				break;
-			}
-		}
-		if (Found) {
-			Count--;
-		} else {
-			control[Count] = rndValue;
-		}
-	}
-}
-function get_random(max) {
-	var ranNum = Math.round(Math.random() * max);
-	return ranNum;
-}
-
-
-
-
-
-
-
-
-var numImages = 12;
-
-// image controls
-var parent = "ul.beer-logos";
-var imgCount;
-var imgSrc = new Array();
-var imgAlt = new Array();
-var imgHref = new Array();
-var control = new Array(numImages);
-	
-
-
 $(document).ready(function() {
 
+	// image controls
+	var parent = "ul.participating";
+
+	var numImages = 12;
+	var control = new Array(numImages);
+
+	var imgCount;
+	var imgSrc = new Array();
+	var imgAlt = new Array();
+	var imgHref = new Array();
+
+
+	var Found = false;
+	var Count = 0;
+
+	// get unique random number
+	function GetUnique(max, num) {
+		for (i = 0; Count < num; Count++) {
+			Found = false;
+			var rndValue = get_random(max);
+			var j = 0;
+			for (j = 0; j < control.length; j++) {
+				if (control[j] == rndValue) {
+					Found = true;
+					break;
+				}
+			}
+			if (Found) {
+				Count--;
+			} else {
+				control[Count] = rndValue;
+			}
+		}
+	}
+	function get_random(max) {
+		var ranNum = Math.round(Math.random() * max);
+		return ranNum;
+	}
+
+
+
 	// clear all child li elements
-	function clearAll() {
+	function clearAll(parent) {
 		$(parent).children("li").each(function(index) {
 			$(this).remove();
 		});
 	}
+
 
 
 	// add an image to specified location in the DOM
@@ -74,9 +66,9 @@ $(document).ready(function() {
 		imgAlt[index] = $(this).children().children("img").attr("alt");
 		imgHref[index] = $(this).children("a").attr("href");
 	});
-	
+
 	// then clear them
-	clearAll();
+	clearAll(parent);
 
 	// build an array of random indexes the desired number of images
 	GetUnique((imgSrc.length - 1), numImages);
