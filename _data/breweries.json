@@ -119,6 +119,13 @@
             "description" : "Every sour beer geek is keenly eyeing up the huge stack of barrels visible from Strange Fellows' tasting room. Brewer Iain Hill's famous Oud Bruin is already bubbling away in that oak, and while we may have to wait a while to see that one there are dozens of barrels left to receive some potentially amazing new farmhouse-style ales."
         },
         {
+            "name" : "Txotx Basque Imports",
+            "id" : "txotx",
+            "url" : "http://txotx.ca/",
+            "logo" : "/images/breweries/txotx.min.png",
+            "description" : "Founded by three friends after a trip to a traditional cider house in the Basque Country, Txotx (pronounced /CHO-ch/) is dedicated to importing Basque products into Canada. It’s difficult to put into words the feeling you get from the region. While Txotx can’t bring you the sweeping landscapes, or the joie de vivre, they can offer you the cider in hopes to recreate this truly special culture."
+        },
+        {
             "name" : "UnTapped Craft Imports",
             "id" : "untapped",
             "url" : "http://www.untapped.ca/",

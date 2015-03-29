@@ -36,10 +36,10 @@ function get_random(max) {
 
 
 
-var numImages = 8;
+var numImages = 12;
 
 // image controls
-var parent = "ul.sponsors-small";
+var parent = "ul.beer-logos";
 var imgCount;
 var imgSrc = new Array();
 var imgAlt = new Array();
@@ -61,8 +61,8 @@ $(document).ready(function() {
 	// add an image to specified location in the DOM
 	function imgAdd(me) {
 		// generate the markup
-		var img = "<li class=\"sponsor\">" + '<a href="' + imgHref[me] + '">';
-		img += '<img src="' + imgSrc[me] + '" alt="' + imgAlt[me] + '">';
+		var img = "<li class=\"beer\">" + '<a href="' + imgHref[me] + '">';
+		img += '<img class=\"logo\" src="' + imgSrc[me] + '" alt="' + imgAlt[me] + '">';
 		img += "</a></li>";
 		$(img).appendTo(parent);
 	}

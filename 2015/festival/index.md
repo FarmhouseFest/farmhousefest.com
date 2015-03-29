@@ -53,10 +53,10 @@ permalink: /2015/festival/
 
 		<div class="panel light beers">
 
-			<ul class="brewery-logos">
+			<ul class="beer-logos">
 
 				{% for brewery in site.data.breweries.breweries %}
-					<li class="brewery">
+					<li class="beer">
 						<a href="/2015/beer/#{{ brewery.id }}">
 							<img class="logo" src="{{ brewery.logo }}" alt="{{ brewery.name }}" />
 						</a>
@@ -64,15 +64,15 @@ permalink: /2015/festival/
 				{% endfor %}
 
 			</ul>
-			<h3 class="styled secondary full-width">And More To Come!</h3>
+			<h3 class="styled secondary full-width"><a href="/2015/beer/">And Even More!</a></h3>
 		</div>
 
 		<div class="panel light">
 			<h2 class="styled">We Chose Good Beer</h2>
 
-			<p>Being a style-forward festival, we’re focusing only on Saisons, Wild-Ales and Sours. Don't expect to find your typical IPAs, Lagers or Stouts at this Fest... unless they're a little wild.</p>
+			<p>Being a style-forward festival, we’re focusing only on Saisons, Wild-Ales and Sours. Don't expect to find your typical IPAs, Lagers or Stouts at this Fest&#8230; unless they're a little wild.</p>
 
-			<p>What about the breweries? Hand picked by a collection of beer nerds as picky as you are. Only breweries with the chops to produce great on-style beer were invited.</p>
+			<p>What about the breweries? As a small festival, we aren't able to invite all of the great BC breweries, so only select breweries who brew these styles were hand-picked to be a part of this year's event.</p>
 		</div>
 
 
