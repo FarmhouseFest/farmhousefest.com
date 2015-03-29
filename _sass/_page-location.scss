@@ -44,7 +44,7 @@
 	    background-color: #b2a397;
 	    background-image: 
 	    	$texture,
-	    	url(/images/map.min.jpg);
+	    	url(/images/map-small.min.jpg);
 	    background-size: 
 	    	auto,
 	    	auto 100%;
@@ -57,10 +57,14 @@
 
 	    @include screen-medium {
 		    opacity: 0.8;
+            background-image: 
+                $texture,
+                url(/images/map.min.jpg);
 	    }
 
 	    &:hover, &:focus {
 	    	opacity: 1;
 	    }
     }
+
 }

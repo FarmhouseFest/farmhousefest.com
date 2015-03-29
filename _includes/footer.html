@@ -2,19 +2,6 @@
 
   <div class="wrapper">
 
-    <div class="sponsors {{ include.sponsors }} panel light">
-      <h2 class="sponsor-title styled">Featuring Unique &amp; Limited Brews by Some of the Best Breweries</h2>
-      <ul class="sponsor-list sponsors-small">
-        {% for brewery in site.data.breweries.breweries %}
-          <li class="sponsor">
-            <a href="{{ brewery.url }}">
-              <img src="{{ brewery.logo }}" alt="{{ brewery.name }}" />
-            </a>
-          </li>
-        {% endfor %}
-      </ul>
-    </div>
-
     <div class="site-footer-extras">
       <div class="wrapper">
         <p class="copyright styled">
