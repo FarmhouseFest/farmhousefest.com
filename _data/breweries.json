@@ -91,6 +91,13 @@
             "description" : "Known informally as the brewpub where brewers go for lunch, The Moon re-devoted themselves to authentic German styles a few years back, including Weizen, Dunkel, and Pilsner. More recently we've been seeing a new direction into farmhouse and sour experiments that are rocketing this brewery up every beer geek's must-watch list."
         },
         {
+            "name" : "Parallel 49 Brewing",
+            "id" : "p49",
+            "url" : "http://parallel49brewing.com/",
+            "logo" : "/images/breweries/parallel49.min.png",
+            "description" : "As far as we know, Parallel 49 is the only BC brewery that has maintained a barrel room since their inception. So far we've seen the results in the form of barrel-aged stouts and barelywines, but other barrels in that room have been left to go a little more wild. What are the results? Come find out."
+        },
+        {
             "name" : "Persephone Brewing",
             "id" : "persephone",
             "url" : "http://www.persephonebrewing.com/",
