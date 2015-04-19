@@ -3,13 +3,37 @@
         {
             "name" : "Beerthirst",
             "id" : "beerthirst",
+            "type" : "primary",
             "url" : "http://www.beerthirst.com/",
             "logo" : "/images/breweries/beerthirst.min.png",
-            "description" : "Obsessed with craft beer, Beerthirst is all about finding great beers from around the world and bringing them back to Canada for everyone to enjoy. Expect an especially strong showing from west coast breweries at the Beerthirst tent this year."
+            "description" : "Obsessed with craft beer, Beerthirst is all about finding great beers from around the world and bringing them back to Canada for everyone to enjoy. Expect an especially strong showing from west coast breweries at the Beerthirst tent this year.",
+            "beer" : [
+                {
+                    "name" : "Elysian Mr. Yuck",
+                    "description" : "Pumpkin Sour, 5.9%",
+                    "ratebeer" : "http://www.ratebeer.com/beer/elysian-mr-yuck-sour-pumpkin-ale/111442/"
+                },
+                {
+                    "name" : "Elysian Sour Grapes",
+                    "description" : "Berliner Weisse with Verjus grape, 3%",
+                    "ratebeer" : "http://www.ratebeer.com/beer/elysian-sour-grapes-berliner-weisse/318526/"
+                },
+                {
+                    "name" : "North Coast Le Merle",
+                    "description" : "Saison, 7.9%",
+                    "ratebeer" : "http://www.ratebeer.com/beer/north-coast-le-merle/51332/"
+                },
+                {
+                    "name" : "North Coast Puck",
+                    "description" : "Table Saison, 4%",
+                    "ratebeer" : "http://www.ratebeer.com/beer/north-coast-puck/291307/"
+                }
+            ]
         },
         {
             "name" : "Brassneck",
             "id" : "brassneck",
+            "type" : "primary",
             "url" : "http://www.brassneck.ca/",
             "logo" : "/images/breweries/brassneck.min.svg",
             "description" : "The Alibi Room's Nigel Springthorpe teamed up with Steamworks' Conrad Gmoser to open Brassneck way back in 2013, and already it's considered one of BC's premier beer factories. The recent addition of BC's first Foeder (pronounced &#8220;giant wooden tank in which one makes awesome beer&#8221;) has local sour and wild fanatics whipped into a frenzy."
@@ -17,20 +41,56 @@
         {
             "name" : "Bravo Beer Co",
             "id" : "bravo",
+            "type" : "primary",
             "url" : "http://www.bravobeerco.com/",
             "logo" : "/images/breweries/bravo.min.png",
-            "description" : "Bravo Beer Co focuses on premium, specialty beer. Bringing in a wide range of European beer with a focus on traditional Belgian breweries, we can look forward to some classic farmhouse ales that will provide a refreshing counterpoint to the more modern interpretations we'll see from BC breweries."
+            "description" : "Bravo Beer Co focuses on premium, specialty beer. Bringing in a wide range of European beer with a focus on traditional Belgian breweries, we can look forward to some classic farmhouse ales that will provide a refreshing counterpoint to the more modern interpretations we'll see from BC breweries.",
+            "beer" : [
+                {
+                    "name" : "Verhaege Duchesse de Bourgogne",
+                    "description" : "Flanders Red, 6.2%",
+                    "ratebeer" : "http://www.ratebeer.com/beer/verhaeghe-duchesse-de-bourgogne/6945/"
+                },
+                {
+                    "name" : "Saison Dupont Vieille Provision",
+                    "description" : "Saison, 6.5%",
+                    "ratebeer" : "http://www.ratebeer.com/beer/saison-dupont-vieille-provision/5386/"
+                },
+                {
+                    "name" : "Saison Dupont Cuvée Dry Hopping",
+                    "description" : "Saison, 6.5%",
+                    "ratebeer" : "http://www.ratebeer.com/beer/saison-dupont-cuvee-dry-hopping/123147/"
+                },
+                {
+                    "name" : "Dupont Avec les Bons Voeux",
+                    "description" : "Strong Saison, 9.5%",
+                    "ratebeer" : "http://www.ratebeer.com/beer/dupont-avec-les-bons-voeux/11047/"
+                }
+            ]
+
         },
         {
             "name" : "Category 12 Brewing",
             "id" : "category12",
+            "type" : "primary",
             "url" : "http://category12beer.com/",
             "logo" : "/images/breweries/category12.min.png",
-            "description" : "The new kids on the block. Category 12 has been making beer on the Saanich Peninsula just shy of six months, but so far everything they've produced has been stellar. With each running selling out locally in Victoria almost as soon as it's done fermenting, it has taken a while for their excellent ales to start appearing in Vancouver's bottle shops, but this past winter a few cases began to slip past the hungry capital hoards."
+            "description" : "The new kids on the block. Category 12 has been making beer on the Saanich Peninsula just shy of six months, but so far everything they've produced has been stellar. With each running selling out locally in Victoria almost as soon as it's done fermenting, it has taken a while for their excellent ales to start appearing in Vancouver's bottle shops, but this past winter a few cases began to slip past the hungry capital hoards.",
+            "beer" : [
+                {
+                    "name" : "Unsanctioned Saison",
+                    "description" : "Saison, 6.9%"
+                },
+                {
+                    "name" : "Pilot Batch Table Saison",
+                    "description" : "Table Saison"
+                },
+            ]
         },
         {
             "name" : "Copper &amp; Theory",
             "id" : "copperandtheory",
+            "type" : "primary",
             "url" : "http://copperandtheory.com/",
             "logo" : "/images/breweries/coppertheory.min.png",
             "description" : "Being a Certified Cicerone wasn't enough for Adam Henderson. He had to go the extra mile and apply that highly-trained palate to searching out unique and interesting breweries around the globe and convince their owners that, of all the places on the planet, they absolutely had to import to BC."
@@ -38,20 +98,54 @@
         {
             "name" : "Craft Beer Importers",
             "id" : "craftbeerimports",
+            "type" : "primary",
             "url" : "http://www.craftbeerimports.ca/craft/",
             "logo" : "/images/breweries/craft.min.png",
-            "description" : "Founded with the vision of bringing only the best beers in the world to the Canadian market, Craft has an impressive portfolio ranging from Belgium to New Zealand to Oklahoma and beyond. Expect some interesting contrasts of Old World and New pouring at the Craft tent."
+            "description" : "Founded with the vision of bringing only the best beers in the world to the Canadian market, Craft has an impressive portfolio ranging from Belgium to New Zealand to Oklahoma and beyond. Expect some interesting contrasts of Old World and New pouring at the Craft tent.",
+            "beer" : [
+                {
+                    "name" : "Omnipollo Magic #42",
+                    "description" : "Sour witbier with passionfruit and key lime, 4.5%",
+                    "ratebeer" : "http://www.ratebeer.com/beer/omnipollo-magic-42--passion-fruit-and-key-lime-wit/275142/"
+                },
+                {
+                    "name" : "Omnipollo Magic #7",
+                    "description" : "Sour witbier with pineapple and spearmint",
+                    "ratebeer" : "http://www.ratebeer.com/beer/omnipollo-magic-7--pineapple-and-fresh-spearmint-wit/270724/"
+                },
+                {
+                    "name" : "De Molen / Anchorage Mud &amp; Funk",
+                    "description" : "Wild Imperial Stout",
+                    "ratebeer" : "http://www.ratebeer.com/beer/de-molen--anchorage-mud-funk/266315/"
+                },
+            ]
         },
         {
             "name" : "Dageraad Brewing",
             "id" : "dageraad",
+            "type" : "primary",
             "url" : "http://dageraadbrewing.com/",
             "logo" : "/images/breweries/dageraad.min.png",
-            "description" : "It seems every brewery dabbles in a Belgian beer from time to time, but it's not often one dedicates full commitment to these styles. Enter former homebrewer Ben Coli, whose many trips abroad let him hankering for some truly authentic brews. And that is exactly what he produces in his tiny brewery: Belgian beer so authentic you could easily serve it at a cafe on the brewery's namesake Dageraadplaats in Antwerp."
+            "description" : "It seems every brewery dabbles in a Belgian beer from time to time, but it's not often one dedicates full commitment to these styles. Enter former homebrewer Ben Coli, whose many trips abroad let him hankering for some truly authentic brews. And that is exactly what he produces in his tiny brewery: Belgian beer so authentic you could easily serve it at a cafe on the brewery's namesake Dageraadplaats in Antwerp.",
+            "beer" : [
+                {
+                    "name" : "Passionfruit De Witte",
+                    "description" : "Sour wheat ale with passionfruit, 5.2%"
+                },
+                {
+                    "name" : "Randonneur",
+                    "description" : "Saison, 6.4%"
+                },
+                {
+                    "name" : "Pilot Batch Saison",
+                    "description" : "Saison"
+                }
+            ]
         },
         {
             "name" : "Driftwood Brewing",
             "id" : "driftwood",
+            "type" : "primary",
             "url" : "http://driftwoodbeer.com/",
             "logo" : "/images/breweries/driftwood.min.png",
             "description" : "People forget that there was a time before their flagship IPA. When Driftwood entered the market in 2008 they didn't even brew an IPA. Instead, their sales came from a renegade lineup including a Wit and an Altbier. It didn't take long for them to branch out into local malt Belgians, wild ales and sours. Fat what?"
@@ -59,61 +153,157 @@
         {
             "name" : "Four Winds Brewing",
             "id" : "fourwinds",
+            "type" : "primary",
             "url" : "http://www.fourwindsbrewing.ca/",
             "logo" : "/images/breweries/four-winds.min.png",
-            "description" : "You know how, every few months, there's an almost-riot at your local beer store? The only evidence that remains after the tide of Plaid-wearing, likely-bearded hoard retreats is a few torn and trampled cardboard cases with a cryptic &#8220;Four Winds&#8221; logo. Throwing a Farmhouse Festival without inviting the yeast wranglers from Delta would be unthinkable."
+            "description" : "You know how, every few months, there's an almost-riot at your local beer store? The only evidence that remains after the tide of Plaid-wearing, likely-bearded hoard retreats is a few torn and trampled cardboard cases with a cryptic &#8220;Four Winds&#8221; logo. Throwing a Farmhouse Festival without inviting the yeast wranglers from Delta would be unthinkable.",
+            "beer" : [
+                {
+                    "name" : "Pequeño Cabo",
+                    "description" : "Tequila barrel-aged Berliner Weisse"
+                },
+                {
+                    "name" : "Bistre",
+                    "description" : "Barrel-aged American dark sour"
+                },
+                {
+                    "name" : "Operis",
+                    "description" : "Brett saison"
+                },
+                {
+                    "name" : "Nectarous",
+                    "description" : "Dry-hopped sour"
+                }
+            ]
         },
         {
             "name" : "Goose Island Brewery",
+            "id" : "gooseisland",
+            "type" : "primary",
             "url" : "http://www.gooseisland.com/",
             "logo" : "/images/breweries/gooseisland.min.png",
-            "description" : "Almost 30 years ago, Goose Island founder John Hall went on a trip to Europe. Trying what was, at that time, exotic and excellent beer led him to conclude “America deserves some damn fine beer like this, too.” Upon his return to Chicago, Goose Island was born, and John began delivering on his dream."
+            "description" : "Almost 30 years ago, Goose Island founder John Hall went on a trip to Europe. Trying what was, at that time, exotic and excellent beer led him to conclude “America deserves some damn fine beer like this, too.” Upon his return to Chicago, Goose Island was born, and John began delivering on his dream.",
+            "beer" : [
+                {
+                    "name" : "Sofie",
+                    "description" : "Wine barrel-aged wild fermented saison with orange peel",
+                    "ratebeer" : "http://www.ratebeer.com/beer/goose-island-sofie/101468/"
+                },
+                {
+                    "name" : "Matilda",
+                    "description" : "Brett Belgian-style ale",
+                    "ratebeer" : "http://www.ratebeer.com/beer/goose-island-matilda/23624/"
+                }
+            ]
         },
         {
             "name" : "Lighthouse Brewing",
             "id" : "lighthouse",
+            "type" : "primary",
             "url" : "http://www.lighthousebrewing.ca/",
             "logo" : "/images/breweries/lighthouse.min.png",
-            "description" : "Founded in 1998, Lighthouse has been quietly brewing great craft ales for the lower half of Vancouver island since before craft beer was a thing. If you've only seen them in six packs or on draft, you might not be familiar with their more experimental beers, including lots of alternate yeast and fermentable products."
+            "description" : "Founded in 1998, Lighthouse has been quietly brewing great craft ales for the lower half of Vancouver island since before craft beer was a thing. If you've only seen them in six packs or on draft, you might not be familiar with their more experimental beers, including lots of alternate yeast and fermentable products.",
+            "beer" : [
+                {
+                    "name" : "Drumbeg",
+                    "description" : "Sour blackberry saison, served from the barrel it was soured in"
+                }
+            ]            
         },
         {
             "name" : "Main Street Brewing",
             "id" : "mainstreet",
+            "type" : "primary",
             "url" : "http://mainstreetbeer.ca/",
             "logo" : "/images/breweries/mainstreet.min.png",
-            "description" : "Their brewery on 7th Ave boasts an open floorplan, exposed wooden beams, red brick, skylights and a giant cool basement. What goes on in that basement, anyways? Experimentation, collaboration with local home brewers, kettle sours and brett experiments, that's what. Cask by painstaking cask."
+            "description" : "Their brewery on 7th Ave boasts an open floorplan, exposed wooden beams, red brick, skylights and a giant cool basement. What goes on in that basement, anyways? Experimentation, collaboration with local home brewers, kettle sours and brett experiments, that's what. Cask by painstaking cask.",
+            "beer" : [
+                {
+                    "name" : "Cantus Fermus",
+                    "description" : "Turbid mash house sour, pitched with Cantillon dregs"
+                },
+                {
+                    "name" : "Spectral Saison",
+                    "description" : "Saison with Lacto and Brett (from propagated Fantôme dregs)",
+                }
+            ]
         },
         {
             "name" : "Moon Brewpub",
             "id" : "moon",
+            "type" : "primary",
             "url" : "http://www.moonunderwater.ca/",
             "logo" : "/images/breweries/moon.min.png",
-            "description" : "Known informally as the brewpub where brewers go for lunch, The Moon re-devoted themselves to authentic German styles a few years back, including Weizen, Dunkel, and Pilsner. More recently we've been seeing a new direction into farmhouse and sour experiments that are rocketing this brewery up every beer geek's must-watch list."
+            "description" : "Known informally as the brewpub where brewers go for lunch, The Moon re-devoted themselves to authentic German styles a few years back, including Weizen, Dunkel, and Pilsner. More recently we've been seeing a new direction into farmhouse and sour experiments that are rocketing this brewery up every beer geek's must-watch list.",
+            "beer" : [
+                {
+                    "name" : "Moon Berliner-style Weisse",
+                    "description" : "Traditional Berlinerweisse"
+                },
+                {
+                    "name" : "Sang du Merle",
+                    "description" : "Port barrel-aged sour ale with black currents",
+                },
+                {
+                    "name" : "Hip as Funk",
+                    "description" : "Brett blond ale with New Zealand hops"
+                }
+            ]
         },
         {
             "name" : "Parallel 49 Brewing",
             "id" : "p49",
+            "type" : "primary",
             "url" : "http://parallel49brewing.com/",
             "logo" : "/images/breweries/parallel49.min.png",
-            "description" : "As far as we know, Parallel 49 is the only BC brewery that has maintained a barrel room since their inception. So far we've seen the results in the form of barrel-aged stouts and barelywines, but other barrels in that room have been left to go a little more wild. What are the results? Come find out."
+            "description" : "As far as we know, Parallel 49 is the only BC brewery that has maintained a barrel room since their inception. So far we've seen barrel-aged stouts and barelywines from this magical room, but other barrels in that room have been left to go a little more wild. What are the results? Come find out.",
+            "beer" : [
+                {
+                    "name" : "Flanders Red",
+                    "description" : "Belgian-style sour red ale"
+                }
+            ]
         },
         {
             "name" : "Persephone Brewing",
             "id" : "persephone",
+            "type" : "primary",
             "url" : "http://www.persephonebrewing.com/",
             "logo" : "/images/breweries/persephone.min.svg",
-            "description" : "You can't have a beer festival on a farm without inviting Persephone, who actually grows their own hops on-site. Throw onto that a reputation for producing amazing beer after amazing beer, and you can see why having them here was a no-brainer."
+            "description" : "You can't have a beer festival on a farm without inviting Persephone, who actually grows their own hops on-site. Throw onto that a reputation for producing amazing beer after amazing beer, and you can see why having them here was a no-brainer.",
+            "beer" : [
+                {
+                    "name" : "Farmhouse Saison",
+                    "description" : "Traditional Belgian-style saison"
+                },
+                {
+                    "name" : "Brett IPA",
+                    "description" : "West coast hops with tropical, fruity Brett",
+                },
+                {
+                    "name" : "Spruce tip &amp; Salmonberry sour",
+                    "description" : "Experimental kettle sour with locally foraged ingredients"
+                }
+            ]
         },
         {
             "name" : "Powell Street Brewing",
             "id" : "powellstreet",
+            "type" : "primary",
             "url" : "http://www.powellbeer.com/",
             "logo" : "/images/breweries/powellstreet.min.png",
-            "description" : "It's everyone's dream to quit their job and start a brewery, right? Well, husband and wife team David Bowkett and Nicole Stefanopoulos did exactly that. Starting from a true 350 litre nano brewhouse, they accumulated enough awards and accolades to force a move to their new, larger brewery down Powell Street. With a new barrel program and experimentation with kettle souring, Powell Street has already proven an affinity for the styles we're all about."
+            "description" : "It's everyone's dream to quit their job and start a brewery, right? Well, husband and wife team David Bowkett and Nicole Stefanopoulos did exactly that. Starting from a true 350 litre nano brewhouse, they accumulated enough awards and accolades to force a move to their new, larger brewery down Powell Street. With a new barrel program and experimentation with kettle souring, Powell Street has already proven an affinity for the styles we're all about.",
+            "beer" : [
+                {
+                    "name" : "Mixed Fermentation Saison",
+                    "description" : "Experimental saison"
+                }
+            ]
         },
         {
             "name" : "Steel &amp; Oak Brewing",
             "id" : "steelandoak",
+            "type" : "primary",
             "url" : "http://steelandoak.ca/",
             "logo" : "/images/breweries/steeloak.min.png",
             "description" : "Most breweries take a few months to get up and running. For this reason, most beer drinkers give breweries around six months to iron out the kinks of brewing on a new system. Steel &amp; Oak needed no such leeway. They began producing excellent beer with their very first batch and have only improved from there."
@@ -121,38 +311,110 @@
         {
             "name" : "Strange Fellows Brewing",
             "id" : "strangefellows",
+            "type" : "primary",
             "url" : "http://www.strangefellowsbrewing.com/",
             "logo" : "/images/breweries/strange-fellows.min.png",
-            "description" : "Every sour beer geek is keenly eyeing up the huge stack of barrels visible from Strange Fellows' tasting room. Brewer Iain Hill's famous Oud Bruin is already bubbling away in that oak, and while we may have to wait a while to see that one there are dozens of barrels left to receive some potentially amazing new farmhouse-style ales."
+            "description" : "Every sour beer geek is keenly eyeing up the huge stack of barrels visible from Strange Fellows' tasting room. Brewer Iain Hill's famous Oud Bruin is already bubbling away in that oak, and while we may have to wait a while to see that one there are dozens of barrels left to receive some potentially amazing new farmhouse-style ales.",
+            "beer" : [
+                {
+                    "name" : "Saison",
+                    "description" : "Traditional Belgian-style saison"
+                }
+            ]
         },
         {
             "name" : "Txotx Basque Imports",
             "id" : "txotx",
+            "type" : "primary",
             "url" : "http://txotx.ca/",
             "logo" : "/images/breweries/txotx.min.png",
-            "description" : "Founded by three friends after a trip to a traditional cider house in the Basque Country, Txotx (pronounced /CHO-ch/) is dedicated to importing Basque products into Canada. It’s difficult to put into words the feeling you get from the region. While Txotx can’t bring you the sweeping landscapes, or the joie de vivre, they can offer you the cider in hopes to recreate this truly special culture."
+            "description" : "Founded by three friends after a trip to a traditional cider house in the Basque Country, Txotx (pronounced /CHO-ch/) is dedicated to importing Basque products into Canada. It’s difficult to put into words the feeling you get from the region. While Txotx can’t bring you the sweeping landscapes, or the joie de vivre, they can offer you the cider in hopes to recreate this truly special culture.",
+            "beer" : [
+                {
+                    "name" : "Isastegi Sagardo Naturala",
+                    "description" : "Wild-fermented dry Basque cider",
+                    "ratebeer" : "http://www.ratebeer.com/beer/isastegi-sagardo-naturala/104336/"
+                }
+            ]
         },
         {
             "name" : "UnTapped Craft Imports",
             "id" : "untapped",
+            "type" : "primary",
             "url" : "http://www.untapped.ca/",
             "logo" : "/images/breweries/untapped.min.png",
-            "description" : "With an emphasis on Cascadia and Québec, UnTapped Craft Imports started in 2013 with a duo of homebrewers passionate about great beer and cider. UnTapped understands that the story of a great beer begins long before drinking it, and work to represent brands as passionate about beer, from start to finish, as they are."
+            "description" : "With an emphasis on Cascadia and Québec, UnTapped Craft Imports started in 2013 with a duo of homebrewers passionate about great beer and cider. UnTapped understands that the story of a great beer begins long before drinking it, and work to represent brands as passionate about beer, from start to finish, as they are.",
+            "beer" : [
+                {
+                    "name" : "Double Mountain Devil's Kriek",
+                    "description" : "Flanders red with bing cherries",
+                    "ratebeer" : "http://www.ratebeer.com/beer/double-mountain-devils-kriek-2011-/149629/"
+                },
+                {
+                    "name" : "Dieu du Ciel Exorciste aux mûres (2015)",
+                    "description" : "Sour oak-aged ale with blackberries",
+                    "ratebeer" : "http://www.ratebeer.com/beer/dieu-du-ciel-exorciste-aux-mures/185696/"
+                },
+                {
+                    "name" : "Les Trois Mousquetaires Gose",
+                    "description" : "Lightly salted sour mash ale with coriander",
+                    "ratebeer" : "http://www.ratebeer.com/beer/les-trois-mousquetaires-hors-serie-gose/184013/"
+                }
+            ]            
         },
 
         {
             "name" : "Westbier",
             "id" : "westbier",
+            "type" : "primary",
             "url" : "http://www.westbier.com/",
             "logo" : "/images/breweries/westbier.min.png",
-            "description" : "If there’s one thing Gerry West loves more than Belgian beer, it’s sharing that love with friends. Upon discovering that many of the beers he discovered in Europe weren’t available locally, he started Westbier to correct that oversight."
+            "description" : "If there’s one thing Gerry West loves more than Belgian beer, it’s sharing that love with friends. Upon discovering that many of the beers he discovered in Europe weren’t available locally, he started Westbier to correct that oversight.",
+            "beer" : [
+                {
+                    "name" : "St. Louis Gueuze Fond Tradition",
+                    "description" : "Traditional Belgian gueuze",
+                    "ratebeer" : "http://www.ratebeer.com/beer/st-louis-gueuze-fond-tradition/6098/"
+                },
+                {
+                    "name" : "St. Louis Fond Tradition Kriek Lambic",
+                    "description" : "Traditional Belgian lambic with cherries",
+                    "ratebeer" : "http://www.ratebeer.com/beer/st-louis-fond-tradition-kriek-lambic/245296/"
+                },
+                {
+                    "name" : "Bockor Cuvée des Jacobins",
+                    "description" : "Traditional Belgian Flanders red",
+                    "ratebeer" : "http://www.ratebeer.com/beer/bockor-cuvee-des-jacobins-rouge/108863/"
+                },
+                {
+                    "name" : "St Feuillien Saison",
+                    "description" : "Classic Belgian saison",
+                    "ratebeer" : "http://www.ratebeer.com/beer/st-feuillien-saison/101851/"
+                },
+                {
+                    "name" : "To Øl Snowball",
+                    "description" : "Chardonnay barrel-aged saison",
+                    "ratebeer" : "http://www.ratebeer.com/beer/to-ol-snowball-saison-aged-in-white-wine-barrels/204851/"
+                }
+            ]               
         },
         {
             "name" : "Yellow Dog Brewing",
             "id" : "yellowdog",
+            "type" : "primary",
             "url" : "http://www.yellowdogbeer.com/",
             "logo" : "/images/breweries/yellowdog.min.png",
-            "description" : "Some breweries produce great beer in their first year. Some win an award for Best Beer in BC, and grab the attention and imagination of the local craft beer crowd. Haven't sampled a great farmhouse ale from Yellow Dog yet? You will."
+            "description" : "Some breweries produce great beer in their first year. Some win an award for Best Beer in BC, and grab the attention and imagination of the local craft beer crowd. Haven't sampled a great farmhouse ale from Yellow Dog yet? You will.",
+            "beer" : [
+                {
+                    "name" : "Roll Over Red",
+                    "description" : "Kettle soured red ale"
+                },
+                {
+                    "name" : "Pilot Batch X2",
+                    "description" : "?"
+                }
+            ] 
         }
 
     ]

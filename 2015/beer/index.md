@@ -28,6 +28,7 @@ permalink: /2015/beer/
 		<ul class="brewery-list">
 
 			{% for brewery in site.data.breweries.breweries %}
+				{% if brewery.type == "primary" %}
 				<li class="brewery" id="{{ brewery.id }}">
 					<a href="{{ brewery.url }}">
 						<img class="logo" src="{{ brewery.logo }}" alt="{{ brewery.name }}" />
@@ -36,16 +37,31 @@ permalink: /2015/beer/
 						<a href="{{ brewery.url }}">
 							<h2 class="styled">{{ brewery.name }}</h2>
 						</a>
+						<!--
 						<p>
 							{{ brewery.description }}
 						</p>
+					-->
+						{% if brewery.beer %}
+							<ul class="beer-list">
+							{% for beer in brewery.beer %}
+								<li>
+									<h3>{{ beer.name }}</h3>
+									<p>{{ beer.description }}{% if beer.ratebeer %} <a href="{{ beer.ratebeer}}">(info)</a>{% endif %}</p>
+								</li>
+							{% endfor %}
+							</ul>
+						{% else %}
+							<p class="tbd">Beer list to be announced.</p>
+						{% endif %}
 					</div>
 				</li>
+				{% endif %}
 			{% endfor %}
 
-		</ul> 
+		</ul>
 
-		<h3 class="styled secondary centered">Even more coming soon...</h3>
+		<h3 class="styled secondary centered">Even more coming soon.<br /> Specific beers subject to availability &amp; distribution whims.</h3>
 	</div>
 
 </div>

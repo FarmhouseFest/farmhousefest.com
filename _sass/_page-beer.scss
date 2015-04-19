@@ -22,6 +22,11 @@
     .details {
         text-align: left;
     }
+    .tbd {
+        color: $color-darkgrey-hover;
+        color: rgba($color-darkgrey-hover, 0.6);
+        font-style: italic;        
+    }
 
     @include screen-xsmall {
         .brewery {
@@ -35,6 +40,24 @@
             margin: 0;
         }
     }
+}
+
+.beer-list {
+
+    list-style: none;
+    margin: 1rem 0 0 0;
+
+    li {
+        margin: 0 0 0.5rem 0;
+    }
+    h3 {
+        margin: 0;
+    }
+    p {
+        margin: 0;
+        color: $color-salmon;
+    }
+
 }
 
 .beer-listing-1up {
