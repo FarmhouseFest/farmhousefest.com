@@ -46,8 +46,8 @@ permalink: /2015/beer/
 							<ul class="beer-list">
 							{% for beer in brewery.beer %}
 								<li>
-									<h3>{{ beer.name }}</h3>
-									<p>{{ beer.description }}{% if beer.ratebeer %} <a href="{{ beer.ratebeer}}">(info)</a>{% endif %}</p>
+									<h3 class="beer-name">{{ beer.name }}</h3>
+									<p class="beer-description">{{ beer.description }}{% if beer.ratebeer %} <a href="{{ beer.ratebeer}}">(info)</a>{% endif %}</p>
 								</li>
 							{% endfor %}
 							</ul>

@@ -7,6 +7,8 @@
 
 .brewery-list {
 
+    display: flex;
+    flex-wrap: wrap;
     padding-top: 2rem;
 
     .brewery {
@@ -16,11 +18,11 @@
     }
     .logo {
         display: inline-block;
-        width: 6rem;
+        width: 5rem;
         margin: 0 auto 1rem auto;
     }
     .details {
-        text-align: left;
+        // text-align: left;
     }
     .tbd {
         color: $color-darkgrey-hover;
@@ -28,16 +30,18 @@
         font-style: italic;        
     }
 
-    @include screen-xsmall {
+    @include screen-medium {
+
         .brewery {
-            position: relative;
-            padding-left: 10rem;
-        }
-        .logo {
-            position: absolute;
-            top: 0;
-            left: 0;
-            margin: 0;
+            flex: 1 1 33%;
+
+            &:nth-child(3n + 1) {
+                padding-right: 2rem;
+            }
+            &:nth-child(3n + 3) {
+                padding-left: 2rem;
+            }
+
         }
     }
 }
@@ -50,10 +54,11 @@
     li {
         margin: 0 0 0.5rem 0;
     }
-    h3 {
+    .beer-name {
         margin: 0;
+        font-size: 1rem;
     }
-    p {
+    .beer-description {
         margin: 0;
         color: $color-salmon;
     }
