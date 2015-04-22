@@ -29,20 +29,15 @@ permalink: /2015/beer/
 
 			{% for brewery in site.data.breweries.breweries %}
 				{% if brewery.type == "primary" %}
-				<li class="brewery" id="{{ brewery.id }}">
-					<a href="{{ brewery.url }}">
-						<img class="logo" src="{{ brewery.logo }}" alt="{{ brewery.name }}" />
-					</a>
-					<div class="details">
+					{% if brewery.beer %}
+					<li class="brewery" id="{{ brewery.id }}">
 						<a href="{{ brewery.url }}">
-							<h2 class="styled">{{ brewery.name }}</h2>
+							<img class="logo" src="{{ brewery.logo }}" alt="{{ brewery.name }}" />
 						</a>
-						<!--
-						<p>
-							{{ brewery.description }}
-						</p>
-					-->
-						{% if brewery.beer %}
+						<div class="details">
+							<a href="{{ brewery.url }}">
+								<h2 class="styled">{{ brewery.name }}</h2>
+							</a>
 							<ul class="beer-list">
 							{% for beer in brewery.beer %}
 								<li>
@@ -51,11 +46,31 @@ permalink: /2015/beer/
 								</li>
 							{% endfor %}
 							</ul>
-						{% else %}
+						</div>
+					</li>
+					{% endif %}
+				{% endif %}
+			{% endfor %}
+		</ul>
+		
+		<ul class="brewery-list coming-soon">
+
+			{% for brewery in site.data.breweries.breweries %}
+				{% if brewery.type == "primary" %}
+					{% if brewery.beer %}
+					{% else %}
+					<li class="brewery" id="{{ brewery.id }}">
+						<a href="{{ brewery.url }}">
+							<img class="logo" src="{{ brewery.logo }}" alt="{{ brewery.name }}" />
+						</a>
+						<div class="details">
+							<a href="{{ brewery.url }}">
+								<h2 class="styled">{{ brewery.name }}</h2>
+							</a>
 							<p class="tbd">Beer list to be announced.</p>
-						{% endif %}
-					</div>
-				</li>
+						</div>
+					</li>
+					{% endif %}
 				{% endif %}
 			{% endfor %}
 

@@ -9,6 +9,8 @@
 
     display: flex;
     flex-wrap: wrap;
+
+    width: 100%;
     padding-top: 2rem;
 
     .brewery {
@@ -30,10 +32,30 @@
         font-style: italic;        
     }
 
+    &.coming-soon {
+        padding-top: 4rem;
+        margin-top: 2rem;
+        border-top: solid 1px rgba(0, 0, 0, 0.2);
+    }
+
     @include screen-medium {
 
         .brewery {
             flex: 1 1 33%;
+            padding-bottom: 4rem;
+
+            &:nth-child(3n + 1) {
+                padding-right: 3rem;
+            }
+            &:nth-child(3n + 3) {
+                padding-left: 3rem;
+            }
+        }
+
+        &.coming-soon .brewery {
+            flex: 1 1 25%;
+            padding-left: 2rem;
+            padding-right: 2rem;         
 
             &:nth-child(3n + 1) {
                 padding-right: 2rem;
@@ -41,8 +63,9 @@
             &:nth-child(3n + 3) {
                 padding-left: 2rem;
             }
-
         }
+
+
     }
 }
 
