@@ -1,6 +1,12 @@
 {
     "breweries": [
         {
+            "name" : "8 Wired Brewing",
+            "id" : "craftbeerimports",
+            "type" : "secondary",
+            "logo" : "/images/breweries/8wired.min.png"
+        },
+        {
             "name" : "Beerthirst",
             "id" : "beerthirst",
             "type" : "primary",
@@ -29,6 +35,12 @@
                     "ratebeer" : "http://www.ratebeer.com/beer/north-coast-puck/291307/"
                 }
             ]
+        },
+        {
+            "name" : "Bockor",
+            "id" : "westbier",
+            "type" : "secondary",
+            "logo" : "/images/breweries/bockor.min.png"
         },
         {
             "name" : "Brassneck",
@@ -68,6 +80,12 @@
                 }
             ]
 
+        },
+        {
+            "name" : "The Bruery",
+            "id" : "beerthirst",
+            "type" : "secondary",
+            "logo" : "/images/breweries/thebruery.min.png"
         },
         {
             "name" : "Category 12 Brewing",
@@ -143,12 +161,42 @@
             ]
         },
         {
+            "name" : "De Molen",
+            "id" : "craftbeerimports",
+            "type" : "secondary",
+            "logo" : "/images/breweries/demolen.min.png"
+        },
+        {
+            "name" : "Double Mountanin Brewery",
+            "id" : "untapped",
+            "type" : "secondary",
+            "logo" : "/images/breweries/doublemountain.min.png"
+        },
+        {
+            "name" : "Brasserie Dieu du Ciel",
+            "id" : "untapped",
+            "type" : "secondary",
+            "logo" : "/images/breweries/ddc.min.png"
+        },
+        {
             "name" : "Driftwood Brewing",
             "id" : "driftwood",
             "type" : "primary",
             "url" : "http://driftwoodbeer.com/",
             "logo" : "/images/breweries/driftwood.min.png",
             "description" : "People forget that there was a time before their flagship IPA. When Driftwood entered the market in 2008 they didn't even brew an IPA. Instead, their sales came from a renegade lineup including a Wit and an Altbier. It didn't take long for them to branch out into local malt Belgians, wild ales and sours. Fat what?"
+        },
+        {
+            "name" : "La Brasserie Dupont",
+            "id" : "bravo",
+            "type" : "secondary",
+            "logo" : "/images/breweries/dupont.min.png"
+        },
+        {
+            "name" : "Elysian Brewing",
+            "id" : "beerthirst",
+            "type" : "secondary",
+            "logo" : "/images/breweries/elysian.min.png"
         },
         {
             "name" : "Four Winds Brewing",
@@ -197,6 +245,18 @@
             ]
         },
         {
+            "name" : "Sidería Isastegi",
+            "id" : "txotx",
+            "type" : "secondary",
+            "logo" : "/images/breweries/isastegi.min.png"
+        },
+        {
+            "name" : "Les Trois Mousquetaires",
+            "id" : "untapped",
+            "type" : "secondary",
+            "logo" : "/images/breweries/ltm.min.png"
+        },
+        {
             "name" : "Lighthouse Brewing",
             "id" : "lighthouse",
             "type" : "primary",
@@ -209,6 +269,12 @@
                     "description" : "Sour blackberry saison, served from the barrel it was soured in"
                 }
             ]            
+        },
+        {
+            "name" : "Logsdon Farmhouse Ales",
+            "id" : "beerthirst",
+            "type" : "secondary",
+            "logo" : "/images/breweries/logsdon.min.png"
         },
         {
             "name" : "Main Street Brewing",
@@ -249,6 +315,18 @@
                     "description" : "Brett blond ale with New Zealand hops"
                 }
             ]
+        },
+        {
+            "name" : "North Coast Brewing Co.",
+            "id" : "beerthirst",
+            "type" : "secondary",
+            "logo" : "/images/breweries/northcoast.min.png"
+        },
+        {
+            "name" : "Omnipollo",
+            "id" : "craftbeerimports",
+            "type" : "secondary",
+            "logo" : "/images/breweries/omnipollo.min.png"
         },
         {
             "name" : "Parallel 49 Brewing",
@@ -301,6 +379,18 @@
             ]
         },
         {
+            "name" : "Shacksbury Cider",
+            "id" : "txotx",
+            "type" : "secondary",
+            "logo" : "/images/breweries/shacksbury.min.png"
+        },
+        {
+            "name" : "Brewery St Feuillien",
+            "id" : "westbier",
+            "type" : "secondary",
+            "logo" : "/images/breweries/stfeuillien.min.png"
+        },
+        {
             "name" : "Steel &amp; Oak Brewing",
             "id" : "steelandoak",
             "type" : "primary",
@@ -323,6 +413,12 @@
             ]
         },
         {
+            "name" : "To Øl",
+            "id" : "westbier",
+            "type" : "secondary",
+            "logo" : "/images/breweries/tool.min.png"
+        },
+        {
             "name" : "Txotx Basque Imports",
             "id" : "txotx",
             "type" : "primary",
@@ -334,6 +430,11 @@
                     "name" : "Isastegi Sagardo Naturala",
                     "description" : "Wild-fermented dry Basque cider",
                     "ratebeer" : "http://www.ratebeer.com/beer/isastegi-sagardo-naturala/104336/"
+                },
+                {
+                    "name" : "Shacksbury Basque Sidra",
+                    "description" : "Wild yeast dry Basque cider",
+                    "ratebeer" : "http://www.ratebeer.com/beer/shacksbury-basque/298371/"
                 }
             ]
         },
@@ -362,7 +463,18 @@
                 }
             ]            
         },
-
+        {
+            "name" : "Verhaeghe Brewing",
+            "id" : "bravo",
+            "type" : "secondary",
+            "logo" : "/images/breweries/verhaeghe.min.png"
+        },
+        {
+            "name" : "Van Honsebrouck / St Louis",
+            "id" : "westbier",
+            "type" : "secondary",
+            "logo" : "/images/breweries/vanhonsebrouck.min.png"
+        },
         {
             "name" : "Westbier",
             "id" : "westbier",
