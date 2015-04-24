@@ -289,8 +289,12 @@
                     "description" : "Turbid mash house sour, pitched with Cantillon dregs"
                 },
                 {
-                    "name" : "Spectral Saison",
-                    "description" : "Saison with Lacto and Brett (from propagated Fantôme dregs)",
+                    "name" : "Feet to the Fire",
+                    "description" : "Classic Saison"
+                },
+                {
+                    "name" : "Checkpoint Charlie",
+                    "description" : "Berliner Weisse",
                 }
             ]
         },
@@ -375,6 +379,10 @@
                 {
                     "name" : "Mixed Fermentation Saison",
                     "description" : "Experimental saison"
+                },
+                {
+                    "name" : "Roggenbier",
+                    "description" : "Experimental sour rye beer"
                 }
             ]
         },
