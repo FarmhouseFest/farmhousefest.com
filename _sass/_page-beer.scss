@@ -14,7 +14,8 @@
     padding-top: 2rem;
 
     .brewery {
-        padding-bottom: 2rem;
+        width: 100%;
+        padding: 0 2rem 2rem 2rem;
         list-style: none;
         text-align: center;
     }
@@ -42,6 +43,7 @@
 
         .brewery {
             flex: 1 1 33%;
+            width: auto;
             padding-bottom: 4rem;
 
             &:nth-child(3n + 1) {
