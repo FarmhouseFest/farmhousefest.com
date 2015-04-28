@@ -106,6 +106,14 @@
             ]
         },
         {
+            "name" : "The Commons Brewery",
+            "id" : "commons",
+            "type" : "primary",
+            "url" : "http://www.commonsbrewery.com/",
+            "logo" : "/images/breweries/commons.min.png",
+            "description" : ""
+        },
+        {
             "name" : "Copper &amp; Theory",
             "id" : "copperandtheory",
             "type" : "primary",
@@ -184,7 +192,13 @@
             "type" : "primary",
             "url" : "http://driftwoodbeer.com/",
             "logo" : "/images/breweries/driftwood.min.png",
-            "description" : "People forget that there was a time before their flagship IPA. When Driftwood entered the market in 2008 they didn't even brew an IPA. Instead, their sales came from a renegade lineup including a Wit and an Altbier. It didn't take long for them to branch out into local malt Belgians, wild ales and sours. Fat what?"
+            "description" : "People forget that there was a time before their flagship IPA. When Driftwood entered the market in 2008 they didn't even brew an IPA. Instead, their sales came from a renegade lineup including a Wit and an Altbier. It didn't take long for them to branch out into local malt Belgians, wild ales and sours. Fat what?",
+            "beer" : [
+                {
+                    "name" : "Obscuritas",
+                    "description" : "Dark Sour"
+                }
+            ]
         },
         {
             "name" : "La Brasserie Dupont",
@@ -531,7 +545,7 @@
                     "description" : "Kettle soured red ale"
                 },
                 {
-                    "name" : "Pilot Batch X2",
+                    "name" : "Pilot Batch",
                     "description" : "?"
                 }
             ] 
