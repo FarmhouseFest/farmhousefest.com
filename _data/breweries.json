@@ -48,7 +48,17 @@
             "type" : "primary",
             "url" : "http://www.brassneck.ca/",
             "logo" : "/images/breweries/brassneck.min.svg",
-            "description" : "The Alibi Room's Nigel Springthorpe teamed up with Steamworks' Conrad Gmoser to open Brassneck way back in 2013, and already it's considered one of BC's premier beer factories. The recent addition of BC's first Foeder (pronounced &#8220;giant wooden tank in which one makes awesome beer&#8221;) has local sour and wild fanatics whipped into a frenzy."
+            "description" : "The Alibi Room's Nigel Springthorpe teamed up with Steamworks' Conrad Gmoser to open Brassneck way back in 2013, and already it's considered one of BC's premier beer factories. The recent addition of BC's first Foeder (pronounced &#8220;giant wooden tank in which one makes awesome beer&#8221;) has local sour and wild fanatics whipped into a frenzy.",
+            "beer" : [
+                {
+                    "name" : "Stockholm Syndrome",
+                    "description" : "Brett Saison, 6.5%"
+                },
+                {
+                    "name" : "Changeling",
+                    "description" : "Sour ale with raspberries, 6%"
+                }
+            ]
         },
         {
             "name" : "Bravo Beer Co",
@@ -355,8 +365,16 @@
             "description" : "As far as we know, Parallel 49 is the only BC brewery that has maintained a barrel room since their inception. So far we've seen barrel-aged stouts and barelywines from this magical room, but other barrels in that room have been left to go a little more wild. What are the results? Come find out.",
             "beer" : [
                 {
-                    "name" : "Flanders Red",
-                    "description" : "Belgian-style sour red ale"
+                    "name" : "Lil' Redemption",
+                    "description" : "Sour red ale with cherries, 7%"
+                },
+                {
+                    "name" : "Sour White",
+                    "description" : "Sour wheat ale aged in Chardonnay barrels, 7%"
+                },
+                {
+                    "name" : "Apricotopus",
+                    "description" : "Sour apricot saison, 6.5%"
                 }
             ]
         },
@@ -454,8 +472,13 @@
                     "ratebeer" : "http://www.ratebeer.com/beer/isastegi-sagardo-naturala/104336/"
                 },
                 {
-                    "name" : "Shacksbury Basque Sidra",
+                    "name" : "Larraldea Sagardo Naturala",
                     "description" : "Wild yeast dry Basque-style cider",
+                    "ratebeer" : "http://www.ratebeer.com/beer/shacksbury-basque/298371/"
+                },                
+                {
+                    "name" : "Shacksbury Basque Sidra",
+                    "description" : "Wild-fermented Basque cider",
                     "ratebeer" : "http://www.ratebeer.com/beer/shacksbury-basque/298371/"
                 }
             ]
