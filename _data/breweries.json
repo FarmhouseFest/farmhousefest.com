@@ -392,7 +392,7 @@
                 },
                 {
                     "name" : "Brett IPA",
-                    "description" : "West coast hops with tropical, fruity Brett",
+                    "description" : "West coast hops with tropical, fruity brett",
                 },
                 {
                     "name" : "Spruce tip &amp; Salmonberry sour",
@@ -436,7 +436,17 @@
             "type" : "primary",
             "url" : "http://steelandoak.ca/",
             "logo" : "/images/breweries/steeloak.min.png",
-            "description" : "Most breweries take a few months to get up and running. For this reason, most beer drinkers give breweries around six months to iron out the kinks of brewing on a new system. Steel &amp; Oak needed no such leeway. They began producing excellent beer with their very first batch and have only improved from there."
+            "description" : "Most breweries take a few months to get up and running. For this reason, most beer drinkers give breweries around six months to iron out the kinks of brewing on a new system. Steel &amp; Oak needed no such leeway. They began producing excellent beer with their very first batch and have only improved from there.",
+            "beer" : [
+                {
+                    "name" : "Llimada",
+                    "description" : "Sour red lager"
+                },
+                {
+                    "name" : "Mehrkorn",
+                    "description" : "Multigrain brett ale"
+                }
+            ]
         },
         {
             "name" : "Strange Fellows Brewing",

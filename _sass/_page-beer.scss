@@ -54,18 +54,18 @@
             }
         }
 
-        &.coming-soon .brewery {
-            flex: 1 1 25%;
-            padding-left: 2rem;
-            padding-right: 2rem;         
+        // &.coming-soon .brewery {
+        //     flex: 1 1 25%;
+        //     padding-left: 2rem;
+        //     padding-right: 2rem;         
 
-            &:nth-child(3n + 1) {
-                padding-right: 2rem;
-            }
-            &:nth-child(3n + 3) {
-                padding-left: 2rem;
-            }
-        }
+        //     &:nth-child(3n + 1) {
+        //         padding-right: 2rem;
+        //     }
+        //     &:nth-child(3n + 3) {
+        //         padding-left: 2rem;
+        //     }
+        // }
 
 
     }
