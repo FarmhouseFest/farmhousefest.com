@@ -15,14 +15,14 @@
             "description" : "Obsessed with craft beer, Beerthirst is all about finding great beers from around the world and bringing them back to Canada for everyone to enjoy. Expect an especially strong showing from west coast breweries at the Beerthirst tent this year.",
             "beer" : [
                 {
-                    "name" : "Elysian Mr. Yuck",
-                    "description" : "Pumpkin Sour, 5.9%",
-                    "ratebeer" : "http://www.ratebeer.com/beer/elysian-mr-yuck-sour-pumpkin-ale/111442/"
+                    "name" : "Elysian Huckleberry Sour",
+                    "description" : "Berliner Weisse, 2.8%",
+                    "ratebeer" : "http://www.ratebeer.com/beer/elysian--payette-huckleberry-berliner-weisse/285410/"
                 },
                 {
-                    "name" : "Elysian Sour Grapes",
-                    "description" : "Berliner Weisse with Verjus grape, 3%",
-                    "ratebeer" : "http://www.ratebeer.com/beer/elysian-sour-grapes-berliner-weisse/318526/"
+                    "name" : "Elysian Unite Red",
+                    "description" : "Berliner Weisse with black raspberry, 4%",
+                    "ratebeer" : "http://www.ratebeer.com/beer/elysian-unite-red-ale/325792/"
                 },
                 {
                     "name" : "North Coast Le Merle",
@@ -291,6 +291,10 @@
                 {
                     "name" : "Drumbeg",
                     "description" : "Sour blackberry saison, served from the barrel it was soured in"
+                },
+                {
+                    "name" : "Wreckoning",
+                    "description" : "Brett IPA with Rakau and Citra"
                 }
             ]            
         },
