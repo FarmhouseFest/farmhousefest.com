@@ -38,7 +38,7 @@ permalink: /2015/location/
 	</a>
 </div>
 
-<div class="panel-container two-up location-gettinghome-2up">
+<div class="panel-container three-up location-gettinghome-3up">
 
 	<div class="fixed-contents">
 
@@ -52,6 +52,11 @@ permalink: /2015/location/
 		<div class="panel">
 			<h3 class="styled secondary">Taking Transit</h3>
 			<p>Route C20 services the <a href="http://ubcfarm.ubc.ca/contact-us/">UBC Farm</a> gate every 30 minutes, taking you to the UBC Loop, where connections are available to a wide array of bus routes.</p>
+		</div>
+
+		<div class="panel">
+			<h3 class="styled secondary">Cycling</h3>
+			<p>The <a href="http://ubcfarm.ubc.ca/contact-us/">UBC Farm website</a> has information on cycling to the venue. Limited bike racks are available, but please be safe and plan to leave your bike overnight if you intend to drink.</p>
 		</div>
 
 	</div>

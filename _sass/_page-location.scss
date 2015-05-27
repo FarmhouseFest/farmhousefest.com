@@ -4,7 +4,7 @@
 
 */
 
-.location-intro-2up, .location-gettinghome-2up {
+.location-intro-2up, .location-gettinghome-3up {
 
     .panel:nth-child(2) {
         padding-top: 2rem;
@@ -12,6 +12,10 @@
     }
     .panel:nth-child(3) {
         padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .panel:nth-child(4) {
+        padding-top: 0;
         padding-bottom: 2rem;
     }
 
@@ -26,6 +30,10 @@
         	padding-right: 0;
             padding-bottom: 3rem;
         }
+        .panel:nth-child(4) {
+            padding-top: 2rem;
+        }
+
     }
 }
 
