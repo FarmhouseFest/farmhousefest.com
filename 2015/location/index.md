@@ -13,7 +13,7 @@ permalink: /2015/location/
 		<div class="panel">
 
 			<p>It wouldn’t make sense to host a Farmhouse Festival anywhere but on an actual farm. Luckily UBC has one, so that’s where Farmhouse Fest will be.</p>
-			<p>The UBC Farm is a 24 hectare teaching and learning farm located on the south end of UBC’s main Point Grey campus.</p>
+			<p>The <a href="http://ubcfarm.ubc.ca/contact-us/">UBC Farm</a> is a 24 hectare teaching and learning farm located on the south end of UBC’s main Point Grey campus.</p>
 
 		</div>
 
@@ -51,7 +51,7 @@ permalink: /2015/location/
 
 		<div class="panel">
 			<h3 class="styled secondary">Taking Transit</h3>
-			<p>Route C20 services the UBC Farm gate every 30 minutes, taking you to the UBC Loop, where connections are available to a wide array of bus routes.</p>
+			<p>Route C20 services the <a href="http://ubcfarm.ubc.ca/contact-us/">UBC Farm</a> gate every 30 minutes, taking you to the UBC Loop, where connections are available to a wide array of bus routes.</p>
 		</div>
 
 	</div>
