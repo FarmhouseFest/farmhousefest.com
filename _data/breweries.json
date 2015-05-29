@@ -25,6 +25,11 @@
                     "ratebeer" : "http://www.ratebeer.com/beer/elysian-unite-red-ale/325792/"
                 },
                 {
+                    "name" : "Logsdon Seizoen Bretta",
+                    "description" : "Saison, 8%",
+                    "ratebeer" : "http://www.ratebeer.com/beer/logsdon-seizoen-bretta/143868/"
+                },
+                {
                     "name" : "North Coast Le Merle",
                     "description" : "Saison, 7.9%",
                     "ratebeer" : "http://www.ratebeer.com/beer/north-coast-le-merle/51332/"
@@ -92,12 +97,6 @@
 
         },
         {
-            "name" : "The Bruery",
-            "id" : "beerthirst",
-            "type" : "secondary",
-            "logo" : "/images/breweries/thebruery.min.png"
-        },
-        {
             "name" : "Category 12 Brewing",
             "id" : "category12",
             "type" : "primary",
@@ -112,7 +111,7 @@
                 {
                     "name" : "Pilot Batch Table Saison",
                     "description" : "Table Saison"
-                },
+                }
             ]
         },
         {
@@ -121,7 +120,24 @@
             "type" : "primary",
             "url" : "http://www.commonsbrewery.com/",
             "logo" : "/images/breweries/commons.min.png",
-            "description" : ""
+            "description" : "",
+            "beer" : [
+                {
+                    "name" : "Fleur de Blanc",
+                    "description" : "Saison with rosehips & elderflower, 5%",
+                    "ratebeer" : "http://www.ratebeer.com/beer/the-commons-fleur-de-blanc/229821/"
+                },
+                {
+                    "name" : "Myrtle",
+                    "description" : "Saison, 5.2%",
+                    "ratebeer" : "http://www.ratebeer.com/beer/the-commons-myrtle/201447/"
+                },
+                {
+                    "name" : "Urban Farmhouse",
+                    "description" : "Saison, 5.3%",
+                    "ratebeer" : "http://www.ratebeer.com/beer/the-commons-urban-farmhouse-ale/141254/"
+                }
+            ]
         },
         {
             "name" : "Copper &amp; Theory",
@@ -129,7 +145,29 @@
             "type" : "primary",
             "url" : "http://copperandtheory.com/",
             "logo" : "/images/breweries/coppertheory.min.png",
-            "description" : "Being a Certified Cicerone wasn't enough for Adam Henderson. He had to go the extra mile and apply that highly-trained palate to searching out unique and interesting breweries around the globe and convince their owners that, of all the places on the planet, they absolutely had to import to BC."
+            "description" : "Being a Certified Cicerone wasn't enough for Adam Henderson. He had to go the extra mile and apply that highly-trained palate to searching out unique and interesting breweries around the globe and convince their owners that, of all the places on the planet, they absolutely had to import to BC.",
+            "beer" : [
+                {
+                    "name" : "Cantillon Gueuze",
+                    "description" : "Gueuze, 5%",
+                    "ratebeer" : "http://www.ratebeer.com/beer/cantillon-gueuze-classic-organic-bio/6925/"
+                },
+                {
+                    "name" : "Cantillon Iris",
+                    "description" : "Dry hopped sour ale, 6.5%",
+                    "ratebeer" : "http://www.ratebeer.com/beer/cantillon-iris/11630/"
+                },
+                {
+                    "name" : "pFriem Saison",
+                    "description" : "Saison, 6.5%",
+                    "ratebeer" : "http://www.ratebeer.com/beer/pfriem-saison/207925/"
+                },
+                {
+                    "name" : "pFriem Flanders Blonde",
+                    "description" : "Pinot barrel-aged sour blonde ale, 7.1%",
+                    "ratebeer" : "http://www.ratebeer.com/beer/pfriem-flanders-blonde/324084/"
+                },
+            ]
         },
         {
             "name" : "Craft Beer Importers",
