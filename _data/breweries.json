@@ -25,9 +25,19 @@
                     "ratebeer" : "http://www.ratebeer.com/beer/elysian-unite-red-ale/325792/"
                 },
                 {
+                    "name" : "Logsdon Seizoen",
+                    "description" : "Saison, 7.5%",
+                    "ratebeer" : "http://www.ratebeer.com/beer/logsdon-seizoen/147285/"
+                },
+                {
                     "name" : "Logsdon Seizoen Bretta",
                     "description" : "Saison, 8%",
                     "ratebeer" : "http://www.ratebeer.com/beer/logsdon-seizoen-bretta/143868/"
+                },
+                {
+                    "name" : "Logsdon Oak-Aged Bretta",
+                    "description" : "Sour Saison, 8%",
+                    "ratebeer" : "http://www.ratebeer.com/beer/logsdon-oak-aged-bretta/179272/"
                 },
                 {
                     "name" : "North Coast Le Merle",
