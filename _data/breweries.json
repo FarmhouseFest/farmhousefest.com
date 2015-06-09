@@ -509,8 +509,16 @@
             "description" : "Every sour beer geek is keenly eyeing up the huge stack of barrels visible from Strange Fellows' tasting room. Brewer Iain Hill's famous Oud Bruin is already bubbling away in that oak, and while we may have to wait a while to see that one there are dozens of barrels left to receive some potentially amazing new farmhouse-style ales.",
             "beer" : [
                 {
-                    "name" : "Saison",
+                    "name" : "Bayard",
                     "description" : "Traditional Belgian-style saison"
+                },
+                {
+                    "name" : "Roxanne",
+                    "description" : "Sour black raspberry grisette"
+                },
+                {
+                    "name" : "Grisette",
+                    "description" : "Sour light saison"
                 }
             ]
         },
