@@ -41,7 +41,8 @@ permalink: /2015/faq/
 			<p class="block">Sorry, no. This is a licensed 19+ event and Fido isn’t permitted on the farm.</p>
 
 		    <h2>Will you be serving food?</h2>
-			<p class="block">Yes, there will be food options at the festival. No outside food or beverages will be permitted on site, with the exception of sealed or empty water bottles. More info and specific vendors will be added when we know more.</p>
+			<p class="block">Yes, there will be food options at the festival. No outside food or beverages will be permitted on site, with the exception of sealed or empty water bottles.</p>
+			<p>Our primary food vendor is <a href="http://edsdaily.com/">Ed's Daily</a>, a Strathcona commissary serving up fresh, fast and healthy fare. Expect an amazing selection of sandwiches, healthy vegetarian options, and various treats for purchase.</p>
 
 		    <h2>Are there in &amp; out privileges?</h2>
 			<p class="block">Yes. Your wristband allows you to come and go from the Fest as you please. But it must be on your wrist to get back in. And we'd hope this goes without saying, but you are not allowed to leave the venue with open beer.</p>

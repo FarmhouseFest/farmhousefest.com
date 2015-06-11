@@ -53,7 +53,7 @@ permalink: /2015/beer/
 			{% endfor %}
 		</ul>
 		
-		<ul class="brewery-list coming-soon">
+		<!--<ul class="brewery-list coming-soon">
 
 			{% for brewery in site.data.breweries.breweries %}
 				{% if brewery.type == "primary" %}
@@ -74,9 +74,9 @@ permalink: /2015/beer/
 				{% endif %}
 			{% endfor %}
 
-		</ul>
+		</ul>-->
 
-		<h3 class="styled secondary centered">Even more coming soon.<br /> Specific beers subject to availability &amp; distribution whims.</h3>
+		<h3 class="styled secondary centered">Specific beers subject to availability &amp; distribution whims.</h3>
 	</div>
 
 </div>
