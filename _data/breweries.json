@@ -133,9 +133,18 @@
             "description" : "",
             "beer" : [
                 {
+                    "name" : "Biere Premiere",
+                    "description" : "Experimental saison, 4.9%",
+                    "ratebeer" : "http://www.ratebeer.com/beer/the-commons-biere-premiere/338189/"
+                },
+                {
                     "name" : "Fleur de Blanc",
                     "description" : "Saison with rosehips & elderflower, 5%",
                     "ratebeer" : "http://www.ratebeer.com/beer/the-commons-fleur-de-blanc/229821/"
+                },
+                {
+                    "name" : "Motueka Saison",
+                    "description" : "Classic saison with a twist, 5.2%"
                 },
                 {
                     "name" : "Urban Farmhouse",
