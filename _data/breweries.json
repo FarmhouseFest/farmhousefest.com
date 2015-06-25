@@ -16,7 +16,7 @@
             "beer" : [
                 {
                     "name" : "Elysian Huckleberry Sour",
-                    "description" : "Berliner Weisse, 2.8%",
+                    "description" : "Berliner Weisse with huckleberries, 2.8%",
                     "ratebeer" : "http://www.ratebeer.com/beer/elysian--payette-huckleberry-berliner-weisse/285410/"
                 },
                 {
@@ -66,12 +66,16 @@
             "description" : "The Alibi Room's Nigel Springthorpe teamed up with Steamworks' Conrad Gmoser to open Brassneck way back in 2013, and already it's considered one of BC's premier beer factories. The recent addition of BC's first Foeder (pronounced &#8220;giant wooden tank in which one makes awesome beer&#8221;) has local sour and wild fanatics whipped into a frenzy.",
             "beer" : [
                 {
-                    "name" : "Stockholm Syndrome",
-                    "description" : "Brett Saison, 6.5%"
-                },
-                {
                     "name" : "Changeling",
                     "description" : "Sour ale with raspberries, 6%"
+                },
+                {
+                    "name" : "Sticks & Stones",
+                    "description" : "Rye Saison, 6.5%"
+                },
+                {
+                    "name" : "Stockholm Syndrome",
+                    "description" : "Brett Saison, 6.5%"
                 }
             ]
         },
@@ -151,6 +155,10 @@
             "logo" : "/images/breweries/coppertheory.min.png",
             "description" : "Being a Certified Cicerone wasn't enough for Adam Henderson. He had to go the extra mile and apply that highly-trained palate to searching out unique and interesting breweries around the globe and convince their owners that, of all the places on the planet, they absolutely had to import to BC.",
             "beer" : [
+                {
+                    "name" : "Breakside Amuse",
+                    "description" : "Saison, 5%"
+                },
                 {
                     "name" : "Cantillon Gueuze",
                     "description" : "Gueuze, 5%",
@@ -273,21 +281,25 @@
             "description" : "You know how, every few months, there's an almost-riot at your local beer store? The only evidence that remains after the tide of Plaid-wearing, likely-bearded hoard retreats is a few torn and trampled cardboard cases with a cryptic &#8220;Four Winds&#8221; logo. Throwing a Farmhouse Festival without inviting the yeast wranglers from Delta would be unthinkable.",
             "beer" : [
                 {
-                    "name" : "Pequeño Cabo",
-                    "description" : "Tequila barrel-aged Berliner Weisse"
-                },
-                {
-                    "name" : "Bistre",
-                    "description" : "Barrel-aged American dark sour"
+                    "name" : "Nectarous",
+                    "description" : "Dry-hopped sour"
                 },
                 {
                     "name" : "Operis",
                     "description" : "Brett saison"
                 },
                 {
-                    "name" : "Nectarous",
-                    "description" : "Dry-hopped sour"
-                }
+                    "name" : "Passionfruit Berliner Weisse",
+                    "description" : "Berliner Weisse"
+                },
+                {
+                    "name" : "Pequeño Cabo",
+                    "description" : "Tequila barrel-aged Berliner Weisse"
+                },
+                {
+                    "name" : "Sovereign",
+                    "description" : "Saison with brett and lacto"
+                },
             ]
         },
         {
@@ -359,12 +371,16 @@
                     "description" : "Turbid mash house sour, pitched with Cantillon dregs"
                 },
                 {
+                    "name" : "Checkpoint Charlie",
+                    "description" : "Berliner Weisse",
+                },
+                {
                     "name" : "Feet to the Fire",
                     "description" : "Classic Saison"
                 },
                 {
-                    "name" : "Checkpoint Charlie",
-                    "description" : "Berliner Weisse",
+                    "name" : "Historic Porter",
+                    "description" : "Porter with brett",
                 }
             ]
         },
@@ -377,17 +393,21 @@
             "description" : "Known informally as the brewpub where brewers go for lunch, The Moon re-devoted themselves to authentic German styles a few years back, including Weizen, Dunkel, and Pilsner. More recently we've been seeing a new direction into farmhouse and sour experiments that are rocketing this brewery up every beer geek's must-watch list.",
             "beer" : [
                 {
+                    "name" : "Hip as Funk",
+                    "description" : "Brett blond ale with New Zealand hops"
+                },
+                {
                     "name" : "Moon Berliner-style Weisse",
-                    "description" : "Traditional Berlinerweisse"
+                    "description" : "Berliner Weisse"
                 },
                 {
                     "name" : "Sang du Merle",
                     "description" : "Port barrel-aged sour ale with black currents",
                 },
                 {
-                    "name" : "Hip as Funk",
-                    "description" : "Brett blond ale with New Zealand hops"
-                }
+                    "name" : "Tempus Corvi",
+                    "description" : "Sour Saison",
+                },
             ]
         },
         {
@@ -455,13 +475,18 @@
             "description" : "It's everyone's dream to quit their job and start a brewery, right? Well, husband and wife team David Bowkett and Nicole Stefanopoulos did exactly that. Starting from a true 350 litre nano brewhouse, they accumulated enough awards and accolades to force a move to their new, larger brewery down Powell Street. With a new barrel program and experimentation with kettle souring, Powell Street has already proven an affinity for the styles we're all about.",
             "beer" : [
                 {
-                    "name" : "Mixed Fermentation Saison",
-                    "description" : "Experimental saison"
+                    "name" : "Brett Azacca",
+                    "description" : "American pale ale with brett"
                 },
                 {
-                    "name" : "Roggenbier",
-                    "description" : "Experimental sour rye beer"
-                }
+                    "name" : "Brett Saison",
+                    "description" : "Saison with brett"
+                },
+                {
+                    "name" : "Grisette",
+                    "description" : "Table saison"
+                },
+
             ]
         },
         {
@@ -513,6 +538,20 @@
                 {
                     "name" : "Grisette",
                     "description" : "Sour table saison"
+                }
+            ]
+        },
+        {
+            "name" : "Storm Brewing",
+            "id" : "storm",
+            "type" : "primary",
+            "url" : "http://www.stormbrewing.org/",
+            "logo" : "/images/breweries/storm.min.png",
+            "description" : "One of the first breweries in North America to brew sour beers, and proud of it. The granddaddy of sour, the pioneer of funk, James and Storm are legends on the local brewing scene.",
+            "beer" : [
+                {
+                    "name" : "Imperial Flanders Red",
+                    "description" : "Barrel-aged sour brown ale, 11%"
                 }
             ]
         },
@@ -628,8 +667,8 @@
             "description" : "Some breweries produce great beer in their first year. Some win an award for Best Beer in BC, and grab the attention and imagination of the local craft beer crowd. Haven't sampled a great farmhouse ale from Yellow Dog yet? You will.",
             "beer" : [
                 {
-                    "name" : "Roll Over Red",
-                    "description" : "Kettle soured red ale"
+                    "name" : "Super Secret White",
+                    "description" : "Kettle soured white ale with brett"
                 },
                 {
                     "name" : "Pilot Batch",
