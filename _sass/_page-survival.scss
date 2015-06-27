@@ -1,0 +1,99 @@
+/*
+
+    Survival Guide Layout
+
+*/
+
+.survival-nav {
+    margin: 1rem 2rem 3rem 2rem;
+
+    li {
+        list-style: none;
+    }
+    a {
+        display: block;
+        padding: 1rem;
+        margin: 0.5rem 0;
+        text-align: center;
+        color: $color-tan;
+        background: $color-salmon;
+        border-radius: 12px;
+    }
+
+
+    .panel {
+        padding: 1rem 2rem 0 2rem;
+    }
+
+}
+
+
+.survival-pourtimes {
+    padding: 1rem 2rem 3rem 2rem;
+    text-align: center;
+
+    h3.beer-name {
+        margin: 0;
+    }
+    .beer-description {
+        color: $color-salmon;
+    }
+}
+
+.survival-beer {
+    .brewery-list {
+        padding-top: 0;
+
+        .brewery {
+            padding-bottom: 1rem;
+        }
+
+        h3.secondary {
+            padding-bottom: 0;
+        }
+
+    }
+}
+
+
+
+.survival-map {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    @include screen-max-small {
+        max-height: 320px;
+    }
+}
+
+.survival-siteplan {
+    text-align: center;
+    margin-bottom: 4rem;
+
+    h3.secondary {
+        padding-bottom: 0;
+    }
+    ul {
+        list-style: none;
+        width: 100%;
+    }
+    em {
+        display: inline-block;
+        margin-right: 5px;
+        font-style: normal;
+        color: $color-salmon;
+    }
+
+}
+
+
+.survival-home {
+    margin-top: 2rem;
+
+    h3.secondary {
+        padding-bottom: 0;
+    }
+}

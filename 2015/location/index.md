@@ -51,7 +51,7 @@ permalink: /2015/location/
 
 		<div class="panel">
 			<h3 class="styled secondary">Taking Transit</h3>
-			<p>Route C20 services the <a href="http://ubcfarm.ubc.ca/contact-us/">UBC Farm</a> gate every 30 minutes, taking you to the UBC Loop, where connections are available to a wide array of bus routes.</p>
+			<p>Route C18 & C20 service the <a href="http://ubcfarm.ubc.ca/contact-us/">UBC Farm</a> gate every 30 minutes, taking you to the UBC Loop, where connections are available to a wide array of bus routes.</p>
 		</div>
 
 		<div class="panel">

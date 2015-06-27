@@ -93,6 +93,13 @@ $xxxlarge: 1400px;
 }
 
 
+@mixin screen-max-small {
+  @media (max-width: #{$small + 1px}) {
+    @content;
+  }
+}
+
+
 
 // silent class for clearfixing
 %clearfix {

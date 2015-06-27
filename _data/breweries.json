@@ -10,6 +10,7 @@
             "name" : "Beerthirst",
             "id" : "beerthirst",
             "type" : "primary",
+            "booth" : "17",
             "url" : "http://www.beerthirst.com/",
             "logo" : "/images/breweries/beerthirst.min.png",
             "description" : "Obsessed with craft beer, Beerthirst is all about finding great beers from around the world and bringing them back to Canada for everyone to enjoy. Expect an especially strong showing from west coast breweries at the Beerthirst tent this year.",
@@ -38,6 +39,12 @@
                     "name" : "Logsdon Oak-Aged Bretta",
                     "description" : "Sour Saison, 8%",
                     "ratebeer" : "http://www.ratebeer.com/beer/logsdon-oak-aged-bretta/179272/"
+                },
+                {
+                    "name" : "Logsdon Szech &amp; Brett",
+                    "description" : "Saison with spice",
+                    "type" : "limited",
+                    "pour-time" : "2:00"
                 },
                 {
                     "name" : "North Coast Le Merle",
@@ -83,14 +90,21 @@
             "name" : "Bravo Beer Co",
             "id" : "bravo",
             "type" : "primary",
+            "booth" : "15",
             "url" : "http://www.bravobeerco.com/",
             "logo" : "/images/breweries/bravo.min.png",
             "description" : "Bravo Beer Co focuses on premium, specialty beer. Bringing in a wide range of European beer with a focus on traditional Belgian breweries, we can look forward to some classic farmhouse ales that will provide a refreshing counterpoint to the more modern interpretations we'll see from BC breweries.",
             "beer" : [
                 {
-                    "name" : "Verhaege Duchesse de Bourgogne",
+                    "name" : "Verhaeghe Duchesse de Bourgogne",
                     "description" : "Flanders Red, 6.2%",
                     "ratebeer" : "http://www.ratebeer.com/beer/verhaeghe-duchesse-de-bourgogne/6945/"
+                },
+                {
+                    "name" : "Verhaeghe Victenaar",
+                    "description" : "Flemish red ale",
+                    "type" : "limited",
+                    "pour-time" : "1:30"
                 },
                 {
                     "name" : "Saison Dupont Vieille Provision",
@@ -185,10 +199,22 @@
             "name" : "Craft Beer Importers",
             "id" : "craftbeerimports",
             "type" : "primary",
+            "booth" : "28",
             "url" : "http://www.craftbeerimports.ca/craft/",
             "logo" : "/images/breweries/craft.min.png",
             "description" : "Founded with the vision of bringing only the best beers in the world to the Canadian market, Craft has an impressive portfolio ranging from Belgium to New Zealand to Oklahoma and beyond. Expect some interesting contrasts of Old World and New pouring at the Craft tent.",
             "beer" : [
+                {
+                    "name" : "8Wired Rastafari Unchained",
+                    "description" : "Sour stout",
+                    "type" : "limited",
+                    "pour-time" : "12:00"
+                },
+                {
+                    "name" : "De Molen / Anchorage Mud &amp; Funk",
+                    "description" : "Wild imperial stout",
+                    "ratebeer" : "http://www.ratebeer.com/beer/de-molen--anchorage-mud-funk/266315/"
+                },
                 {
                     "name" : "Omnipollo Magic #42",
                     "description" : "Sour witbier with passionfruit and key lime, 4.5%",
@@ -198,12 +224,7 @@
                     "name" : "Omnipollo Magic #7",
                     "description" : "Sour witbier with pineapple and spearmint",
                     "ratebeer" : "http://www.ratebeer.com/beer/omnipollo-magic-7--pineapple-and-fresh-spearmint-wit/270724/"
-                },
-                {
-                    "name" : "De Molen / Anchorage Mud &amp; Funk",
-                    "description" : "Wild Imperial Stout",
-                    "ratebeer" : "http://www.ratebeer.com/beer/de-molen--anchorage-mud-funk/266315/"
-                },
+                }
             ]
         },
         {
@@ -276,10 +297,17 @@
             "name" : "Four Winds Brewing",
             "id" : "fourwinds",
             "type" : "primary",
+            "booth" : "24",
             "url" : "http://www.fourwindsbrewing.ca/",
             "logo" : "/images/breweries/four-winds.min.png",
             "description" : "You know how, every few months, there's an almost-riot at your local beer store? The only evidence that remains after the tide of Plaid-wearing, likely-bearded hoard retreats is a few torn and trampled cardboard cases with a cryptic &#8220;Four Winds&#8221; logo. Throwing a Farmhouse Festival without inviting the yeast wranglers from Delta would be unthinkable.",
             "beer" : [
+                {
+                    "name" : "Edna",
+                    "description" : "Crabapple &amp; cranberry saison",
+                    "type" : "limited",
+                    "pour-time" : "2:30"
+                },
                 {
                     "name" : "Nectarous",
                     "description" : "Dry-hopped sour"
@@ -388,6 +416,7 @@
             "name" : "Moon Brewpub",
             "id" : "moon",
             "type" : "primary",
+            "booth" : "19",
             "url" : "http://www.moonunderwater.ca/",
             "logo" : "/images/breweries/moon.min.png",
             "description" : "Known informally as the brewpub where brewers go for lunch, The Moon re-devoted themselves to authentic German styles a few years back, including Weizen, Dunkel, and Pilsner. More recently we've been seeing a new direction into farmhouse and sour experiments that are rocketing this brewery up every beer geek's must-watch list.",
@@ -399,6 +428,12 @@
                 {
                     "name" : "Moon Berliner-style Weisse",
                     "description" : "Berliner Weisse"
+                },
+                {
+                    "name" : "Oud King Crow",
+                    "description" : "Barrel-aged sour ale",
+                    "type" : "limited",
+                    "pour-time" : "1:00"
                 },
                 {
                     "name" : "Sang du Merle",
@@ -590,6 +625,7 @@
             "name" : "UnTapped Craft Imports",
             "id" : "untapped",
             "type" : "primary",
+            "booth" : "1",
             "url" : "http://www.untapped.ca/",
             "logo" : "/images/breweries/untapped.min.png",
             "description" : "With an emphasis on Cascadia and Québec, UnTapped Craft Imports started in 2013 with a duo of homebrewers passionate about great beer and cider. UnTapped understands that the story of a great beer begins long before drinking it, and work to represent brands as passionate about beer, from start to finish, as they are.",
@@ -608,6 +644,12 @@
                     "name" : "Les Trois Mousquetaires Gose",
                     "description" : "Lightly salted sour mash ale with coriander",
                     "ratebeer" : "http://www.ratebeer.com/beer/les-trois-mousquetaires-hors-serie-gose/184013/"
+                },
+                {
+                    "name" : "Ale Apothecary Sahalie",
+                    "description" : "Wild ale",
+                    "type" : "limited",
+                    "pour-time" : "3:30"
                 }
             ]            
         },
@@ -627,6 +669,7 @@
             "name" : "Westbier",
             "id" : "westbier",
             "type" : "primary",
+            "booth" : "13",
             "url" : "http://www.westbier.com/",
             "logo" : "/images/breweries/westbier.min.png",
             "description" : "If there’s one thing Gerry West loves more than Belgian beer, it’s sharing that love with friends. Upon discovering that many of the beers he discovered in Europe weren’t available locally, he started Westbier to correct that oversight.",
@@ -655,6 +698,12 @@
                     "name" : "To Øl Snowball",
                     "description" : "Chardonnay barrel-aged saison",
                     "ratebeer" : "http://www.ratebeer.com/beer/to-ol-snowball-saison-aged-in-white-wine-barrels/204851/"
+                },
+                {
+                    "name" : "Brekeriet Cassis",
+                    "description" : "Sour blackberry ale",
+                    "type" : "limited",
+                    "pour-time" : "3:00"
                 }
             ]               
         },
