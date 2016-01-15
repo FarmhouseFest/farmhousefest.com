@@ -51,6 +51,12 @@
 // panel layouts
 .panel-container {
 
+	&.light {
+		color: $color-darkgrey;
+		background-color: $color-tan;
+		background-image: $texture;
+	}
+
 	.fixed-contents {
 		@extend %fixed-centered;
 		display: flex;

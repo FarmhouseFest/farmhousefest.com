@@ -18,6 +18,6 @@
   class: nav-faq
   url: /2015/faq/
 
-- text: Buy Tickets
-  class: nav-tickets
-  url: http://farmhousefest2015.eventbrite.ca/
+- text: About
+  class: nav-about
+  url: /2015/about/
