@@ -60,5 +60,8 @@ permalink: /2016/beer/
 				{% endif %}
 			{% endfor %}
 		</ul>
+		<h3 class="full-width spaced">
+			With many more still to come&#8230;
+		</h3>
 
 </div>
