@@ -1,0 +1,267 @@
+/*
+
+    2016
+    main header layout
+
+*/
+
+
+.site-header {
+
+    position: absolute;
+    z-index: 50;
+    width: 100%;
+
+    .wrapper {
+        @extend %set-screen-width;
+
+        display: flex;
+        margin: 0;
+
+        @include screen-large {
+            margin: 0 auto;
+        }
+    }
+
+    .panel {
+        flex: 1 1 50%;        
+    }
+
+    @media (min-width: $large) {
+        // naaahh
+        // position: fixed;
+    }
+
+}
+
+
+
+
+
+// default to not showing mobile menu controls for larger screens
+.menu-icon, .closeControl {
+    display: none;
+}
+
+.site-nav {    
+
+    height: $site-nav-height;
+    padding: 0;
+    margin: 0;
+
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    @include screen-large {
+
+        padding: 0 30px;
+        background: $color-salmon;
+
+        ul {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+        li {
+            flex: 0 0 auto;
+
+            &.nav-tickets {
+                flex: 1 1 100%;
+                text-align: right;
+
+                a {
+                    color: $color-tan;
+                    background-color: $color-grey;
+                    padding: 8px 16px;
+
+                    &:hover, &:focus {
+                        color: $color-white;
+                        background-color: $color-grey-dark;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+    }
+
+}
+
+
+.site-nav-item {
+    margin: 0;
+    list-style: none;
+
+    a {
+        color: $color-tan;
+
+        font-family: $alt-font-family;
+        font-size: $alt-font-size * 0.83333333333333;
+        text-transform: uppercase;
+        white-space: nowrap;
+
+        &:hover, &:focus {
+            color: $color-white;
+        }
+
+        @include screen-large {
+            padding: 0.25rem 1rem 0.25rem 0;
+        }
+
+    }
+
+    @include screen-xxxlarge {
+        padding-top: 0.75rem;
+        a {
+            padding: 0.5rem 0.75rem;
+        }
+    }
+
+}
+
+
+// collapsed menu overrides
+
+@media (max-width: $large) {
+
+    .site-nav {
+        position: fixed;
+
+        top: 0;
+        right: 0;
+
+        .menu {
+            visibility: hidden;
+        }
+    }
+
+    .menu-icon, .closeControl {
+        display: block;
+        float: right;
+        width: 68px;
+        height: 68px;
+        line-height: 0;
+    }
+    .menu-icon {
+
+        padding: 1.3rem 1rem 1.5rem 0;
+        text-align: right;
+        background-color: $color-salmon;
+
+        > svg {
+            width: 32px;
+            height: auto;
+
+            path {
+                fill: $color-tan;
+            }
+        }
+    }
+    a.closeControl, a.closeControl:hover, a.closeControl:focus {
+        padding: 2.3rem 0 0 0.25rem;
+        font-size: 2.5rem;
+        color: $color-tan;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .menu {
+        position: fixed;
+        top: 0;
+        z-index: 100;
+        width: 100%;
+        margin: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.15s ease-out;
+
+        &.is-active {
+            max-height: 384px;
+        }
+    }
+
+    .site-nav-wrapper {
+        display: none;
+        position: absolute;
+        top: 74px;
+        left: 0;
+        width: 100%;
+        padding: 1rem 0 0.25rem 0;
+        margin: 0;
+        clear: both;
+        text-align: left;
+        background-color: rgba($color-tan, 0.95);
+    }
+
+    .site-nav-item {
+
+        a {
+            display: block;
+            border-radius: 0;
+            padding: 0 1rem;
+
+            color: $color-tan;
+            background-color: $color-grey;
+
+            &:hover, &:focus {
+                text-decoration: none;
+            }
+        }
+
+    }
+
+    .nav-tickets a {
+        color: $color-salmon;
+    }
+
+}
+
+// minor style tweaking for tablet
+
+@media (max-width: $medium) {
+    .menu-icon {
+        background-color: $color-tan;
+        > svg {
+            path {
+                fill: $color-salmon;
+            }
+        }
+    }
+}
+
+
+
+// logo
+.site-title {
+
+    display: inline-block;
+    width: 72px;
+    height: 78px;
+    background: $color-tan;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: all 0.1s ease-out;
+
+    img {
+        flex: 0 0 42px;
+        width: 42px;
+        opacity: 0.95;
+
+        &:hover, &:focus {
+            opacity: 1;
+        }
+    }
+
+    @include screen-large {
+        width: 98px;
+        height: $site-nav-height;
+    }
+
+}
+
+

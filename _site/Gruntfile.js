@@ -5,7 +5,8 @@ module.exports = function(grunt) {
     cssmin: {
       target: {
         files: {
-          '_site/css/main-2015.css': '_site/css/main-2015.css'
+          '_site/css/main-2015.css': '_site/css/main-2015.css',
+          '_site/css/main-2016.css': '_site/css/main-2016.css'          
         }
       }
     },
@@ -14,9 +15,13 @@ module.exports = function(grunt) {
       options: {
         browsers: ['last 2 versions']
       },
-      single_file: {
-        src: '_site/css/main-2015.css'
+
+      multiple_files: {
+        files: [{
+          src: '_site/css/*.css'
+        }]
       }
+
     },
 
     smarttext: {

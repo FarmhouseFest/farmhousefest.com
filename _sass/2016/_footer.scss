@@ -1,0 +1,99 @@
+/*
+
+    2016
+    main footer layout
+
+*/
+
+
+.site-footer {
+
+    padding: 0;
+    text-align: center;
+
+    p, ul {
+        margin: 0;
+    }
+
+
+    .wrapper {
+        @extend %clearfix;
+        @extend %fixed-centered;
+    }
+
+    .sponsor-title {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .sponsors {
+        &.show {
+            display: block;
+            padding: 3rem 0;
+        }
+    }
+
+
+}
+
+.site-footer-extras {
+
+    padding: 0;
+
+    .wrapper {
+        padding: 3.25rem 2.5rem;
+
+        color: $color-tan;
+        background-color: $color-salmon;
+    }
+    .copyright {
+        display: inline-block;
+        padding-top: 0.25rem;
+        font-size: 1.25rem;
+
+        @include screen-medium {
+            float: left;
+        }
+    }
+
+}
+
+.social-media-list {
+
+    padding-top: 1rem;
+
+    li {
+        display: inline-block;
+        margin: 0 1rem;
+        list-style: none;
+    }
+
+    a {
+        display: inline-block;
+        opacity: 0.8;
+        width: 32px;
+        height: 32px;
+        padding-left: 32px;
+        overflow: hidden;
+        background-size: 32px 32px;
+        &:hover, &:focus {
+            opacity: 1;
+        }
+    }
+
+    .social-twitter a {
+        background-image: url(/images/2016/svg/twitter.svg);
+    }
+    .social-facebook a {
+        background-image: url(/images/2016/svg/facebook.svg);
+    }
+    .social-instagram a {
+        background-image: url(/images/2016/svg/instagram.svg);
+    }
+
+    @include screen-medium {
+        float: right;
+        padding-top: 0;
+        margin-left: 2rem;
+    }
+}

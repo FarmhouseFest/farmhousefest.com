@@ -1,0 +1,23 @@
+- text: Fest
+  class: nav-festival
+  url: /2016/festival/
+
+- text: Beer
+  class: nav-beer
+  url: /2016/beer/
+
+- text: Venue
+  class: nav-venue
+  url: /2016/venue/
+
+- text: Info
+  class: nav-info
+  url: /2016/info/
+
+- text: Contact
+  class: nav-contact
+  url: /2016/contact/
+
+- text: Tickets
+  class: nav-tickets
+  url: https://farmhousefest2016.eventbrite.ca/

@@ -35,8 +35,8 @@ permalink: /2015/survival-guide/
 
 		<h2 class="styled full-width">The Venue</h2>
 
-		<a href="/images/site-map.png">
-			<img src="/images/site-map.png" alt="Bus Map" class="survival-map" />
+		<a href="/images/2015/site-map.png">
+			<img src="/images/2015/site-map.png" alt="Bus Map" class="survival-map" />
 		</a>
 
 		<h3 class="styled secondary">Local Breweries</h3>
@@ -138,8 +138,8 @@ permalink: /2015/survival-guide/
 
 		<div class="panel">
 
-			<a href="/images/bus-map.png">
-				<img src="/images/bus-map.png" alt="Bus Map" class="survival-map" />
+			<a href="/images/2015/bus-map.png">
+				<img src="/images/2015/bus-map.png" alt="Bus Map" class="survival-map" />
 			</a>
 
 			<p>Route C18 &amp; C20 service the <a href="http://ubcfarm.ubc.ca/contact-us/">UBC Farm</a> gate every 30 minutes, taking you to the UBC Loop, where connections are available to the 99 B-Line, 33, 41, 49 etc. bus loops that will take you west to downtown or connecting points.</p>

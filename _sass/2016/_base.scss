@@ -1,0 +1,125 @@
+/*
+
+    2016
+    Basic reset
+
+*/
+* {
+    box-sizing: border-box;
+}
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+    margin: 0;
+    padding: 0;
+}
+/* Set `margin-bottom` to maintain vertical rhythm */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+    margin-bottom: $spacing-unit / 2;
+}
+
+
+
+
+/*
+
+ Basic HTML element styling
+
+*/
+body {
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    font-weight: 300;
+    color: $color-grey;
+    background-color: $color-tan;
+    -webkit-text-size-adjust: 100%;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+ul, ol {
+    margin-left: $spacing-unit;
+}
+li {
+    > ul,
+    > ol {
+         margin-bottom: 0;
+    }
+}
+
+
+
+
+
+
+
+/**
+ * Headings
+ */
+h1, h2, h3, h4, h5, h6 {
+    @extend %site-header;
+    line-height: 1;
+}
+.header-alt {
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: -0.05rem;
+}
+
+
+
+
+
+/**
+ * Block control
+ */
+.block {
+    margin-bottom: 2rem;
+}
+.centered {
+    text-align: center;
+}
+
+
+/**
+ * Links
+ */
+a {
+    color: $color-salmon;
+    text-decoration: none;
+
+    &:visited {
+        color: darken($color-salmon, 15%);
+    }
+
+    &:hover {
+        color: $color-grey;
+        text-decoration: underline;
+    }
+}
+
+
+
+
+
+/**
+ * Clearfix
+ */
+%clearfix {
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}

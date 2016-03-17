@@ -55,7 +55,7 @@ permalink: /2015/festival/
 
 			<ul class="participating">
 
-				{% for brewery in site.data.breweries.breweries %}
+				{% for brewery in site.data.2015.breweries.breweries %}
 					<li class="beer">
 						<a href="/2015/beer/#{{ brewery.id }}">
 							<img class="logo" src="{{ brewery.logo }}" alt="{{ brewery.name }}" />

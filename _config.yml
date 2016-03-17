@@ -8,7 +8,7 @@ url: "http://farmhousefest.com" # the base hostname & protocol for your site
 twitter_username: farmhousefest
 instagram_username: farmhousefest
 facebook_username: FarmhouseFest
-ticket_link: http://farmhousefest2015.eventbrite.ca/
+ticket_link: https://farmhousefest2016.eventbrite.ca/
 
 # Build settings
 markdown: kramdown

@@ -27,7 +27,7 @@ permalink: /2015/beer/
 	<div class="fixed-contents">
 		<ul class="brewery-list">
 
-			{% for brewery in site.data.breweries.breweries %}
+			{% for brewery in site.data.2015.breweries.breweries %}
 				{% if brewery.type == "primary" %}
 					{% if brewery.beer %}
 					<li class="brewery" id="{{ brewery.id }}">

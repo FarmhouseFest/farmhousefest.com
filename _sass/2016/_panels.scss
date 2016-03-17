@@ -1,0 +1,292 @@
+/*
+
+	2016
+    panels & variations
+
+*/
+
+
+// panel basics
+.panel {
+
+	.full-width {
+		width: 100%;
+		text-align: center;
+	}
+
+
+	&.brand {
+		color: $color-tan;
+		background-color: $color-salmon;
+	}
+
+	&.dark {
+		color: $color-tan;
+		background-color: $color-grey;
+
+		a {
+			color: $color-white;
+		}
+	}
+
+	&.light {
+		color: $color-grey;
+	}
+
+	&.silent {
+		display: none;
+		@include screen-medium {
+			display: block;
+		}
+	}
+
+}
+
+
+// panel layouts
+.panel-container {
+
+	&.light {
+		color: $color-grey;
+		background-color: $color-tan;
+		background-image: $texture;
+	}
+
+	.fixed-contents {
+		@extend %fixed-centered;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.panel {
+		padding: 2rem;
+	}
+	.short {
+		padding: 1rem 2rem;
+	}
+
+	.full-width {
+		width: 100%;
+		text-align: center;
+	}
+
+	@include screen-medium {
+
+		.panel {
+			padding: 3rem 2rem;			
+		}
+		.short {
+			padding: 1rem 2rem;
+		}
+
+		&.two-up {
+
+			.contents, .fixed-contents {
+				display: flex;
+			}
+
+			.panel {
+				flex: 1 1 50%;
+				align-items: center;
+			}
+
+			@include screen-medium {
+
+				.panel {
+					position: relative;
+					&.with-button {
+						padding-bottom: 8rem;
+					}
+				}
+				.button {
+					position: absolute;
+					left: 2rem;
+					bottom: 3rem;
+
+					width: calc(100% - 2em);
+				}
+			}
+
+		}
+
+
+		&.three-up {
+			display: flex;
+
+			.panel {
+				flex: 1 1 33%;
+				align-items: center;
+			}
+
+		}
+	}
+}
+
+
+// simple column variation
+.simple-columns {
+
+	.col {
+		padding: 2rem 0 0 0;
+	}
+
+	@include screen-medium {
+
+		.col {
+			padding: 2rem 2rem 0 2rem;
+			&:first-child {
+				padding-left: 0;
+			}
+			&:last-child {
+				padding-right: 0;
+			}
+		}
+
+		&.two-up {
+			display: flex;
+
+			.col {
+				flex: 1 1 50%;
+				align-items: center;
+			}
+		}
+
+
+		&.three-up {
+			display: flex;
+
+			.col {
+				flex: 1 1 33%;
+				align-items: center;
+			}
+
+		}
+	}
+}
+
+
+
+
+// photo panels
+.panel.photo {
+
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	// set min-heights for standalone photos
+	.one-up & {
+
+		width: 100%;
+		height: 180px;
+
+		@include screen-small {
+			height: 300px;
+		}
+		@include screen-medium {
+			height: 400px;
+		}
+
+	}
+	.two-up.photos & {
+
+		width: 50%;
+		height: 160px;
+
+		@include screen-small {
+			height: 220px;
+		}
+		@include screen-medium {
+			height: 300px;
+		}
+
+	}
+
+	.three-up.photos & {
+
+		width: 50%;
+		height: 120px;
+
+		@include screen-small {
+			width: 33.3333%;
+			height: 185px;
+		}
+		@include screen-medium {
+			height: 200px;
+		}
+
+	}
+
+
+	&.farm1 {
+		background-image: url(/images/2016/photos/farm1.min.jpg);
+	}
+	&.farm2 {
+		background-image: url(/images/2016/photos/farm2.min.jpg);
+	}
+	&.farm3 {
+		background-image: url(/images/2016/photos/farm3.min.jpg);
+	}
+	&.festival-wide {
+		background-image: url(/images/2016/photos/festival-wide.min.jpg);
+	}
+	&.beerglass {
+		background-image: url(/images/2016/photos/beerglass.min.jpg);
+	}
+	&.cornhole {
+		background-image: url(/images/2016/photos/cornhole.min.jpg);
+	}
+	&.dageraad {
+		background-image: url(/images/2016/photos/dageraad.min.jpg);
+	}
+	&.groupmq {
+		background-image: url(/images/2016/photos/groupmq.min.jpg);
+	}
+	&.orchard2 {
+		background-image: url(/images/2016/photos/orchard2.min.jpg);
+	}
+	&.orchard3 {
+		background-image: url(/images/2016/photos/orchard3.min.jpg);
+	}
+	&.shade {
+		background-image: url(/images/2016/photos/shade.min.jpg);
+	}
+	&.tent {
+		background-image: url(/images/2016/photos/tent.min.jpg);
+	}
+	&.txotx {
+		background-image: url(/images/2016/photos/txotx.min.jpg);
+	}
+	&.untapped2 {
+		background-image: url(/images/2016/photos/untapped2.min.jpg);
+	}
+
+}
+
+
+// control custom image hiding for symmetry at various breakpoints
+@media (max-width: $small) {
+
+	.panel-container.break-2 {
+		.panel:nth-child(1), .panel:nth-child(3) {
+			display: none;
+		}
+		.panel:nth-child(2) {
+			width: 100%;
+			height: 200px;
+		}
+	}
+
+	.panel-container.break-9 {
+		.panel:nth-child(7), .panel:nth-child(8), .panel:nth-child(9) {
+			display: none;
+		}
+	}
+
+}
+
+@media (max-width: $medium) {
+	.large-only {
+		display: none;
+	}
+}

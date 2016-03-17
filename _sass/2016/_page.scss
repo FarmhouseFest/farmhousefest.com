@@ -1,0 +1,129 @@
+/*
+
+	2016
+    page layout configuration
+
+*/
+
+
+// clearing the header
+.page-content {
+	padding-top: $site-nav-height;
+}
+
+
+
+// general title styling
+.styled {
+    font-family: $base-font-family;
+    font-size: $base-font-size * 1.5;
+    line-height: $base-line-height;
+    text-transform: none;
+}
+.secondary {
+    color: $color-salmon;
+    font-size: $alt-font-size;
+}
+
+
+// main page titles
+.page-intro {
+
+	padding-top: 3rem;
+
+	.page-title {
+		@extend %fixed-centered;
+	}
+}
+
+.page-title {
+
+	padding-left: 1rem;
+	font-size: $title-font-size * 0.6363;
+
+	@include screen-small {
+		background-image: url(/images/2016/art-right.min.png);
+		background-repeat: no-repeat;
+		background-position: 100% 0;
+		background-size: auto 90%;
+	}
+	@include screen-medium {
+		font-size: $title-font-size;
+		line-height: 1;
+	}
+	@include screen-large {
+		padding-left: 0;
+	}
+
+}
+
+.one-up .page-title {
+	padding-left: 0;
+}
+
+
+// secondary titles
+.content-container {
+	@extend %fixed-centered;
+}
+.secondary-title {
+
+	padding: 1rem 2rem 0.7rem 2rem;
+	font-size: $title-font-size * 0.5454;
+	line-height: 0.9;
+
+	color: $color-tan;
+	background: $color-grey;
+}
+
+
+// paragraph text styling
+.content-intro {
+	padding: 2rem;
+}
+
+// link styling
+.link-silent, .link-silent:visited {
+	color: $color-grey;
+}
+
+
+// location page: map
+.map {
+    width: 100%;
+    margin-top: -0.7rem;
+
+    background-color: #b2a397;
+    background-image: $texture;
+
+
+    height: 300px;
+
+    @include screen-medium {
+	    height: 500px;
+    }
+
+    a {
+    	display: block;
+    	width: 100%;
+    	height: 100%;
+    	text-indent: -999px;
+
+	    background-color: #b2a397;
+	    background-image: url(/images/2016/map-small.min.jpg);
+	    background-size: 160%;
+	    background-repeat: no-repeat;
+	    background-position: center;
+
+	    @include screen-medium {
+		    background-image: url(/images/2016/map.min.jpg);
+		    background-size: 150%;
+		    opacity: 0.9;
+	    }
+
+	    &:hover, &:focus {
+	    	opacity: 1;
+	    }
+    }
+
+}

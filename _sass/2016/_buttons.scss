@@ -1,0 +1,33 @@
+/*
+
+    2016
+    buttons & variations
+
+*/
+
+
+.button, a.button {
+
+    display: block;
+    width: auto;
+    padding: 0.5rem;
+    border: solid 1px $color-tan;
+    border-radius: 2px;
+
+    color: $color-tan;
+
+    font-family: $alt-font-family;
+    font-size: $alt-font-size * 0.75;
+    line-height: 1;
+
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+
+    &:hover, &:focus {
+        color: $color-white;
+        border-color: $color-white;
+        text-decoration: none;
+    }
+
+}

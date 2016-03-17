@@ -1,0 +1,154 @@
+{
+    "breweries": [
+        {
+            "name" : "Beerthirst",
+            "id" : "beerthirst",
+            "type" : "primary",
+            "url" : "http://www.beerthirst.com/",
+            "logo" : "/images/2016/logos/beerthirst.png",
+        },
+        {
+            "name" : "Callister Brewing",
+            "id" : "callister",
+            "type" : "primary",
+            "url" : "http://callisterbrewing.com/",
+            "logo" : "/images/2016/logos/callister.png"
+        },
+        {
+            "name" : "Copper &amp; Theory",
+            "id" : "copperandtheory",
+            "type" : "primary",
+            "url" : "http://copperandtheory.com/",
+            "logo" : "/images/2016/logos/copper-theory.png"
+        },
+        {
+            "name" : "Dageraad Brewing",
+            "id" : "dageraad",
+            "type" : "primary",
+            "url" : "http://dageraadbrewing.com/",
+            "logo" : "/images/2016/logos/dageraad.png"
+        },
+        {
+            "name" : "Field House Brewing",
+            "id" : "fieldhouse",
+            "type" : "primary",
+            "url" : "http://fieldhousebrewing.com/",
+            "logo" : "/images/2016/logos/field-house.png"
+        },
+        {
+            "name" : "Four Winds Brewing",
+            "id" : "fourwinds",
+            "type" : "primary",
+            "url" : "http://www.fourwindsbrewing.ca/",
+            "logo" : "/images/2016/logos/four-winds.png"
+        },
+        {
+            "name" : "Fuggles & Warlock Craftworks",
+            "id" : "fuggles&warlock",
+            "type" : "primary",
+            "url" : "http://fuggleswarlock.com/",
+            "logo" : "/images/2016/logos/fuggles-warlock.png"
+        },
+        {
+            "name" : "Main Street Brewing",
+            "id" : "mainstreet",
+            "type" : "primary",
+            "url" : "http://mainstreetbeer.ca/",
+            "logo" : "/images/2016/logos/main-street.png"
+        },
+        {
+            "name" : "Moody Ales",
+            "id" : "moody",
+            "type" : "primary",
+            "url" : "http://www.moodyales.com/",
+            "logo" : "/images/2016/logos/moody.png"
+        },
+        {
+            "name" : "Moon Under Water",
+            "id" : "moon",
+            "type" : "primary",
+            "url" : "http://www.moonunderwater.ca/",
+            "logo" : "/images/2016/logos/moon.png"
+        },
+        {
+            "name" : "Parallel 49 Brewing",
+            "id" : "p49",
+            "type" : "primary",
+            "url" : "http://parallel49brewing.com/",
+            "logo" : "/images/2016/logos/p49.png"
+        },
+        {
+            "name" : "pFriem Brewing",
+            "id" : "pfriem",
+            "type" : "primary",
+            "url" : "http://www.pfriembeer.com/",
+            "logo" : "/images/2016/logos/pfriem.png"
+        },
+        {
+            "name" : "Steel Toad Brewing",
+            "id" : "steeltoad",
+            "type" : "primary",
+            "url" : "http://steeltoad.ca/",
+            "logo" : "/images/2016/logos/steel-toad.png"
+        },
+        {
+            "name" : "Steel &amp; Oak Brewing",
+            "id" : "steelandoak",
+            "type" : "primary",
+            "url" : "http://steelandoak.ca/",
+            "logo" : "/images/2016/logos/steel-oak.png"
+        },
+        {
+            "name" : "Strange Fellows Brewing",
+            "id" : "strangefellows",
+            "type" : "primary",
+            "url" : "http://www.strangefellowsbrewing.com/",
+            "logo" : "/images/2016/logos/strange-fellows.png"
+        },
+        {
+            "name" : "Trading Post Brewing",
+            "id" : "tradingpost",
+            "type" : "primary",
+            "url" : "http://tradingpostbrewing.com/",
+            "logo" : "/images/2016/logos/trading-post.png"
+        },
+        {
+            "name" : "Twin Sails Brewing",
+            "id" : "twinsails",
+            "type" : "primary",
+            "url" : "http://twinsailsbrewing.com/",
+            "logo" : "/images/2016/logos/twin-sails.png"
+        },
+        {
+            "name" : "Txotx Basque Imports",
+            "id" : "txotx",
+            "type" : "primary",
+            "url" : "http://txotx.ca/",
+            "logo" : "/images/2016/logos/txotx.png"
+        },
+        {
+            "name" : "UnTapped Craft Imports",
+            "id" : "untapped",
+            "type" : "primary",
+            "url" : "http://www.untapped.ca/",
+            "logo" : "/images/2016/logos/untapped.png",
+        },
+        {
+            "name" : "Westbier",
+            "id" : "westbier",
+            "type" : "primary",
+            "booth" : "13",
+            "url" : "http://www.westbier.com/",
+            "logo" : "/images/2016/logos/westbier.png",
+        },
+        {
+            "name" : "Yellow Dog Brewing",
+            "id" : "yellowdog",
+            "type" : "primary",
+            "url" : "http://www.yellowdogbeer.com/",
+            "logo" : "/images/2016/logos/yellow-dog.png"
+        }
+
+
+    ]
+}

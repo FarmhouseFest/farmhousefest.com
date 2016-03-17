@@ -1,0 +1,37 @@
+/*
+
+    2016
+    sponsor styling
+
+*/
+
+
+.sponsor-list {
+
+}
+.sponsors-small {
+
+    @extend %set-screen-width;
+    margin: 0 auto;
+    text-align: center;
+
+    .sponsor {
+        display: inline-block;
+        list-style: none;
+
+        img {
+            display: inline-block;
+            width: 50px;
+            max-height: 50px;
+            margin: 0 1rem 1rem 1rem;
+
+            @include screen-medium {
+                width: 70px;
+                max-height: 70px;
+            }
+        }
+
+    }
+
+
+}
