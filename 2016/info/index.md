@@ -59,6 +59,9 @@ permalink: /2016/info/
 			<p class="block">Farmhouse Fest will proceed rain or shine. In addition to plentiful open air seating, a lot more covered seating will be provided this year, to block out the blazing sun if nothing else. If the weather looks uncertain, make sure to bring an umbrella.</p>
 
 		    <h2>Who&#8217;s running this thing?</h2>
+
+			Your friendly neighbourhood organizing crew consists of Jonathan Evans (@jonnybeers), Lynn McIlwee (@hopscanary), Dave Shea (@mezzoblue), Matt Kump (@kump), and Simon Droscher (@foodandbier).
+
 		    <p class="block">Your friendly neighbourhood organizing crew consists of <a href="https://twitter.com/JonnyBeers">@jonnybeers</a>, <a href="https://twitter.com/mezzoblue">@mezzoblue</a>, <a href="https://twitter.com/HopsCanary">@hopscanary</a>, <a href="https://twitter.com/kump">@kump</a>, and <a href="https://twitter.com/foodandbier">@foodandbier</a>.</p>
 
 		    <h2>Where did last year&#8217;s site go?</h2>
