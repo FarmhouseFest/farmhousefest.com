@@ -8,6 +8,13 @@
             "logo" : "/images/2016/logos/beerthirst.png",
         },
         {
+            "name" : "Brassneck",
+            "id" : "brassneck",
+            "type" : "primary",
+            "url" : "http://www.brassneck.ca/",
+            "logo" : "/images/2016/logos/brassneck.png",
+        },
+        {
             "name" : "Callister Brewing",
             "id" : "callister",
             "type" : "primary",
