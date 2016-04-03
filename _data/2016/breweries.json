@@ -1,6 +1,13 @@
 {
     "breweries": [
         {
+            "name" : "Astarbe Sidreria",
+            "id" : "astarbe",
+            "type" : "primary",
+            "url" : "http://www.astarbesagardotegia.com/",
+            "logo" : "/images/2016/logos/astarbe.png",
+        },
+        {
             "name" : "Beerthirst",
             "id" : "beerthirst",
             "type" : "primary",
@@ -99,6 +106,13 @@
             "logo" : "/images/2016/logos/pfriem.png"
         },
         {
+            "name" : "Shacksbury Cider",
+            "id" : "shacksbury",
+            "type" : "primary",
+            "url" : "http://www.shacksbury.com/",
+            "logo" : "/images/2016/logos/shacksbury.png"
+        },
+        {
             "name" : "Steel Toad Brewing",
             "id" : "steeltoad",
             "type" : "primary",
@@ -154,6 +168,14 @@
             "booth" : "13",
             "url" : "http://www.westbier.com/",
             "logo" : "/images/2016/logos/westbier.png",
+        },
+        {
+            "name" : "Woodland Empire",
+            "id" : "woodlandempire",
+            "type" : "primary",
+            "booth" : "13",
+            "url" : "http://woodlandempire.com/",
+            "logo" : "/images/2016/logos/woodland-empire.png",
         },
         {
             "name" : "Yellow Dog Brewing",
