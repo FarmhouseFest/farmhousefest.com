@@ -141,6 +141,20 @@
             "logo" : "/images/2016/logos/trading-post.png"
         },
         {
+            "name" : "Les Trois Mousequetaires",
+            "id" : "ltm",
+            "type" : "primary",
+            "url" : "http://www.lestroismousquetaires.ca/",
+            "logo" : "/images/2016/logos/ltm.png"
+        },
+        {
+            "name" : "Le Trou du Diable",
+            "id" : "ltdd",
+            "type" : "primary",
+            "url" : "http://troududiable.com/",
+            "logo" : "/images/2016/logos/ltdd.png"
+        },
+        {
             "name" : "Twin Sails Brewing",
             "id" : "twinsails",
             "type" : "primary",
