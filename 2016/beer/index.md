@@ -48,7 +48,7 @@ permalink: /2016/beer/
 				{% if brewery.type == "primary" %}
 					<li class="brewery" id="{{ brewery.id }}">
 						<a href="{{ brewery.url }}" class="brewery-logo">
-							<img class="logo" src="{{ brewery.logo }}" alt="{{ brewery.name }}" />
+							<img class="logo ff-fix" src="{{ brewery.logo }}" alt="{{ brewery.name }}" />
 						</a>
 						<div class="details">
 							<a href="{{ brewery.url }}">
