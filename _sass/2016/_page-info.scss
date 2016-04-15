@@ -1,0 +1,41 @@
+/*
+
+    2016
+    info page custom layout
+
+*/
+
+
+.food-list {
+
+    display: flex;
+    flex-wrap: wrap;
+
+    .vendor {
+        display: flex;
+        align-items: center;
+
+        width: 100%;
+        padding: 0 1rem 3rem 1rem;
+
+        list-style: none;
+        text-align: left;
+    }
+    .vendor-logo {
+        flex: 0 0 7rem;
+        margin: 0 2rem 1rem auto;
+        text-align: center;
+    }
+
+
+    @include screen-medium {
+
+        .vendor {
+            flex: 0 0 33%;
+            width: auto;
+            padding-bottom: 3rem;
+        }
+
+    }
+}
+
