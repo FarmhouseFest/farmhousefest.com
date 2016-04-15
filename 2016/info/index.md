@@ -29,14 +29,14 @@ permalink: /2016/info/
 			<p class="block">Yes, please bring your EventBrite ticket as a printout, a PDF, or in Passbook. We will be scanning your ticket on entry.</p>
 
 		    <h2>How much are additional tokens?</h2>
-			<p class="block">$10 will get you 6 tokens, good for a 4oz pour each. Every beer we pour will cost a single token.</p>
+			<p class="block">$10 will get you 6 tokens, good for a 4oz pour each. Every beer we pour will cost a single token. We accept Visa, Mastercard and good old cash for token sales.</p>
 
 		    <h2>Can I ask for a refund on a ticket I bought?</h2>
 			<p class="block">Sorry, no. All ticket sales are final. If circumstances have changed and you're unable to attend, we will honour tickets that have been transferred.</p>
 
 
 		    <h2>Will there be food?</h2>
-			<p class="block">Absolutely. This year we have lined up three food trucks to provide a wide variety of omnivorous and vegetarian choice: <a href="http://www.thepressurebox.ca/">Pressure Box</a>, <a href="http://tacofino.com/menus/VANCOUVER">Tacofino</a>, and <a href="http://viateverepizzeria.com/">Via Tevere&#8217;s</a> food truck. Please bring cash in case your choice of truck doesn&#8217;t process plastic.</p>
+			<p class="block">Absolutely. This year we have lined up three food trucks to provide a wide variety of omnivorous and vegetarian choices, available for purchase: <a href="http://www.thepressurebox.ca/">Pressure Box</a>, <a href="http://tacofino.com/menus/VANCOUVER">Tacofino</a>, and <a href="http://viateverepizzeria.com/">Via Tevere&#8217;s</a> food truck. Please bring cash in case your choice of truck doesn&#8217;t process plastic.</p>
 
 
 			<ul class="food-list">
