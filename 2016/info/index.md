@@ -38,8 +38,6 @@ permalink: /2016/info/
 		    <h2>Will there be food?</h2>
 			<p class="block">Absolutely, there will be multiple food booths at the festival this year, offering great selection for vegetarians and omnivores alike. No outside food or beverages will be permitted on site, with the exception of sealed or empty water bottles.</p>
 
-			<p class="block">This year we have lined up three food trucks to provide a wide variety of choices, available for purchase: <a href="http://www.thepressurebox.ca/">Pressure Box</a>, <a href="http://tacofino.com/menus/VANCOUVER">Tacofino</a>, and <a href="http://viateverepizzeria.com/">Via Tevere&#8217;s</a> food truck. Please bring cash in case your choice of truck doesn&#8217;t process plastic.</p>
-
 			<ul class="food-list">
 				<li class="vendor" id="pressure-box">
 					<a href="http://www.thepressurebox.ca/" class="vendor-logo">
@@ -57,6 +55,8 @@ permalink: /2016/info/
 					</a>
 				</li>
 			</ul>
+
+			<p class="block">This year we have lined up three food trucks to provide a wide variety of choices, available for purchase: <a href="http://www.thepressurebox.ca/">Pressure Box</a>, <a href="http://tacofino.com/menus/VANCOUVER">Tacofino</a>, and <a href="http://viateverepizzeria.com/">Via Tevere&#8217;s</a> food truck. Please bring cash in case your choice of truck doesn&#8217;t process plastic.</p>
 
 
 		    <h2>Where is the Farmhouse Fest being held?</h2>
