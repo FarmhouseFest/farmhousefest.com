@@ -42,13 +42,10 @@ permalink: /2016/beer/
 			<p>We&#8217;re bringing in some of the best breweries in the province, as well as guests from around the world. We don&#8217;t want to count our chickens before they hatch, so we&#8217;ll announce attending breweries as we get confirmation. The best way to stay up to date with who will be serving at Farmhouse Fest is to follow us on <a href="https://facebook.com/FarmhouseFest">Facebook</a>, <a href="https://twitter.com/farmhousefest">Twitter</a>, or <a href="https://instagram.com/farmhousefest">Instagram</a>, as we&#8217;ll be posting updates as we get closer to festival day.</p>
 		</div>
 
-
-
-		<ul class="brewery-list announced">
+		<ul class="brewery-list">
 
 			{% for brewery in site.data.2016.breweries.breweries %}
 				{% if brewery.type == "primary" %}
-					{% if brewery.beer %}
 					<li class="brewery" id="{{ brewery.id }}">
 						<a href="{{ brewery.url }}" class="brewery-logo">
 							<img class="logo ff-fix" src="{{ brewery.logo }}" alt="{{ brewery.name }}" />
@@ -56,58 +53,15 @@ permalink: /2016/beer/
 						<div class="details">
 							<a href="{{ brewery.url }}">
 								<h2 class="styled">{{ brewery.name }}</h2>
+								<p>{{ brewery.url | remove:'http://' | remove:'www.' | replace:'/',' ' }}</p>
 							</a>
-							<ul class="beer-list">
-							{% for beer in brewery.beer %}
-								{% if beer.type == "limited" %}
-								{% else %}
-									<li>
-										<h3 class="beer-name">{{ beer.name }}</h3>
-										<p class="beer-description">{{ beer.description }}{% if beer.ratebeer %} <a href="{{ beer.ratebeer}}">(info)</a>{% endif %}</p>
-									</li>
-								{% endif %}
-							{% endfor %}
-							</ul>
 						</div>
 					</li>
-					{% endif %}
 				{% endif %}
 			{% endfor %}
-
 		</ul>
-
 		<h3 class="full-width spaced">
-			And Coming Soon&#8230;
-		</h3>
-
-
-		<ul class="brewery-list coming-soon">
-
-			{% for brewery in site.data.2016.breweries.breweries %}
-				{% if brewery.type == "primary" %}
-					{% if brewery.beer %}
-					{% else %}
-					<li class="brewery" id="{{ brewery.id }}">
-						<a href="{{ brewery.url }}" class="brewery-logo">
-							<img class="logo ff-fix" src="{{ brewery.logo }}" alt="{{ brewery.name }}" />
-						</a>
-						<div class="details">
-							<a href="{{ brewery.url }}">
-								<h2 class="styled">{{ brewery.name }}</h2>
-							</a>
-							<p class="tbd">List to be announced.</p>
-						</div>
-					</li>
-					{% endif %}
-				{% endif %}
-			{% endfor %}
-
-		</ul>
-
-
-
-		<h3 class="full-width spaced callout">
-			Specific beers subject to availability &amp; distribution whims. More still to come.
+			With many more still to come&#8230;
 		</h3>
 
 </div>

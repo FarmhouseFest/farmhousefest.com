@@ -3,7 +3,7 @@
         {
             "name" : "Astarbe Sidreria",
             "id" : "astarbe",
-            "type" : "primary",
+            "type" : "secondary",
             "url" : "http://www.astarbesagardotegia.com/",
             "logo" : "/images/2016/logos/astarbe.png",
         },
@@ -26,7 +26,17 @@
             "id" : "callister",
             "type" : "primary",
             "url" : "http://callisterbrewing.com/",
-            "logo" : "/images/2016/logos/callister.png"
+            "logo" : "/images/2016/logos/callister.png",
+            "beer" : [
+                {
+                    "name" : "Josie's Vacation",
+                    "description" : "Saison with strawberry &amp; kiwi",
+                },
+                {
+                    "name" : "French Saison",
+                    "description" : "Barrel-aged Saison",
+                },
+            ]
         },
         {
             "name" : "Copper &amp; Theory",
@@ -40,7 +50,26 @@
             "id" : "dageraad",
             "type" : "primary",
             "url" : "http://dageraadbrewing.com/",
-            "logo" : "/images/2016/logos/dageraad.png"
+            "logo" : "/images/2016/logos/dageraad.png",
+            "beer" : [
+                {
+                    "name" : "Amber Kelderbier",
+                    "description" : "Brett bottle-conditioned Dageraad Amber",
+                },
+                {
+                    "name" : "Randonneur",
+                    "description" : "Saison, 6.4%"
+                },
+                {
+                    "name" : "Saison Blanc",
+                    "description" : "Saison",
+                },
+                {
+                    "name" : "Uncomfortable Silence",
+                    "description" : "Strong cherry ale with brett",
+                },
+            ]
+
         },
         {
             "name" : "Brasserie Dunham",
@@ -48,97 +77,361 @@
             "type" : "primary",
             "url" : "http://brasseriedunham.com/",
             "logo" : "/images/2016/logos/dunham.png",
+            "beer" : [
+                {
+                    "name" : "Assemblage No. 1",
+                    "description" : "Zinfandel barrel-aged blended ale with brett, 5.5%",
+                },
+                {
+                    "name" : "Ping Pong Wizard",
+                    "description" : "Wheat Grisette"
+                },
+                {
+                    "name" : "No Tahoma",
+                    "description" : "Farmhouse Pale Ale, 5.3%",
+                },
+                {
+                    "name" : "Berliner Mango Weisse, 4.2%",
+                    "description" : "Berlinerweisse with Mango",
+                },
+                {
+                    "name" : "Assemblage No. 6",
+                    "description" : "Blended wild fruit ale with cherry and raspberry",
+                },
+                {
+                    "name" : "Saison Rustique",
+                    "description" : "Brett Saison, 6%",
+                },
+            ]
         },
         {
             "name" : "Field House Brewing",
             "id" : "fieldhouse",
             "type" : "primary",
             "url" : "http://fieldhousebrewing.com/",
-            "logo" : "/images/2016/logos/field-house.png"
+            "logo" : "/images/2016/logos/field-house.png",
+            "beer" : [
+                {
+                    "name" : "Wild Saison",
+                    "description" : "Brett Saison",
+                },
+                {
+                    "name" : "Wild Cider",
+                    "description" : "Wild Cider/Ale Blend"
+                },
+                {
+                    "name" : "Wild Ale",
+                    "description" : "Open Fermented Wild Ale",
+                },
+            ]
         },
         {
             "name" : "Four Winds Brewing",
             "id" : "fourwinds",
             "type" : "primary",
             "url" : "http://www.fourwindsbrewing.ca/",
-            "logo" : "/images/2016/logos/four-winds.png"
+            "logo" : "/images/2016/logos/four-winds.png",
+            "beer" : [
+                {
+                    "name" : "Berliner Weisse",
+                    "description" : "Served with syrup: raspberry, cherry or rhubarb, 3.5%",
+                },
+                {
+                    "name" : "Common Winds",
+                    "description" : "Apricot Brett ale collab with Commons, 6%",
+                },
+                {
+                    "name" : "Exil d'Eden",
+                    "description" : "Apple and Oat table saison collab with Le Trou du Diable, 5%",
+                },
+                {
+                    "name" : "La Maison",
+                    "description" : "Mosaic dry-hopped wild saison, 4.5%"
+                },
+                {
+                    "name" : "Mutiny",
+                    "description" : "Brassneck collab tropical saison with rice, 5%"
+                },
+                {
+                    "name" : "Nectarous",
+                    "description" : "Dry-hopped sour ale, 6%"
+                },
+                {
+                    "name" : "Operis",
+                    "description" : "Barrel-aged brett saison, 6.7%",
+                },
+                {
+                    "name" : "Salt &amp; Pepper Gose",
+                    "description" : "Traditional gose brewed with salt and pepper, 4.5%",
+                },
+                {
+                    "name" : "Sovereign",
+                    "description" : "Super Saison, 9%",
+                },
+                {
+                    "name" : "Three Years",
+                    "description" : "Anniversery barrel aged sour ale with nectarines, 5%",
+                },
+            ]
         },
         {
             "name" : "Fuggles & Warlock Craftworks",
             "id" : "fuggles&warlock",
             "type" : "primary",
             "url" : "http://fuggleswarlock.com/",
-            "logo" : "/images/2016/logos/fuggles-warlock.png"
+            "logo" : "/images/2016/logos/fuggles-warlock.png",
+            "beer" : [
+                {
+                    "name" : "Saskatoon Sour",
+                    "description" : "Sour ale with Saskatoon berries",
+                },
+                {
+                    "name" : "Hikari",
+                    "description" : "Imperial Dry-Hopped Sour"
+                },
+                {
+                    "name" : "Kiwami",
+                    "description" : "Sour ale with plums",
+                },
+            ]
         },
         {
             "name" : "Main Street Brewing",
             "id" : "mainstreet",
             "type" : "primary",
             "url" : "http://mainstreetbeer.ca/",
-            "logo" : "/images/2016/logos/main-street.png"
+            "logo" : "/images/2016/logos/main-street.png",
+            "beer" : [
+                {
+                    "name" : "Saison Blanc",
+                    "description" : "Saison with Hallertau",
+                },
+                {
+                    "name" : "Brett Reifel",
+                    "description" : "Rye saison with brett"
+                },
+                {
+                    "name" : "Oud Bruin",
+                    "description" : "Sour brown ale",
+                },
+            ]
         },
         {
             "name" : "Moody Ales",
             "id" : "moody",
             "type" : "primary",
             "url" : "http://www.moodyales.com/",
-            "logo" : "/images/2016/logos/moody.png"
+            "logo" : "/images/2016/logos/moody.png",
+            "beer" : [
+                {
+                    "name" : "Brett Saison",
+                    "description" : "Saison with Brett",
+                },
+                {
+                    "name" : "Dark Rye Saison",
+                    "description" : "Soured Saison with rye"
+                },
+                {
+                    "name" : "Sour Hibiscus Gruit",
+                    "description" : "Soured Gruit",
+                },
+                {
+                    "name" : "Sour Pale Ale",
+                    "description" : "Sour Ale inspired by Petrus",
+                },
+            ]
         },
         {
             "name" : "Moon Under Water",
             "id" : "moon",
             "type" : "primary",
             "url" : "http://www.moonunderwater.ca/",
-            "logo" : "/images/2016/logos/moon.png"
+            "logo" : "/images/2016/logos/moon.png",
+            "beer" : [
+                {
+                    "name" : "Moon Berliner-style Weisse",
+                    "description" : "Berliner Weisse aged 8 months with brett and lacto",
+                },
+                {
+                    "name" : "Spring Saison",
+                    "description" : "Saison with fruity German hops"
+                },
+                {
+                    "name" : "Oud King Crow",
+                    "description" : "French oak-aged dark sour with brett and lacto",
+                },
+                {
+                    "name" : "Kokako",
+                    "description" : "Dry hopped oak-aged wild ale with kiwi",
+                },
+            ]
         },
         {
             "name" : "Parallel 49 Brewing",
             "id" : "p49",
             "type" : "primary",
             "url" : "http://parallel49brewing.com/",
-            "logo" : "/images/2016/logos/p49.png"
+            "logo" : "/images/2016/logos/p49.png",
+            "beer" : [
+                {
+                    "name" : "Paranoid",
+                    "description" : "Chardonnay & sake oak-aged imperial rice pilsner with Brett",
+                },
+                {
+                    "name" : "Garden Saison",
+                    "description" : "Saison with garden herbs"
+                }
+            ]
         },
         {
             "name" : "pFriem Brewing",
             "id" : "pfriem",
             "type" : "primary",
             "url" : "http://www.pfriembeer.com/",
-            "logo" : "/images/2016/logos/pfriem.png"
+            "logo" : "/images/2016/logos/pfriem.png",
+            "beer" : [
+                {
+                    "name" : "Bretta",
+                    "description" : "Brett-conditioned Belgian ale, 6.5%",
+                },
+                {
+                    "name" : "Bretta-Brux",
+                    "description" : "Brett-conditioned Belgian ale, 6.9%",
+                },
+                {
+                    "name" : "Flanders Red",
+                    "description" : "Sour ale fermented in Pinot Noir barrels, 7.0%",
+                },
+                {
+                    "name" : "Flanders Blonde",
+                    "description" : "Sour ale aged 18 months in Pinot Noir barrels, 7.1%",
+                },
+                {
+                    "name" : "Peche",
+                    "description" : "Heirloom peaches added to year-old lambic, 5.8%",
+                },
+                {
+                    "name" : "Kriek",
+                    "description" : "details coming",
+                },
+                {
+                    "name" : "Blueberry",
+                    "description" : "details coming",
+                },
+                {
+                    "name" : "Frambozen",
+                    "description" : "details coming",
+                },
+            ]
+
         },
         {
             "name" : "Shacksbury Cider",
             "id" : "shacksbury",
-            "type" : "primary",
+            "type" : "secondary",
             "url" : "http://www.shacksbury.com/",
             "logo" : "/images/2016/logos/shacksbury.png"
         },
         {
-            "name" : "Steel Toad Brewing",
-            "id" : "steeltoad",
+            "name" : "Steamworks Brewing",
+            "id" : "steamworks",
             "type" : "primary",
-            "url" : "http://steeltoad.ca/",
-            "logo" : "/images/2016/logos/steel-toad.png"
+            "url" : "http://www.steamworks.com/brewery",
+            "logo" : "/images/2016/logos/steamworks.png",
+            "beer" : [
+                {
+                    "name" : "Brett Saison",
+                    "description" : "100% Brett Brux fermented, 5.5%",
+                },
+                {
+                    "name" : "Tonnellerie",
+                    "description" : "Brett and Lacto soured saison blended from red and white wine barrels, 5.5%",
+                },
+            ]
         },
         {
             "name" : "Steel &amp; Oak Brewing",
             "id" : "steelandoak",
             "type" : "primary",
             "url" : "http://steelandoak.ca/",
-            "logo" : "/images/2016/logos/steel-oak.png"
+            "logo" : "/images/2016/logos/steel-oak.png",
+            "beer" : [
+                {
+                    "name" : "Titian",
+                    "description" : "Barrel-aged Belgian Style Sour Ale",
+                },
+                {
+                    "name" : "Purple Draaaank",
+                    "description" : "Saison with Boysenberry",
+                },
+                {
+                    "name" : "Szechuan &amp; Ginger",
+                    "description" : "Saison with Ginger and Szechuan",
+                },
+            ]
+        },
+        {
+            "name" : "Steel Toad Brewing",
+            "id" : "steeltoad",
+            "type" : "primary",
+            "url" : "http://steeltoad.ca/",
+            "logo" : "/images/2016/logos/steel-toad.png",
+            "beer" : [
+                {
+                    "name" : "Brett Saison Sauvignon",
+                    "description" : "Classic farmhouse ale with New Zealand hops and Brett Bruxellensis",
+                },
+                {
+                    "name" : "Farmhouse Double IPA",
+                    "description" : "Saison-styled Double IPA",
+                },
+                {
+                    "name" : "Rustic Saison",
+                    "description" : "Mixed ferment historical saison with brett",
+                },
+            ]
         },
         {
             "name" : "Strange Fellows Brewing",
             "id" : "strangefellows",
             "type" : "primary",
             "url" : "http://www.strangefellowsbrewing.com/",
-            "logo" : "/images/2016/logos/strange-fellows.png"
+            "logo" : "/images/2016/logos/strange-fellows.png",
+            "beer" : [
+                {
+                    "name" : "Obnoxious Lil Persona",
+                    "description" : "Strawberry Berlinerweisse with Tellicherry pepper",
+                },
+                {
+                    "name" : "Oud Bruin",
+                    "description" : "Flanders Brown Ale",
+                },
+                {
+                    "name" : "Bayard",
+                    "description" : "Saison",
+                },
+            ]
         },
         {
             "name" : "Trading Post Brewing",
             "id" : "tradingpost",
             "type" : "primary",
             "url" : "http://tradingpostbrewing.com/",
-            "logo" : "/images/2016/logos/trading-post.png"
+            "logo" : "/images/2016/logos/trading-post.png",
+            "beer" : [
+                {
+                    "name" : "Dear James",
+                    "description" : "SMaSH Saison with Mosaic & pilsner malt, 6.5%",
+                },
+                {
+                    "name" : "Otis",
+                    "description" : "Brett saison with sweet orange and grains of paradise, 6.5%",
+                },
+                {
+                    "name" : "Owhyee",
+                    "description" : "Wheat IPA with brett, 5.3%",
+                },
+            ]
         },
         {
             "name" : "Les Trois Mousequetaires",
@@ -155,18 +448,29 @@
             "logo" : "/images/2016/logos/ltdd.png"
         },
         {
-            "name" : "Steamworks Brewing",
-            "id" : "steamworks",
-            "type" : "primary",
-            "url" : "http://www.steamworks.com/brewery",
-            "logo" : "/images/2016/logos/steamworks.png"
-        },
-        {
             "name" : "Twin Sails Brewing",
             "id" : "twinsails",
             "type" : "primary",
             "url" : "http://twinsailsbrewing.com/",
-            "logo" : "/images/2016/logos/twin-sails.png"
+            "logo" : "/images/2016/logos/twin-sails.png",
+            "beer" : [
+                {
+                    "name" : "Plum Wild Ale",
+                    "description" : "Mixed fermentation ale w/ plums",
+                },
+                {
+                    "name" : "Tart Wheat Saison",
+                    "description" : "Saison with wheat, fermented with brett &amp; lactobacillus",
+                },
+                {
+                    "name" : "Dry-hopped brett ale",
+                    "description" : "100% Brett ale with Citra and Galaxy",
+                },
+                {
+                    "name" : "Citrus Gose",
+                    "description" : "Sour ale with sea salt, coriander and meyer lemon",
+                },
+            ]
         },
         {
             "name" : "Txotx Basque Imports",
@@ -193,7 +497,7 @@
         {
             "name" : "Woodland Empire",
             "id" : "woodlandempire",
-            "type" : "primary",
+            "type" : "secondary",
             "booth" : "13",
             "url" : "http://woodlandempire.com/",
             "logo" : "/images/2016/logos/woodland-empire.png",
@@ -203,7 +507,25 @@
             "id" : "yellowdog",
             "type" : "primary",
             "url" : "http://www.yellowdogbeer.com/",
-            "logo" : "/images/2016/logos/yellow-dog.png"
+            "logo" : "/images/2016/logos/yellow-dog.png",
+            "beer" : [
+                {
+                    "name" : "Super Secret White Sour",
+                    "description" : "Sour ale with brett",
+                },
+                {
+                    "name" : "Brett Double IPA",
+                    "description" : "Brett-fermented Double IPA",
+                },
+                {
+                    "name" : "Barrel-Aged Peach Offleash",
+                    "description" : "Sour ale with peaches",
+                },
+                {
+                    "name" : "Sour IPA",
+                    "description" : "Soured IPA collab with Machine Ales",
+                },
+            ]
         }
 
 
