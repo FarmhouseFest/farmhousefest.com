@@ -1,6 +1,13 @@
 {
     "breweries": [
         {
+            "name" : "Almanac Beer Co",
+            "id" : "almanac",
+            "type" : "secondary",
+            "url" : "http://www.almanacbeer.com/",
+            "logo" : "/images/2016/logos/almanac.png",
+        },
+        {
             "name" : "Astarbe Sidreria",
             "id" : "astarbe",
             "type" : "primary",
@@ -41,6 +48,13 @@
             "type" : "primary",
             "url" : "http://dageraadbrewing.com/",
             "logo" : "/images/2016/logos/dageraad.png"
+        },
+        {
+            "name" : "Brasserie Dieu du Ciel",
+            "id" : "ddc",
+            "type" : "secondary",
+            "url" : "http://dieuduciel.com/",
+            "logo" : "/images/2016/logos/ddc.png",
         },
         {
             "name" : "Brasserie Dunham",
@@ -155,11 +169,25 @@
             "logo" : "/images/2016/logos/ltdd.png"
         },
         {
+            "name" : "Shacksbury Cider",
+            "id" : "shacksbury",
+            "type" : "secondary",
+            "url" : "http://www.shacksbury.com/",
+            "logo" : "/images/2016/logos/shacksbury.png"
+        },
+        {
             "name" : "Steamworks Brewing",
             "id" : "steamworks",
             "type" : "primary",
             "url" : "http://www.steamworks.com/brewery",
             "logo" : "/images/2016/logos/steamworks.png"
+        },
+        {
+            "name" : "To Øl",
+            "id" : "tool",
+            "type" : "secondary",
+            "url" : "http://to-ol.dk/home/",
+            "logo" : "/images/2016/logos/to-ol.png"
         },
         {
             "name" : "Twin Sails Brewing",

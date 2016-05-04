@@ -45,19 +45,17 @@ permalink: /2016/beer/
 		<ul class="brewery-list">
 
 			{% for brewery in site.data.2016.breweries.breweries %}
-				{% if brewery.type == "primary" %}
-					<li class="brewery" id="{{ brewery.id }}">
-						<a href="{{ brewery.url }}" class="brewery-logo">
-							<img class="logo ff-fix" src="{{ brewery.logo }}" alt="{{ brewery.name }}" />
+				<li class="brewery" id="{{ brewery.id }}">
+					<a href="{{ brewery.url }}" class="brewery-logo">
+						<img class="logo ff-fix" src="{{ brewery.logo }}" alt="{{ brewery.name }}" />
+					</a>
+					<div class="details">
+						<a href="{{ brewery.url }}">
+							<h2 class="styled">{{ brewery.name }}</h2>
+							<p>{{ brewery.url | remove:'http://' | remove:'www.' | replace:'/',' ' }}</p>
 						</a>
-						<div class="details">
-							<a href="{{ brewery.url }}">
-								<h2 class="styled">{{ brewery.name }}</h2>
-								<p>{{ brewery.url | remove:'http://' | remove:'www.' | replace:'/',' ' }}</p>
-							</a>
-						</div>
-					</li>
-				{% endif %}
+					</div>
+				</li>
 			{% endfor %}
 		</ul>
 		<h3 class="full-width spaced">
