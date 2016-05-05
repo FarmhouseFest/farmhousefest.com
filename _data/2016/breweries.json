@@ -155,6 +155,13 @@
             "logo" : "/images/2016/logos/trading-post.png"
         },
         {
+            "name" : "Microbrasserie Le Castor",
+            "id" : "lecastor",
+            "type" : "primary",
+            "url" : "http://www.microlecastor.ca/",
+            "logo" : "/images/2016/logos/le-castor.png"
+        },
+        {
             "name" : "Les Trois Mousequetaires",
             "id" : "ltm",
             "type" : "primary",
@@ -188,6 +195,13 @@
             "type" : "secondary",
             "url" : "http://to-ol.dk/home/",
             "logo" : "/images/2016/logos/to-ol.png"
+        },
+        {
+            "name" : "Trinity Brewing",
+            "id" : "trinity",
+            "type" : "secondary",
+            "url" : "http://trinitybrew.com/",
+            "logo" : "/images/2016/logos/trinity.png"
         },
         {
             "name" : "Twin Sails Brewing",
