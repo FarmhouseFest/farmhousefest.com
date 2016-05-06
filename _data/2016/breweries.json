@@ -11,6 +11,7 @@
             "name" : "Astarbe Sidreria",
             "id" : "astarbe",
             "type" : "secondary",
+            "covered" : "true",
             "url" : "http://www.astarbesagardotegia.com/",
             "logo" : "/images/2016/logos/astarbe.png",
         },
@@ -327,6 +328,7 @@
             "name" : "Shacksbury Cider",
             "id" : "shacksbury",
             "type" : "secondary",
+            "covered" : "true",
             "url" : "http://www.shacksbury.com/",
             "logo" : "/images/2016/logos/shacksbury.png"
         },
@@ -476,7 +478,21 @@
             "id" : "txotx",
             "type" : "primary",
             "url" : "http://txotx.ca/",
-            "logo" : "/images/2016/logos/txotx.png"
+            "logo" : "/images/2016/logos/txotx.png",
+            "beer" : [
+                {
+                    "name" : "Astarbe - Mendiola Sidra Natural",
+                    "description" : "Basque sidra, 6.5%",
+                },
+                {
+                    "name" : "Shacksbury - The Basque",
+                    "description" : "Basque-style sidra, 6.2%",
+                },
+                {
+                    "name" : "",
+                    "description" : "<em>(more to be announced)</em>",
+                },
+            ]
         },
         {
             "name" : "UnTapped Craft Imports",
