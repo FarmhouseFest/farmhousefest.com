@@ -39,7 +39,10 @@ permalink: /2016/beer/
 		<div class="content-intro">
 			<p>Farmhouse ales are a perfect canvas for new and innovative ideas. Their rich depth of flavours lets brewers explore exciting possibilities in any aspect of the beer. Malt character, hop flavours and aromas, yeast esters and phenols, funk and acid, fruit and spice additions, and oak aging are all on the table for the brewmaster. As such, brewing farmhouse ales is no easy task, but drinking them sure is.</p>
 
-			<p>We&#8217;re bringing in some of the best breweries in the province, as well as guests from around the world. We don&#8217;t want to count our chickens before they hatch, so we&#8217;ll announce attending breweries as we get confirmation. The best way to stay up to date with who will be serving at Farmhouse Fest is to follow us on <a href="https://facebook.com/FarmhouseFest">Facebook</a>, <a href="https://twitter.com/farmhousefest">Twitter</a>, or <a href="https://instagram.com/farmhousefest">Instagram</a>, as we&#8217;ll be posting updates as we get closer to festival day.</p>
+			<p>We&#8217;re bringing in some of the best and newest breweries in the province, as well as guests from around the world. For a taste of what&#8217;s to come, some of the beers you can expect to find at Farmhouse Fest are listed below, with many more on the way.</p>
+
+			<p>We don&#8217;t want to count our chickens before they hatch, so we&#8217;ll announce attending breweries and beers as we get confirmation. The best way to stay up to date with who will be serving at Farmhouse Fest is to follow us on <a href="https://facebook.com/FarmhouseFest">Facebook</a>, <a href="https://twitter.com/farmhousefest">Twitter</a>, or <a href="https://instagram.com/farmhousefest">Instagram</a>, as we&#8217;ll be posting updates as we get closer to festival day.</p>
+
 		</div>
 
 
@@ -84,21 +87,19 @@ permalink: /2016/beer/
 		<ul class="brewery-list coming-soon">
 
 			{% for brewery in site.data.2016.breweries.breweries %}
-				{% if brewery.type == "primary" %}
-					{% if brewery.beer %}
-					{% else %}
-					<li class="brewery" id="{{ brewery.id }}">
-						<a href="{{ brewery.url }}" class="brewery-logo">
-							<img class="logo ff-fix" src="{{ brewery.logo }}" alt="{{ brewery.name }}" />
+				{% if brewery.beer %}
+				{% else %}
+				<li class="brewery" id="{{ brewery.id }}">
+					<a href="{{ brewery.url }}" class="brewery-logo">
+						<img class="logo ff-fix" src="{{ brewery.logo }}" alt="{{ brewery.name }}" />
+					</a>
+					<div class="details">
+						<a href="{{ brewery.url }}">
+							<h2 class="styled">{{ brewery.name }}</h2>
 						</a>
-						<div class="details">
-							<a href="{{ brewery.url }}">
-								<h2 class="styled">{{ brewery.name }}</h2>
-							</a>
-							<p class="tbd">List to be announced.</p>
-						</div>
-					</li>
-					{% endif %}
+						<p class="tbd">List to be announced.</p>
+					</div>
+				</li>
 				{% endif %}
 			{% endfor %}
 

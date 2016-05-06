@@ -1,6 +1,13 @@
 {
     "breweries": [
         {
+            "name" : "Almanac Beer Co",
+            "id" : "almanac",
+            "type" : "secondary",
+            "url" : "http://www.almanacbeer.com/",
+            "logo" : "/images/2016/logos/almanac.png",
+        },
+        {
             "name" : "Astarbe Sidreria",
             "id" : "astarbe",
             "type" : "secondary",
@@ -20,6 +27,20 @@
             "type" : "primary",
             "url" : "http://www.brassneck.ca/",
             "logo" : "/images/2016/logos/brassneck.png",
+            "beer" : [
+                {
+                    "name" : "Stockholm Syndrome",
+                    "description" : "Foudre-aged Brett Saison",
+                },
+                {
+                    "name" : "Changeling",
+                    "description" : "Sour ale with Viognier grapes",
+                },
+                {
+                    "name" : "",
+                    "description" : "<em>(more to be announced)</em>",
+                },
+            ]
         },
         {
             "name" : "Callister Brewing",
@@ -35,6 +56,10 @@
                 {
                     "name" : "French Saison",
                     "description" : "Barrel-aged Saison",
+                },
+                {
+                    "name" : "",
+                    "description" : "<em>(more to be announced)</em>",
                 },
             ]
         },
@@ -57,19 +82,21 @@
                     "description" : "Brett bottle-conditioned Dageraad Amber",
                 },
                 {
-                    "name" : "Randonneur",
-                    "description" : "Saison, 6.4%"
+                    "name" : "Peachy Brett",
+                    "description" : "Dageraad Blonde infused with peaches and refermented with brett",
                 },
                 {
-                    "name" : "Saison Blanc",
-                    "description" : "Saison",
-                },
-                {
-                    "name" : "Uncomfortable Silence",
-                    "description" : "Strong cherry ale with brett",
+                    "name" : "",
+                    "description" : "<em>(more to be announced)</em>",
                 },
             ]
-
+        },
+        {
+            "name" : "Brasserie Dieu du Ciel",
+            "id" : "ddc",
+            "type" : "secondary",
+            "url" : "http://dieuduciel.com/",
+            "logo" : "/images/2016/logos/ddc.png",
         },
         {
             "name" : "Brasserie Dunham",
@@ -79,28 +106,16 @@
             "logo" : "/images/2016/logos/dunham.png",
             "beer" : [
                 {
-                    "name" : "Assemblage No. 1",
-                    "description" : "Zinfandel barrel-aged blended ale with brett, 5.5%",
-                },
-                {
                     "name" : "Ping Pong Wizard",
-                    "description" : "Wheat Grisette"
+                    "description" : "Wheat Grisette with local malt and the wild Luskville hop from Lupuline hopyard in Outaouais, fermented with Brett Drei. Collaboration with Cambridge Brewing Co., 5%",
                 },
                 {
                     "name" : "No Tahoma",
-                    "description" : "Farmhouse Pale Ale, 5.3%",
+                    "description" : "Farmhouse Pale Ale with oat malt and six hop varietals (but no Tahoma), 5.3%",
                 },
                 {
-                    "name" : "Berliner Mango Weisse, 4.2%",
-                    "description" : "Berlinerweisse with Mango",
-                },
-                {
-                    "name" : "Assemblage No. 6",
-                    "description" : "Blended wild fruit ale with cherry and raspberry",
-                },
-                {
-                    "name" : "Saison Rustique",
-                    "description" : "Brett Saison, 6%",
+                    "name" : "",
+                    "description" : "<em>(more to be announced)</em>",
                 },
             ]
         },
@@ -113,15 +128,15 @@
             "beer" : [
                 {
                     "name" : "Wild Saison",
-                    "description" : "Brett Saison",
+                    "description" : "Saison with brettanomyces lambicus",
                 },
                 {
                     "name" : "Wild Cider",
                     "description" : "Wild Cider/Ale Blend"
                 },
                 {
-                    "name" : "Wild Ale",
-                    "description" : "Open Fermented Wild Ale",
+                    "name" : "",
+                    "description" : "<em>(more to be announced)</em>",
                 },
             ]
         },
@@ -133,44 +148,16 @@
             "logo" : "/images/2016/logos/four-winds.png",
             "beer" : [
                 {
-                    "name" : "Berliner Weisse",
-                    "description" : "Served with syrup: raspberry, cherry or rhubarb, 3.5%",
-                },
-                {
-                    "name" : "Common Winds",
-                    "description" : "Apricot Brett ale collab with Commons, 6%",
-                },
-                {
-                    "name" : "Exil d'Eden",
-                    "description" : "Apple and Oat table saison collab with Le Trou du Diable, 5%",
-                },
-                {
-                    "name" : "La Maison",
-                    "description" : "Mosaic dry-hopped wild saison, 4.5%"
-                },
-                {
-                    "name" : "Mutiny",
-                    "description" : "Brassneck collab tropical saison with rice, 5%"
-                },
-                {
-                    "name" : "Nectarous",
-                    "description" : "Dry-hopped sour ale, 6%"
-                },
-                {
                     "name" : "Operis",
                     "description" : "Barrel-aged brett saison, 6.7%",
                 },
                 {
-                    "name" : "Salt &amp; Pepper Gose",
-                    "description" : "Traditional gose brewed with salt and pepper, 4.5%",
-                },
-                {
                     "name" : "Sovereign",
-                    "description" : "Super Saison, 9%",
+                    "description" : "Super saison, 9%",
                 },
                 {
-                    "name" : "Three Years",
-                    "description" : "Anniversery barrel aged sour ale with nectarines, 5%",
+                    "name" : "",
+                    "description" : "<em>(more to be announced)</em>",
                 },
             ]
         },
@@ -186,14 +173,35 @@
                     "description" : "Sour ale with Saskatoon berries",
                 },
                 {
-                    "name" : "Hikari",
-                    "description" : "Imperial Dry-Hopped Sour"
-                },
-                {
                     "name" : "Kiwami",
                     "description" : "Sour ale with plums",
                 },
+                {
+                    "name" : "",
+                    "description" : "<em>(more to be announced)</em>",
+                },
             ]
+        },
+        {
+            "name" : "Microbrasserie Le Castor",
+            "id" : "lecastor",
+            "type" : "primary",
+            "url" : "http://www.microlecastor.ca/",
+            "logo" : "/images/2016/logos/le-castor.png"
+        },
+        {
+            "name" : "Les Trois Mousequetaires",
+            "id" : "ltm",
+            "type" : "primary",
+            "url" : "http://www.lestroismousquetaires.ca/",
+            "logo" : "/images/2016/logos/ltm.png"
+        },
+        {
+            "name" : "Le Trou du Diable",
+            "id" : "ltdd",
+            "type" : "primary",
+            "url" : "http://troududiable.com/",
+            "logo" : "/images/2016/logos/ltdd.png"
         },
         {
             "name" : "Main Street Brewing",
@@ -207,12 +215,12 @@
                     "description" : "Saison with Hallertau",
                 },
                 {
-                    "name" : "Brett Reifel",
-                    "description" : "Rye saison with brett"
-                },
-                {
                     "name" : "Oud Bruin",
                     "description" : "Sour brown ale",
+                },
+                {
+                    "name" : "",
+                    "description" : "<em>(more to be announced)</em>",
                 },
             ]
         },
@@ -228,16 +236,12 @@
                     "description" : "Saison with Brett",
                 },
                 {
-                    "name" : "Dark Rye Saison",
-                    "description" : "Soured Saison with rye"
-                },
-                {
-                    "name" : "Sour Hibiscus Gruit",
-                    "description" : "Soured Gruit",
-                },
-                {
                     "name" : "Sour Pale Ale",
                     "description" : "Sour Ale inspired by Petrus",
+                },
+                {
+                    "name" : "",
+                    "description" : "<em>(more to be announced)</em>",
                 },
             ]
         },
@@ -249,20 +253,16 @@
             "logo" : "/images/2016/logos/moon.png",
             "beer" : [
                 {
-                    "name" : "Moon Berliner-style Weisse",
-                    "description" : "Berliner Weisse aged 8 months with brett and lacto",
-                },
-                {
                     "name" : "Spring Saison",
                     "description" : "Saison with fruity German hops"
                 },
                 {
-                    "name" : "Oud King Crow",
-                    "description" : "French oak-aged dark sour with brett and lacto",
-                },
-                {
                     "name" : "Kokako",
                     "description" : "Dry hopped oak-aged wild ale with kiwi",
+                },
+                {
+                    "name" : "",
+                    "description" : "<em>(more to be announced)</em>",
                 },
             ]
         },
@@ -280,7 +280,11 @@
                 {
                     "name" : "Garden Saison",
                     "description" : "Saison with garden herbs"
-                }
+                },
+                {
+                    "name" : "",
+                    "description" : "<em>(more to be announced)</em>",
+                },
             ]
         },
         {
@@ -295,32 +299,12 @@
                     "description" : "Brett-conditioned Belgian ale, 6.5%",
                 },
                 {
-                    "name" : "Bretta-Brux",
-                    "description" : "Brett-conditioned Belgian ale, 6.9%",
-                },
-                {
-                    "name" : "Flanders Red",
-                    "description" : "Sour ale fermented in Pinot Noir barrels, 7.0%",
-                },
-                {
-                    "name" : "Flanders Blonde",
-                    "description" : "Sour ale aged 18 months in Pinot Noir barrels, 7.1%",
-                },
-                {
                     "name" : "Peche",
                     "description" : "Heirloom peaches added to year-old lambic, 5.8%",
                 },
                 {
-                    "name" : "Kriek",
-                    "description" : "details coming",
-                },
-                {
-                    "name" : "Blueberry",
-                    "description" : "details coming",
-                },
-                {
-                    "name" : "Frambozen",
-                    "description" : "details coming",
+                    "name" : "",
+                    "description" : "<em>(more to be announced)</em>",
                 },
             ]
 
@@ -347,6 +331,10 @@
                     "name" : "Tonnellerie",
                     "description" : "Brett and Lacto soured saison blended from red and white wine barrels, 5.5%",
                 },
+                {
+                    "name" : "",
+                    "description" : "<em>(more to be announced)</em>",
+                },
             ]
         },
         {
@@ -365,8 +353,8 @@
                     "description" : "Saison with Boysenberry",
                 },
                 {
-                    "name" : "Szechuan &amp; Ginger",
-                    "description" : "Saison with Ginger and Szechuan",
+                    "name" : "",
+                    "description" : "<em>(more to be announced)</em>",
                 },
             ]
         },
@@ -378,16 +366,16 @@
             "logo" : "/images/2016/logos/steel-toad.png",
             "beer" : [
                 {
-                    "name" : "Brett Saison Sauvignon",
-                    "description" : "Classic farmhouse ale with New Zealand hops and Brett Bruxellensis",
-                },
-                {
                     "name" : "Farmhouse Double IPA",
-                    "description" : "Saison-styled Double IPA",
+                    "description" : "Saison-styled Double IPA with brett",
                 },
                 {
                     "name" : "Rustic Saison",
                     "description" : "Mixed ferment historical saison with brett",
+                },
+                {
+                    "name" : "",
+                    "description" : "<em>(more to be announced)</em>",
                 },
             ]
         },
@@ -407,8 +395,8 @@
                     "description" : "Flanders Brown Ale",
                 },
                 {
-                    "name" : "Bayard",
-                    "description" : "Saison",
+                    "name" : "",
+                    "description" : "<em>(more to be announced)</em>",
                 },
             ]
         },
@@ -428,24 +416,24 @@
                     "description" : "Brett saison with sweet orange and grains of paradise, 6.5%",
                 },
                 {
-                    "name" : "Owhyee",
-                    "description" : "Wheat IPA with brett, 5.3%",
+                    "name" : "",
+                    "description" : "<em>(more to be announced)</em>",
                 },
             ]
         },
         {
-            "name" : "Les Trois Mousequetaires",
-            "id" : "ltm",
-            "type" : "primary",
-            "url" : "http://www.lestroismousquetaires.ca/",
-            "logo" : "/images/2016/logos/ltm.png"
+            "name" : "To Øl",
+            "id" : "tool",
+            "type" : "secondary",
+            "url" : "http://to-ol.dk/home/",
+            "logo" : "/images/2016/logos/to-ol.png"
         },
         {
-            "name" : "Le Trou du Diable",
-            "id" : "ltdd",
-            "type" : "primary",
-            "url" : "http://troududiable.com/",
-            "logo" : "/images/2016/logos/ltdd.png"
+            "name" : "Trinity Brewing",
+            "id" : "trinity",
+            "type" : "secondary",
+            "url" : "http://trinitybrew.com/",
+            "logo" : "/images/2016/logos/trinity.png"
         },
         {
             "name" : "Twin Sails Brewing",
@@ -459,16 +447,12 @@
                     "description" : "Mixed fermentation ale w/ plums",
                 },
                 {
-                    "name" : "Tart Wheat Saison",
-                    "description" : "Saison with wheat, fermented with brett &amp; lactobacillus",
-                },
-                {
                     "name" : "Dry-hopped brett ale",
                     "description" : "100% Brett ale with Citra and Galaxy",
                 },
                 {
-                    "name" : "Citrus Gose",
-                    "description" : "Sour ale with sea salt, coriander and meyer lemon",
+                    "name" : "",
+                    "description" : "<em>(more to be announced)</em>",
                 },
             ]
         },
@@ -510,10 +494,6 @@
             "logo" : "/images/2016/logos/yellow-dog.png",
             "beer" : [
                 {
-                    "name" : "Super Secret White Sour",
-                    "description" : "Sour ale with brett",
-                },
-                {
                     "name" : "Brett Double IPA",
                     "description" : "Brett-fermented Double IPA",
                 },
@@ -522,8 +502,8 @@
                     "description" : "Sour ale with peaches",
                 },
                 {
-                    "name" : "Sour IPA",
-                    "description" : "Soured IPA collab with Machine Ales",
+                    "name" : "",
+                    "description" : "<em>(more to be announced)</em>",
                 },
             ]
         }
