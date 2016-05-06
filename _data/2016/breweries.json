@@ -439,6 +439,7 @@
             "name" : "To Øl",
             "id" : "tool",
             "type" : "secondary",
+            "covered" : "true",
             "url" : "http://to-ol.dk/home/",
             "logo" : "/images/2016/logos/to-ol.png"
         },

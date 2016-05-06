@@ -87,7 +87,8 @@ permalink: /2016/beer/
 		<ul class="brewery-list coming-soon">
 
 			{% for brewery in site.data.2016.breweries.breweries %}
-				{% if brewery.type == "primary" %}
+				{% if brewery.covered %}
+				{% else %}
 					{% if brewery.beer %}
 					{% else %}
 					<li class="brewery" id="{{ brewery.id }}">
