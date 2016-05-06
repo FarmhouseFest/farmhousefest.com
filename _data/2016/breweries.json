@@ -187,7 +187,21 @@
             "id" : "lecastor",
             "type" : "primary",
             "url" : "http://www.microlecastor.ca/",
-            "logo" : "/images/2016/logos/le-castor.png"
+            "logo" : "/images/2016/logos/le-castor.png",
+            "beer" : [
+                {
+                    "name" : "Brett Zeste Saison",
+                    "description" : "Brett saison with citrus zest &amp; juice and cracked pepper, 5%",
+                },
+                {
+                    "name" : "Dark Farmhouse",
+                    "description" : "Dark saison with brett",
+                },
+                {
+                    "name" : "",
+                    "description" : "<em>(more to be announced)</em>",
+                },
+            ]
         },
         {
             "name" : "Les Trois Mousequetaires",
@@ -477,6 +491,21 @@
             "booth" : "13",
             "url" : "http://www.westbier.com/",
             "logo" : "/images/2016/logos/westbier.png",
+            "beer" : [
+                {
+                    "name" : "To Øl Sur Amarillo",
+                    "description" : "Sour ale dry-hopped with Amarillo",
+                },
+                {
+                    "name" : "Van Honsebrouck Fond Tradition Kriek",
+                    "description" : "Traditional lambic with cherries, 6.5%",
+                },
+                {
+                    "name" : "",
+                    "description" : "<em>(more to be announced)</em>",
+                },
+            ]
+
         },
         {
             "name" : "Woodland Empire",

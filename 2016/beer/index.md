@@ -87,19 +87,21 @@ permalink: /2016/beer/
 		<ul class="brewery-list coming-soon">
 
 			{% for brewery in site.data.2016.breweries.breweries %}
-				{% if brewery.beer %}
-				{% else %}
-				<li class="brewery" id="{{ brewery.id }}">
-					<a href="{{ brewery.url }}" class="brewery-logo">
-						<img class="logo ff-fix" src="{{ brewery.logo }}" alt="{{ brewery.name }}" />
-					</a>
-					<div class="details">
-						<a href="{{ brewery.url }}">
-							<h2 class="styled">{{ brewery.name }}</h2>
+				{% if brewery.type == "primary" %}
+					{% if brewery.beer %}
+					{% else %}
+					<li class="brewery" id="{{ brewery.id }}">
+						<a href="{{ brewery.url }}" class="brewery-logo">
+							<img class="logo ff-fix" src="{{ brewery.logo }}" alt="{{ brewery.name }}" />
 						</a>
-						<p class="tbd">List to be announced.</p>
-					</div>
-				</li>
+						<div class="details">
+							<a href="{{ brewery.url }}">
+								<h2 class="styled">{{ brewery.name }}</h2>
+							</a>
+							<p class="tbd">List to be announced.</p>
+						</div>
+					</li>
+					{% endif %}
 				{% endif %}
 			{% endfor %}
 
