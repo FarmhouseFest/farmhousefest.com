@@ -121,6 +121,13 @@
             ]
         },
         {
+            "name" : "Ecliptic Brewing",
+            "id" : "ecliptic",
+            "type" : "secondary",
+            "url" : "http://eclipticbrewing.com/",
+            "logo" : "/images/2016/logos/ecliptic.png",
+        },
+        {
             "name" : "Field House Brewing",
             "id" : "fieldhouse",
             "type" : "primary",
@@ -184,6 +191,13 @@
             ]
         },
         {
+            "name" : "Funkwerks",
+            "id" : "funkwerks",
+            "type" : "secondary",
+            "url" : "http://funkwerks.com/",
+            "logo" : "/images/2016/logos/funkwerks.png",
+        },
+        {
             "name" : "Microbrasserie Le Castor",
             "id" : "lecastor",
             "type" : "primary",
@@ -238,6 +252,13 @@
                     "description" : "<em>(more to be announced)</em>",
                 },
             ]
+        },
+        {
+            "name" : "Modern Times Beer",
+            "id" : "moderntimes",
+            "type" : "primary",
+            "url" : "http://moderntimesbeer.com/",
+            "logo" : "/images/2016/logos/modern-times.png"
         },
         {
             "name" : "Moody Ales",
