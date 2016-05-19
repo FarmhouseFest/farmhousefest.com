@@ -307,8 +307,16 @@
                     "description" : "Brassneck collaboration tropical saison with rice, 5%",
                 },
                 {
+                    "name" : "Nectarous",
+                    "description" : "Dry-hopped sour, 6%",
+                },
+                {
                     "name" : "Operis",
                     "description" : "Barrel-aged brett saison, 6.7%",
+                },
+                {
+                    "name" : "Pequeño Cabo",
+                    "description" : "Tequila barrel aged berliner weisse, 4.2%",
                 },
                 {
                     "name" : "Salt &amp; Pepper Gose",
@@ -365,7 +373,7 @@
             "logo" : "/images/2016/logos/le-castor.png",
             "beer" : [
                 {
-                    "name" : "Brett Zeste Saison (FHF exclusive)",
+                    "name" : "Brett Zeste Saison",
                     "description" : "Brett saison with citrus zest &amp; juice and cracked pepper, 5%",
                 },
                 {
@@ -412,6 +420,10 @@
                 {
                     "name" : "Dulcis Succubus",
                     "description" : "Wild saison aged in white wine barrels, 7%",
+                },
+                {
+                    "name" : "Exil d&#8217;Eden",
+                    "description" : "Four Winds collaboration apple &amp; oat table saison, 5%",
                 },
                 {
                     "name" : "Saison Sainte Maurice",
