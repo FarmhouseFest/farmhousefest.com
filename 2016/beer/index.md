@@ -37,11 +37,11 @@ permalink: /2016/beer/
 	<h2 class="secondary-title">Breweries</h2>
 
 		<div class="content-intro">
-			<p>Farmhouse ales are a perfect canvas for new and innovative ideas. Their rich depth of flavours lets brewers explore exciting possibilities in any aspect of the beer. Malt character, hop flavours and aromas, yeast esters and phenols, funk and acid, fruit and spice additions, and oak aging are all on the table for the brewmaster. As such, brewing farmhouse ales is no easy task, but drinking them sure is.</p>
+			<p>Farmhouse ales are a perfect canvas for new and innovative ideas. Their rich depth of flavours lets brewers explore exciting possibilities in any aspect of the beer. Malt character, hop flavours and aromas, yeast esters and phenols, funk and acid, fruit and spice additions, and oak aging are all on the table for the brewer.</p>
 
-			<p>We&#8217;re bringing in some of the best and newest breweries in the province, as well as guests from around the world. For a taste of what&#8217;s to come, some of the beers you can expect to find at Farmhouse Fest are listed below, with many more on the way.</p>
+			<p>We&#8217;re bringing in some of the best and newest breweries in the province, as well as guests from around the world. For a preview of what&#8217;s to come, some of the beers you can expect to find at Farmhouse Fest are listed below, with even more on the way.</p>
 
-			<p>We don&#8217;t want to count our chickens before they hatch, so we&#8217;ll announce attending breweries and beers as we get confirmation. The best way to stay up to date with who will be serving at Farmhouse Fest is to follow us on <a href="https://facebook.com/FarmhouseFest">Facebook</a>, <a href="https://twitter.com/farmhousefest">Twitter</a>, or <a href="https://instagram.com/farmhousefest">Instagram</a>, as we&#8217;ll be posting updates as we get closer to festival day.</p>
+			<!-- <p>We don&#8217;t want to count our chickens before they hatch, so we&#8217;ll announce attending breweries and beers as we get confirmation. The best way to stay up to date with who will be serving at Farmhouse Fest is to follow us on <a href="https://facebook.com/FarmhouseFest">Facebook</a>, <a href="https://twitter.com/farmhousefest">Twitter</a>, or <a href="https://instagram.com/farmhousefest">Instagram</a>, as we&#8217;ll be posting updates as we get closer to festival day.</p>-->
 
 		</div>
 
@@ -79,7 +79,7 @@ permalink: /2016/beer/
 
 		</ul>
 
-		<h3 class="full-width spaced">
+<!-- 		<h3 class="full-width spaced">
 			And Coming Soon&#8230;
 		</h3>
 
@@ -105,7 +105,7 @@ permalink: /2016/beer/
 					{% endif %}
 				{% endif %}
 			{% endfor %}
-
+ -->
 		</ul>
 
 
