@@ -278,16 +278,16 @@
             "logo" : "/images/2016/logos/field-house.png",
             "beer" : [
                 {
-                    "name" : "Wild Ale",
-                    "description" : "An open fermentation experiment",
+                    "name" : "Dutch Sour White",
+                    "description" : "Sour white ale with coriander and orange peel, 6%",
                 },
                 {
                     "name" : "Wild Fields",
-                    "description" : "Wild Cider/Ale Blend"
+                    "description" : "Wild Cider/Ale Blend, 6%"
                 },
                 {
                     "name" : "Wild Saison",
-                    "description" : "Saison with brettanomyces lambicus",
+                    "description" : "Saison with brettanomyces lambicus, 6%",
                 },
             ]
         },
@@ -640,16 +640,16 @@
             "logo" : "/images/2016/logos/steel-toad.png",
             "beer" : [
                 {
+                    "name" : "Brett Double IPA",
+                    "description" : "Saison-styled Double IPA with brett, 10%",
+                },
+                {
+                    "name" : "Brett Sauvignon",
+                    "description" : "Brett-fermented saison with Nelson Sauvin hops, 5.5%",
+                },
+                {
                     "name" : "Farmhouse Double IPA",
-                    "description" : "Saison-styled Double IPA with brett",
-                },
-                {
-                    "name" : "Rustic Saison",
-                    "description" : "Mixed ferment historical saison with brett",
-                },
-                {
-                    "name" : "",
-                    "description" : "<em>(more to be announced)</em>",
+                    "description" : "Saison-styled Double IPA, 10%",
                 },
             ]
         },
