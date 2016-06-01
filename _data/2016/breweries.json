@@ -28,6 +28,10 @@
                     "description" : "White wine barrel-aged brett saison, 7.2%",
                 },
                 {
+                    "name" : "Almanac - Blueberry Reserve",
+                    "description" : "Wine barrel-aged sour ale with blueberries, 7%",
+                },
+                {
                     "name" : "Bear Republic - Tartare Rouge",
                     "description" : "Spontaneously-fermented red ale, 6%",
                 },
@@ -44,21 +48,21 @@
                     "description" : "Extra Saison, 8%",
                 },
                 {
+                    "name" : "Jolly Pumpkin - Bam Bière",
+                    "description" : "Farmhouse Ale, 4.5%",
+                },
+                {
                     "name" : "Moylans - Lonely Tarts Club Ale",
                     "description" : "Flanders red ale with cherries, 5.3%",
                 },
                 {
                     "name" : "Trinity - One Ear",
-                    "description" : "Classic saison, 6.5%",
+                    "description" : "Classic saison brewed with oats &amp; rye, 6.5%",
                 },
                 {
                     "name" : "Trinity - Saison Delivery",
-                    "description" : "Saison with apple &amp; grains of paradise, 9.5%",
-                },
-                {
-                    "name" : "",
-                    "description" : "<em>(more to be announced)</em>",
-                },
+                    "description" : "Saison with apple &amp; grains of paradise aged in Chardonnay barrels, 9.5%",
+                }
             ]
         },
         {
@@ -73,7 +77,7 @@
                     "description" : "Sour ale with Viognier grapes",
                 },
                 {
-                    "name" : "Mutiny",
+                    "name" : "Honeymoon Baby",
                     "description" : "Four Winds collaboration tropical saison with rice, 5%",
                 },
                 {
@@ -106,6 +110,10 @@
             "logo" : "/images/2016/logos/callister.png",
             "beer" : [
                 {
+                    "name" : "Josie",
+                    "description" : "Sour saison from the barrel",
+                },
+                {
                     "name" : "Josie's Vacation",
                     "description" : "Saison with strawberry &amp; kiwi",
                 },
@@ -116,11 +124,7 @@
                 {
                     "name" : "BC<sup>4</sup>",
                     "description" : "Sour saison with black currant",
-                },
-                {
-                    "name" : "",
-                    "description" : "<em>(more to be announced)</em>",
-                },
+                }
             ]
         },
         {
@@ -164,7 +168,7 @@
                 },
                 {
                     "name" : "Commons - Stay Awhile",
-                    "description" : "Table saison hopped with Equinox",
+                    "description" : "Table saison hopped with Equinox, 4.2%",
                 },
                 {
                     "name" : "Brouwerij De Ranke - Cuvee de Ranke",
@@ -303,8 +307,12 @@
                     "description" : "Trou du Diable collaboration apple &amp; oat table saison, 5%",
                 },
                 {
-                    "name" : "Mutiny",
+                    "name" : "Honeymoon Baby",
                     "description" : "Brassneck collaboration tropical saison with rice, 5%",
+                },
+                {
+                    "name" : "Marge",
+                    "description" : "Tequila barrel-aged saison with lime and salt",
                 },
                 {
                     "name" : "Nectarous",
@@ -325,10 +333,6 @@
                 {
                     "name" : "Sovereign",
                     "description" : "Super saison, 9%",
-                },
-                {
-                    "name" : "Three Years",
-                    "description" : "Anniversary barrel-aged sour ale with nectarines, 5%",
                 },
             ]
         },
@@ -385,15 +389,15 @@
                     "description" : "Saison dry hopped with Pacific Northwest Hops and bottle conditioned with Brett",
                 },
                 {
-                    "name" : "Feral Monk",
+                    "name" : "Le Moine Feral",
                     "description" : "Belgian-style Tripel, bottled conditioned with Brett",
                 },
                 {
-                    "name" : "Foudre 4 (FHF exclusive)",
+                    "name" : "Foudre 4",
                     "description" : "Brett Saison aged 1 year in foudre &amp; bottle conditioned with Brett",
                 },
                 {
-                    "name" : "Sanctuaire Brett (FHF exclusive)",
+                    "name" : "Sanctuaire Brett",
                     "description" : "Belgian-style Tripel aged in red wine barrels &amp; refermented with Brett",
                 },
             ]
@@ -464,16 +468,20 @@
             "logo" : "/images/2016/logos/modern-times.png",
             "beer" : [
                 {
-                    "name" : "Lomaland",
-                    "description" : "Classic saison, 5.5%",
-                },
-                {
                     "name" : "Fruitlands",
                     "description" : "Classic gose brewed with apricot, 4.8%",
                 },
                 {
-                    "name" : "",
-                    "description" : "<em>(more to be announced)</em>",
+                    "name" : "Funky Universal Friend",
+                    "description" : "Saison with pinot grigio must, 7.5%",
+                },
+                {
+                    "name" : "Lomaland",
+                    "description" : "Classic saison, 5.5%",
+                },
+                {
+                    "name" : "Looking Backward",
+                    "description" : "White wine barrel-aged sour blond, 7.1%",
                 },
             ]
         },
@@ -485,10 +493,6 @@
             "logo" : "/images/2016/logos/moody.png",
             "beer" : [
                 {
-                    "name" : "Brett Saison",
-                    "description" : "Saison with Brett",
-                },
-                {
                     "name" : "Rye Sour Saison",
                     "description" : "Soured saison brewed with dark rye",
                 },
@@ -497,8 +501,8 @@
                     "description" : "Un-hopped soured ale brewed with hibiscus flowers",
                 },
                 {
-                    "name" : "Sour Pale Ale",
-                    "description" : "Sour Ale inspired by Petrus",
+                    "name" : "",
+                    "description" : "<em>(more to be announced)</em>",
                 },
             ]
         },
@@ -543,6 +547,10 @@
             "logo" : "/images/2016/logos/p49.png",
             "beer" : [
                 {
+                    "name" : "Brett IPA",
+                    "description" : "Brett-primary west coast IPA"
+                },
+                {
                     "name" : "Paranoid",
                     "description" : "Chardonnay & sake oak-aged imperial rice pilsner with Brett",
                 },
@@ -572,8 +580,8 @@
                     "description" : "Heirloom peaches added to year-old lambic, 5.8%",
                 },
                 {
-                    "name" : "",
-                    "description" : "<em>(more to be announced)</em>",
+                    "name" : "Saison",
+                    "description" : "Classic saison, 6.2%",
                 },
             ]
 
@@ -598,12 +606,12 @@
                     "description" : "100% Brett Brux fermented, 5.5%",
                 },
                 {
-                    "name" : "Tonnellerie",
-                    "description" : "Brett and lacto soured saison blended from red and white wine barrels, 5.5%",
+                    "name" : "Muscari",
+                    "description" : "Wild ale fermented with yeast isolated from Muscari flowers, 6%",
                 },
                 {
-                    "name" : "",
-                    "description" : "<em>(more to be announced)</em>",
+                    "name" : "Tonnellerie",
+                    "description" : "Brett and lacto soured saison blended from red and white wine barrels, 5.5%",
                 },
             ]
         },
@@ -625,10 +633,6 @@
                 {
                     "name" : "Titian",
                     "description" : "Barrel-aged Belgian-style sour ale",
-                },
-                {
-                    "name" : "",
-                    "description" : "<em>(more to be announced)</em>",
                 },
             ]
         },
@@ -720,7 +724,7 @@
             "beer" : [
                 {
                     "name" : "Orchard Wild Ale",
-                    "description" : "Mixed fermentation ale with apricot` &amp; plum",
+                    "description" : "Mixed fermentation ale with apricot &amp; plum",
                 },
                 {
                     "name" : "Citrus Gose",
@@ -748,6 +752,14 @@
                     "description" : "Basque sidra, 6.5%",
                 },
                 {
+                    "name" : "Isastegi Cider House - Natural Cider",
+                    "description" : "Basque sidra, 6%",
+                },
+                {
+                    "name" : "Sidería Bereziartua - Sidra Bere",
+                    "description" : "Basque sidra made with a blend of natural wild apples such as Txalaka, Urtebia, Judeline and Judor, 6%",
+                },
+                {
                     "name" : "Shacksbury - The Basque",
                     "description" : "Basque-style sidra, 6.2%",
                 },
@@ -756,16 +768,12 @@
                     "description" : "Saison with malt smoked over apricot, apple, asian pear and cherry wood, 5.6%",
                 },
                 {
-                    "name" : "Woodland Empire - Mr. Brett",
-                    "description" : "100% brett fermented saison, 5.6%",
-                },
-                {
                     "name" : "Woodland Empire - Set 'Em Wild, Set 'Em Free (Carrot)",
                     "description" : "Berlinerweisse with house-pressed carrot juice, 4%",
                 },
                 {
-                    "name" : "Woodland Empire - Super Saison",
-                    "description" : "Saison hopped with Galaxy and Motueka, 8%",
+                    "name" : "Woodland Empire - Yirge",
+                    "description" : "Saison with coffee, 5.5%",
                 },
             ]
         },
@@ -829,6 +837,10 @@
                 {
                     "name" : "To Øl - Sur Amarillo",
                     "description" : "Sour ale dry-hopped with Amarillo, 7.5%",
+                },
+                {
+                    "name" : "To Øl - Sky Mountain Sour",
+                    "description" : "Berlinerweisse collaboration with Buxton Brewery, 4.9%",
                 },
                 {
                     "name" : "To Øl - Sur Yule",

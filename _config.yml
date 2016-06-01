@@ -12,3 +12,5 @@ ticket_link: https://farmhousefest2016.eventbrite.ca/
 
 # Build settings
 markdown: kramdown
+exclude:
+    - node_modules
