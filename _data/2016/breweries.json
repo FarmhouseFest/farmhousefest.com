@@ -2,7 +2,7 @@
     "breweries": [
         {
             "name" : "Almanac Beer Co",
-            "id" : "almanac",
+            "id" : "beerthirst",
             "type" : "secondary",
             "covered" : "true",
             "url" : "http://www.almanacbeer.com/",
@@ -10,7 +10,7 @@
         },
         {
             "name" : "Astarbe Sidreria",
-            "id" : "astarbe",
+            "id" : "txotx",
             "type" : "secondary",
             "covered" : "true",
             "url" : "http://www.astarbesagardotegia.com/",
@@ -96,7 +96,7 @@
         },
         {
             "name" : "Berkeriet Beer AB",
-            "id" : "berkeriet",
+            "id" : "westbier",
             "type" : "secondary",
             "covered" : "true",
             "url" : "http://www.brekeriet.se/",
@@ -129,7 +129,7 @@
         },
         {
             "name" : "Brasserie Cantillon",
-            "id" : "commons",
+            "id" : "copperandtheory",
             "type" : "secondary",
             "covered" : "true",
             "url" : "http://www.cantillon.be/",
@@ -137,7 +137,7 @@
         },
         {
             "name" : "The Commons Brewery",
-            "id" : "commons",
+            "id" : "copperandtheory",
             "type" : "secondary",
             "covered" : "true",
             "url" : "http://www.commonsbrewery.com/",
@@ -223,7 +223,7 @@
         },
         {
             "name" : "Brouwerij De Ranke",
-            "id" : "de-ranke",
+            "id" : "copperandtheory",
             "type" : "secondary",
             "covered" : "true",
             "url" : "http://www.deranke.be/",
@@ -231,7 +231,7 @@
         },
         {
             "name" : "Brasserie Dieu du Ciel",
-            "id" : "ddc",
+            "id" : "untapped",
             "type" : "secondary",
             "covered" : "true",
             "url" : "http://dieuduciel.com/",
@@ -268,7 +268,7 @@
         },
         {
             "name" : "Ecliptic Brewing",
-            "id" : "ecliptic",
+            "id" : "beerthirst",
             "type" : "secondary",
             "covered" : "true",
             "url" : "http://eclipticbrewing.com/",
@@ -363,7 +363,7 @@
         },
         {
             "name" : "Funkwerks",
-            "id" : "funkwerks",
+            "id" : "beerthirst",
             "type" : "secondary",
             "covered" : "true",
             "url" : "http://funkwerks.com/",
@@ -371,7 +371,7 @@
         },
         {
             "name" : "Jolly Pumpkin Artisan Ales",
-            "id" : "jollypumpkin",
+            "id" : "beerthirst",
             "type" : "secondary",
             "covered" : "true",
             "url" : "http://www.jollypumpkin.com/",
@@ -412,7 +412,7 @@
         },
         {
             "name" : "Les Trois Mousequetaires",
-            "id" : "ltm",
+            "id" : "untapped",
             "type" : "secondary",
             "covered" : "true",
             "url" : "http://www.lestroismousquetaires.ca/",
@@ -541,7 +541,7 @@
         },
         {
             "name" : "Omer Vander Ghinste",
-            "id" : "ovg",
+            "id" : "westbier",
             "type" : "secondary",
             "covered" : "true",
             "url" : "http://www.omervanderghinste.be/",
@@ -592,7 +592,7 @@
         },
         {
             "name" : "Shacksbury Cider",
-            "id" : "shacksbury",
+            "id" : "txotx",
             "type" : "secondary",
             "covered" : "true",
             "url" : "http://www.shacksbury.com/",
@@ -705,7 +705,7 @@
         },
         {
             "name" : "To Øl",
-            "id" : "tool",
+            "id" : "westbier",
             "type" : "secondary",
             "covered" : "true",
             "url" : "http://to-ol.dk/home/",
@@ -713,7 +713,7 @@
         },
         {
             "name" : "Trinity Brewing",
-            "id" : "trinity",
+            "id" : "beerthirst",
             "type" : "secondary",
             "covered" : "true",
             "url" : "http://trinitybrew.com/",
@@ -800,7 +800,7 @@
         },
         {
             "name" : "Upright Brewing",
-            "id" : "upright",
+            "id" : "copperandtheory",
             "type" : "secondary",
             "covered" : "true",
             "url" : "http://www.uprightbrewing.com/",
@@ -808,7 +808,7 @@
         },
         {
             "name" : "Castle Brewery Van Honsebrouck",
-            "id" : "vanhonsebrouck",
+            "id" : "westbier",
             "type" : "secondary",
             "covered" : "true",
             "url" : "http://www.vanhonsebrouck.be/",
