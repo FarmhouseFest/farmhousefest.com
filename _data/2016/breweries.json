@@ -338,7 +338,7 @@
         },
         {
             "name" : "Fuggles & Warlock Craftworks",
-            "id" : "fuggles&warlock",
+            "id" : "fuggles-warlock",
             "type" : "primary",
             "url" : "http://fuggleswarlock.com/",
             "logo" : "/images/2016/logos/fuggles-warlock.png",
@@ -368,6 +368,14 @@
             "covered" : "true",
             "url" : "http://funkwerks.com/",
             "logo" : "/images/2016/logos/funkwerks.png",
+        },
+        {
+            "name" : "Jolly Pumpkin Artisan Ales",
+            "id" : "jollypumpkin",
+            "type" : "secondary",
+            "covered" : "true",
+            "url" : "http://www.jollypumpkin.com/",
+            "logo" : "/images/2016/logos/jolly-pumpkin.png",
         },
         {
             "name" : "Microbrasserie Le Castor",
