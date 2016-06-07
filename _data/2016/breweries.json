@@ -352,12 +352,12 @@
                     "description" : "Sour ale with plums",
                 },
                 {
-                    "name" : "Saskatoon Sour",
+                    "name" : "Takumi",
                     "description" : "Small batch sour ale with Saskatoon berries",
                 },
                 {
-                    "name" : "Mosaic Saison",
-                    "description" : "Single-hopped classic saison",
+                    "name" : "Icarus Mosaic Saison",
+                    "description" : "Belgian style saison single-hopped with Mosaic",
                 },
             ]
         },
@@ -493,16 +493,16 @@
             "logo" : "/images/2016/logos/moody.png",
             "beer" : [
                 {
+                    "name" : "North American Gose",
+                    "description" : "Wild yeast-fermented gose with grapefruit peel, grey sea salt, and a generous addition of Mosaic hops.",
+                },
+                {
                     "name" : "Rye Sour Saison",
                     "description" : "Soured saison brewed with dark rye",
                 },
                 {
                     "name" : "Sour Hibiscus Gruit",
                     "description" : "Un-hopped soured ale brewed with hibiscus flowers",
-                },
-                {
-                    "name" : "",
-                    "description" : "<em>(more to be announced)</em>",
                 },
             ]
         },
@@ -557,10 +557,6 @@
                 {
                     "name" : "Garden Saison",
                     "description" : "Saison with garden herbs"
-                },
-                {
-                    "name" : "",
-                    "description" : "<em>(more to be announced)</em>",
                 },
             ]
         },
