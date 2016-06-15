@@ -36,7 +36,7 @@ permalink: /2016/info/
 
 
 		    <h2>Will there be food?</h2>
-			<p class="block">Absolutely, there will be multiple food booths at the festival this year, offering great selection for vegetarians and omnivores alike. No outside food or beverages will be permitted on site, with the exception of sealed or empty water bottles.</p>
+			<p class="block">Absolutely, there will be multiple food trucks at the festival this year, offering great selection for vegetarians and omnivores alike. No outside food or beverages will be permitted on site, with the exception of sealed or empty water bottles.</p>
 
 			<ul class="food-list">
 				<li class="vendor" id="pressure-box">
@@ -56,7 +56,7 @@ permalink: /2016/info/
 				</li>
 			</ul>
 
-			<p class="block">This year we have lined up three food trucks to provide a wide variety of choices, available for purchase: <a href="http://www.thepressurebox.ca/">Pressure Box</a>, <a href="http://tacofino.com/menus/VANCOUVER">Tacofino</a>, and <a href="http://viateverepizzeria.com/">Via Tevere&#8217;s</a> food truck. Please bring cash in case your choice of truck doesn&#8217;t process plastic.</p>
+			<p class="block">This year we have lined up three trucks to provide a wide variety of choices, available for purchase: <a href="http://www.thepressurebox.ca/">Pressure Box</a>, <a href="http://tacofino.com/menus/VANCOUVER">Tacofino</a>, and <a href="http://viateverepizzeria.com/">Via Tevere&#8217;s</a> food truck. Please bring cash in case your choice of truck doesn&#8217;t process plastic.</p>
 
 
 		    <h2>Where is the Farmhouse Fest being held?</h2>
@@ -64,6 +64,7 @@ permalink: /2016/info/
 
 		    <h2>What bus do I take to get there?</h2>
 			<p class="block">Get to the UBC Loop however you can (99 B-Line, 25, 33, 41, 49, etc), then take shuttle C20, which runs every 30 minutes and will drop you off at the gates of the UBC Farm. Or get off at UBC Loop Bay 8; walk 0.61 kms south on West 16th, turn left at the first street East Mall; right onto Ross Drive.</p>
+			<p class="block">Additionally, <a href="http://www.vineandhops.ca/">Vine &amp; Hops</a> will be operating a shuttle every 20 minutes between the UBC Bus Loop and the UBC Farm. Signs will direct you to the pickup spot, and the schedule has been <a href="https://twitter.com/Vineandhops/status/743210280373596160">posted</a>. Space is very limited, and this will only be offered on a first come, first serve basis.</p>
 
 		    <h2>Is there parking?</h2>
 			<p class="block">There isn't much. We would really prefer that you take public transit anyway.</p>
