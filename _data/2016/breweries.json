@@ -715,10 +715,6 @@
             "logo" : "/images/2016/logos/twin-sails.png",
             "beer" : [
                 {
-                    "name" : "Orchard Wild Ale",
-                    "description" : "Mixed fermentation ale with apricot &amp; plum",
-                },
-                {
                     "name" : "Citrus Gose",
                     "description" : "Ale with sea salt, coriander &amp; grapefruit zest",
                 },
