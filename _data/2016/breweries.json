@@ -678,16 +678,16 @@
             "logo" : "/images/2016/logos/trading-post.png",
             "beer" : [
                 {
-                    "name" : "Dear James",
-                    "description" : "SMaSH Saison with Mosaic & pilsner malt, 6.5%",
-                },
-                {
                     "name" : "Ohwhyee",
                     "description" : "Tropical IPA / wheat ale cross with brett, 5.3%",
                 },
                 {
                     "name" : "Otis",
                     "description" : "Brett saison with sweet orange and grains of paradise, 6.5%",
+                },
+                {
+                    "name" : "Tart Cranberry Ale",
+                    "description" : "Soured cranberry wheat ale fermented with 100% brett",
                 },
             ]
         },
