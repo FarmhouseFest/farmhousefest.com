@@ -657,16 +657,16 @@
             "logo" : "/images/2016/logos/strange-fellows.png",
             "beer" : [
                 {
-                    "name" : "Obnoxious Lil Persona",
-                    "description" : "Strawberry Berlinerweisse with Tellicherry pepper",
+                    "name" : "Coup de Foudre",
+                    "description" : "Foudre-aged sour ale",
+                },
+                {
+                    "name" : "Roxanne",
+                    "description" : "Black raspberry cultured sour ale",
                 },
                 {
                     "name" : "Oud Bruin",
                     "description" : "Flanders Brown Ale",
-                },
-                {
-                    "name" : "",
-                    "description" : "<em>(more to be announced)</em>",
                 },
             ]
         },
