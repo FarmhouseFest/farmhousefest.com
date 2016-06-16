@@ -73,24 +73,24 @@
             "logo" : "/images/2016/logos/brassneck.png",
             "beer" : [
                 {
-                    "name" : "Changeling",
-                    "description" : "Sour ale with Viognier grapes",
+                    "name" : "Buzzkill",
+                    "description" : "Table ale brewed with a highly experimental yeast",
                 },
                 {
-                    "name" : "Honeymoon Baby",
-                    "description" : "Four Winds collaboration tropical saison with rice, 5%",
+                    "name" : "Magician's Assistant",
+                    "description" : "Sour ale dry-hopped with Nelson Sauvin, 6%",
                 },
                 {
                     "name" : "Stockholm Syndrome",
-                    "description" : "Foudre-aged Brett Saison",
+                    "description" : "Foudre-aged Brett Saison, 6.5%",
                 },
                 {
-                    "name" : "Uncomfortable Silence",
-                    "description" : "Dageraad collaboration dark Belgian ale with cherries & brett, 8.5%",
+                    "name" : "Raspberry Changeling",
+                    "description" : "Sour ale with raspberry, 6.5%",
                 },
                 {
-                    "name" : "",
-                    "description" : "<em>(more to be announced)</em>",
+                    "name" : "Viognier Changeling",
+                    "description" : "Sour ale with Viognier grapes, 6.5%",
                 },
             ]
         },
@@ -401,10 +401,6 @@
                     "description" : "Belgian-style Tripel, bottled conditioned with Brett",
                 },
                 {
-                    "name" : "Foudre 4",
-                    "description" : "Brett Saison aged 1 year in foudre &amp; bottle conditioned with Brett",
-                },
-                {
                     "name" : "Sanctuaire Brett",
                     "description" : "Belgian-style Tripel aged in red wine barrels &amp; refermented with Brett",
                 },
@@ -480,16 +476,8 @@
                     "description" : "Classic gose brewed with apricot, 4.8%",
                 },
                 {
-                    "name" : "Funky Universal Friend",
-                    "description" : "Saison with pinot grigio must, 7.5%",
-                },
-                {
                     "name" : "Lomaland",
                     "description" : "Classic saison, 5.5%",
-                },
-                {
-                    "name" : "Looking Backward",
-                    "description" : "White wine barrel-aged sour blond, 7.1%",
                 },
             ]
         },
@@ -576,8 +564,8 @@
             "logo" : "/images/2016/logos/pfriem.png",
             "beer" : [
                 {
-                    "name" : "Bretta",
-                    "description" : "Brett-conditioned Belgian ale, 6.5%",
+                    "name" : "Frambozen",
+                    "description" : "Raspberry lambic-style ale",
                 },
                 {
                     "name" : "Peche",
@@ -827,6 +815,10 @@
                     "description" : "Flanders red ale, 5.5%",
                 },
                 {
+                    "name" : "Brekeriet - Raudhetta",
+                    "description" : "Spontaneous barrel-fermented red ale, 4.5%",
+                },
+                {
                     "name" : "Brekeriet - Scanium",
                     "description" : "Sour wine barrel-aged saison collaboration with To Øl &amp; Stillwater, 6%",
                 },
@@ -841,10 +833,6 @@
                 {
                     "name" : "To Øl - Sur Yule",
                     "description" : "Sour ale with cherries, 5.4%",
-                },
-                {
-                    "name" : "To Øl - Yeastus Christus",
-                    "description" : "Saison, 7.4%",
                 },
                 {
                     "name" : "Van Honsebrouck - Fond Tradition Kriek",
