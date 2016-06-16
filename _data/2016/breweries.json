@@ -111,19 +111,19 @@
             "beer" : [
                 {
                     "name" : "Josie",
-                    "description" : "Sour saison from the barrel",
+                    "description" : "Sour saison from the barrel (Boombox)",
                 },
                 {
                     "name" : "Josie's Vacation",
-                    "description" : "Saison with strawberry &amp; kiwi",
+                    "description" : "Saison with strawberry &amp; kiwi (Boombox)",
                 },
                 {
                     "name" : "La Belle Gin",
-                    "description" : "Gin-oaked French saison with juniper",
+                    "description" : "Gin-oaked French saison with juniper (Callister)",
                 },
                 {
                     "name" : "BC<sup>4</sup>",
-                    "description" : "Sour saison with black currant",
+                    "description" : "Sour saison with black currant (Brewery Creek)",
                 }
             ]
         },
