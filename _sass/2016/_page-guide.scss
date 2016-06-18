@@ -1,0 +1,158 @@
+/*
+
+    2016
+    Day-of Guide Layout
+
+*/
+
+.guide {
+    .secondary {
+        font-size: 1.5rem;
+    }
+}
+
+.guide-nav {
+    margin: 0 2rem 3rem 2rem;
+    text-align: center;
+
+    li {
+        list-style: none;
+        display: inline;
+    }
+    a {
+        display: inline-block;
+        padding: 1rem;
+        margin: 0.5rem 0;
+        text-align: center;
+        color: $color-tan;
+        background: $color-salmon;
+        border-radius: 12px;
+    }
+
+    .panel {
+        padding: 1rem 2rem 0 2rem;
+    }
+
+}
+
+
+.guide-pourtimes {
+    padding: 1rem 2rem 3rem 2rem;
+    text-align: center;
+
+    h3.beer-name {
+        margin: 0;
+    }
+    .beer-description {
+        color: $color-salmon;
+    }
+}
+
+.guide-beer {
+    .brewery-list {
+        padding-top: 0;
+
+        .brewery {
+            padding-bottom: 1rem;
+        }
+
+        h3.secondary {
+            padding-bottom: 0;
+            text-align: center;
+        }
+
+    }
+}
+
+
+
+.guide-map {
+    display: block;
+    margin: 0 auto 2rem auto;
+    width: auto;
+    height: auto;
+    @include screen-max-small {
+        max-height: 320px;
+    }
+
+    @include screen-small {
+        max-width: 400px;
+    }
+}
+
+
+.panel-container .guide-siteplan {
+    display: block;
+}
+.guide-siteplan {
+    text-align: center;
+    margin-bottom: 4rem;
+
+    .plan {
+        display: block;
+        text-align: center;
+    }
+
+    h3.secondary {
+        padding-bottom: 0;
+    }
+    ul {
+        list-style: none;
+        width: 100%;
+        margin: 0;
+    }
+    em {
+        display: inline-block;
+        margin-right: 5px;
+        font-style: normal;
+        color: $color-salmon;
+    }
+
+    .fixed-contents {
+        display: block;
+    }
+    .panel {
+        padding: 0;
+
+        @include screen-large {
+            padding: 2rem 0;
+        }
+    }
+
+}
+
+
+.help {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.guide-home {
+    margin-top: 2rem;
+
+    h3.secondary {
+        padding-bottom: 0;
+    }
+
+}
+
+
+
+.brewery-list {
+
+    margin: 0;
+    align-items: flex-start;
+
+    h3 {
+        font-family: "Mercury SSm A", "Mercury SSm B", georgia, serif;
+        font-size: 1rem;
+    }
+
+    li {
+        list-style: none;
+    }
+    & > li {
+        margin-bottom: 2rem;
+    }
+
+}
