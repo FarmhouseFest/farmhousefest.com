@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box; }
+
+/*
+
+    Base media query mixins
+
+*/
+body {
+  font-family: 'Arvo', sans-serif;
+  color: #fff;
+  background-image: linear-gradient(to bottom, rgba(135, 76, 36, 0.95) 0%, rgba(135, 76, 36, 0.7) 100%), url(/images/2017/glass.jpg);
+  background-size: cover, cover; }
+
+html, body {
+  margin: 0;
+  height: 100%;
+  min-height: 100%; }
+
+.wrapper {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%; }
+
+.form {
+  -webkit-flex: 0 0 60%;
+      -ms-flex: 0 0 60%;
+          flex: 0 0 60%;
+  text-align: center; }
+  @media (min-width: 961px) {
+    .form {
+      -webkit-flex: 0 0 40%;
+          -ms-flex: 0 0 40%;
+              flex: 0 0 40%; } }
+  @media (min-width: 1281px) {
+    .form {
+      -webkit-flex: 0 0 30%;
+          -ms-flex: 0 0 30%;
+              flex: 0 0 30%; } }
+
+.fhf-logo {
+  opacity: 0.9;
+  width: 100px;
+  margin-bottom: 2.5rem; }
+  @media (min-width: 641px) {
+    .fhf-logo {
+      width: 200px;
+      margin-bottom: 5rem; } }
+
+.signup-title {
+  margin: 0;
+  color: rgba(248, 217, 202, 0.9);
+  font-size: 2rem;
+  text-transform: uppercase; }
+
+.signup-fields {
+  width: 100%;
+  margin: 1rem 0; }
+  @media (min-width: 641px) {
+    .signup-fields {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; } }
+
+.signup-email, .signup-button {
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 2px;
+  background: #fff;
+  font-size: 1.25rem;
+  font-family: 'Arvo', sans-serif;
+  line-height: 1; }
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #946e55; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #946e55; }
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #946e55; }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #946e55; }
+
+input:focus, button:focus, textarea:focus {
+  outline: none;
+  box-shadow: rgba(108, 42, 22, 0.5) 0 1px 9px; }
+
+.signup-email {
+  width: 100%;
+  margin: 0 0 0.5rem 0;
+  color: #6c2a16;
+  background: rgba(248, 217, 202, 0.9); }
+  .signup-email:focus, .signup-email:active {
+    background: #fff; }
+  @media (min-width: 641px) {
+    .signup-email {
+      -webkit-flex: 1 1 75%;
+          -ms-flex: 1 1 75%;
+              flex: 1 1 75%;
+      margin: 0 0.5rem 0 0; } }
+
+.signup-button {
+  width: 100%;
+  color: #f8d9ca;
+  background: rgba(108, 42, 22, 0.8);
+  text-transform: uppercase; }
+  .signup-button:hover, .signup-button:focus {
+    background: rgba(108, 42, 22, 0.9);
+    cursor: pointer; }
+  @media (min-width: 641px) {
+    .signup-button {
+      -webkit-flex: 1 1 25%;
+          -ms-flex: 1 1 25%;
+              flex: 1 1 25%; } }
+
+.social-media-list {
+  padding: 2rem 0 0 0;
+  margin: 0; }
+  .social-media-list li {
+    display: inline-block;
+    margin: 0 1rem;
+    list-style: none; }
+  .social-media-list a {
+    display: inline-block;
+    opacity: 0.8;
+    overflow: hidden; }
+    .social-media-list a svg {
+      width: 24px;
+      height: 24px;
+      fill: #f8d9ca; }
+    .social-media-list a:hover, .social-media-list a:focus {
+      opacity: 1; }

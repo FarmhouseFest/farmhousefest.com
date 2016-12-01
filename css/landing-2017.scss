@@ -1,0 +1,242 @@
+---
+# Link together our SASS partials
+---
+@charset "utf-8";
+
+* {
+    box-sizing: border-box;
+}
+
+/*
+
+    Base media query mixins
+
+*/
+
+$xxsmall: 320px;
+$xsmall: 480px;
+$small: 640px;
+$medium: 800px;
+$large: 960px;
+$xlarge: 1120px;
+$xxlarge: 1280px;
+$xxxlarge: 1400px;
+
+@mixin screen-xxxlarge {
+  @media (min-width: #{$xxxlarge + 1px}) {
+    @content;
+  }
+}
+@mixin screen-xxlarge {
+  @media (min-width: #{$xxlarge + 1px}) {
+    @content;
+  }
+}
+@mixin screen-xlarge {
+  @media (min-width: #{$xlarge + 1px}) {
+    @content;
+  }
+}
+@mixin screen-large {
+  @media (min-width: #{$large + 1px}) {
+    @content;
+  }
+}
+
+@mixin screen-medium {
+  @media (min-width: #{$medium + 1px}) {
+    @content;
+  }
+}
+@mixin screen-small {
+  @media (min-width: #{$small + 1px}) {
+    @content;
+  }
+}
+@mixin screen-xsmall {
+  @media (min-width: #{$xsmall + 1px}) {
+    @content;
+  }
+}
+@mixin screen-xxsmall {
+  @media (min-width: #{$xxsmall + 1px}) {
+    @content;
+  }
+}
+
+
+$text-colour: #f8d9ca;
+$dark-red: #6c2a16;
+$input-placeholder: #946e55;
+$social-icon-size: 24px;
+
+
+
+// base style
+body {
+    font-family: 'Arvo', sans-serif;
+
+    color: #fff;
+    background-image: 
+        linear-gradient(
+          to bottom,
+          rgba(#874c24, 0.95) 0%,
+          rgba(#874c24, 0.70) 100%
+        ),    
+        url(/images/2017/glass.jpg)
+    ;
+    background-size: cover, cover;
+}
+
+
+// base layout
+html, body {
+    margin: 0;
+    height: 100%;
+    min-height: 100%;
+}
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+}
+.form {
+    flex: 0 0 60%;
+    text-align: center;
+
+    @include screen-large {
+        flex: 0 0 40%;
+    }
+    @include screen-xxlarge {
+        flex: 0 0 30%;
+    }
+}
+.fhf-logo {
+    opacity: 0.9;
+
+    width: 100px;
+    margin-bottom: 2.5rem;
+
+    @include screen-small {
+        width: 200px;
+        margin-bottom: 5rem;
+    }
+}
+
+
+
+// form style
+.signup-title {
+    margin: 0;
+    color: rgba($text-colour, 0.9);
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.signup-fields {
+    width: 100%;
+    margin: 1rem 0;
+
+    @include screen-small {
+        display: flex;
+    }
+}
+.signup-email, .signup-button {
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 2px;
+    background: #fff;
+
+    font-size: 1.25rem;
+    font-family: 'Arvo', sans-serif;
+    line-height: 1;
+}
+
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: $input-placeholder;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: $input-placeholder;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: $input-placeholder;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: $input-placeholder;
+}
+
+input, button, textarea {
+    &:focus {
+        outline: none;
+        box-shadow: rgba($dark-red, 0.5) 0 1px 9px;
+    }
+}
+
+.signup-email {
+    width: 100%;
+    margin: 0 0 0.5rem 0;
+
+    color: $dark-red;
+    background: rgba(#f8d9ca, 0.9);
+
+    &:focus, &:active {
+        background: #fff;
+    }
+
+    @include screen-small {
+        flex: 1 1 75%;
+        margin: 0 0.5rem 0 0;
+    }
+}
+.signup-button {
+    width: 100%;
+    color: $text-colour;
+    background: rgba($dark-red, 0.8);
+    text-transform: uppercase;
+
+    &:hover, &:focus {
+        background: rgba($dark-red, 0.9);
+        cursor: pointer;
+    }
+
+    @include screen-small {
+        flex: 1 1 25%;
+    }
+}
+
+
+
+// footer
+
+.social-media-list {
+
+    padding: 2rem 0 0 0;
+    margin: 0;
+
+    li {
+        display: inline-block;
+        margin: 0 1rem;
+        list-style: none;
+    }
+
+    a {
+        display: inline-block;
+        opacity: 0.8;
+        overflow: hidden;
+
+        svg {
+            width: $social-icon-size;
+            height: $social-icon-size;
+            fill: $text-colour;
+        }
+
+        &:hover, &:focus {
+            opacity: 1;
+        }
+    }
+
+
+}
