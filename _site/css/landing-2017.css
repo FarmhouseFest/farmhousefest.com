@@ -11,6 +11,24 @@ body {
   color: #fff;
   background-image: linear-gradient(to bottom, rgba(135, 76, 36, 0.95) 0%, rgba(135, 76, 36, 0.7) 100%), url(/images/2017/glass.jpg);
   background-size: cover, cover; }
+  body.photo-band {
+    background-image: linear-gradient(to bottom, rgba(135, 76, 36, 0.95) 0%, rgba(135, 76, 36, 0.8) 100%), url(/images/2017/band.jpg); }
+  body.photo-field {
+    background-image: linear-gradient(to bottom, rgba(135, 76, 36, 0.95) 0%, rgba(135, 76, 36, 0.8) 100%), url(/images/2017/field.jpg); }
+  body.photo-field2 {
+    background-image: linear-gradient(to bottom, rgba(135, 76, 36, 0.95) 0%, rgba(135, 76, 36, 0.8) 100%), url(/images/2017/field2.jpg); }
+  body.photo-gear {
+    background-image: linear-gradient(to bottom, rgba(135, 76, 36, 0.95) 0%, rgba(135, 76, 36, 0.8) 100%), url(/images/2017/gear.jpg); }
+  body.photo-glass {
+    background-image: linear-gradient(to bottom, rgba(135, 76, 36, 0.95) 0%, rgba(135, 76, 36, 0.7) 100%), url(/images/2017/glass.jpg); }
+  body.photo-glass2 {
+    background-image: linear-gradient(to bottom, rgba(135, 76, 36, 0.95) 0%, rgba(135, 76, 36, 0.8) 100%), url(/images/2017/glass2.jpg); }
+  body.photo-ice {
+    background-image: linear-gradient(to bottom, rgba(135, 76, 36, 0.95) 0%, rgba(135, 76, 36, 0.8) 100%), url(/images/2017/ice.jpg); }
+  body.photo-pour {
+    background-image: linear-gradient(to bottom, rgba(135, 76, 36, 0.95) 0%, rgba(135, 76, 36, 0.8) 100%), url(/images/2017/pour.jpg); }
+  body.photo-pour2 {
+    background-image: linear-gradient(to bottom, rgba(135, 76, 36, 0.95) 0%, rgba(135, 76, 36, 0.8) 100%), url(/images/2017/pour2.jpg); }
 
 html, body {
   margin: 0;
@@ -127,9 +145,19 @@ input:focus, button:focus, textarea:focus {
           -ms-flex: 1 1 25%;
               flex: 1 1 25%; } }
 
+.site-footer {
+  padding-top: 2rem; }
+  @media (min-width: 641px) {
+    .site-footer {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; } }
+
 .social-media-list {
-  padding: 2rem 0 0 0;
-  margin: 0; }
+  -webkit-flex: 1 1 50%;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+  padding: 0; }
   .social-media-list li {
     display: inline-block;
     margin: 0 1rem;
@@ -144,3 +172,22 @@ input:focus, button:focus, textarea:focus {
       fill: #f8d9ca; }
     .social-media-list a:hover, .social-media-list a:focus {
       opacity: 1; }
+
+.past-years {
+  -webkit-flex: 1 1 50%;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+  padding: 0;
+  margin: 1rem 0; }
+  .past-years li {
+    display: inline-block;
+    margin: 0 1rem;
+    list-style: none; }
+  .past-years a {
+    display: inline-block;
+    line-height: 24px;
+    color: #f8d9ca;
+    text-decoration: none;
+    opacity: 0.5; }
+    .past-years a:hover, .past-years a:focus {
+      opacity: 0.8; }
