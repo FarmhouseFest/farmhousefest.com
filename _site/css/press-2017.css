@@ -1,0 +1,220 @@
+/*
+
+    2016
+    global variables, mixins, etc.
+
+*/
+/*
+
+    Base media query mixins
+
+*/
+.wrapper {
+  width: 100%;
+  padding: 10px 20px; }
+  @media (min-width: 961px) {
+    .wrapper {
+      width: 960px;
+      margin: 0 auto; } }
+  @media (min-width: 1281px) {
+    .wrapper {
+      width: 1200px; } }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Knockout-HTF46-Flyweight", "Knockout 46 A", "Knockout 46 B", "Arial Narrow", sans-serif;
+  line-height: 1.5;
+  font-size: 3rem;
+  font-weight: 300;
+  text-transform: uppercase; }
+
+/*
+
+    2017
+    Basic reset
+
+*/
+* {
+  box-sizing: border-box; }
+
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0; }
+
+/* Set `margin-bottom` to maintain vertical rhythm */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure {
+  margin-bottom: 0.5rem; }
+
+/*
+
+ Basic HTML element styling
+
+*/
+body {
+  font-family: "Mercury SSm A", "Mercury SSm B", georgia, serif;
+  font-size: 1.15rem;
+  line-height: 1.5;
+  font-weight: 300;
+  color: #535351;
+  background-color: #eceae2;
+  -webkit-text-size-adjust: 100%; }
+
+img {
+  max-width: 100%;
+  vertical-align: middle; }
+
+.ff-fix {
+  width: 100%; }
+
+ul, ol {
+  margin-left: 1rem; }
+
+li > ul,
+li > ol {
+  margin-bottom: 0; }
+
+/**
+ * Headings
+ */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1; }
+
+.header-alt {
+  font-family: "Mercury SSm A", "Mercury SSm B", georgia, serif;
+  font-size: 1.15rem;
+  line-height: 1.5;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -0.05rem; }
+
+.full-width {
+  width: 100%;
+  text-align: center; }
+
+.spaced {
+  margin: 2rem 1rem; }
+
+.callout {
+  margin: 4rem 2rem; }
+
+/**
+ * Block control
+ */
+.block {
+  margin-bottom: 2rem; }
+
+.centered {
+  text-align: center; }
+
+/**
+ * Links
+ */
+a {
+  color: #ed6666;
+  text-decoration: none; }
+  a:visited {
+    color: #e52222; }
+  a:hover {
+    color: #535351;
+    text-decoration: underline; }
+
+/**
+ * Clearfix
+ */
+@media (min-width: 961px) {
+  .wrapper {
+    width: 800px; } }
+@media (min-width: 1281px) {
+  .wrapper {
+    width: 960px; } }
+
+.header-logo {
+  width: 60px;
+  margin: 20px 0; }
+
+.back {
+  display: block;
+  margin: 20px 0; }
+
+.date {
+  font-style: italic; }
+
+/* photo downloads */
+.photos {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin: 20px 0; }
+  .photos img {
+    max-height: 150px; }
+  .photos .photo {
+    list-style: none;
+    text-align: center;
+    margin: 0 20px 20px 0;
+    -webkit-flex: calc(50% - 20px) 0 0;
+        -ms-flex: calc(50% - 20px) 0 0;
+            flex: calc(50% - 20px) 0 0; }
+    @media (min-width: 641px) {
+      .photos .photo {
+        -webkit-flex: calc(33% - 20px) 0 0;
+            -ms-flex: calc(33% - 20px) 0 0;
+                flex: calc(33% - 20px) 0 0; } }
+    @media (min-width: 801px) {
+      .photos .photo {
+        -webkit-flex: calc(20% - 20px) 0 0;
+            -ms-flex: calc(20% - 20px) 0 0;
+                flex: calc(20% - 20px) 0 0; } }
+  .photos.three-up .photo {
+    -webkit-flex: calc(100% - 20px) 0 0;
+        -ms-flex: calc(100% - 20px) 0 0;
+            flex: calc(100% - 20px) 0 0; }
+    @media (min-width: 801px) {
+      .photos.three-up .photo {
+        -webkit-flex: calc(33% - 20px) 0 0;
+            -ms-flex: calc(33% - 20px) 0 0;
+                flex: calc(33% - 20px) 0 0; } }
+
+.photos-more {
+  display: block;
+  margin: -20px 20px 0 0;
+  text-align: right; }
+
+/* logo downloads */
+.logos {
+  margin: 20px 0; }
+  @media (min-width: 481px) {
+    .logos {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; } }
+  .logos .logo {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 20px 10px 0;
+    list-style: none; }
+    .logos .logo img {
+      max-width: 60px; }
+    .logos .logo p {
+      margin: 10px 0 0 30px; }
+    @media (min-width: 481px) {
+      .logos .logo {
+        -webkit-flex: 50% 1 1;
+            -ms-flex: 50% 1 1;
+                flex: 50% 1 1; } }
+
+/* stand-alone page spacing */
+.head-block {
+  margin: 60px 0; }
+
+article {
+  margin: 60px 0; }
