@@ -1,0 +1,110 @@
+---
+# Link together our SASS partials
+---
+@charset "utf-8";
+
+@import
+    "../_sass/2017/variables",
+    "../_sass/2017/base"
+;
+
+.wrapper {
+    @extend %fixed-centered;
+
+    @include screen-large {
+        width: 800px;
+    }
+    @include screen-xxlarge {
+        width: 960px;
+    }
+}
+
+.header-logo {
+    width: 60px;
+    margin: 20px 0;
+}
+.back {
+    display: block;
+    margin: 20px 0;
+}
+
+.date {
+    font-style: italic;
+}
+
+
+/* photo downloads */
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    img {
+        max-height: 150px;
+    }
+    .photo {
+        list-style: none;
+        text-align: center;
+        margin: 0 20px 20px 0;
+        flex: calc(50% - 20px) 0 0;
+
+        @include screen-small {
+            flex: calc(33% - 20px) 0 0;
+        }
+        @include screen-medium {
+            flex: calc(20% - 20px) 0 0;
+        }
+    }
+
+    &.three-up .photo {
+        flex: calc(100% - 20px) 0 0;
+        @include screen-medium {
+            flex: calc(33% - 20px) 0 0;
+        }
+    }
+
+}
+.photos-more {
+    display: block;
+    margin: -20px 20px 0 0;
+    text-align: right;
+}
+
+
+/* logo downloads */
+.logos {
+
+    @include screen-xsmall {
+        display: flex;
+    }
+
+    margin: 20px 0;
+
+    .logo {
+        display: flex;
+        align-items: center;
+        margin: 0 20px 10px 0;
+        list-style: none;
+
+        img {
+            max-width: 60px;
+        }
+        p {
+            margin: 10px 0 0 30px;
+        }
+
+        @include screen-xsmall {
+            flex: 50% 1 1;
+        }
+
+    }
+}
+
+
+/* stand-alone page spacing */
+.head-block {
+    margin: 60px 0;
+}
+article {
+    margin: 60px 0;
+}
+

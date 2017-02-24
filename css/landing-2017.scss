@@ -238,7 +238,7 @@ html, body {
         display: flex;
     }
 }
-.signup-email, .signup-button {
+.signup-email, .signup-button, .buy-button {
     padding: 0.75rem 1rem;
     border: none;
     border-radius: 2px;
@@ -286,11 +286,12 @@ input, button, textarea {
         margin: 0 0.5rem 0 0;
     }
 }
-.signup-button {
+.signup-button, .buy-button {
     width: 100%;
     color: $text-colour;
     background: rgba($dark-red, 0.8);
     text-transform: uppercase;
+    text-decoration: none;
 
     &:hover, &:focus {
         background: rgba($dark-red, 0.9);
@@ -302,6 +303,10 @@ input, button, textarea {
     }
 }
 
+.buy-button {
+  margin-top: 2rem;
+  display: inline-block;
+}
 
 
 // footer

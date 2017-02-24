@@ -1,0 +1,166 @@
+/*
+
+    2016
+    global variables, mixins, etc.
+
+*/
+
+
+// base font
+$base-font-family:      "Mercury SSm A", "Mercury SSm B", georgia, serif;
+$base-font-size:        1.15rem;
+$small-font-size:       $base-font-size * 0.875;
+$base-line-height:      1.5;
+
+
+// largest titles
+$title-font-size:       220px;
+
+
+// secondary titles
+$alt-font-family:       "Knockout-HTF46-Flyweight", "Knockout 46 A", "Knockout 46 B", 'Arial Narrow', sans-serif;
+                        // "Knockout-HTF46-Flyweight" not included in the kit
+$alt-font-size:         3rem;
+$alt-line-height:       1.5;
+
+$spacing-unit:          1rem;
+
+
+// colour declarations
+$color-white:           #fff;
+
+$color-tan:             #eceae2;
+$color-tan-light:       lighten($color-tan, 20%);
+$color-tan-light-hover: lighten($color-tan, 40%);
+
+$color-salmon:          #ed6666;
+$color-salmon-hover:    lighten($color-salmon, 20%);
+
+$color-grey:            #535351;
+$color-grey-light:      lighten($color-grey, 10%);
+$color-grey-dark:       darken($color-grey, 5%);
+
+$texture:               none;
+
+
+// how high should the header navigation be?
+$site-nav-height: 88px;
+
+
+
+
+
+/*
+
+    Base media query mixins
+
+*/
+
+$xxsmall: 320px;
+$xsmall: 480px;
+$small: 640px;
+$medium: 800px;
+$large: 960px;
+$xlarge: 1120px;
+$xxlarge: 1280px;
+$xxxlarge: 1400px;
+
+@mixin screen-xxxlarge {
+  @media (min-width: #{$xxxlarge + 1px}) {
+    @content;
+  }
+}
+@mixin screen-xxlarge {
+  @media (min-width: #{$xxlarge + 1px}) {
+    @content;
+  }
+}
+@mixin screen-xlarge {
+  @media (min-width: #{$xlarge + 1px}) {
+    @content;
+  }
+}
+@mixin screen-large {
+  @media (min-width: #{$large + 1px}) {
+    @content;
+  }
+}
+
+@mixin screen-medium {
+  @media (min-width: #{$medium + 1px}) {
+    @content;
+  }
+}
+@mixin screen-small {
+  @media (min-width: #{$small + 1px}) {
+    @content;
+  }
+}
+@mixin screen-xsmall {
+  @media (min-width: #{$xsmall + 1px}) {
+    @content;
+  }
+}
+@mixin screen-xxsmall {
+  @media (min-width: #{$xxsmall + 1px}) {
+    @content;
+  }
+}
+
+
+@mixin screen-max-small {
+  @media (max-width: #{$small + 1px}) {
+    @content;
+  }
+}
+
+
+
+// silent class for clearfixing
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+
+// silent class for setting upper boundaries
+%set-screen-width {
+  @include screen-large {
+    width: 960px;
+  }
+  @include screen-xxlarge {
+    width: 1200px;
+  }
+}
+
+
+// silent class to fix a centered width at larger screen sizes
+%fixed-centered {
+
+  width: 100%;
+  padding: 10px 20px;
+
+  @include screen-large {
+      width: 960px;
+      margin: 0 auto;
+  }
+  @include screen-xxlarge {
+    width: 1200px;
+  }
+}
+
+
+
+
+
+// silent class mixin for header type
+%site-header {
+  font-family: $alt-font-family;
+  line-height: $alt-line-height;
+  font-size: $alt-font-size;
+  font-weight: 300;
+  text-transform: uppercase;
+}
