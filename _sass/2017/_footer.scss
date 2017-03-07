@@ -1,0 +1,63 @@
+/*
+
+    2017
+    Footer
+
+*/
+
+
+.site-footer {
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    color: $color-tan;
+    background: $color-red;
+    .inner {
+        @extend %fixed-centered;
+        justify-content: space-between;
+        margin: 0 auto;
+
+        @include screen-large {
+            display: flex;
+        }
+    }
+    ul {
+        margin: 0 0 1rem 0;
+        text-align: center;
+        @include screen-large {
+            margin: 0;
+        }
+    }
+    li {
+        display: inline-block;
+        margin: 0 0 0 1rem;
+        list-style: none;
+    }
+    a {
+        color: $color-tan;
+    }
+    p {
+        text-align: center;
+        @include screen-large {
+            text-align: left;
+            flex: 0 1 75%;
+        }
+    }
+
+}
+
+.past-years {
+    @include screen-large {
+        flex: 0 1 25%;
+    }
+}
+
+.social-media-list {
+    @include screen-large {
+        flex: 0 1 25%;
+    }
+    svg {
+        width: 20px;
+        height: 20px;
+        fill: $color-tan;
+    }
+}

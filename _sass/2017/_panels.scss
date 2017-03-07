@@ -1,0 +1,94 @@
+/*
+
+    2017
+    Panels
+
+*/
+
+
+// 
+//  base
+//
+.panel-container {
+
+    .inner {
+        @extend %fixed-centered;
+        padding-top: $site-nav-height;
+        padding-bottom: $site-nav-height;
+    }
+
+    .full-span {
+        flex: 0 1 100%;
+    }
+
+    h2 {
+        margin-bottom: 2rem;
+        font-size: 3rem;
+        text-align: center;
+    }
+
+
+    &.red {
+        color: $color-tan;
+        background: $color-red;
+    }
+    &.tan {
+        background: #F7E1C6;
+    }
+
+    &.two-up .inner {
+        @include screen-medium {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .panel {
+                flex: 1 1 50%;
+                p {
+                    padding-right: 2rem;
+                }
+                &:last-child {
+                    p, h3 {
+                        padding-left: 2rem;
+                        padding-right: 0;
+                    }
+                }
+            }
+        }
+
+    }
+
+
+    &.four-up .inner {
+        @include screen-large {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .panel {
+                @include screen-large {
+                    flex: 1 1 25%;
+                }
+                p {
+                    padding-right: 2rem;
+                }
+                &:last-child {
+                    p, h3 {
+                        padding-left: 2rem;
+                        padding-right: 0;
+                    }
+                }
+            }
+
+        }
+    }
+
+    &.beers .inner {
+        max-width: $site-content-width / 2;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+}

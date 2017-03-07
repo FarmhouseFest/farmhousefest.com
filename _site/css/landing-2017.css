@@ -36,21 +36,33 @@ html, body {
   min-height: 100%; }
 
 .wrapper {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
   height: 100%; }
 
 .form {
-  flex: 0 0 60%;
+  -webkit-flex: 0 0 60%;
+      -ms-flex: 0 0 60%;
+          flex: 0 0 60%;
   text-align: center; }
   @media (min-width: 961px) {
     .form {
-      flex: 0 0 40%; } }
+      -webkit-flex: 0 0 40%;
+          -ms-flex: 0 0 40%;
+              flex: 0 0 40%; } }
   @media (min-width: 1281px) {
     .form {
-      flex: 0 0 30%; } }
+      -webkit-flex: 0 0 30%;
+          -ms-flex: 0 0 30%;
+              flex: 0 0 30%; } }
 
 .fhf-logo {
   opacity: 0.9;
@@ -72,6 +84,8 @@ html, body {
   margin: 1rem 0; }
   @media (min-width: 641px) {
     .signup-fields {
+      display: -webkit-flex;
+      display: -ms-flexbox;
       display: flex; } }
 
 .signup-email, .signup-button, .buy-button {
@@ -112,7 +126,9 @@ input:focus, button:focus, textarea:focus {
     background: #fff; }
   @media (min-width: 641px) {
     .signup-email {
-      flex: 1 1 75%;
+      -webkit-flex: 1 1 75%;
+          -ms-flex: 1 1 75%;
+              flex: 1 1 75%;
       margin: 0 0.5rem 0 0; } }
 
 .signup-button, .buy-button {
@@ -126,7 +142,9 @@ input:focus, button:focus, textarea:focus {
     cursor: pointer; }
   @media (min-width: 641px) {
     .signup-button, .buy-button {
-      flex: 1 1 25%; } }
+      -webkit-flex: 1 1 25%;
+          -ms-flex: 1 1 25%;
+              flex: 1 1 25%; } }
 
 .buy-button {
   margin-top: 2rem;
@@ -136,10 +154,14 @@ input:focus, button:focus, textarea:focus {
   padding-top: 2rem; }
   @media (min-width: 641px) {
     .site-footer {
+      display: -webkit-flex;
+      display: -ms-flexbox;
       display: flex; } }
 
 .social-media-list {
-  flex: 1 1 50%;
+  -webkit-flex: 1 1 50%;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
   padding: 0; }
   .social-media-list li {
     display: inline-block;
@@ -157,7 +179,9 @@ input:focus, button:focus, textarea:focus {
       opacity: 1; }
 
 .past-years {
-  flex: 1 1 50%;
+  -webkit-flex: 1 1 50%;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
   padding: 0;
   margin: 1rem 0; }
   .past-years li {

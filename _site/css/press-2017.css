@@ -1,6 +1,6 @@
 /*
 
-    2016
+    2017
     global variables, mixins, etc.
 
 */
@@ -11,7 +11,7 @@
 */
 .wrapper {
   width: 100%;
-  padding: 10px 20px; }
+  padding: 0 20px; }
   @media (min-width: 961px) {
     .wrapper {
       width: 960px;
@@ -21,9 +21,16 @@
       width: 1200px; } }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Knockout-HTF46-Flyweight", "Knockout 46 A", "Knockout 46 B", "Arial Narrow", sans-serif;
+  font-family: haste-woff, haste, georgia, sans-serif;
   line-height: 1.5;
-  font-size: 3rem;
+  font-size: 2rem;
+  font-weight: 300;
+  text-transform: lowercase; }
+
+h3 {
+  font-family: freight-sans-condensed-pro, sans-serif;
+  line-height: 1.5;
+  font-size: 1.15rem;
   font-weight: 300;
   text-transform: uppercase; }
 
@@ -54,20 +61,17 @@ ul, ol, dl, figure {
 
 */
 body {
-  font-family: "Mercury SSm A", "Mercury SSm B", georgia, serif;
+  font-family: freight-sans-condensed-pro, sans-serif;
   font-size: 1.15rem;
   line-height: 1.5;
-  font-weight: 300;
-  color: #535351;
-  background-color: #eceae2;
+  font-weight: 400;
+  color: #000;
+  background-color: #FFFDE9;
   -webkit-text-size-adjust: 100%; }
 
 img {
   max-width: 100%;
   vertical-align: middle; }
-
-.ff-fix {
-  width: 100%; }
 
 ul, ol {
   margin-left: 1rem; }
@@ -83,7 +87,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1; }
 
 .header-alt {
-  font-family: "Mercury SSm A", "Mercury SSm B", georgia, serif;
+  font-family: freight-sans-condensed-pro, sans-serif;
   font-size: 1.15rem;
   line-height: 1.5;
   font-weight: 800;
@@ -100,6 +104,10 @@ h1, h2, h3, h4, h5, h6 {
 .callout {
   margin: 4rem 2rem; }
 
+h3 {
+  font-size: 1rem;
+  margin-top: 1rem; }
+
 /**
  * Block control
  */
@@ -113,12 +121,12 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: #ed6666;
+  color: #EE5A4B;
   text-decoration: none; }
   a:visited {
-    color: #e52222; }
+    color: #d82614; }
   a:hover {
-    color: #535351;
+    color: #000;
     text-decoration: underline; }
 
 /**
@@ -144,8 +152,12 @@ a {
 
 /* photo downloads */
 .photos {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   margin: 20px 0; }
   .photos img {
     max-height: 150px; }
@@ -153,18 +165,28 @@ a {
     list-style: none;
     text-align: center;
     margin: 0 20px 20px 0;
-    flex: calc(50% - 20px) 0 0; }
+    -webkit-flex: calc(50% - 20px) 0 0;
+        -ms-flex: calc(50% - 20px) 0 0;
+            flex: calc(50% - 20px) 0 0; }
     @media (min-width: 641px) {
       .photos .photo {
-        flex: calc(33% - 20px) 0 0; } }
+        -webkit-flex: calc(33% - 20px) 0 0;
+            -ms-flex: calc(33% - 20px) 0 0;
+                flex: calc(33% - 20px) 0 0; } }
     @media (min-width: 801px) {
       .photos .photo {
-        flex: calc(20% - 20px) 0 0; } }
+        -webkit-flex: calc(20% - 20px) 0 0;
+            -ms-flex: calc(20% - 20px) 0 0;
+                flex: calc(20% - 20px) 0 0; } }
   .photos.three-up .photo {
-    flex: calc(100% - 20px) 0 0; }
+    -webkit-flex: calc(100% - 20px) 0 0;
+        -ms-flex: calc(100% - 20px) 0 0;
+            flex: calc(100% - 20px) 0 0; }
     @media (min-width: 801px) {
       .photos.three-up .photo {
-        flex: calc(33% - 20px) 0 0; } }
+        -webkit-flex: calc(33% - 20px) 0 0;
+            -ms-flex: calc(33% - 20px) 0 0;
+                flex: calc(33% - 20px) 0 0; } }
 
 .photos-more {
   display: block;
@@ -176,10 +198,16 @@ a {
   margin: 20px 0; }
   @media (min-width: 481px) {
     .logos {
+      display: -webkit-flex;
+      display: -ms-flexbox;
       display: flex; } }
   .logos .logo {
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 0 20px 10px 0;
     list-style: none; }
     .logos .logo img {
@@ -188,7 +216,9 @@ a {
       margin: 10px 0 0 30px; }
     @media (min-width: 481px) {
       .logos .logo {
-        flex: 50% 1 1; } }
+        -webkit-flex: 50% 1 1;
+            -ms-flex: 50% 1 1;
+                flex: 50% 1 1; } }
 
 /* stand-alone page spacing */
 .head-block {
