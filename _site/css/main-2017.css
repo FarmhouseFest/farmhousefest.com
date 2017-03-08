@@ -108,7 +108,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 4rem 2rem; }
 
 h3 {
-  font-size: 1rem;
+  font-size: 1.15rem;
   margin-top: 1rem; }
 
 /**
@@ -422,3 +422,6 @@ a {
     .newsletter button:hover, .newsletter button:focus {
       color: #EE5A4B;
       background-color: #FFFDE9; }
+
+.info h3 {
+  margin-top: 1.5rem; }
