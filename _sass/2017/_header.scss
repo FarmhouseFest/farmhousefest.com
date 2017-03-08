@@ -34,6 +34,7 @@
 // sticky header, kinda-sorta
 //
 .fhf-header {
+  top: 0;
   width: 100%;
   opacity: 1;
   transition: 
@@ -46,7 +47,6 @@
 .header-scripted {
   @include screen-medium {
     position: fixed;
-    top: 0;
     left: 0;
   }
 }
@@ -134,7 +134,6 @@
     .details {
         z-index: 5;
         position: relative;
-        left: -10px;
 
         display: flex;
         align-items: center;
@@ -145,18 +144,22 @@
         color: $color-tan;
         background: $color-red;
 
+        @include screen-small {
+            left: -10px;
+        }
+
         p {
             @extend %site-header-main;
             font-size: 3rem;
             line-height: 1;
+            white-space: nowrap;
             &:first-child {
                 padding-right: 100px;
             }
+            @include screen-max-small {
+                font-size: 1.8rem;
+            }
         }
-        @include screen-max-small {
-            display: none;
-        }
-
     }
 
     .tagline {
@@ -165,7 +168,7 @@
         font-size: 1.8rem;
 
         @include screen-max-small {
-            display: none;
+            font-size: 1.4rem;
         }
 
     }
