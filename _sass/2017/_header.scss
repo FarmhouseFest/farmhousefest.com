@@ -14,14 +14,52 @@
 }
 
 .fhf-header {
+    position: fixed;
+    z-index: 100;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
 
+    width: 100%;
     padding: 0 13px;
     height: $site-nav-height;
     background: $color-tan;
+
 }
+
+
+
+//
+// sticky header, kinda-sorta
+//
+.fhf-header {
+  width: 100%;
+  opacity: 1;
+  transition: 
+      top 0.5s ease-out,
+      opacity 0.5s ease-out;
+  @include screen-medium {
+    position: absolute;
+  }
+}
+.header-scripted {
+  @include screen-medium {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+}
+.header-opaque {
+  
+}
+.header-hidden {
+  top: -$spacing-unit * 1.25;
+  opacity: 0;
+}
+
+
+
 
 .fhf-nav {
     ul {
@@ -37,6 +75,10 @@
         font-size: 1.5rem;
         line-height: 1;
         color: $color-black;
+
+        @include screen-max-small {
+            display: none;
+        }
     }
     .tickets a {
         display: inline-block;
@@ -47,6 +89,9 @@
         &:hover, &:focus {
             background: $color-red;
             text-decoration: none;
+        }
+        @include screen-max-small {
+            display: inline-block;
         }
     }
 }
@@ -59,6 +104,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: $site-nav-height;
     min-height: 60vh;
     background-image: 
         linear-gradient(

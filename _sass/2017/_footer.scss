@@ -45,12 +45,6 @@
 
 }
 
-.past-years {
-    @include screen-large {
-        flex: 0 1 25%;
-    }
-}
-
 .social-media-list {
     @include screen-large {
         flex: 0 1 25%;

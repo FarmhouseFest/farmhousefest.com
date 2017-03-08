@@ -145,6 +145,8 @@ a {
   max-width: 37px; }
 
 .fhf-header {
+  position: fixed;
+  z-index: 100;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -154,9 +156,28 @@ a {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
   padding: 0 13px;
   height: 60px;
   background: #FFFDE9; }
+
+.fhf-header {
+  width: 100%;
+  opacity: 1;
+  transition: top 0.5s ease-out, opacity 0.5s ease-out; }
+  @media (min-width: 801px) {
+    .fhf-header {
+      position: absolute; } }
+
+@media (min-width: 801px) {
+  .header-scripted {
+    position: fixed;
+    top: 0;
+    left: 0; } }
+
+.header-hidden {
+  top: -1.25rem;
+  opacity: 0; }
 
 .fhf-nav ul {
   margin: 0; }
@@ -168,6 +189,9 @@ a {
   font-size: 1.5rem;
   line-height: 1;
   color: #000; }
+  @media (max-width: 641px) {
+    .fhf-nav a {
+      display: none; } }
 .fhf-nav .tickets a {
   display: inline-block;
   padding: 6px 12px;
@@ -177,6 +201,9 @@ a {
   .fhf-nav .tickets a:hover, .fhf-nav .tickets a:focus {
     background: #EE5A4B;
     text-decoration: none; }
+  @media (max-width: 641px) {
+    .fhf-nav .tickets a {
+      display: inline-block; } }
 
 .fhf-intro {
   display: -webkit-flex;
@@ -188,6 +215,7 @@ a {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 60px;
   min-height: 60vh;
   background-image: linear-gradient(to bottom, rgba(255, 253, 233, 0.7) 0%, rgba(255, 253, 233, 0.7) 100%), url(/images/2017/cheers.jpg);
   background-size: cover, cover;
@@ -283,12 +311,6 @@ a {
                 flex: 0 1 75%; } }
 
 @media (min-width: 961px) {
-  .past-years {
-    -webkit-flex: 0 1 25%;
-        -ms-flex: 0 1 25%;
-            flex: 0 1 25%; } }
-
-@media (min-width: 961px) {
   .social-media-list {
     -webkit-flex: 0 1 25%;
         -ms-flex: 0 1 25%;
@@ -343,7 +365,7 @@ a {
       .panel-container.two-up .inner .panel:last-child p, .panel-container.two-up .inner .panel:last-child h3 {
         padding-left: 2rem;
         padding-right: 0; } }
-@media (min-width: 961px) {
+@media (min-width: 801px) {
   .panel-container.four-up .inner {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -356,19 +378,44 @@ a {
             justify-content: space-between;
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
-            flex-wrap: wrap; } }
-  @media (min-width: 961px) and (min-width: 961px) {
+            flex-wrap: wrap; }
     .panel-container.four-up .inner .panel {
       -webkit-flex: 1 1 25%;
           -ms-flex: 1 1 25%;
-              flex: 1 1 25%; } }
-@media (min-width: 961px) {
-    .panel-container.four-up .inner .panel p {
-      padding-right: 2rem; }
-    .panel-container.four-up .inner .panel:last-child p, .panel-container.four-up .inner .panel:last-child h3 {
-      padding-left: 2rem;
-      padding-right: 0; } }
+              flex: 1 1 25%; }
+      .panel-container.four-up .inner .panel p {
+        padding-right: 2rem; }
+      .panel-container.four-up .inner .panel:last-child p, .panel-container.four-up .inner .panel:last-child h3 {
+        padding-left: 2rem;
+        padding-right: 0; } }
 .panel-container.beers .inner {
   max-width: 480px;
   margin: 0 auto;
   text-align: center; }
+
+.mapbox iframe {
+  width: 100%;
+  height: auto;
+  margin: 1rem 0; }
+  @media (min-width: 801px) {
+    .mapbox iframe {
+      height: 300px; } }
+
+.newsletter {
+  text-align: center; }
+  .newsletter input, .newsletter button {
+    padding: 4px 12px;
+    border-radius: 4px;
+    border: solid 2px #FFFDE9;
+    font-family: freight-sans-condensed-pro, sans-serif;
+    font-size: 1.725rem; }
+  .newsletter input {
+    color: #000;
+    background-color: #FFFDE9; }
+  .newsletter button {
+    color: #FFFDE9;
+    background-color: #EE5A4B;
+    cursor: pointer; }
+    .newsletter button:hover, .newsletter button:focus {
+      color: #EE5A4B;
+      background-color: #FFFDE9; }
