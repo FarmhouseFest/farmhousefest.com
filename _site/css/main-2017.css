@@ -407,12 +407,18 @@ a {
     -webkit-flex: 1 1 33.33%;
         -ms-flex: 1 1 33.33%;
             flex: 1 1 33.33%;
-    height: 200px; }
+    height: 100px; }
     .panel-photos div:nth-child(1), .panel-photos div:nth-child(2) {
       border-right: solid 1px #FFFDE9; }
+    @media (min-width: 641px) {
+      .panel-photos div {
+        height: 200px; } }
     @media (min-width: 961px) {
       .panel-photos div {
         height: 300px; } }
+    @media (min-width: 1281px) {
+      .panel-photos div {
+        height: 400px; } }
   .panel-photos .photo1 {
     background-image: url(/images/2017/photo1.jpg); }
   .panel-photos .photo2 {
