@@ -91,6 +91,45 @@
 
 }
 
+.panel-photos {
+    display: flex;
+    div {
+        background-color: #fff;
+        background-size: cover;
+        background-position: center center;
+        flex: 1 1 33.33%;
+        height: 200px;
+
+        &:nth-child(1), &:nth-child(2) {
+            border-right: solid 1px $color-tan;
+        }
+
+        @include screen-large {
+            height: 300px;
+        }
+    }
+
+    .photo1 {
+        background-image: url(/images/2017/photo1.jpg);
+    }
+    .photo2 {
+        background-image: url(/images/2017/photo2.jpg);
+    }
+    .photo3 {
+        background-image: url(/images/2017/photo3.jpg);
+    }
+    .photo4 {
+        background-image: url(/images/2017/photo4.jpg);
+    }
+    .photo5 {
+        background-image: url(/images/2017/photo5.jpg);
+    }
+    .photo6 {
+        background-image: url(/images/2017/photo6.jpg);
+    }
+}
+
+
 
 
 //

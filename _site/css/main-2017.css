@@ -396,6 +396,36 @@ a {
   margin: 0 auto;
   text-align: center; }
 
+.panel-photos {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .panel-photos div {
+    background-color: #fff;
+    background-size: cover;
+    background-position: center center;
+    -webkit-flex: 1 1 33.33%;
+        -ms-flex: 1 1 33.33%;
+            flex: 1 1 33.33%;
+    height: 200px; }
+    .panel-photos div:nth-child(1), .panel-photos div:nth-child(2) {
+      border-right: solid 1px #FFFDE9; }
+    @media (min-width: 961px) {
+      .panel-photos div {
+        height: 300px; } }
+  .panel-photos .photo1 {
+    background-image: url(/images/2017/photo1.jpg); }
+  .panel-photos .photo2 {
+    background-image: url(/images/2017/photo2.jpg); }
+  .panel-photos .photo3 {
+    background-image: url(/images/2017/photo3.jpg); }
+  .panel-photos .photo4 {
+    background-image: url(/images/2017/photo4.jpg); }
+  .panel-photos .photo5 {
+    background-image: url(/images/2017/photo5.jpg); }
+  .panel-photos .photo6 {
+    background-image: url(/images/2017/photo6.jpg); }
+
 .mapbox iframe {
   width: 100%;
   height: auto;
