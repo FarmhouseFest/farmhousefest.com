@@ -83,12 +83,6 @@
         }
     }
 
-    &.beers .inner {
-        max-width: $site-content-width / 2;
-        margin: 0 auto;
-        text-align: center;
-    }
-
 }
 
 .panel-photos {
@@ -142,6 +136,48 @@
 //
 // custom panels
 //
+
+.beers {
+    .inner {
+        margin: 0 auto;
+        text-align: center;
+        p {
+            display: inline-block;
+            max-width: $site-content-width / 2;
+        }
+    }
+    .breweries {
+        margin: 1rem 0;
+        display: flex;
+        flex-wrap: wrap;
+        li {
+            flex: 1 1 50%;
+            margin: 2rem 0;
+            list-style: none;
+            text-align: center;
+        }
+        img {
+            width: 80%;
+            max-width: 100px;
+        }
+
+        @include screen-xsmall {
+            li {
+                flex: 1 1 33%;
+                margin: 3rem 0;
+            }
+            img {
+                width: 60%;
+                max-width: 150px;
+            }
+        }
+        @include screen-medium {
+            li {
+                flex: 1 1 20%;
+            }
+        }
+    }
+}
 
 .mapbox iframe {
     width: 100%;
