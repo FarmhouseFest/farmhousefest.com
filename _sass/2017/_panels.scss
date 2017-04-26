@@ -151,8 +151,8 @@
         display: flex;
         flex-wrap: wrap;
         li {
-            flex: 1 1 50%;
-            margin: 2rem 0;
+            flex: 1 1 33%;
+            margin: 1rem 0;
             list-style: none;
             text-align: center;
         }
@@ -161,10 +161,16 @@
             max-width: 100px;
         }
 
+        @include screen-xxsmall {
+            li {
+                flex: 1 1 25%;
+                margin: 1.5rem 0;
+            }
+        }
         @include screen-xsmall {
             li {
-                flex: 1 1 33%;
-                margin: 3rem 0;
+                flex: 1 1 20%;
+                margin: 2rem 0;
             }
             img {
                 width: 60%;
@@ -173,7 +179,7 @@
         }
         @include screen-medium {
             li {
-                flex: 1 1 20%;
+                flex: 1 1 12.5%;
             }
         }
     }

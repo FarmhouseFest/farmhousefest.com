@@ -152,8 +152,12 @@ a {
 
 /* photo downloads */
 .photos {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   margin: 20px 0; }
   .photos img {
     max-height: 150px; }
@@ -161,18 +165,28 @@ a {
     list-style: none;
     text-align: center;
     margin: 0 20px 20px 0;
-    flex: calc(50% - 20px) 0 0; }
+    -webkit-flex: calc(50% - 20px) 0 0;
+        -ms-flex: calc(50% - 20px) 0 0;
+            flex: calc(50% - 20px) 0 0; }
     @media (min-width: 641px) {
       .photos .photo {
-        flex: calc(33% - 20px) 0 0; } }
+        -webkit-flex: calc(33% - 20px) 0 0;
+            -ms-flex: calc(33% - 20px) 0 0;
+                flex: calc(33% - 20px) 0 0; } }
     @media (min-width: 801px) {
       .photos .photo {
-        flex: calc(20% - 20px) 0 0; } }
+        -webkit-flex: calc(20% - 20px) 0 0;
+            -ms-flex: calc(20% - 20px) 0 0;
+                flex: calc(20% - 20px) 0 0; } }
   .photos.three-up .photo {
-    flex: calc(100% - 20px) 0 0; }
+    -webkit-flex: calc(100% - 20px) 0 0;
+        -ms-flex: calc(100% - 20px) 0 0;
+            flex: calc(100% - 20px) 0 0; }
     @media (min-width: 801px) {
       .photos.three-up .photo {
-        flex: calc(33% - 20px) 0 0; } }
+        -webkit-flex: calc(33% - 20px) 0 0;
+            -ms-flex: calc(33% - 20px) 0 0;
+                flex: calc(33% - 20px) 0 0; } }
 
 .photos-more {
   display: block;
@@ -184,10 +198,16 @@ a {
   margin: 20px 0; }
   @media (min-width: 481px) {
     .logos {
+      display: -webkit-flex;
+      display: -ms-flexbox;
       display: flex; } }
   .logos .logo {
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 0 20px 10px 0;
     list-style: none; }
     .logos .logo img {
@@ -196,7 +216,9 @@ a {
       margin: 10px 0 0 30px; }
     @media (min-width: 481px) {
       .logos .logo {
-        flex: 50% 1 1; } }
+        -webkit-flex: 50% 1 1;
+            -ms-flex: 50% 1 1;
+                flex: 50% 1 1; } }
 
 /* stand-alone page spacing */
 .head-block {
