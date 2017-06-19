@@ -196,6 +196,7 @@
     .list {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
         // align-items: center;
         margin: 0 auto;
     }
@@ -219,7 +220,6 @@
             display: block;
             color: $color-red;
             font-size: 0.8rem;
-            font-style: italic;
         }
         .more {
             margin-top: 1rem;
