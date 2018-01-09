@@ -245,6 +245,10 @@ input, button, textarea {
     }
 }
 .signup-button, .buy-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
     width: 100%;
     color: #fff;
     background: #EE5A4B;
