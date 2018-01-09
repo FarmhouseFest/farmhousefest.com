@@ -1,0 +1,186 @@
+* {
+  box-sizing: border-box; }
+
+/*
+
+    Base media query mixins
+
+*/
+body {
+  font-family: 'Arvo', sans-serif;
+  color: #fff; }
+
+.background {
+  position: relative;
+  z-index: 1;
+  position: fixed;
+  top: -1%;
+  left: -1%;
+  width: 102%;
+  height: 102%;
+  background-size: cover, cover;
+  -webkit-filter: blur(2px) grayscale(60%);
+  -moz-filter: blur(2px) grayscale(60%);
+  -o-filter: blur(2px) grayscale(60%);
+  -ms-filter: blur(2px) grayscale(60%);
+  filter: blur(2px) grayscale(60%); }
+  .background.photo-band {
+    background-image: url(/images/2017/band.jpg); }
+  .background.photo-field {
+    background-image: url(/images/2017/field.jpg); }
+  .background.photo-field2 {
+    background-image: url(/images/2017/field2.jpg); }
+  .background.photo-gear {
+    background-image: url(/images/2017/gear.jpg); }
+  .background.photo-glass {
+    background-image: url(/images/2017/glass.jpg); }
+  .background.photo-glass2 {
+    background-image: url(/images/2017/glass2.jpg); }
+  .background.photo-pour2 {
+    background-image: url(/images/2017/pour2.jpg); }
+
+html, body {
+  margin: 0;
+  height: 100%;
+  min-height: 100%; }
+
+.wrapper {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgba(246, 235, 206, 0.85) 0%, rgba(246, 235, 206, 0.85) 100%); }
+
+.form {
+  flex: 0 0 60%;
+  text-align: center; }
+  @media (min-width: 961px) {
+    .form {
+      flex: 0 0 40%; } }
+  @media (min-width: 1281px) {
+    .form {
+      flex: 0 0 30%; } }
+
+.fhf-logo {
+  opacity: 0.9;
+  width: 100px;
+  margin-bottom: 2.5rem; }
+  @media (min-width: 641px) {
+    .fhf-logo {
+      width: 200px;
+      margin-bottom: 5rem; } }
+
+.signup-title {
+  margin: 0;
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 2rem;
+  text-transform: uppercase; }
+
+.signup-fields {
+  width: 100%;
+  margin: 1rem 0; }
+  @media (min-width: 641px) {
+    .signup-fields {
+      display: flex; } }
+
+.signup-email, .signup-button, .buy-button {
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 2px;
+  background: #fff;
+  font-size: 1.25rem;
+  font-family: 'Arvo', sans-serif;
+  line-height: 1; }
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #fff; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #fff; }
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #fff; }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #fff; }
+
+input:focus, button:focus, textarea:focus {
+  outline: none;
+  box-shadow: rgba(217, 196, 166, 0.5) 0 1px 9px; }
+
+.signup-email {
+  width: 100%;
+  margin: 0 0 0.5rem 0;
+  color: #000;
+  background: #fff; }
+  .signup-email:focus, .signup-email:active {
+    background: #fff; }
+  @media (min-width: 641px) {
+    .signup-email {
+      flex: 1 1 75%;
+      margin: 0 0.5rem 0 0; } }
+
+.signup-button, .buy-button {
+  width: 100%;
+  color: #fff;
+  background: #EE5A4B;
+  text-transform: uppercase;
+  text-decoration: none; }
+  .signup-button:hover, .signup-button:focus, .buy-button:hover, .buy-button:focus {
+    background: #dc5446;
+    cursor: pointer; }
+  @media (min-width: 641px) {
+    .signup-button, .buy-button {
+      flex: 1 1 25%; } }
+
+.buy-button {
+  margin-top: 2rem;
+  display: inline-block; }
+
+.site-footer {
+  padding-top: 2rem; }
+  @media (min-width: 641px) {
+    .site-footer {
+      display: flex; } }
+
+.social-media-list {
+  flex: 1 1 50%;
+  padding: 0; }
+  .social-media-list li {
+    display: inline-block;
+    margin: 0 1rem;
+    list-style: none; }
+  .social-media-list a {
+    display: inline-block;
+    opacity: 0.8;
+    overflow: hidden; }
+    .social-media-list a svg {
+      width: 24px;
+      height: 24px;
+      fill: #000; }
+    .social-media-list a:hover, .social-media-list a:focus {
+      opacity: 1; }
+
+.past-years {
+  flex: 1 1 50%;
+  padding: 0;
+  margin: 1rem 0; }
+  .past-years li {
+    display: inline-block;
+    margin: 0 0.5rem;
+    list-style: none; }
+  .past-years a {
+    display: inline-block;
+    line-height: 24px;
+    color: #000;
+    text-decoration: none;
+    opacity: 0.5; }
+    .past-years a:hover, .past-years a:focus {
+      opacity: 0.8; }
