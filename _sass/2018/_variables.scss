@@ -1,0 +1,136 @@
+/*
+
+    2018
+    global variables, mixins, etc.
+
+*/
+
+
+// base font
+$base-font-family:      sans-serif;
+$base-font-size:        1.15rem;
+$small-font-size:       $base-font-size * 0.875;
+$base-line-height:      1.5;
+
+
+
+// secondary titles
+$alt-font-family:       sans-serif;
+$alt-font-size:         2rem;
+$alt-line-height:       1.5;
+
+$spacing-unit:          1rem;
+
+
+// colour declarations
+$color-white:           #fff;
+$color-black:           #000;
+
+
+// key dimensions
+$site-content-width: 960px;
+
+
+
+
+/*
+
+    Base media query mixins
+
+*/
+
+$xxsmall: 320px;
+$xsmall: 480px;
+$small: 640px;
+$medium: 800px;
+$large: 960px;
+$xlarge: 1120px;
+$xxlarge: 1280px;
+$xxxlarge: 1400px;
+
+@mixin screen-xxxlarge {
+  @media (min-width: #{$xxxlarge + 1px}) {
+    @content;
+  }
+}
+@mixin screen-xxlarge {
+  @media (min-width: #{$xxlarge + 1px}) {
+    @content;
+  }
+}
+@mixin screen-xlarge {
+  @media (min-width: #{$xlarge + 1px}) {
+    @content;
+  }
+}
+@mixin screen-large {
+  @media (min-width: #{$large + 1px}) {
+    @content;
+  }
+}
+
+@mixin screen-medium {
+  @media (min-width: #{$medium + 1px}) {
+    @content;
+  }
+}
+@mixin screen-small {
+  @media (min-width: #{$small + 1px}) {
+    @content;
+  }
+}
+@mixin screen-xsmall {
+  @media (min-width: #{$xsmall + 1px}) {
+    @content;
+  }
+}
+@mixin screen-xxsmall {
+  @media (min-width: #{$xxsmall + 1px}) {
+    @content;
+  }
+}
+
+
+@mixin screen-max-small {
+  @media (max-width: #{$small + 1px}) {
+    @content;
+  }
+}
+
+
+
+
+// silent class to fix a centered width at larger screen sizes
+%fixed-centered {
+
+  width: 100%;
+  padding: 0 20px;
+
+  @include screen-large {
+      width: 960px;
+      margin: 0 auto;
+  }
+  @include screen-xxlarge {
+    width: 1200px;
+  }
+}
+
+
+
+
+
+// silent classes mixin for header type
+%site-header-main {
+  font-family: $alt-font-family;
+  line-height: $alt-line-height;
+  font-size: $alt-font-size;
+  font-weight: 300;
+  text-transform: lowercase;
+}
+%site-header-secondary {
+  font-family: $base-font-family;
+  line-height: $base-line-height;
+  font-size: $base-font-size;
+  font-weight: 300;
+  text-transform: uppercase;
+}

@@ -1,0 +1,97 @@
+/*
+
+    2018
+    Panels
+
+*/
+
+
+// 
+//  base
+//
+.panel-container {
+
+    .inner {
+        @extend %fixed-centered;
+        padding: 2rem 0;
+    }
+
+    .full-span {
+        flex: 0 1 100%;
+    }
+
+    &.two-up .inner {
+        @include screen-medium {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .panel {
+                flex: 1 1 50%;
+                p {
+                    padding-right: 2rem;
+                }
+                &:last-child {
+                    p, h3 {
+                        padding-left: 2rem;
+                        padding-right: 0;
+                    }
+                }
+            }
+        }
+
+    }
+
+
+    &.four-up .inner {
+        @include screen-medium {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .panel {
+                flex: 1 1 25%;
+                p {
+                    padding-right: 2rem;
+                }
+                &:last-child {
+                    p, h3 {
+                        padding-left: 2rem;
+                        padding-right: 0;
+                    }
+                }
+            }
+
+        }
+    }
+
+}
+
+
+//
+// custom panels
+//
+
+
+.mapbox iframe {
+    width: 100%;
+    height: auto;
+    margin: 1rem 0;
+    @include screen-medium {
+        height: 300px;
+    }
+}
+.newsletter {
+    text-align: center;
+    input, button {
+        padding: 4px 12px;
+        border-radius: 4px;
+        font-family: $base-font-family;
+        font-size: $base-font-size * 1.5;
+    }
+    button {
+        cursor: pointer;
+    }
+}
