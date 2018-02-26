@@ -8,6 +8,10 @@
     "../_sass/2017/base"
 ;
 
+body {
+    background: #fdefdd;
+}
+
 .wrapper {
     @extend %fixed-centered;
 

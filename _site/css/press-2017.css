@@ -132,6 +132,9 @@ a {
 /**
  * Clearfix
  */
+body {
+  background: #fdefdd; }
+
 @media (min-width: 961px) {
   .wrapper {
     width: 800px; } }
