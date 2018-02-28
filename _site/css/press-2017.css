@@ -153,6 +153,19 @@ body {
 .date {
   font-style: italic; }
 
+/* video */
+.video iframe {
+  width: 100%; }
+@media (min-width: 481px) {
+  .video iframe {
+    height: 300px; } }
+@media (min-width: 641px) {
+  .video iframe {
+    height: 400px; } }
+@media (min-width: 961px) {
+  .video iframe {
+    height: 500px; } }
+
 /* photo downloads */
 .photos {
   display: flex;

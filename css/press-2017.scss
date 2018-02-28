@@ -37,6 +37,29 @@ body {
 }
 
 
+/* video */
+.video {
+    iframe {
+        width: 100%;
+    }
+    @include screen-xsmall {
+        iframe {
+            height: 300px;
+        }
+    }
+    @include screen-small {
+        iframe {
+            height: 400px;
+        }
+    }
+    @include screen-large {
+        iframe {
+            height: 500px;
+        }
+    }
+}
+
+
 /* photo downloads */
 .photos {
     display: flex;
