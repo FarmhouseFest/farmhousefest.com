@@ -7,6 +7,7 @@
 
 
 .site-footer {
+    color: $color-tan-text;
     padding-top: 1rem;
     padding-bottom: 0.5rem;
     .inner {
@@ -47,5 +48,6 @@
     svg {
         width: 20px;
         height: 20px;
+        color: $color-tan-text;
     }
 }

@@ -65,18 +65,21 @@ html, body {
       flex: 0 0 30%; } }
 
 .fhf-logo {
-  opacity: 0.9;
-  width: 100px;
-  margin-bottom: 2.5rem; }
+  text-align: center; }
+  .fhf-logo img {
+    display: inline-block;
+    width: 100px;
+    margin: 0 auto 1rem auto;
+    opacity: 0.9; }
   @media (min-width: 641px) {
-    .fhf-logo {
+    .fhf-logo img {
       width: 200px;
-      margin-bottom: 5rem; } }
+      margin-bottom: 2rem; } }
 
 .signup-title {
   margin: 0;
   color: rgba(0, 0, 0, 0.9);
-  font-size: 2rem;
+  font-size: 1.25rem;
   text-transform: uppercase; }
 
 .signup-fields {
@@ -127,25 +130,31 @@ input:focus, button:focus, textarea:focus {
       flex: 1 1 75%;
       margin: 0 0.5rem 0 0; } }
 
-.signup-button, .buy-button {
+.button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  display: inline-block;
+  padding: 1rem 1rem;
   width: 100%;
   color: #fff;
   background: #EE5A4B;
+  font-family: 'Arvo', sans-serif;
+  font-size: 1.25rem;
   text-transform: uppercase;
   text-decoration: none; }
-  .signup-button:hover, .signup-button:focus, .buy-button:hover, .buy-button:focus {
+  .button:hover, .button:focus {
     background: #dc5446;
     cursor: pointer; }
   @media (min-width: 641px) {
-    .signup-button, .buy-button {
+    .button {
       flex: 1 1 25%; } }
 
-.buy-button {
-  margin-top: 2rem;
-  display: inline-block; }
+.button-buy {
+  display: inline-block;
+  width: auto;
+  margin: 0 auto 4rem auto;
+  font-size: 1.25rem; }
 
 .site-footer {
   padding-top: 2rem; }

@@ -24,9 +24,10 @@
       width: 1200px; } }
 
 h1, h2, h3, h4, h5, h6, .fhf-nav a, .fhf-intro .details p {
-  font-family: sans-serif;
+  font-family: "verveine", sans-serif;
   line-height: 1.5;
   font-size: 2rem;
+  text-transform: uppercase;
   font-weight: 300;
   text-transform: lowercase; }
 
@@ -68,7 +69,8 @@ body {
   font-size: 1.15rem;
   line-height: 1.5;
   font-weight: 400;
-  -webkit-text-size-adjust: 100%; }
+  -webkit-text-size-adjust: 100%;
+  background-color: #FFEFDB; }
 
 img {
   max-width: 100%;
@@ -136,33 +138,14 @@ a {
     Header
 
 */
-.fhf-logo {
-  position: absolute;
-  top: 1.5rem;
-  left: 50%;
-  margin-left: -22.5px;
-  max-width: 45px; }
-
 .fhf-header {
   position: fixed;
   z-index: 100;
   width: 100%;
-  padding: 2rem 0; }
-
-.fhf-nav ul {
-  text-align: right;
-  padding-right: 60%; }
-
-.fhf-nav li {
-  display: inline-block;
-  padding-left: 2rem; }
-
-.fhf-nav .tickets {
-  position: absolute;
-  top: 2rem;
-  left: 60%;
-  width: 40%;
-  text-align: center; }
+  padding: 1rem 0;
+  background: #f3c07e;
+  outline: 2px solid #000;
+  outline-offset: 2px; }
 
 .fhf-header {
   top: 0;
@@ -173,12 +156,10 @@ a {
     .fhf-header {
       position: absolute; } }
 
-.header-scripted {
-  background: rgba(255, 255, 255, 0.8); }
-  @media (min-width: 801px) {
-    .header-scripted {
-      position: fixed;
-      left: 0; } }
+@media (min-width: 801px) {
+  .header-scripted {
+    position: fixed;
+    left: 0; } }
 
 .header-hidden {
   top: -1.25rem;
@@ -190,26 +171,23 @@ a {
     margin: 0;
     text-align: center; }
   .fhf-nav li {
-    display: inline;
+    display: inline-block;
     margin: 0;
     list-style: none; }
+    .fhf-nav li::after {
+      content: "\2022";
+      display: inline-block;
+      padding: 0 1rem; }
+    .fhf-nav li:last-child::after {
+      content: none; }
   .fhf-nav a {
     font-size: 1.5rem;
     line-height: 1;
-    color: #000; }
+    color: #000;
+    text-transform: uppercase; }
     @media (max-width: 641px) {
       .fhf-nav a {
         display: none; } }
-  .fhf-nav .tickets a {
-    display: inline-block;
-    padding: 6px 12px;
-    border-radius: 6px;
-    background: #000; }
-    .fhf-nav .tickets a:hover, .fhf-nav .tickets a:focus {
-      text-decoration: none; }
-    @media (max-width: 641px) {
-      .fhf-nav .tickets a {
-        display: inline-block; } }
 
 .fhf-intro {
   display: flex;
@@ -247,6 +225,7 @@ a {
 
 */
 .site-footer {
+  color: #EDC28E;
   padding-top: 1rem;
   padding-bottom: 0.5rem; }
   .site-footer .inner {
@@ -277,7 +256,8 @@ a {
     flex: 0 1 25%; } }
 .social-media-list svg {
   width: 20px;
-  height: 20px; }
+  height: 20px;
+  color: #EDC28E; }
 
 /*
 
@@ -286,7 +266,8 @@ a {
 
 */
 .panel-container .inner {
-  padding: 2rem 0; }
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
 .panel-container .full-span {
   flex: 0 1 100%; }
 @media (min-width: 801px) {

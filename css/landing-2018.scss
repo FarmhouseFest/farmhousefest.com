@@ -168,14 +168,20 @@ html, body {
     }
 }
 .fhf-logo {
-    opacity: 0.9;
+    text-align: center;
 
-    width: 100px;
-    margin-bottom: 2.5rem;
+    img {
+        display: inline-block;
+        width: 100px;
+        margin: 0 auto 1rem auto;
+        opacity: 0.9;
+    }
 
     @include screen-small {
-        width: 200px;
-        margin-bottom: 5rem;
+        img {
+            width: 200px;
+            margin-bottom: 2rem;
+        }
     }
 }
 
@@ -185,7 +191,7 @@ html, body {
 .signup-title {
     margin: 0;
     color: rgba($text-colour, 0.9);
-    font-size: 2rem;
+    font-size: 1.25rem;
     text-transform: uppercase;
 }
 .signup-fields {
@@ -244,14 +250,20 @@ input, button, textarea {
         margin: 0 0.5rem 0 0;
     }
 }
-.signup-button, .buy-button {
+.button {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
 
+    display: inline-block; 
+    padding: 1rem 1rem;
+
     width: 100%;
     color: #fff;
     background: #EE5A4B;
+
+    font-family: 'Arvo', sans-serif;
+    font-size: 1.25rem;
     text-transform: uppercase;
     text-decoration: none;
 
@@ -265,9 +277,11 @@ input, button, textarea {
     }
 }
 
-.buy-button {
-  margin-top: 2rem;
-  display: inline-block;
+.button-buy {
+    display: inline-block;
+    width: auto;
+    margin: 0 auto 4rem auto;
+    font-size: 1.25rem;
 }
 
 
