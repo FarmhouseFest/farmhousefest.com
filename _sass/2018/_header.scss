@@ -164,7 +164,8 @@
             }
         }
         .extra {
-            position: relative;
+            position: absolute;
+            width: 100%;
             text-align: center;
             div {
                 display: inline-block;
@@ -180,21 +181,9 @@
                 }
             }
 
-            bottom: 115px;
-            @include screen-xxsmall {
-                bottom: 150px;
-            }
-            @include screen-small {
-                bottom: 195px;
-            }
+            top: 60%;
             @include screen-medium {
-                bottom: 255px;
-            }
-            @include screen-large {
-                bottom: 275px;
-            }
-            @include screen-xxlarge {
-                bottom: 340px;
+                top: 62%;
             }
         }
     }

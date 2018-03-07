@@ -89,10 +89,16 @@
 
 .photo-gallery {
     margin-top: -5rem;
+    @include screen-xsmall {
+        margin-top: -2rem;
+    }
     @include screen-small {
-        margin-top: 3rem;
+        margin-top: 2rem;
     }
     @include screen-medium {
+        margin-top: -8rem;
+    }
+    @include screen-large {
         margin-top: -10rem;
     }
     @include screen-xxlarge {
