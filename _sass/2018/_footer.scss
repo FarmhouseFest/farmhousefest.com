@@ -7,9 +7,18 @@
 
 
 .site-footer {
-    color: $color-tan-text;
-    padding-top: 1rem;
-    padding-bottom: 0.5rem;
+
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+
+    color: $color-black;
+    font-family: $alt-font-family;
+    line-height: $alt-line-height;
+    text-transform: $alt-text-transform;
+    font-weight: 300;
+    text-transform: uppercase;
+
     .inner {
         @extend %fixed-centered;
         justify-content: space-between;

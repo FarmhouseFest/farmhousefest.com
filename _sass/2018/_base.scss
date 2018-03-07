@@ -55,7 +55,9 @@ li {
          margin-bottom: 0;
     }
 }
-
+a:link {
+    color: $color-red;
+}
 
 
 
@@ -91,7 +93,7 @@ h1, h2, h3, h4, h5, h6 {
 h3 {
     @extend %site-header-secondary;
     font-size: $base-font-size;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 

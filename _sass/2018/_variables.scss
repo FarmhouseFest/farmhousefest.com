@@ -15,7 +15,7 @@ $base-line-height:      1.5;
 
 
 // secondary titles
-$alt-font-family:       "verveine",sans-serif;
+$alt-font-family:       "verveine", sans-serif;
 $alt-font-size:         2rem;
 $alt-line-height:       1.5;
 $alt-text-transform:    uppercase;
@@ -134,7 +134,7 @@ $xxxlarge: 1400px;
   font-size: $alt-font-size;
   text-transform: $alt-text-transform;
   font-weight: 300;
-  text-transform: lowercase;
+  text-transform: uppercase;
 }
 %site-header-secondary {
   font-family: $base-font-family;
