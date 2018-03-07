@@ -87,6 +87,20 @@
 }
 
 
+.photo-gallery {
+    margin-top: -5rem;
+    @include screen-small {
+        margin-top: 3rem;
+    }
+    @include screen-medium {
+        margin-top: -10rem;
+    }
+    @include screen-xxlarge {
+        margin-top: -2rem;
+    }
+}
+
+
 .beer-list {
     padding-top: 2rem;
     padding-bottom: 3rem;
@@ -131,12 +145,10 @@
     outline-offset: 2px;
     text-align: center;
     input, button {
+        @extend %site-header-main;
         padding: 4px 12px;
         border: solid 2px $color-black;
         border-radius: 2px;
-
-        font-family: $base-font-family;
-        font-size: $base-font-size * 1.5;
     }
     button {
         color: $color-white;

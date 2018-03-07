@@ -92,41 +92,113 @@
 //  logo & intro photo
 //
 .fhf-intro {
-    position: relative;
-    background-size: cover;
-    background-image: url(/images/2018/tmp/header.jpg);
-    background-position: top center;
-    background-repeat: no-repeat;
-    text-align: center;
+    display: flex;
+    max-height: 350px;
+    margin-top: 3.15rem;
+    @include screen-medium {
+        max-height: 700px;
+    }
 
+    .before, .after {
+        flex: 1 1 auto;
+        background-image: url(/images/2018/site/bg-repeat@2x.png);
+        background-repeat: repeat-x;
+        background-size: auto 100%;
+    }
+    .before {
+        background-position: top right;
+    }
     .inner {
-        min-height: 40vh;
-        padding: 0;
-        margin-top: 3.15rem;
-        @include screen-medium {
-            min-height: 60vh;
+        background-color: $color-tan;
+        flex: 0 0 100%;
+        @include screen-large {
+            flex: 0 0 960px;
         }
+        @include screen-xxlarge {
+            flex: 0 0 1200px;
+        }
+    }
+    .after {
+        background-position: top left;
     }
 
     .title {
-        width: 0;
-        height: 0;
-        overflow: hidden;
-    }
+        position: relative;
+        .anim {
+            position: absolute;
+            left: 50%;
+            top: 14%;
+            width: 50px;
+            height: 50px;
+            margin-left: -25px;
 
-    .extra {
-        div {
-            display: inline-block;
-            @extend %site-header-main;
-            &::after {
-                content: "\2022";
-                display: inline-block;
-                padding: 0 1rem;
+            @include screen-xsmall {
+                width: 70px;
+                height: 70px;
+                margin-left: -35px;
             }
-            &:last-child::after {
-                content: none;
+
+            @include screen-small {
+                width: 90px;
+                height: 90px;
+                margin-left: -45px;
+            }
+
+            @include screen-medium {
+                width: 120px;
+                height: 120px;
+                margin-left: -60px;
+            }
+
+            @include screen-xlarge {
+                top: 100px;
+                width: 150px;
+                height: 150px;
+                margin-left: -75px;
+            }
+            @include screen-xxlarge {
+                top: 130px;
+                width: 170px;
+                height: 170px;
+                margin-left: -85px;
+            }
+        }
+        .extra {
+            position: relative;
+            text-align: center;
+            div {
+                display: inline-block;
+                @extend %site-header-main;
+                font-size: 1.5rem;
+                &::after {
+                    content: "\2022";
+                    display: inline-block;
+                    padding: 0 0.5rem;
+                }
+                &:last-child::after {
+                    content: none;
+                }
+            }
+
+            bottom: 115px;
+            @include screen-xxsmall {
+                bottom: 150px;
+            }
+            @include screen-small {
+                bottom: 195px;
+            }
+            @include screen-medium {
+                bottom: 255px;
+            }
+            @include screen-large {
+                bottom: 275px;
+            }
+            @include screen-xxlarge {
+                bottom: 340px;
             }
         }
     }
+
+
 
 }
