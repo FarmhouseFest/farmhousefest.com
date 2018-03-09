@@ -23,7 +23,7 @@
     .site-footer .inner, .panel-container .inner {
       width: 1200px; } }
 
-h1, h2, h3, h4, h5, h6, .fhf-nav a, .fhf-intro .title .extra div, .newsletter input, .newsletter button {
+h1, h2, h3, h4, h5, h6, .fhf-nav .nav-item a, .fhf-intro .title .extra div, .newsletter input, .newsletter button {
   font-family: "verveine", sans-serif;
   line-height: 1.5;
   font-size: 2rem;
@@ -70,6 +70,7 @@ body {
   line-height: 1.5;
   font-weight: 400;
   -webkit-text-size-adjust: 100%;
+  color: #493a26;
   background-color: #FFEFDB; }
 
 img {
@@ -143,12 +144,14 @@ a {
 */
 .fhf-header {
   position: fixed;
-  z-index: 100;
-  width: 100%;
-  padding: 1rem 0;
-  background: #f3c07e;
-  outline: 2px solid #000;
-  outline-offset: 2px; }
+  z-index: 100; }
+  @media (min-width: 961px) {
+    .fhf-header {
+      width: 100%;
+      padding: 1rem 0;
+      background: #f3c07e;
+      outline: 2px solid #493a26;
+      outline-offset: 2px; } }
 
 .fhf-header {
   top: 0;
@@ -173,32 +176,105 @@ a {
   .fhf-nav ul {
     margin: 0;
     text-align: center; }
-  .fhf-nav li {
+  .fhf-nav .nav-item {
     display: inline-block;
     margin: 0;
     list-style: none; }
-    .fhf-nav li::after {
+    .fhf-nav .nav-item::after {
       content: "\2022";
       display: inline-block;
       padding: 0 1rem; }
-    .fhf-nav li:last-child::after {
+    .fhf-nav .nav-item:last-child::after {
       content: none; }
-  .fhf-nav a {
-    font-size: 1.5rem;
-    line-height: 1;
-    color: #000;
-    text-transform: uppercase; }
-    @media (max-width: 641px) {
-      .fhf-nav a {
-        display: none; } }
+    .fhf-nav .nav-item a {
+      font-size: 1.5rem;
+      line-height: 1;
+      color: #493a26;
+      text-transform: uppercase; }
+      @media (max-width: 641px) {
+        .fhf-nav .nav-item a {
+          display: none; } }
 
+.menu-icon, .close-control {
+  display: none; }
+
+@media (max-width: 960px) {
+  .fhf-nav {
+    position: fixed;
+    top: 0;
+    right: 0; }
+    .fhf-nav .menu {
+      visibility: hidden; }
+
+  .menu-icon, .closeControl {
+    display: block;
+    float: right;
+    line-height: 0; }
+
+  .menu-icon {
+    display: inline-block;
+    padding: 1rem;
+    text-align: right;
+    background-color: transparent; }
+    .menu-icon > svg {
+      width: 32px;
+      height: auto; }
+      .menu-icon > svg path {
+        fill: #493a26; }
+
+  a.close-control, a.close-control:hover, a.close-control:focus {
+    padding: 2.3rem 0 0 0.25rem;
+    font-size: 2.5rem;
+    color: #FFEFDB;
+    text-align: center;
+    text-decoration: none; }
+
+  .menu {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    margin: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.15s ease-out; }
+    .menu.is-active {
+      max-height: 384px; }
+
+  .site-nav-wrapper {
+    display: none;
+    position: absolute;
+    top: 74px;
+    left: 0;
+    width: 100%;
+    padding: 1rem 0 0.25rem 0;
+    margin: 0;
+    clear: both;
+    text-align: left;
+    background-color: rgba(255, 239, 219, 0.95); }
+
+  .nav-item a {
+    font-family: "verveine", sans-serif;
+    line-height: 1.5;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #493a26;
+    background-color: #e07e74; }
+    .nav-item a:hover, .nav-item a:focus, .nav-item a:active {
+      background-color: #FFEFDB;
+      text-decoration: none; } }
 .fhf-intro {
   display: flex;
-  max-height: 350px;
-  margin-top: 3.15rem; }
+  max-height: 350px; }
   @media (min-width: 801px) {
     .fhf-intro {
       max-height: 700px; } }
+  @media (min-width: 961px) {
+    .fhf-intro {
+      margin-top: 4rem; } }
   .fhf-intro .before, .fhf-intro .after {
     flex: 1 1 auto;
     background-image: url(/images/2018/site/bg-repeat@2x.png);
@@ -280,7 +356,7 @@ a {
 .site-footer {
   padding-top: 3rem;
   padding-bottom: 3rem;
-  color: #000;
+  color: #493a26;
   font-family: "verveine", sans-serif;
   line-height: 1.5;
   text-transform: uppercase;
@@ -356,7 +432,7 @@ a {
         padding-right: 0; } }
 
 .fotorama__thumb-border {
-  border-color: #000;
+  border-color: #493a26;
   border-radius: 2px; }
 
 .photo-gallery {
@@ -383,7 +459,12 @@ a {
   text-align: center; }
   .beer-list h2:before {
     display: block;
-    content: url(/images/2018/tmp/beer.jpg); }
+    content: "";
+    width: 150px;
+    height: 100px;
+    margin: 0 auto 2rem auto;
+    background-image: url(/images/2018/site/beers-graphic@2x.png);
+    background-size: cover; }
   @media (min-width: 801px) {
     .beer-list .inner {
       padding: 0 20%; } }
@@ -393,14 +474,14 @@ a {
 
 .location-details {
   background: #e07e74;
-  outline: 2px solid #000;
+  outline: 2px solid #493a26;
   outline-offset: 2px; }
 
 .mapbox iframe {
   width: 100%;
   height: auto;
   margin: 1rem 0;
-  outline: 2px solid #000;
+  outline: 2px solid #493a26;
   outline-offset: 2px; }
   @media (min-width: 801px) {
     .mapbox iframe {
@@ -410,12 +491,12 @@ a {
   padding-top: 2rem;
   padding-bottom: 2rem;
   background: #f3c07e;
-  outline: 2px solid #000;
+  outline: 2px solid #493a26;
   outline-offset: 2px;
   text-align: center; }
   .newsletter input, .newsletter button {
     padding: 4px 12px;
-    border: solid 2px #000;
+    border: solid 2px #493a26;
     border-radius: 2px; }
   .newsletter button {
     color: #fff;
