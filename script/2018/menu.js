@@ -27,7 +27,7 @@ $("a.menu-icon").click(function() {
 
 // close menu when option is selected
 
-$("li.nav-item a").click(function() {
+$("li.nav-item a.anchor").click(function() {
 
 	$("ul.menu").toggleClass("is-active");
 	return false;
