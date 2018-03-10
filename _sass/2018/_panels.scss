@@ -75,11 +75,23 @@
 // custom panels
 //
 
-
+.photo-gallery {
+    @media (max-width: $xsmall) {
+        .inner {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .fotorama__arr {
+            display: none !important;
+        }
+    }
+}
 
 .fotorama__stage__frame {
-    border: solid 4px $color-black;
-    border-radius: 4px;
+    @include screen-medium {
+        border: solid 4px $color-black;
+        border-radius: 4px;
+    }
 }
 .fotorama__nav-wrap .fotorama__thumb-border {
     border-color: $color-black;

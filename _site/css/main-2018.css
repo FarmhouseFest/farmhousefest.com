@@ -439,9 +439,17 @@ a {
         padding-left: 2rem;
         padding-right: 0; } }
 
-.fotorama__stage__frame {
-  border: solid 4px #493a26;
-  border-radius: 4px; }
+@media (max-width: 480px) {
+  .photo-gallery .inner {
+    padding-left: 0;
+    padding-right: 0; }
+  .photo-gallery .fotorama__arr {
+    display: none !important; } }
+
+@media (min-width: 801px) {
+  .fotorama__stage__frame {
+    border: solid 4px #493a26;
+    border-radius: 4px; } }
 
 .fotorama__nav-wrap .fotorama__thumb-border {
   border-color: #493a26;
