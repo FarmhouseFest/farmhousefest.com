@@ -78,11 +78,12 @@
 
 
 .fotorama__stage__frame {
-    border: solid 2px $color-black;
-    border-radius: 2px;
+    border: solid 4px $color-black;
+    border-radius: 4px;
 }
 .fotorama__nav-wrap .fotorama__thumb-border {
     border-color: $color-black;
+    border-size: 4px;
     border-radius: 3px;
 }
 
