@@ -134,11 +134,14 @@
     }
     text-align: center;
     .inner {
-        @include screen-medium {
-            padding: 0 20%;
+        @include screen-small {
+            padding: 0 4rem;
         }
-        @include screen-large {
-            padding: 0 25%;
+        @include screen-medium {
+            padding: 0 10rem;
+        }
+        @include screen-xxlarge {
+            padding: 0 20rem;
         }
     }
 }

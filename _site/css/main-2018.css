@@ -496,12 +496,15 @@ a {
     margin: 0 auto 2rem auto;
     background-image: url(/images/2018/site/beers-graphic@2x.png);
     background-size: cover; }
+  @media (min-width: 641px) {
+    .beer-list .inner {
+      padding: 0 4rem; } }
   @media (min-width: 801px) {
     .beer-list .inner {
-      padding: 0 20%; } }
-  @media (min-width: 961px) {
+      padding: 0 10rem; } }
+  @media (min-width: 1281px) {
     .beer-list .inner {
-      padding: 0 25%; } }
+      padding: 0 20rem; } }
 
 .location-details {
   z-index: 1;
