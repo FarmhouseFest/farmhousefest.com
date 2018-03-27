@@ -123,6 +123,7 @@
 .beer-list {
     padding-top: 2rem;
     padding-bottom: 3rem;
+
     h2:before {
         display: block;
         content: "";
@@ -132,8 +133,7 @@
         background-image: url(/images/2018/site/beers-graphic@2x.png);
         background-size: cover;
     }
-    text-align: center;
-    .inner {
+    .intro {
         @include screen-small {
             padding: 0 4rem;
         }
@@ -144,6 +144,42 @@
             padding: 0 20rem;
         }
     }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        list-style: none;
+        margin: 0;
+    }
+    li {
+        list-style: none;
+        padding: 1rem 3rem;
+        margin: 0;
+    }
+
+
+    @include screen-xxsmall {
+        li {
+            flex: 50% 0 0;
+            padding: 1rem 2rem;
+            margin: 0 0 0.5rem 0;
+        }
+    }
+    @include screen-small {
+        li {
+            flex: 33% 0 0;
+            padding: 1.5rem 3rem;
+        }
+    }
+    @include screen-xlarge {
+            li {
+            flex: 25% 0 0;
+            padding: 2rem 4rem;
+        }
+    }
+
+
 }
 
 
