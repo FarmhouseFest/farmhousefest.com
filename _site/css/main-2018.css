@@ -520,13 +520,16 @@ a {
       flex: 50% 0 0;
       padding: 1rem 2rem;
       margin: 0 0 0.5rem 0; } }
-  @media (min-width: 641px) {
+  @media (min-width: 481px) {
     .beer-list li {
       flex: 33% 0 0;
       padding: 1.5rem 3rem; } }
-  @media (min-width: 1121px) {
+  @media (min-width: 801px) {
     .beer-list li {
-      flex: 25% 0 0;
+      flex: 25% 0 0; } }
+  @media (min-width: 1281px) {
+    .beer-list li {
+      flex: 20% 0 0;
       padding: 2rem 4rem; } }
 
 .location-details {

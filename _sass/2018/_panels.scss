@@ -167,15 +167,20 @@
             margin: 0 0 0.5rem 0;
         }
     }
-    @include screen-small {
+    @include screen-xsmall {
         li {
             flex: 33% 0 0;
             padding: 1.5rem 3rem;
         }
     }
-    @include screen-xlarge {
-            li {
+    @include screen-medium {
+        li {
             flex: 25% 0 0;
+        }
+    }
+    @include screen-xxlarge {
+            li {
+            flex: 20% 0 0;
             padding: 2rem 4rem;
         }
     }
