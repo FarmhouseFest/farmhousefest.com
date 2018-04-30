@@ -497,14 +497,40 @@ a {
     background-image: url(/images/2018/site/beers-graphic@2x.png);
     background-size: cover; }
   @media (min-width: 641px) {
-    .beer-list .inner {
+    .beer-list .intro {
       padding: 0 4rem; } }
   @media (min-width: 801px) {
-    .beer-list .inner {
+    .beer-list .intro {
       padding: 0 10rem; } }
   @media (min-width: 1281px) {
-    .beer-list .inner {
+    .beer-list .intro {
       padding: 0 20rem; } }
+  .beer-list ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    margin: 2rem 0 0 0; }
+  .beer-list li {
+    list-style: none;
+    padding: 1rem 3rem;
+    margin: 0; }
+  @media (min-width: 321px) {
+    .beer-list li {
+      flex: 50% 0 0;
+      padding: 1rem 2rem;
+      margin: 0 0 0.5rem 0; } }
+  @media (min-width: 481px) {
+    .beer-list li {
+      flex: 33% 0 0;
+      padding: 1.5rem 3rem; } }
+  @media (min-width: 801px) {
+    .beer-list li {
+      flex: 25% 0 0; } }
+  @media (min-width: 1281px) {
+    .beer-list li {
+      flex: 20% 0 0;
+      padding: 2rem 4rem; } }
 
 .location-details {
   z-index: 1;
