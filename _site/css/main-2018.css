@@ -530,7 +530,7 @@ a {
   @media (min-width: 1281px) {
     .beer-list li {
       flex: 16.5% 0 0;
-      padding: 2rem 2.5rem; } }
+      padding: 1.5rem; } }
 
 .location-details {
   z-index: 1;
