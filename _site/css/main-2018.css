@@ -23,7 +23,7 @@
     .site-footer .inner, .panel-container .inner {
       width: 1200px; } }
 
-h1, h2, h3, h4, h5, h6, .fhf-nav .nav-item a, .fhf-intro .title .extra div, .newsletter input, .newsletter button {
+h1, h2, h3, h4, h5, h6, .fhf-nav .nav-item a, .fhf-intro .title .extra div, .beer-list .item h3, .beer-list .item .pouring, .newsletter input, .newsletter button {
   font-family: "verveine", sans-serif;
   line-height: 1.5;
   font-size: 2rem;
@@ -484,11 +484,11 @@ a {
     .photo-gallery {
       margin-top: -2rem; } }
 
-.beer-list {
+.vendor-list {
   padding-top: 2rem;
   padding-bottom: 3rem;
   text-align: center; }
-  .beer-list h2:before {
+  .vendor-list h2:before {
     display: block;
     content: "";
     width: 150px;
@@ -497,40 +497,91 @@ a {
     background-image: url(/images/2018/site/beers-graphic@2x.png);
     background-size: cover; }
   @media (min-width: 641px) {
-    .beer-list .intro {
+    .vendor-list .intro {
       padding: 0 4rem; } }
   @media (min-width: 801px) {
-    .beer-list .intro {
+    .vendor-list .intro {
       padding: 0 10rem; } }
   @media (min-width: 1281px) {
-    .beer-list .intro {
+    .vendor-list .intro {
       padding: 0 20rem; } }
-  .beer-list ul {
+  .vendor-list ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     list-style: none;
     margin: 2rem 0 0 0; }
-  .beer-list li {
+  .vendor-list li {
     list-style: none;
     padding: 1rem 3rem;
     margin: 0; }
   @media (min-width: 321px) {
-    .beer-list li {
+    .vendor-list li {
       flex: 50% 0 0;
       padding: 1rem 2rem;
       margin: 0 0 0.5rem 0; } }
   @media (min-width: 481px) {
-    .beer-list li {
+    .vendor-list li {
       flex: 33% 0 0;
       padding: 1.5rem 3rem; } }
   @media (min-width: 801px) {
-    .beer-list li {
+    .vendor-list li {
       flex: 25% 0 0; } }
   @media (min-width: 1281px) {
-    .beer-list li {
+    .vendor-list li {
       flex: 16.5% 0 0;
       padding: 1.5rem; } }
+
+.beer-list {
+  text-align: center; }
+  .beer-list .inner p {
+    max-width: 480px;
+    margin: 0 auto 1rem auto; }
+  .beer-list .list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-top: 2rem; }
+  .beer-list .item {
+    flex: 100% 0 0;
+    padding: 0 0.75rem;
+    margin: 0 0 3rem 0;
+    list-style: none;
+    text-align: left; }
+    .beer-list .item ul {
+      margin: 0; }
+    .beer-list .item li {
+      list-style: none;
+      margin: 0 0 0.5rem 0; }
+    .beer-list .item h3 {
+      font-size: 1.265rem;
+      margin: 0 0 0.5rem 0; }
+    .beer-list .item ul li {
+      font-size: 1.035rem; }
+    .beer-list .item .region {
+      font-weight: normal; }
+    .beer-list .item .desc {
+      display: block;
+      color: #c2a384;
+      font-size: 0.8rem;
+      text-transform: lowercase; }
+    .beer-list .item .pouring {
+      font-size: 1.15rem; }
+    .beer-list .item .more {
+      margin-top: 1rem; }
+  .beer-list .disclaimer {
+    margin-bottom: 3rem; }
+  @media (min-width: 321px) {
+    .beer-list .item {
+      flex: 50% 0 0; } }
+  @media (min-width: 641px) {
+    .beer-list .item {
+      flex: 33% 0 0; } }
+  @media (min-width: 1121px) {
+    .beer-list .list {
+      width: 960px; }
+    .beer-list .item {
+      flex: 25% 0 0; } }
 
 .location-details {
   z-index: 1;
