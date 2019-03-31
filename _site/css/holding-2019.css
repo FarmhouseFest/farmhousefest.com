@@ -30,7 +30,7 @@ html, body {
 
 */
 body {
-  padding: 11px;
+  padding: 6px;
   color: #82ABB0;
   background-color: #112E32;
   background-repeat: repeat;
@@ -42,7 +42,7 @@ body {
   font-weight: 400; }
   @media (min-width: 641px) {
     body {
-      padding: 22px; } }
+      padding: 11px; } }
   @media (min-width: 801px) {
     body {
       padding: 22px; } }
@@ -120,6 +120,8 @@ a {
       width: 15rem; } }
 
 .signup-button {
+  appearance: none;
+  -webkit-appearance: none;
   background-color: #DCB988;
   text-transform: uppercase; }
   .signup-button:hover {

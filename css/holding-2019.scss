@@ -21,7 +21,7 @@ html, body {
 */
 
 body {
-  padding: 11px;
+  padding: 6px;
 
   color: $color-blue-light;
   background-color: $color-blue-dark;
@@ -40,7 +40,7 @@ body {
   font-weight: $base-font-weight;
 
   @include screen-small {
-    padding: 22px;
+    padding: 11px;
   }
   @include screen-medium {
     padding: 22px;
@@ -151,6 +151,9 @@ a {
   }
 }
 .signup-button {
+  appearance: none;
+  -webkit-appearance: none;
+
   background-color: $color-peach;
   text-transform: uppercase;
 
