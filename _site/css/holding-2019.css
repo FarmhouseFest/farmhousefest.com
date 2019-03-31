@@ -37,12 +37,13 @@ body {
   background-image: url(/images/2019/site/bg.png);
   text-align: center;
   font-family: league-gothic, sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.00000005rem;
   font-style: normal;
   font-weight: 400; }
   @media (min-width: 641px) {
     body {
-      padding: 11px; } }
+      padding: 11px;
+      font-size: 1.5rem; } }
   @media (min-width: 801px) {
     body {
       padding: 22px; } }
@@ -149,8 +150,11 @@ footer a {
   line-height: 1; }
 
 .social-media-list, .past-years {
-  display: inline-block;
-  margin: 0 1rem; }
+  display: block;
+  margin: 1rem; }
+  @media (min-width: 641px) {
+    .social-media-list, .past-years {
+      display: inline-block; } }
 
 .social-media-list a:hover {
   text-decoration: none; }

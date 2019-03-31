@@ -35,12 +35,13 @@ body {
   text-align: center;
 
   font-family: $base-font-family;
-  font-size: $base-font-size;
+  font-size: $base-font-size * 0.6666667;
   font-style: $base-font-style;
   font-weight: $base-font-weight;
 
   @include screen-small {
     padding: 11px;
+    font-size: $base-font-size;
   }
   @include screen-medium {
     padding: 22px;
@@ -188,8 +189,12 @@ footer a {
 
 
 .social-media-list, .past-years {
-  display: inline-block;
-  margin: 0 $spacing-unit;
+  display: block;
+  margin: $spacing-unit;
+
+  @include screen-small {
+    display: inline-block;
+  }
 }
 .social-media-list a:hover {
   text-decoration: none;
