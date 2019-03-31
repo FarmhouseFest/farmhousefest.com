@@ -1,0 +1,36 @@
+/*
+
+    2019
+    global variables, mixins, etc.
+
+*/
+
+
+// base font
+$base-font-family:      league-gothic, sans-serif;
+$base-font-size:        1.5rem;
+$base-font-weight:      400;
+$base-font-style:       normal;
+$small-font-size:       $base-font-size * 0.875;
+$base-line-height:      1.75;
+
+
+
+$spacing-unit:          1rem;
+
+
+// colour declarations
+$color-white:           #fff;
+
+$color-green:           #4AA459;
+$color-green-light:     #61C272;
+
+$color-peach:           #DCB988;
+$color-peach-light:     #EFD0A5;
+
+$color-blue-dark:       #112E32;
+$color-blue-light:      #82ABB0;
+
+
+// key dimensions
+$site-content-width: 960px;

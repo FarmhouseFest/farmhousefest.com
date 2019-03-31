@@ -1,0 +1,202 @@
+---
+# Link together our SASS partials
+---
+@charset "utf-8";
+
+@import
+  "../_sass/universals",
+  "../_sass/2019/variables"
+;
+
+html, body {
+  height: 100%;
+}
+
+
+
+/*
+
+  Base Decoration
+
+*/
+
+body {
+  padding: 11px;
+
+  color: $color-blue-light;
+  background-color: $color-blue-dark;
+  background-repeat: repeat;
+  background-image: url(/images/2019/site/bg.png);
+  // @include screen-res-high {
+  //   background-image: url(/images/2019/site/bg@2x.png);
+  //   background-size: 50%;
+  // }
+
+  text-align: center;
+
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  font-style: $base-font-style;
+  font-weight: $base-font-weight;
+
+  @include screen-small {
+    padding: 22px;
+  }
+  @include screen-medium {
+    padding: 22px;
+  }
+
+}
+
+.wrapper {
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+
+  min-height: 100%;
+
+  border: solid 15px $color-blue-light;
+  border-image-source: url(/images/2019/site/border.png);
+  border-image-slice: 15;
+  border-image-width: 15px;
+  border-image-repeat: round;
+
+}
+
+a {
+  color: $color-green;
+  text-decoration: none;
+  &:hover {
+    color: $color-green-light;
+    text-decoration: underline;
+  }
+}
+
+
+
+
+
+
+
+/*
+
+  Landing Page frilly bits
+
+*/
+.fhf-logo img {
+  width: 282px;
+  height: 178px;
+
+  @include screen-medium {
+    width: 563px;
+    height: 356px;
+  }
+}
+
+
+// signup form
+.signup-fields {
+  text-align: center;
+  margin-top: $spacing-unit * 2;
+}
+.signup-email, .signup-button {
+  display: inline-block;
+  width: 80%;
+  padding: $spacing-unit;
+  margin: $spacing-unit / 4 0;
+
+  border: solid 1px rgba(0, 0, 0, 0);
+  border-radius: 8px;
+
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+
+  box-shadow: rgba(#0F2123, 1) 0 6px 6px;
+
+  &:focus {
+    outline: none;
+    border: solid 1px rgba($color-blue-dark, 0.75);
+    box-shadow:
+      0 0 5px 2px rgba($color-blue-light, 0.5),
+      0 0 2px 2px $color-blue-light;
+  }
+
+  @include screen-xsmall {
+    width: 65%;
+  }
+  @include screen-small {
+    width: 50%;
+  }
+  @include screen-medium {
+    width: auto;
+    margin: 0 $spacing-unit / 4;
+  }
+
+}
+.signup-email {
+  color: #ccc;
+  background-color: $color-white;
+
+  &::placeholder {
+    color: #ccc;
+  }
+  &:focus {
+    color: $color-blue-dark;
+  }
+
+  @include screen-medium {
+    width: $spacing-unit * 15;
+  }
+}
+.signup-button {
+  background-color: $color-peach;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: $color-peach-light;
+    cursor: pointer;
+  }
+}
+
+
+
+/*
+
+  footer
+
+*/
+footer {
+  margin: $spacing-unit * 2 0 0 0;
+}
+footer ul, footer li {
+  padding: 0;
+  margin: 0;
+}
+footer li {
+  display: inline;
+  list-style: none;
+  margin: $spacing-unit / 2 $spacing-unit / 4;
+}
+footer a {
+  line-height: 1;
+}
+
+
+.social-media-list, .past-years {
+  display: inline-block;
+  margin: 0 $spacing-unit;
+}
+.social-media-list a:hover {
+  text-decoration: none;
+}
+
+.social-media-list svg {
+  width: 24px;
+  height: 24px;
+  fill: $color-green;
+  &:hover {
+    fill: $color-green-light;
+  }
+}

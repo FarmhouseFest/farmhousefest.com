@@ -1,0 +1,81 @@
+/*
+
+    Universals
+
+*/
+
+
+//    Restoring Sanity
+* {
+    box-sizing: border-box;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+
+    Base media query mixins
+
+*/
+
+$xxsmall: 320px;
+$xsmall: 480px;
+$small: 640px;
+$medium: 800px;
+$large: 960px;
+$xlarge: 1120px;
+$xxlarge: 1280px;
+$xxxlarge: 1400px;
+
+@mixin screen-xxxlarge {
+  @media (min-width: #{$xxxlarge + 1px}) {
+    @content;
+  }
+}
+@mixin screen-xxlarge {
+  @media (min-width: #{$xxlarge + 1px}) {
+    @content;
+  }
+}
+@mixin screen-xlarge {
+  @media (min-width: #{$xlarge + 1px}) {
+    @content;
+  }
+}
+@mixin screen-large {
+  @media (min-width: #{$large + 1px}) {
+    @content;
+  }
+}
+
+@mixin screen-medium {
+  @media (min-width: #{$medium + 1px}) {
+    @content;
+  }
+}
+@mixin screen-small {
+  @media (min-width: #{$small + 1px}) {
+    @content;
+  }
+}
+@mixin screen-xsmall {
+  @media (min-width: #{$xsmall + 1px}) {
+    @content;
+  }
+}
+@mixin screen-xxsmall {
+  @media (min-width: #{$xxsmall + 1px}) {
+    @content;
+  }
+}
+
+
+
+
+@mixin screen-res-high {
+  @media only screen and (min-resolution: 180dpi) {
+  	@content;
+  }
+}

@@ -1,0 +1,161 @@
+/*
+
+    Universals
+
+*/
+* {
+  box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0; }
+
+/*
+
+    Base media query mixins
+
+*/
+/*
+
+    2019
+    global variables, mixins, etc.
+
+*/
+html, body {
+  height: 100%; }
+
+/*
+
+  Base Decoration
+
+*/
+body {
+  padding: 11px;
+  color: #82ABB0;
+  background-color: #112E32;
+  background-repeat: repeat;
+  background-image: url(/images/2019/site/bg.png);
+  text-align: center;
+  font-family: league-gothic, sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400; }
+  @media (min-width: 641px) {
+    body {
+      padding: 22px; } }
+  @media (min-width: 801px) {
+    body {
+      padding: 22px; } }
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  min-height: 100%;
+  border: solid 15px #82ABB0;
+  border-image-source: url(/images/2019/site/border.png);
+  border-image-slice: 15;
+  border-image-width: 15px;
+  border-image-repeat: round; }
+
+a {
+  color: #4AA459;
+  text-decoration: none; }
+  a:hover {
+    color: #61C272;
+    text-decoration: underline; }
+
+/*
+
+  Landing Page frilly bits
+
+*/
+.fhf-logo img {
+  width: 282px;
+  height: 178px; }
+  @media (min-width: 801px) {
+    .fhf-logo img {
+      width: 563px;
+      height: 356px; } }
+
+.signup-fields {
+  text-align: center;
+  margin-top: 2rem; }
+
+.signup-email, .signup-button {
+  display: inline-block;
+  width: 80%;
+  padding: 1rem;
+  margin: 0.25rem 0;
+  border: solid 1px rgba(0, 0, 0, 0);
+  border-radius: 8px;
+  font-family: league-gothic, sans-serif;
+  font-size: 1.5rem;
+  box-shadow: #0f2123 0 6px 6px; }
+  .signup-email:focus, .signup-button:focus {
+    outline: none;
+    border: solid 1px rgba(17, 46, 50, 0.75);
+    box-shadow: 0 0 5px 2px rgba(130, 171, 176, 0.5), 0 0 2px 2px #82ABB0; }
+  @media (min-width: 481px) {
+    .signup-email, .signup-button {
+      width: 65%; } }
+  @media (min-width: 641px) {
+    .signup-email, .signup-button {
+      width: 50%; } }
+  @media (min-width: 801px) {
+    .signup-email, .signup-button {
+      width: auto;
+      margin: 0 0.25rem; } }
+
+.signup-email {
+  color: #ccc;
+  background-color: #fff; }
+  .signup-email::placeholder {
+    color: #ccc; }
+  .signup-email:focus {
+    color: #112E32; }
+  @media (min-width: 801px) {
+    .signup-email {
+      width: 15rem; } }
+
+.signup-button {
+  background-color: #DCB988;
+  text-transform: uppercase; }
+  .signup-button:hover {
+    background-color: #EFD0A5;
+    cursor: pointer; }
+
+/*
+
+  footer
+
+*/
+footer {
+  margin: 2rem 0 0 0; }
+
+footer ul, footer li {
+  padding: 0;
+  margin: 0; }
+
+footer li {
+  display: inline;
+  list-style: none;
+  margin: 0.5rem 0.25rem; }
+
+footer a {
+  line-height: 1; }
+
+.social-media-list, .past-years {
+  display: inline-block;
+  margin: 0 1rem; }
+
+.social-media-list a:hover {
+  text-decoration: none; }
+
+.social-media-list svg {
+  width: 24px;
+  height: 24px;
+  fill: #4AA459; }
+  .social-media-list svg:hover {
+    fill: #61C272; }
