@@ -102,7 +102,7 @@ a {
   text-align: center;
   margin-top: $spacing-unit * 2;
 }
-.signup-email, .signup-button {
+.signup-email, .button {
   display: inline-block;
   width: 80%;
   padding: $spacing-unit;
@@ -151,19 +151,30 @@ a {
     width: $spacing-unit * 15;
   }
 }
-.signup-button {
+.button {
+  display: inline-block;
   appearance: none;
   -webkit-appearance: none;
 
+  color: $color-black;
   background-color: $color-peach;
   text-transform: uppercase;
 
   &:hover {
+    color: $color-black;
     background-color: $color-peach-light;
+    text-decoration: none;
     cursor: pointer;
   }
 }
-
+.buy {
+  margin: 2rem 0 0 0;
+  text-align: center;
+  .button {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
 
 
 /*
