@@ -10,6 +10,9 @@ html, body {
   margin: 0;
   padding: 0; }
 
+img {
+  max-width: 100%; }
+
 /*
 
     Base media query mixins
@@ -30,20 +33,22 @@ html, body {
 
 */
 body {
-  padding: 6px;
   color: #82ABB0;
   background-color: #112E32;
   background-repeat: repeat;
   background-image: url(/images/2019/site/bg.png);
   text-align: center;
-  font-family: league-gothic, sans-serif;
-  font-size: 1.00000005rem;
+  font-family: linotype-sabon, sans-serif;
+  font-size: 1.25rem;
   font-style: normal;
   font-weight: 400; }
+  @media only screen and (min-resolution: 180dpi) {
+    body {
+      background-image: url(/images/2019/site/bg@2x.png);
+      background-size: 15%; } }
   @media (min-width: 641px) {
     body {
-      padding: 11px;
-      font-size: 1.5rem; } }
+      padding: 11px; } }
   @media (min-width: 801px) {
     body {
       padding: 22px; } }
@@ -52,12 +57,14 @@ body {
   display: flex;
   align-content: center;
   flex-direction: column;
-  min-height: 100%;
-  border: solid 15px #82ABB0;
-  border-image-source: url(/images/2019/site/border.png);
-  border-image-slice: 15;
-  border-image-width: 15px;
-  border-image-repeat: round; }
+  min-height: 100%; }
+  @media (min-width: 801px) {
+    .wrapper {
+      border: solid 15px #82ABB0;
+      border-image-source: url(/images/2019/site/border.png);
+      border-image-slice: 15;
+      border-image-width: 15px;
+      border-image-repeat: round; } }
 
 a {
   color: #4AA459;
@@ -66,9 +73,45 @@ a {
     color: #61C272;
     text-decoration: underline; }
 
+p {
+  color: #DCB988;
+  line-height: 1.5; }
+
+h2 {
+  margin: 1rem 0;
+  color: #DCB988;
+  font-family: league-gothic, sans-serif;
+  font-size: 6rem;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase; }
+
+h3 {
+  margin: 1rem 0;
+  color: #DCB988;
+  font-family: league-gothic, sans-serif;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase; }
+
+.photo {
+  margin: 3rem 0; }
+
+.photo-1 {
+  overflow: hidden;
+  background-color: #DCB988; }
+  .photo-1 img {
+    display: block;
+    line-height: 1;
+    margin: -25% 0 0 0;
+    filter: grayscale(100%) contrast(30%);
+    mix-blend-mode: luminosity;
+    opacity: 0.8; }
+
 /*
 
-  Landing Page frilly bits
+  Header
 
 */
 .fhf-logo img {
@@ -79,9 +122,62 @@ a {
       width: 563px;
       height: 356px; } }
 
-.signup-fields {
+nav {
+  margin: 0 -2px;
   text-align: center;
-  margin-top: 2rem; }
+  border: solid 15px #82ABB0;
+  border-image-source: url(/images/2019/site/border.png);
+  border-image-slice: 15;
+  border-image-width: 0 0 15px 0;
+  border-image-repeat: round;
+  margin-bottom: 2rem; }
+  nav ul {
+    margin: 0;
+    padding: 0 0 1rem 0; }
+  nav li {
+    display: inline-block;
+    margin: 0 2rem;
+    list-style: none; }
+  nav a {
+    color: #DCB988;
+    font-family: league-gothic, sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-shadow: 0 2px 1px rgba(0, 0, 0, 0.25); }
+  nav .selected a {
+    color: #4AA459; }
+  @media (min-width: 961px) {
+    nav {
+      margin-bottom: 4rem; } }
+
+/*
+
+
+  Home Page
+
+*/
+.home-intro {
+  margin: 0 auto;
+  justify-content: space-between; }
+  @media (min-width: 641px) {
+    .home-intro {
+      display: flex; } }
+  @media (min-width: 961px) {
+    .home-intro {
+      max-width: 960px; } }
+  .home-intro p {
+    flex: 0 1 45%;
+    text-align: left; }
+
+.home-beer {
+  text-align: center; }
+  @media (min-width: 801px) {
+    .home-beer p {
+      max-width: 480px;
+      margin: 0 auto; } }
+
+.signup-fields {
+  text-align: center; }
 
 .signup-email, .signup-button {
   display: inline-block;
@@ -134,7 +230,14 @@ a {
 
 */
 footer {
-  margin: 2rem 0 0 0; }
+  padding: 1rem 0 0 0;
+  margin: 3rem -2px 0 -2px;
+  text-align: center;
+  border: solid 15px #82ABB0;
+  border-width: 15px 0 0 0;
+  border-image-source: url(/images/2019/site/border.png);
+  border-image-slice: 15;
+  border-image-repeat: round; }
 
 footer ul, footer li {
   padding: 0;
@@ -143,14 +246,24 @@ footer ul, footer li {
 footer li {
   display: inline;
   list-style: none;
-  margin: 0.5rem 0.25rem; }
+  margin: 0.5rem 0.5rem; }
 
 footer a {
-  line-height: 1; }
+  font-size: 1.5rem; }
+
+footer .form {
+  padding: 0 0 3rem 0;
+  margin: 0 -2px;
+  border: solid 15px #82ABB0;
+  border-width: 0 0 15px 0;
+  border-image-source: url(/images/2019/site/border.png);
+  border-image-slice: 15;
+  border-image-repeat: round; }
 
 .social-media-list, .past-years {
   display: block;
-  margin: 1rem; }
+  margin: 1rem;
+  font-family: league-gothic, sans-serif; }
   @media (min-width: 641px) {
     .social-media-list, .past-years {
       display: inline-block; } }

@@ -35,13 +35,13 @@ body {
   text-align: center;
 
   font-family: $base-font-family;
-  font-size: $base-font-size * 0.6666667;
+  font-size: $font-size-small;
   font-style: $base-font-style;
   font-weight: $base-font-weight;
 
   @include screen-small {
     padding: 11px;
-    font-size: $base-font-size;
+    font-size: $font-size-med;
   }
   @include screen-medium {
     padding: 22px;
@@ -112,7 +112,7 @@ a {
   border-radius: 8px;
 
   font-family: $base-font-family;
-  font-size: $base-font-size;
+  font-size: $font-size-med;
 
   box-shadow: rgba(#0F2123, 1) 0 6px 6px;
 

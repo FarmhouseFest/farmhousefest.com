@@ -10,6 +10,9 @@ html, body {
   margin: 0;
   padding: 0; }
 
+img {
+  max-width: 100%; }
+
 /*
 
     Base media query mixins
@@ -37,7 +40,7 @@ body {
   background-image: url(/images/2019/site/bg.png);
   text-align: center;
   font-family: league-gothic, sans-serif;
-  font-size: 1.00000005rem;
+  font-size: 1.25rem;
   font-style: normal;
   font-weight: 400; }
   @media (min-width: 641px) {

@@ -21,27 +21,24 @@ html, body {
 */
 
 body {
-  padding: 6px;
-
   color: $color-blue-light;
   background-color: $color-blue-dark;
   background-repeat: repeat;
   background-image: url(/images/2019/site/bg.png);
-  // @include screen-res-high {
-  //   background-image: url(/images/2019/site/bg@2x.png);
-  //   background-size: 50%;
-  // }
+  @include screen-res-high {
+    background-image: url(/images/2019/site/bg@2x.png);
+    background-size: 15%;
+  }
 
   text-align: center;
 
-  font-family: $base-font-family;
-  font-size: $base-font-size * 0.6666667;
-  font-style: $base-font-style;
-  font-weight: $base-font-weight;
+  font-family: $alt-font-family;
+  font-size: $font-size-small;
+  font-style: $alt-font-style;
+  font-weight: $alt-font-weight;
 
   @include screen-small {
     padding: 11px;
-    font-size: $base-font-size;
   }
   @include screen-medium {
     padding: 22px;
@@ -58,12 +55,13 @@ body {
 
   min-height: 100%;
 
-  border: solid 15px $color-blue-light;
-  border-image-source: url(/images/2019/site/border.png);
-  border-image-slice: 15;
-  border-image-width: 15px;
-  border-image-repeat: round;
-
+  @include screen-medium {
+    border: solid 15px $color-blue-light;
+    border-image-source: url(/images/2019/site/border.png);
+    border-image-slice: 15;
+    border-image-width: 15px;
+    border-image-repeat: round;
+  }
 }
 
 a {
@@ -75,15 +73,51 @@ a {
   }
 }
 
+p {
+  color: $color-peach;
+  line-height: 1.5;
+}
 
+h2 {
+  margin: 1rem 0;
+  color: $color-peach;
+  font-family: $base-font-family;
+  font-size: $font-size-huge;
+  font-style: $base-font-style;
+  font-weight: $base-font-weight;
+  text-transform: uppercase;
+}
 
+h3 {
+  margin: 1rem 0;
+  color: $color-peach;
+  font-family: $base-font-family;
+  font-size: $font-size-xlarge;
+  font-style: $base-font-style;
+  font-weight: $base-font-weight;
+  text-transform: uppercase;
+}
 
-
+.photo {
+  margin: 3rem 0;
+}
+.photo-1 {
+  overflow: hidden;
+  background-color: $color-peach;
+  img {
+    display: block;
+    line-height: 1;
+    margin: -25% 0 0 0;
+    filter: grayscale(100%) contrast(30%);
+    mix-blend-mode: luminosity;
+    opacity: 0.8;
+  }
+}
 
 
 /*
 
-  Landing Page frilly bits
+  Header
 
 */
 .fhf-logo img {
@@ -95,12 +129,80 @@ a {
     height: 356px;
   }
 }
+nav {
+  margin: 0 -2px;
+  text-align: center;
+  border: solid 15px $color-blue-light;
+  border-image-source: url(/images/2019/site/border.png);
+  border-image-slice: 15;
+  border-image-width: 0 0 15px 0;
+  border-image-repeat: round;
+  ul {
+    margin: 0;
+    padding: 0 0 1rem 0;
+  }
+  li {
+    display: inline-block;
+    margin: 0 2rem;
+    list-style: none;
+  }
+  a {
+    color: $color-peach;
+    font-family: $base-font-family;
+    font-size: $font-size-large;
+    text-transform: uppercase;
+    text-shadow: 0 2px 1px rgba(#000, 0.25);
+  }
+  .selected a {
+    color: $color-green;
+  }
+
+  margin-bottom: 2rem;
+  @include screen-large {
+    margin-bottom: 4rem;
+  }
+}
+
+
+/*
+
+
+  Home Page
+
+*/
+.home-intro {
+  margin: 0 auto;
+  justify-content: space-between;
+
+  @include screen-small {
+    display: flex;
+  }
+  @include screen-large {
+    max-width: 960px;
+  }
+
+  p {
+    flex: 0 1 45%;
+    text-align: left;
+  }
+}
+.home-beer {
+  text-align: center;
+  p {
+    @include screen-medium {
+      max-width: 480px;
+      margin: 0 auto;
+    }
+  }
+}
+
+
+
 
 
 // signup form
 .signup-fields {
   text-align: center;
-  margin-top: $spacing-unit * 2;
 }
 .signup-email, .signup-button {
   display: inline-block;
@@ -112,7 +214,7 @@ a {
   border-radius: 8px;
 
   font-family: $base-font-family;
-  font-size: $base-font-size;
+  font-size: $font-size-med;
 
   box-shadow: rgba(#0F2123, 1) 0 6px 6px;
 
@@ -172,7 +274,14 @@ a {
 
 */
 footer {
-  margin: $spacing-unit * 2 0 0 0;
+  padding: 1rem 0 0 0;
+  margin: 3rem -2px 0 -2px;
+  text-align: center;
+  border: solid 15px $color-blue-light;
+  border-width: 15px 0 0 0;
+  border-image-source: url(/images/2019/site/border.png);
+  border-image-slice: 15;
+  border-image-repeat: round;
 }
 footer ul, footer li {
   padding: 0;
@@ -181,16 +290,27 @@ footer ul, footer li {
 footer li {
   display: inline;
   list-style: none;
-  margin: $spacing-unit / 2 $spacing-unit / 4;
+  margin: $spacing-unit / 2 $spacing-unit / 2;
 }
 footer a {
-  line-height: 1;
+  font-size: $font-size-med;
 }
 
+
+footer .form {
+  padding: 0 0 3rem 0;
+  margin: 0 -2px;
+  border: solid 15px $color-blue-light;
+  border-width: 0 0 15px 0;
+  border-image-source: url(/images/2019/site/border.png);
+  border-image-slice: 15;
+  border-image-repeat: round;
+}
 
 .social-media-list, .past-years {
   display: block;
   margin: $spacing-unit;
+  font-family: $base-font-family;
 
   @include screen-small {
     display: inline-block;
