@@ -79,21 +79,28 @@ p, li {
 h2 {
   margin: 1rem 0;
   color: $color-peach;
+  font-size: $font-size-xlarge;
   font-family: $base-font-family;
-  font-size: $font-size-huge;
   font-style: $base-font-style;
   font-weight: $base-font-weight;
   text-transform: uppercase;
+
+  @include screen-large {
+    font-size: $font-size-huge;
+  }
 }
 
 h3 {
   margin: 1rem 0;
   color: $color-peach;
   font-family: $base-font-family;
-  font-size: $font-size-xlarge;
+  font-size: $font-size-large;
   font-style: $base-font-style;
   font-weight: $base-font-weight;
   text-transform: uppercase;
+  @include screen-large {
+    font-size: $font-size-xlarge;
+  }
 }
 
 .photo {
@@ -132,9 +139,10 @@ h3 {
 }
 
 .panel-2, .panel-3 {
-  margin: 0 auto;
+  margin: 0 $spacing-unit * 1.5;
   justify-content: space-between;
   @include screen-small {
+    margin: 0 auto;
     display: flex;
   }
   @include screen-large {
@@ -172,6 +180,7 @@ h3 {
 
 */
 .fhf-logo img {
+  margin-top: $spacing-unit * 3;
   width: 282px;
   height: 178px;
 
@@ -180,39 +189,177 @@ h3 {
     height: 356px;
   }
 }
-nav {
-  margin: 0 -2px;
+.fhf-nav {
   text-align: center;
-  border: solid 15px $color-blue-light;
-  border-image-source: url(/images/2019/site/border.png);
-  border-image-slice: 15;
-  border-image-width: 0 0 15px 0;
-  border-image-repeat: round;
-  ul {
-    margin: 0;
-    padding: 0 0 1rem 0;
+  margin-bottom: 2rem;
+  @include screen-large {
+    margin: 0 -2px 4rem -2px;
+    border: solid 15px $color-blue-light;
+    border-image-source: url(/images/2019/site/border.png);
+    border-image-slice: 15;
+    border-image-width: 0 0 15px 0;
+    border-image-repeat: round;
   }
-  li {
-    display: inline-block;
-    margin: 0 2rem;
-    list-style: none;
+}
+.menu {
+  margin: 0;
+  padding: 0;
+  pointer-events: none;
+  & > * {
+    pointer-events: auto;
+    transition: opacity 0.25s ease-out;
   }
+  &:hover > * {
+    opacity: 0.6;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+.menu-icon, .close-control {
+  display: none;
+}
+.nav-item {
+  display: inline-block;
+  margin: 0;
+  list-style: none;
   a {
+    display: inline-block;
+    padding: 0 2rem 1rem 2rem;
     color: $color-peach;
     font-family: $base-font-family;
     font-size: $font-size-large;
     text-transform: uppercase;
     text-shadow: 0 2px 1px rgba(#000, 0.25);
+    &:hover {
+      color: $color-peach;
+    }
   }
-  .selected a {
+  &.selected a {
     color: $color-green;
   }
-
-  margin-bottom: 2rem;
-  @include screen-large {
-    margin-bottom: 4rem;
-  }
 }
+
+
+
+//
+// Mobile nav
+//
+@media (max-width: $large) {
+
+  .menu-icon, .close-control {
+    display: inline-block;
+    line-height: 0;
+    transition: opacity 0.25s ease-out;
+  }
+
+
+  .fhf-nav {
+      position: fixed;
+      border-width: 0;
+
+      top: 0;
+      right: 0;
+      text-align: right;
+
+      background-color: transparent;
+      transition: background-color 0.15s ease-out;
+
+      .menu {
+        visibility: hidden;
+      }
+
+
+      // menu control transitions
+      .menu-icon {
+        opacity: 1;
+      }
+      .close-control {
+        display: none;
+        opacity: 0;
+      }
+      &.is-active {
+        width: 100%;
+        background-color: $color-peach;
+        .menu-icon {
+          display: none;
+          opacity: 0;
+        }
+        .close-control {
+          display: block;
+          opacity: 1;
+        }
+      }
+  }
+
+  .menu-icon {
+      padding: 1rem;
+      text-align: right;
+      background-color: transparent;
+
+      > svg {
+          width: 32px;
+          height: auto;
+
+          path {
+            fill: $color-peach;
+          }
+      }
+  }
+  a.close-control, a.close-control:hover, a.close-control:focus {
+      padding: 1rem;
+      float: right;
+      font-size: 2.5rem;
+      line-height: 2rem;
+      color: $color-black;
+      text-align: center;
+      text-decoration: none;
+  }
+
+  .menu {
+      position: fixed;
+      top: 4rem;
+      left: 0;
+      z-index: 100;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      background-color: $color-peach;
+      transition:
+        max-height 0.15s ease-out,
+        opacity 0.15s ease-out
+      ;
+
+      &.is-active {
+        opacity: 1;
+        min-height: 100%;
+        max-height: 100%;
+      }
+  }
+
+  .nav-item {
+    display: block;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background: $color-peach;
+    a, &.selected a {
+      display: block;
+      padding: 1rem 0;
+      color: $color-black;
+      font-family: $base-font-family;
+      font-size: $font-size-large;
+      text-shadow: none;
+      line-height: 2rem;
+    }
+  }
+
+}
+
+
 
 
 /*
@@ -221,8 +368,10 @@ nav {
   Home Page
 
 */
+
 .home-beer {
   text-align: center;
+  margin: 0 $spacing-unit;
   p {
     @include screen-medium {
       max-width: 480px;
@@ -240,28 +389,28 @@ nav {
   Info Page
 
 */
+.info-intro {
+  @media (max-width: $large) {
+    margin-top: $spacing-unit * 3;
+  }
+}
 .info-map {
   position: relative;
   z-index: 10;
   width: 100%;
-  height: 200px;
   padding: 0;
   margin: 1rem 0;
   background-color: $color-peach;
   line-height: 1;
 
-  @include screen-medium {
-    height: 300px;
-  }
-
   iframe {
     display: block;
     width: 100%;
-    height: 188px;
+    height: 300px;
     filter: grayscale(100%) contrast(30%) brightness(130%) blur(0.2px);
     mix-blend-mode: luminosity;
     @include screen-medium {
-        height: 288px;
+        height: 400px;
     }
   }
 }
@@ -271,11 +420,12 @@ nav {
 }
 
 .info-qa {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: block;
+  margin: 0 $spacing-unit * 1.5;
   @include screen-small {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin: 0 auto;
   }
   @include screen-large {
@@ -298,6 +448,19 @@ nav {
   }
 }
 
+
+
+/*
+
+
+  Contact Page
+
+*/
+.contact-intro {
+  @media (max-width: $large) {
+    margin-top: $spacing-unit * 3;
+  }
+}
 
 
 // signup form
