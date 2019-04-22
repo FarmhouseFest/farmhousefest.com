@@ -38,9 +38,9 @@ body {
   font-weight: $alt-font-weight;
 
   @include screen-small {
-    padding: 11px;
+    padding: 8px;
   }
-  @include screen-medium {
+  @include screen-large {
     padding: 22px;
   }
 }
@@ -52,8 +52,15 @@ body {
   flex-direction: column;
 
   min-height: 100%;
+  @include screen-small {
+    border: solid 8px $color-blue-light;
+    border-image-source: url(/images/2019/site/border.png);
+    border-image-slice: 8;
+    border-image-width: 8px;
+    border-image-repeat: round;
+  }
 
-  @include screen-medium {
+  @include screen-large {
     border: solid 15px $color-blue-light;
     border-image-source: url(/images/2019/site/border.png);
     border-image-slice: 15;
@@ -116,25 +123,33 @@ h3 {
 .photo-1 {
   background-color: $color-peach;
   img {
-    margin: -25% 0 0 0;
     mix-blend-mode: luminosity;
     opacity: 0.8;
+    @include screen-medium {
+      margin: -25% 0 0 0;
+    }
   }
 }
 .photo-2 {
   background-color: $color-blue-light;
   img {
-    margin: -10% 0 -5% 0;
+    margin: 0;
     mix-blend-mode: luminosity;
     opacity: 0.8;
+    @include screen-medium {
+      margin: -12% 0 -7% 0;
+    }
   }
 }
 .photo-3 {
   background-color: $color-peach;
   img {
-    margin: -10% 0 -5% 0;
+    margin: 0;
     mix-blend-mode: luminosity;
     opacity: 0.8;
+    @include screen-medium {
+      margin: -10% 0 -5% 0;
+    }
   }
 }
 
@@ -142,10 +157,10 @@ h3 {
   margin: 0 $spacing-unit * 1.5;
   justify-content: space-between;
   @include screen-small {
-    margin: 0 auto;
     display: flex;
   }
-  @include screen-large {
+  @include screen-xlarge {
+    margin: 0 auto;
     max-width: 960px;
   }
 }
@@ -204,15 +219,17 @@ h3 {
 .menu {
   margin: 0;
   padding: 0;
-  pointer-events: none;
-  & > * {
-    pointer-events: auto;
-    transition: opacity 0.25s ease-out;
-  }
-  &:hover > * {
-    opacity: 0.6;
-    &:hover {
-      opacity: 1;
+  @include screen-large {
+    pointer-events: none;
+    & > * {
+      pointer-events: auto;
+      transition: opacity 0.25s ease-out;
+    }
+    &:hover > * {
+      opacity: 0.6;
+      &:hover {
+        opacity: 1;
+      }
     }
   }
 }
@@ -249,51 +266,58 @@ h3 {
 
   .menu-icon, .close-control {
     display: inline-block;
+    margin-top: 4px;
+    margin-right: 4px;
     line-height: 0;
     transition: opacity 0.25s ease-out;
+    @include screen-small {
+      margin-top: 2rem;
+      margin-right: 2rem;
+    }
   }
 
 
   .fhf-nav {
-      position: fixed;
-      border-width: 0;
+    position: fixed;
+    border-width: 0;
 
-      top: 0;
-      right: 0;
-      text-align: right;
-      z-index: 20;
-
-
-      .menu {
-        visibility: hidden;
-      }
+    top: 0;
+    right: 0;
+    text-align: right;
+    z-index: 200;
 
 
-      // menu control transitions
+    .menu {
+      visibility: hidden;
+    }
+
+
+    // menu control transitions
+    .menu-icon {
+      opacity: 1;
+    }
+    .close-control {
+      display: none;
+      opacity: 0;
+    }
+    &.is-active {
+      width: 100%;
       .menu-icon {
-        opacity: 1;
-      }
-      .close-control {
         display: none;
         opacity: 0;
       }
-      &.is-active {
-        width: 100%;
-        .menu-icon {
-          display: none;
-          opacity: 0;
-        }
-        .close-control {
-          display: block;
-          opacity: 1;
-        }
+      .close-control {
+        display: block;
+        opacity: 1;
       }
+    }
   }
 
   .menu-icon {
       padding: 1rem;
       text-align: right;
-      background-color: transparent;
+      background-color: rgba($color-blue-dark, 0.9);
+      border-radius: 8px;
 
       > svg {
           width: 32px;
@@ -324,7 +348,6 @@ h3 {
       margin: 0;
       max-height: 0;
       opacity: 0;
-      z-index: 10;
       overflow: hidden;
       background-color: $color-peach;
       transition:
@@ -352,6 +375,9 @@ h3 {
       font-size: $font-size-large;
       text-shadow: none;
       line-height: 2rem;
+      &:hover {
+        color: $color-black;
+      }
     }
   }
 
