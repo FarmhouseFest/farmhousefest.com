@@ -323,7 +323,6 @@ h3 {
         color: #000; } }
 /*
 
-
   Home Page
 
 */
@@ -334,6 +333,35 @@ h3 {
     .home-beer p {
       max-width: 480px;
       margin: 0 auto; } }
+
+/*
+
+  Lineup Page
+
+*/
+.vendor-list {
+  text-align: center;
+  margin: 0 1rem; }
+  .vendor-list ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0; }
+  .vendor-list li {
+    flex: 0 0 33%;
+    padding: 0 0.5rem;
+    margin: 0;
+    list-style: none; }
+  @media (min-width: 641px) {
+    .vendor-list li {
+      flex: 0 0 20%; } }
+  @media (min-width: 1121px) {
+    .vendor-list {
+      max-width: 960px;
+      margin: 0 auto; }
+      .vendor-list li {
+        flex: 0 0 14.2857%;
+        padding: 0rem 1rem; } }
 
 /*
 
