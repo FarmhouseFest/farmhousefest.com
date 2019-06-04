@@ -21,7 +21,7 @@ html, body {
 */
 
 body {
-  color: $color-blue-light;
+  color: $color-peach;
   background-color: $color-blue-dark;
   background-repeat: repeat;
   background-image: url(/images/2019/site/bg.png);
@@ -79,7 +79,6 @@ a {
 }
 
 p, li {
-  color: $color-peach;
   line-height: 1.5;
 }
 
@@ -108,6 +107,11 @@ h3 {
   @include screen-large {
     font-size: $font-size-xlarge;
   }
+}
+
+.amp {
+  font-family: palatino, $alt-font-family;
+  font-style: italic;
 }
 
 .photo {
@@ -391,26 +395,20 @@ h3 {
   Home Page
 
 */
-.home-beer {
+.home-intro {
   text-align: center;
   margin: 0 $spacing-unit;
-  p {
-    @include screen-medium {
+  @include screen-medium {
+    margin: 0 auto;
+    p {
       max-width: 480px;
       margin: 0 auto;
     }
   }
 }
-
-
-/*
-
-  Lineup Page
-
-*/
 .vendor-list {
   text-align: center;
-  margin: 0 $spacing-unit;
+  margin: 2rem $spacing-unit;
   ul {
     display: flex;
     flex-wrap: wrap;
@@ -430,13 +428,203 @@ h3 {
   }
   @include screen-xlarge {
     max-width: $large;
-    margin: 0 auto;
+    margin: 3rem auto;
     li {
       flex: 0 0 14.2857%;
       padding: 0rem 1rem;
     }
   }
 }
+
+
+
+
+
+/*
+
+  What's Pouring Page
+
+*/
+.beer-intro {
+  @media (max-width: $large) {
+    margin-top: $spacing-unit * 3;
+  }
+}
+
+.palate-cleansers {
+  display: block;
+  margin: 2rem 0 0 0;
+  font-size: $font-size-small;
+  line-height: 1.2;
+  text-align: center;
+  a {
+    // font-family: $base-font-family;
+    // text-transform: uppercase;
+  }
+}
+
+.toc {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0 auto;
+  li {
+    flex: 0 0 50%;
+    padding: 0 0 0.5rem 0;
+    margin: 0;
+    list-style: none;
+
+    a {
+      font-family: $base-font-family;
+      font-size: $font-size-med;
+      line-height: 1.2;
+      text-transform: uppercase;
+    }
+  }
+
+  @include screen-xsmall {
+    padding-top: 1rem;
+    li {
+      flex: 0 0 33%;
+    }
+  }
+  @include screen-medium {
+    padding-top: 2rem;
+    li {
+      flex: 0 0 25%;
+    }
+  }
+  @include screen-xlarge {
+    max-width: $large;
+    li {
+      flex: 0 0 20%;
+    }
+  }
+  @include screen-xxlarge {
+    max-width: $xlarge;
+    li {
+      flex: 0 0 16.66667%;
+    }
+  }
+
+}
+
+.beer-list {
+  padding: 0;
+  margin: 0;
+
+  ul, li {
+    padding: 0;
+    margin: 0;
+  }
+  ul {
+    padding-top: 0.5rem;
+  }
+  li {
+    padding: 2rem 1rem 0 1rem;
+    margin: 2rem 0 0 0;
+    list-style: none;
+    text-align: left;
+  }
+  h3 {
+    display: inline-block;
+    margin: 0 1rem 0 0;
+    font-size: $font-size-large;
+    color: $color-peach-light;
+  }
+  .geography {
+    color: $color-peach-light;
+  }
+  .pouring-at {
+    display: block;
+    margin: -0.5rem 0 1rem 0;
+    font-style: italic;
+    color: $color-blue-light;
+  }
+  .pouring {
+    li {
+      padding: 0 1rem 0 0;
+      margin: 0 0 0.5rem 0;
+      border-width: 0;
+      text-align: left;
+      &:nth-child(2n) {
+        padding-right: 0;
+      }
+    }
+    h4 {
+      display: inline-block;
+      margin: 0 0.5rem 0 0;
+      color: $color-peach-light;
+    }
+    .desc {
+      display: block;
+      margin: 0;
+      font-size: $font-size-xsmall;
+      &.tbd {
+        font-style: italic;
+      }
+    }
+    .abv {
+      display: inline-block;
+      margin: 0;
+      font-size: $font-size-xsmall;
+      color: $color-blue-light;
+    }
+  }
+
+  @include screen-medium {
+    li {
+      padding-top: 2rem 2rem 0 2rem;
+      margin: 2rem 0 0 0;
+      border: solid 8px $color-blue-light;
+      border-width: 8px 0 0 0;
+      border-image-source: url(/images/2019/site/border.png);
+      border-image-slice: 8;
+      border-image-width: 8px 0 0 0;
+      border-image-repeat: round;
+    }
+    .pouring {
+      display: flex;
+      flex-wrap: wrap;
+      li {
+        flex: 1 1 50%;
+      }
+    }
+  }
+  @include screen-xlarge {
+    max-width: $large;
+    margin: 0 auto;
+    li {
+      padding-top: 4rem;
+      margin-top: 3.5rem;
+    }
+    .pouring {
+      li {
+        flex: 0 1 33%;
+        padding: 0 2rem 0 0;
+        margin: 0 0 1rem 0;
+        &:nth-child(2n) {
+          padding-right: 2rem;
+        }
+        &:nth-child(3n) {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+  @include screen-xxlarge {
+    max-width: $xlarge;
+    margin: 0 auto;
+  }
+  @include screen-xxxlarge {
+    max-width: $xxlarge;
+    margin: 0 auto;
+  }
+
+}
+
+
+
 
 
 

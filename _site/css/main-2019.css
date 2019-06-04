@@ -33,7 +33,7 @@ html, body {
 
 */
 body {
-  color: #82ABB0;
+  color: #DCB988;
   background-color: #112E32;
   background-repeat: repeat;
   background-image: url(/images/2019/site/bg.png);
@@ -60,14 +60,14 @@ body {
   min-height: 100%; }
   @media (min-width: 641px) {
     .wrapper {
-      border: solid 8px #82ABB0;
+      border: solid 8px #618286;
       border-image-source: url(/images/2019/site/border.png);
       border-image-slice: 8;
       border-image-width: 8px;
       border-image-repeat: round; } }
   @media (min-width: 961px) {
     .wrapper {
-      border: solid 15px #82ABB0;
+      border: solid 15px #618286;
       border-image-source: url(/images/2019/site/border.png);
       border-image-slice: 15;
       border-image-width: 15px;
@@ -81,7 +81,6 @@ a {
     text-decoration: underline; }
 
 p, li {
-  color: #DCB988;
   line-height: 1.5; }
 
 h2 {
@@ -108,6 +107,10 @@ h3 {
     h3 {
       font-size: 3rem; } }
 
+.amp {
+  font-family: palatino, linotype-sabon, sans-serif;
+  font-style: italic; }
+
 .photo {
   margin: 3rem 0;
   opacity: 0.9;
@@ -127,7 +130,7 @@ h3 {
         margin: -25% 0 0 0; } }
 
 .photo-2 {
-  background-color: #82ABB0; }
+  background-color: #618286; }
   .photo-2 img {
     margin: 0;
     mix-blend-mode: luminosity;
@@ -191,7 +194,7 @@ h3 {
   @media (min-width: 961px) {
     .fhf-nav {
       margin: 0 -2px 4rem -2px;
-      border: solid 15px #82ABB0;
+      border: solid 15px #618286;
       border-image-source: url(/images/2019/site/border.png);
       border-image-slice: 15;
       border-image-width: 0 0 15px 0;
@@ -326,22 +329,19 @@ h3 {
   Home Page
 
 */
-.home-beer {
+.home-intro {
   text-align: center;
   margin: 0 1rem; }
   @media (min-width: 801px) {
-    .home-beer p {
-      max-width: 480px;
-      margin: 0 auto; } }
+    .home-intro {
+      margin: 0 auto; }
+      .home-intro p {
+        max-width: 480px;
+        margin: 0 auto; } }
 
-/*
-
-  Lineup Page
-
-*/
 .vendor-list {
   text-align: center;
-  margin: 0 1rem; }
+  margin: 2rem 1rem; }
   .vendor-list ul {
     display: flex;
     flex-wrap: wrap;
@@ -358,10 +358,148 @@ h3 {
   @media (min-width: 1121px) {
     .vendor-list {
       max-width: 960px;
-      margin: 0 auto; }
+      margin: 3rem auto; }
       .vendor-list li {
         flex: 0 0 14.2857%;
         padding: 0rem 1rem; } }
+
+/*
+
+  What's Pouring Page
+
+*/
+@media (max-width: 960px) {
+  .beer-intro {
+    margin-top: 3rem; } }
+
+.palate-cleansers {
+  display: block;
+  margin: 2rem 0 0 0;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  text-align: center; }
+
+.toc {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0 auto; }
+  .toc li {
+    flex: 0 0 50%;
+    padding: 0 0 0.5rem 0;
+    margin: 0;
+    list-style: none; }
+    .toc li a {
+      font-family: league-gothic, sans-serif;
+      font-size: 1.5rem;
+      line-height: 1.2;
+      text-transform: uppercase; }
+  @media (min-width: 481px) {
+    .toc {
+      padding-top: 1rem; }
+      .toc li {
+        flex: 0 0 33%; } }
+  @media (min-width: 801px) {
+    .toc {
+      padding-top: 2rem; }
+      .toc li {
+        flex: 0 0 25%; } }
+  @media (min-width: 1121px) {
+    .toc {
+      max-width: 960px; }
+      .toc li {
+        flex: 0 0 20%; } }
+  @media (min-width: 1281px) {
+    .toc {
+      max-width: 1120px; }
+      .toc li {
+        flex: 0 0 16.66667%; } }
+
+.beer-list {
+  padding: 0;
+  margin: 0; }
+  .beer-list ul, .beer-list li {
+    padding: 0;
+    margin: 0; }
+  .beer-list ul {
+    padding-top: 0.5rem; }
+  .beer-list li {
+    padding: 2rem 1rem 0 1rem;
+    margin: 2rem 0 0 0;
+    list-style: none;
+    text-align: left; }
+  .beer-list h3 {
+    display: inline-block;
+    margin: 0 1rem 0 0;
+    font-size: 2rem;
+    color: #EFD0A5; }
+  .beer-list .geography {
+    color: #EFD0A5; }
+  .beer-list .pouring-at {
+    display: block;
+    margin: -0.5rem 0 1rem 0;
+    font-style: italic;
+    color: #618286; }
+  .beer-list .pouring li {
+    padding: 0 1rem 0 0;
+    margin: 0 0 0.5rem 0;
+    border-width: 0;
+    text-align: left; }
+    .beer-list .pouring li:nth-child(2n) {
+      padding-right: 0; }
+  .beer-list .pouring h4 {
+    display: inline-block;
+    margin: 0 0.5rem 0 0;
+    color: #EFD0A5; }
+  .beer-list .pouring .desc {
+    display: block;
+    margin: 0;
+    font-size: 1rem; }
+    .beer-list .pouring .desc.tbd {
+      font-style: italic; }
+  .beer-list .pouring .abv {
+    display: inline-block;
+    margin: 0;
+    font-size: 1rem;
+    color: #618286; }
+  @media (min-width: 801px) {
+    .beer-list li {
+      padding-top: 2rem 2rem 0 2rem;
+      margin: 2rem 0 0 0;
+      border: solid 8px #618286;
+      border-width: 8px 0 0 0;
+      border-image-source: url(/images/2019/site/border.png);
+      border-image-slice: 8;
+      border-image-width: 8px 0 0 0;
+      border-image-repeat: round; }
+    .beer-list .pouring {
+      display: flex;
+      flex-wrap: wrap; }
+      .beer-list .pouring li {
+        flex: 1 1 50%; } }
+  @media (min-width: 1121px) {
+    .beer-list {
+      max-width: 960px;
+      margin: 0 auto; }
+      .beer-list li {
+        padding-top: 4rem;
+        margin-top: 3.5rem; }
+      .beer-list .pouring li {
+        flex: 0 1 33%;
+        padding: 0 2rem 0 0;
+        margin: 0 0 1rem 0; }
+        .beer-list .pouring li:nth-child(2n) {
+          padding-right: 2rem; }
+        .beer-list .pouring li:nth-child(3n) {
+          padding-right: 0; } }
+  @media (min-width: 1281px) {
+    .beer-list {
+      max-width: 1120px;
+      margin: 0 auto; } }
+  @media (min-width: 1401px) {
+    .beer-list {
+      max-width: 1280px;
+      margin: 0 auto; } }
 
 /*
 
@@ -443,7 +581,7 @@ h3 {
   .signup-email:focus, .signup-button:focus {
     outline: none;
     border: solid 1px rgba(17, 46, 50, 0.75);
-    box-shadow: 0 0 5px 2px rgba(130, 171, 176, 0.5), 0 0 2px 2px #82ABB0; }
+    box-shadow: 0 0 5px 2px rgba(97, 130, 134, 0.5), 0 0 2px 2px #618286; }
   @media (min-width: 481px) {
     .signup-email, .signup-button {
       width: 65%; } }
@@ -484,7 +622,7 @@ footer {
   padding: 1rem 0 0 0;
   margin: 3rem -2px 0 -2px;
   text-align: center;
-  border: solid 15px #82ABB0;
+  border: solid 15px #618286;
   border-width: 15px 0 0 0;
   border-image-source: url(/images/2019/site/border.png);
   border-image-slice: 15;
@@ -506,7 +644,7 @@ footer a {
 footer .form {
   padding: 0 0 3rem 0;
   margin: 0 -2px;
-  border: solid 15px #82ABB0;
+  border: solid 15px #618286;
   border-width: 0 0 15px 0;
   border-image-source: url(/images/2019/site/border.png);
   border-image-slice: 15;
