@@ -544,7 +544,6 @@ h3 {
         flex: 1 1 50%; } }
   @media (min-width: 801px) {
     .beer-list li {
-      padding-top: 2rem 2rem 0 2rem;
       margin: 2rem 0 0 0;
       border: solid 8px #618286;
       border-width: 8px 0 0 0;
@@ -560,7 +559,7 @@ h3 {
       width: 960px;
       margin: 0 auto; }
       .beer-list li {
-        padding-top: 4rem;
+        padding-top: 2rem;
         margin-top: 3.5rem; }
       .beer-list .pouring li {
         flex: 0 1 33%;
