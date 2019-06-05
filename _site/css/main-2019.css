@@ -476,7 +476,7 @@ h3 {
     padding-top: 0.5rem; }
   .beer-list li {
     min-width: 100%;
-    padding: 2rem 1rem 0 1rem;
+    padding: 0 1rem;
     margin: 2rem 0 0 0;
     list-style: none;
     text-align: left;
@@ -486,8 +486,11 @@ h3 {
     border-image-slice: 4;
     border-image-width: 4px 0 0 0;
     border-image-repeat: round; }
+    .beer-list li:target {
+      padding-top: 2rem; }
   .beer-list h3 {
     display: inline-block;
+    padding: 3rem 0 0 0;
     margin: 0;
     font-size: 1.5rem;
     line-height: 1;
@@ -501,29 +504,31 @@ h3 {
     margin: -0.5rem 0 1rem 0;
     font-style: italic;
     color: #618286; }
-  .beer-list .pouring li {
-    min-width: auto;
-    padding: 0 1rem 0 0;
-    margin: 0 0 0.5rem 0;
-    border-width: 0;
-    text-align: left; }
-    .beer-list .pouring li:nth-child(2n) {
-      padding-right: 0; }
-  .beer-list .pouring h4 {
-    display: inline-block;
-    margin: 0 0.5rem 0 0;
-    color: #EFD0A5; }
-  .beer-list .pouring .desc {
-    display: block;
-    margin: 0;
-    font-size: 1rem; }
-    .beer-list .pouring .desc.tbd {
-      font-style: italic; }
-  .beer-list .pouring .abv {
-    display: inline-block;
-    margin: 0;
-    font-size: 1rem;
-    color: #618286; }
+  .beer-list .pouring {
+    padding-bottom: 1rem; }
+    .beer-list .pouring li {
+      min-width: auto;
+      padding: 0 1rem 0 0;
+      margin: 0 0 0.5rem 0;
+      border-width: 0;
+      text-align: left; }
+      .beer-list .pouring li:nth-child(2n) {
+        padding-right: 0; }
+    .beer-list .pouring h4 {
+      display: inline-block;
+      margin: 0 0.5rem 0 0;
+      color: #EFD0A5; }
+    .beer-list .pouring .desc {
+      display: block;
+      margin: 0;
+      font-size: 1rem; }
+      .beer-list .pouring .desc.tbd {
+        font-style: italic; }
+    .beer-list .pouring .abv {
+      display: inline-block;
+      margin: 0;
+      font-size: 1rem;
+      color: #618286; }
   @media (min-width: 481px) {
     .beer-list h3 {
       margin: 0 1rem 0 0;
@@ -543,7 +548,6 @@ h3 {
         flex: 1 1 50%; } }
   @media (min-width: 801px) {
     .beer-list li {
-      padding-top: 2rem 2rem 0 2rem;
       margin: 2rem 0 0 0;
       border: solid 8px #618286;
       border-width: 8px 0 0 0;
@@ -559,7 +563,7 @@ h3 {
       width: 960px;
       margin: 0 auto; }
       .beer-list li {
-        padding-top: 4rem;
+        padding-top: 2rem;
         margin-top: 3.5rem; }
       .beer-list .pouring li {
         flex: 0 1 33%;
