@@ -594,6 +594,10 @@ h3 {
     border-image-slice: 4;
     border-image-width: 4px 0 0 0;
     border-image-repeat: round;
+
+    &:target {
+      padding-top: 2rem;
+    }
   }
   h3 {
     display: inline-block;
@@ -615,6 +619,7 @@ h3 {
     color: $color-blue-light;
   }
   .pouring {
+    padding-bottom: 1rem;
     li {
       min-width: auto;
       padding: 0 1rem 0 0;
