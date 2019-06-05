@@ -39,7 +39,7 @@ body {
   background-image: url(/images/2019/site/bg.png);
   text-align: center;
   font-family: linotype-sabon, sans-serif;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400; }
   @media only screen and (min-resolution: 180dpi) {
@@ -48,7 +48,8 @@ body {
       background-size: 15%; } }
   @media (min-width: 641px) {
     body {
-      padding: 8px; } }
+      padding: 8px;
+      font-size: 1.25rem; } }
   @media (min-width: 961px) {
     body {
       padding: 22px; } }
@@ -81,7 +82,10 @@ a {
     text-decoration: underline; }
 
 p, li {
-  line-height: 1.5; }
+  line-height: 1.35; }
+  @media (min-width: 481px) {
+    p, li {
+      line-height: 1.5; } }
 
 h2 {
   margin: 1rem 0;
@@ -243,6 +247,10 @@ h3 {
     transition: opacity 0.25s ease-out; } }
   @media (max-width: 960px) and (min-width: 641px) {
     .menu-icon, .close-control {
+      margin-top: 1rem;
+      margin-right: 1rem; } }
+  @media (max-width: 960px) and (min-width: 961px) {
+    .menu-icon, .close-control {
       margin-top: 2rem;
       margin-right: 2rem; } }
 
@@ -382,21 +390,24 @@ h3 {
 .toc {
   display: flex;
   flex-wrap: wrap;
-  padding: 0;
+  padding: 0 0.5rem;
   margin: 0 auto; }
   .toc li {
     flex: 0 0 50%;
-    padding: 0 0 0.5rem 0;
+    padding: 0;
     margin: 0;
     list-style: none; }
     .toc li a {
-      font-family: league-gothic, sans-serif;
-      font-size: 1.5rem;
-      line-height: 1.2;
-      text-transform: uppercase; }
+      font-family: alt-font-family;
+      font-size: 1rem;
+      line-height: 1.35; }
+      @media (min-width: 481px) {
+        .toc li a {
+          font-size: 1.25rem;
+          line-height: 1.2; } }
   @media (min-width: 481px) {
     .toc {
-      padding-top: 1rem; }
+      padding: 1rem 0 0 0; }
       .toc li {
         flex: 0 0 33%; } }
   @media (min-width: 801px) {
@@ -427,13 +438,22 @@ h3 {
     padding: 2rem 1rem 0 1rem;
     margin: 2rem 0 0 0;
     list-style: none;
-    text-align: left; }
+    text-align: left;
+    border: solid 4px #618286;
+    border-width: 4px 0 0 0;
+    border-image-source: url(/images/2019/site/border.png);
+    border-image-slice: 4;
+    border-image-width: 4px 0 0 0;
+    border-image-repeat: round; }
   .beer-list h3 {
     display: inline-block;
-    margin: 0 1rem 0 0;
-    font-size: 2rem;
+    margin: 0;
+    font-size: 1.5rem;
+    line-height: 1;
     color: #EFD0A5; }
   .beer-list .geography {
+    display: block;
+    margin: 0 0 0.5rem 0;
     color: #EFD0A5; }
   .beer-list .pouring-at {
     display: block;
@@ -462,6 +482,21 @@ h3 {
     margin: 0;
     font-size: 1rem;
     color: #618286; }
+  @media (min-width: 481px) {
+    .beer-list h3 {
+      margin: 0 1rem 0 0;
+      font-size: 2rem; }
+    .beer-list li {
+      border-width: 8px 0 0 0;
+      border-image-slice: 8;
+      border-image-width: 8px 0 0 0; }
+    .beer-list .geography {
+      display: inline-block; }
+    .beer-list .pouring {
+      display: flex;
+      flex-wrap: wrap; }
+      .beer-list .pouring li {
+        flex: 1 1 50%; } }
   @media (min-width: 801px) {
     .beer-list li {
       padding-top: 2rem 2rem 0 2rem;
@@ -471,12 +506,7 @@ h3 {
       border-image-source: url(/images/2019/site/border.png);
       border-image-slice: 8;
       border-image-width: 8px 0 0 0;
-      border-image-repeat: round; }
-    .beer-list .pouring {
-      display: flex;
-      flex-wrap: wrap; }
-      .beer-list .pouring li {
-        flex: 1 1 50%; } }
+      border-image-repeat: round; } }
   @media (min-width: 1121px) {
     .beer-list {
       max-width: 960px;

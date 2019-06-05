@@ -33,12 +33,13 @@ body {
   text-align: center;
 
   font-family: $alt-font-family;
-  font-size: $font-size-small;
+  font-size: $font-size-xsmall;
   font-style: $alt-font-style;
   font-weight: $alt-font-weight;
 
   @include screen-small {
     padding: 8px;
+    font-size: $font-size-small;
   }
   @include screen-large {
     padding: 22px;
@@ -79,7 +80,10 @@ a {
 }
 
 p, li {
-  line-height: 1.5;
+  line-height: 1.35;
+  @include screen-xsmall {
+    line-height: 1.5;
+  }
 }
 
 h2 {
@@ -275,6 +279,10 @@ h3 {
     line-height: 0;
     transition: opacity 0.25s ease-out;
     @include screen-small {
+      margin-top: 1rem;
+      margin-right: 1rem;
+    }
+    @include screen-large {
       margin-top: 2rem;
       margin-right: 2rem;
     }
@@ -457,33 +465,32 @@ h3 {
   font-size: $font-size-small;
   line-height: 1.2;
   text-align: center;
-  a {
-    // font-family: $base-font-family;
-    // text-transform: uppercase;
-  }
 }
 
 .toc {
   display: flex;
   flex-wrap: wrap;
-  padding: 0;
+  padding: 0 0.5rem;
   margin: 0 auto;
   li {
     flex: 0 0 50%;
-    padding: 0 0 0.5rem 0;
+    padding: 0;
     margin: 0;
     list-style: none;
 
     a {
-      font-family: $base-font-family;
-      font-size: $font-size-med;
-      line-height: 1.2;
-      text-transform: uppercase;
+      font-family: alt-font-family;
+      font-size: $font-size-xsmall;
+      line-height: 1.35;
+      @include screen-xsmall {
+        font-size: $font-size-small;
+        line-height: 1.2;
+      }
     }
   }
 
   @include screen-xsmall {
-    padding-top: 1rem;
+    padding: 1rem 0 0 0;
     li {
       flex: 0 0 33%;
     }
@@ -525,14 +532,23 @@ h3 {
     margin: 2rem 0 0 0;
     list-style: none;
     text-align: left;
+    border: solid 4px $color-blue-light;
+    border-width: 4px 0 0 0;
+    border-image-source: url(/images/2019/site/border.png);
+    border-image-slice: 4;
+    border-image-width: 4px 0 0 0;
+    border-image-repeat: round;
   }
   h3 {
     display: inline-block;
-    margin: 0 1rem 0 0;
-    font-size: $font-size-large;
+    margin: 0;
+    font-size: $font-size-med;
+    line-height: 1;
     color: $color-peach-light;
   }
   .geography {
+    display: block;
+    margin: 0 0 0.5rem 0;
     color: $color-peach-light;
   }
   .pouring-at {
@@ -572,6 +588,27 @@ h3 {
     }
   }
 
+  @include screen-xsmall {
+    h3 {
+      margin: 0 1rem 0 0;
+      font-size: $font-size-large;
+    }
+    li {
+      border-width: 8px 0 0 0;
+      border-image-slice: 8;
+      border-image-width: 8px 0 0 0;
+    }
+    .geography {
+      display: inline-block;
+    }
+    .pouring {
+      display: flex;
+      flex-wrap: wrap;
+      li {
+        flex: 1 1 50%;
+      }
+    }
+  }
   @include screen-medium {
     li {
       padding-top: 2rem 2rem 0 2rem;
@@ -582,13 +619,6 @@ h3 {
       border-image-slice: 8;
       border-image-width: 8px 0 0 0;
       border-image-repeat: round;
-    }
-    .pouring {
-      display: flex;
-      flex-wrap: wrap;
-      li {
-        flex: 1 1 50%;
-      }
     }
   }
   @include screen-xlarge {
