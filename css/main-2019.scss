@@ -597,6 +597,9 @@ h3 {
       border-width: 8px 0 0 0;
       border-image-slice: 8;
       border-image-width: 8px 0 0 0;
+      &.importer .pouring li {
+        flex: none;
+      }
     }
     .geography {
       display: inline-block;
