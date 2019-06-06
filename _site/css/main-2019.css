@@ -61,14 +61,14 @@ body {
   min-height: 100%; }
   @media (min-width: 641px) {
     .wrapper {
-      border: solid 8px #618286;
+      border: solid 8px #7fa2a6;
       border-image-source: url(/images/2019/site/border.png);
       border-image-slice: 8;
       border-image-width: 8px;
       border-image-repeat: round; } }
   @media (min-width: 961px) {
     .wrapper {
-      border: solid 15px #618286;
+      border: solid 15px #7fa2a6;
       border-image-source: url(/images/2019/site/border.png);
       border-image-slice: 15;
       border-image-width: 15px;
@@ -134,7 +134,7 @@ h3 {
         margin: -25% 0 0 0; } }
 
 .photo-2 {
-  background-color: #618286; }
+  background-color: #7fa2a6; }
   .photo-2 img {
     margin: 0;
     mix-blend-mode: luminosity;
@@ -198,7 +198,7 @@ h3 {
   @media (min-width: 961px) {
     .fhf-nav {
       margin: 0 -2px 4rem -2px;
-      border: solid 15px #618286;
+      border: solid 15px #7fa2a6;
       border-image-source: url(/images/2019/site/border.png);
       border-image-slice: 15;
       border-image-width: 0 0 15px 0;
@@ -344,7 +344,7 @@ h3 {
     .home-intro {
       margin: 0 auto; }
       .home-intro p {
-        width: 480px;
+        width: 520px;
         margin: 0 auto; } }
 
 .vendor-list {
@@ -397,7 +397,7 @@ h3 {
     border: solid 1px rgba(17, 46, 50, 0.75);
     color: #112E32;
     background-image: url(/images/2019/site/search.png);
-    box-shadow: 0 0 5px 2px rgba(97, 130, 134, 0.5), 0 0 2px 2px #618286; }
+    box-shadow: 0 0 5px 2px rgba(127, 162, 166, 0.5), 0 0 2px 2px #7fa2a6; }
   .beer-search::placeholder {
     color: #ccc; }
   .beer-search.is-hidden {
@@ -418,7 +418,7 @@ h3 {
     .beer-search {
       padding: 0.5rem;
       padding-left: 3rem;
-      margin: -1rem 0 2rem 0;
+      margin: 1rem 0 3rem 0;
       border-radius: 8px;
       min-width: 60%;
       background-size: 20px 20px;
@@ -491,7 +491,7 @@ h3 {
     margin: 2rem 0 0 0;
     list-style: none;
     text-align: left;
-    border: solid 4px #618286;
+    border: solid 4px #7fa2a6;
     border-width: 4px 0 0 0;
     border-image-source: url(/images/2019/site/border.png);
     border-image-slice: 4;
@@ -499,6 +499,10 @@ h3 {
     border-image-repeat: round; }
     .beer-list li:target {
       padding-top: 2rem; }
+    .beer-list li.importer {
+      color: #7fa2a6; }
+      .beer-list li.importer h3 {
+        color: #7fa2a6; }
   .beer-list h3 {
     display: inline-block;
     padding: 3rem 0 0 0;
@@ -514,7 +518,7 @@ h3 {
     display: block;
     margin: -0.5rem 0 1rem 0;
     font-style: italic;
-    color: #618286; }
+    color: #7fa2a6; }
   .beer-list .pouring {
     padding-bottom: 1rem; }
     .beer-list .pouring li {
@@ -539,7 +543,7 @@ h3 {
       display: inline-block;
       margin: 0;
       font-size: 1rem;
-      color: #618286; }
+      color: #7fa2a6; }
   @media (min-width: 481px) {
     .beer-list h3 {
       margin: 0 1rem 0 0;
@@ -560,7 +564,7 @@ h3 {
   @media (min-width: 801px) {
     .beer-list li {
       margin: 2rem 0 0 0;
-      border: solid 8px #618286;
+      border: solid 8px #7fa2a6;
       border-width: 8px 0 0 0;
       border-image-source: url(/images/2019/site/border.png);
       border-image-slice: 8;
@@ -568,15 +572,46 @@ h3 {
       border-image-repeat: round; } }
   @media (min-width: 961px) {
     .beer-list {
-      padding-top: 0; }
+      padding-top: 0; } }
+  @media (min-width: 1121px) {
+    .beer-list {
+      width: 960px;
+      margin: 0 auto; }
+      .beer-list li {
+        padding-top: 2rem;
+        margin-top: 3.5rem; }
+      .beer-list .pouring li {
+        flex: 0 1 33%;
+        padding: 0 2rem 0 0;
+        margin: 0 0 1rem 0; }
+        .beer-list .pouring li:nth-child(2n) {
+          padding-right: 2rem; }
+        .beer-list .pouring li:nth-child(3n) {
+          padding-right: 0; } }
+  @media (min-width: 1281px) {
+    .beer-list {
+      width: 1120px;
+      margin: 0 auto; }
       .beer-list li {
         padding-left: 290px;
         background-position: 0 3rem;
         background-repeat: no-repeat;
-        background-size: 220px 220px;
-        min-height: 5.5rem; }
+        background-size: 200px 200px;
+        min-height: 16rem; }
         .beer-list li#palaterefreshers {
           padding-left: 0; }
+        .beer-list li#beerthirst {
+          background-image: url(/images/2019/vendors/beerthirst-alt.png); }
+        .beer-list li#copperandtheory {
+          background-image: url(/images/2019/vendors/copperandtheory-alt.png); }
+        .beer-list li#liquidart {
+          background-image: url(/images/2019/vendors/liquidart-alt.png); }
+        .beer-list li#txotx {
+          background-image: url(/images/2019/vendors/txotx-alt.png); }
+        .beer-list li#untapped {
+          background-image: url(/images/2019/vendors/untapped-alt.png); }
+        .beer-list li#westbier {
+          background-image: url(/images/2019/vendors/westbier-alt.png); }
         .beer-list li#aleapothecary {
           background-image: url(/images/2019/vendors/aleapothecary.png); }
         .beer-list li#aslan {
@@ -676,26 +711,9 @@ h3 {
         .beer-list li#wildambition {
           background-image: url(/images/2019/vendors/wildambition.png); }
         .beer-list li#wildbeer {
-          background-image: url(/images/2019/vendors/wildbeerco.png); } }
-  @media (min-width: 1121px) {
-    .beer-list {
-      width: 960px;
-      margin: 0 auto; }
-      .beer-list li {
-        padding-top: 2rem;
-        margin-top: 3.5rem; }
+          background-image: url(/images/2019/vendors/wildbeerco.png); }
       .beer-list .pouring li {
-        flex: 0 1 33%;
-        padding: 0 2rem 0 0;
-        margin: 0 0 1rem 0; }
-        .beer-list .pouring li:nth-child(2n) {
-          padding-right: 2rem; }
-        .beer-list .pouring li:nth-child(3n) {
-          padding-right: 0; } }
-  @media (min-width: 1281px) {
-    .beer-list {
-      width: 1120px;
-      margin: 0 auto; } }
+        min-height: auto; } }
   @media (min-width: 1401px) {
     .beer-list {
       width: 1280px;
@@ -781,7 +799,7 @@ h3 {
   .signup-email:focus, .signup-button:focus {
     outline: none;
     border: solid 1px rgba(17, 46, 50, 0.75);
-    box-shadow: 0 0 5px 2px rgba(97, 130, 134, 0.5), 0 0 2px 2px #618286; }
+    box-shadow: 0 0 5px 2px rgba(127, 162, 166, 0.5), 0 0 2px 2px #7fa2a6; }
   @media (min-width: 481px) {
     .signup-email, .signup-button {
       width: 65%; } }
@@ -822,7 +840,7 @@ footer {
   padding: 1rem 0 0 0;
   margin: 3rem -2px 0 -2px;
   text-align: center;
-  border: solid 15px #618286;
+  border: solid 15px #7fa2a6;
   border-width: 15px 0 0 0;
   border-image-source: url(/images/2019/site/border.png);
   border-image-slice: 15;
@@ -844,7 +862,7 @@ footer a {
 footer .form {
   padding: 0 0 3rem 0;
   margin: 0 -2px;
-  border: solid 15px #618286;
+  border: solid 15px #7fa2a6;
   border-width: 0 0 15px 0;
   border-image-source: url(/images/2019/site/border.png);
   border-image-slice: 15;
