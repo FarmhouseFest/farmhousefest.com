@@ -379,16 +379,24 @@ h3 {
 .beer-search {
   appearance: none;
   -webkit-appearance: none;
+  opacity: 0.9;
   padding: 0.25rem 0.5rem;
+  padding-left: 2.5rem;
   border: solid 1px rgba(0, 0, 0, 0);
   border-radius: 4px;
   font-family: league-gothic, sans-serif;
   font-size: 1.5rem;
-  box-shadow: #0f2123 0 6px 6px; }
+  box-shadow: #0f2123 0 6px 6px;
+  background-image: url(/images/2019/site/search-light.png);
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position: 12px 11px; }
   .beer-search:focus {
+    opacity: 1;
     outline: none;
     border: solid 1px rgba(17, 46, 50, 0.75);
     color: #112E32;
+    background-image: url(/images/2019/site/search.png);
     box-shadow: 0 0 5px 2px rgba(97, 130, 134, 0.5), 0 0 2px 2px #618286; }
   .beer-search::placeholder {
     color: #ccc; }
@@ -409,9 +417,12 @@ h3 {
   @media (min-width: 961px) {
     .beer-search {
       padding: 0.5rem;
+      padding-left: 3rem;
       margin: -1rem 0 2rem 0;
       border-radius: 8px;
-      min-width: 60%; } }
+      min-width: 60%;
+      background-size: 20px 20px;
+      background-position: 14px 13px; } }
 
 .beer-intro {
   margin-bottom: -3rem; }
@@ -557,7 +568,115 @@ h3 {
       border-image-repeat: round; } }
   @media (min-width: 961px) {
     .beer-list {
-      padding-top: 0; } }
+      padding-top: 0; }
+      .beer-list li {
+        padding-left: 290px;
+        background-position: 0 3rem;
+        background-repeat: no-repeat;
+        background-size: 220px 220px;
+        min-height: 5.5rem; }
+        .beer-list li#palaterefreshers {
+          padding-left: 0; }
+        .beer-list li#aleapothecary {
+          background-image: url(/images/2019/vendors/aleapothecary.png); }
+        .beer-list li#aslan {
+          background-image: url(/images/2019/vendors/aslan.png); }
+        .beer-list li#atwood {
+          background-image: url(/images/2019/vendors/atwood.png); }
+        .beer-list li#bellwoods {
+          background-image: url(/images/2019/vendors/bellwoods.png); }
+        .beer-list li#bench {
+          background-image: url(/images/2019/vendors/bench.png); }
+        .beer-list li#bereziartua {
+          background-image: url(/images/2019/vendors/bereziartua.png); }
+        .beer-list li#blackberryfarm {
+          background-image: url(/images/2019/vendors/blackberryfarm.png); }
+        .beer-list li#blindman {
+          background-image: url(/images/2019/vendors/blindman.png); }
+        .beer-list li#bloodbrothers {
+          background-image: url(/images/2019/vendors/bloodbrothers.png); }
+        .beer-list li#boombox {
+          background-image: url(/images/2019/vendors/boombox.png); }
+        .beer-list li#brassneck {
+          background-image: url(/images/2019/vendors/brassneck.png); }
+        .beer-list li#brekeriet {
+          background-image: url(/images/2019/vendors/brekeriet.png); }
+        .beer-list li#burdock {
+          background-image: url(/images/2019/vendors/burdock.png); }
+        .beer-list li#cantillon {
+          background-image: url(/images/2019/vendors/cantillon.png); }
+        .beer-list li#dageraad {
+          background-image: url(/images/2019/vendors/dageraad.png); }
+        .beer-list li#dominion {
+          background-image: url(/images/2019/vendors/dominion.png); }
+        .beer-list li#dunham {
+          background-image: url(/images/2019/vendors/dunham.png); }
+        .beer-list li#e9 {
+          background-image: url(/images/2019/vendors/e9.png); }
+        .beer-list li#fieldhouse {
+          background-image: url(/images/2019/vendors/fieldhouse.png); }
+        .beer-list li#firestonewalker {
+          background-image: url(/images/2019/vendors/firestonewalker.png); }
+        .beer-list li#floodland {
+          background-image: url(/images/2019/vendors/floodland.png); }
+        .beer-list li#fourwinds {
+          background-image: url(/images/2019/vendors/fourwinds.png); }
+        .beer-list li#gardenpath {
+          background-image: url(/images/2019/vendors/gardenpath.png); }
+        .beer-list li#gigantic {
+          background-image: url(/images/2019/vendors/gigantic.png); }
+        .beer-list li#graft {
+          background-image: url(/images/2019/vendors/graft.png); }
+        .beer-list li#greatnotion {
+          background-image: url(/images/2019/vendors/greatnotion.png); }
+        .beer-list li#holymountain {
+          background-image: url(/images/2019/vendors/holymountain.png); }
+        .beer-list li#houseoffunk {
+          background-image: url(/images/2019/vendors/houseoffunk.png); }
+        .beer-list li#ilesauvage {
+          background-image: url(/images/2019/vendors/ilesauvage.png); }
+        .beer-list li#isastegi {
+          background-image: url(/images/2019/vendors/isastegi.png); }
+        .beer-list li#jesterking {
+          background-image: url(/images/2019/vendors/jesterking.png); }
+        .beer-list li#lasirene {
+          background-image: url(/images/2019/vendors/lasirene.png); }
+        .beer-list li#luppolo {
+          background-image: url(/images/2019/vendors/luppolo.png); }
+        .beer-list li#moderntimes {
+          background-image: url(/images/2019/vendors/moderntimes.png); }
+        .beer-list li#nomad {
+          background-image: url(/images/2019/vendors/nomad.png); }
+        .beer-list li#oxbow {
+          background-image: url(/images/2019/vendors/oxbow.png); }
+        .beer-list li#p49 {
+          background-image: url(/images/2019/vendors/p49.png); }
+        .beer-list li#powell {
+          background-image: url(/images/2019/vendors/powell.png); }
+        .beer-list li#quebrada {
+          background-image: url(/images/2019/vendors/quebrada.png); }
+        .beer-list li#shacksbury {
+          background-image: url(/images/2019/vendors/shacksbury.png); }
+        .beer-list li#steeloak {
+          background-image: url(/images/2019/vendors/steelandoak.png); }
+        .beer-list li#stillwell {
+          background-image: url(/images/2019/vendors/stillwell.png); }
+        .beer-list li#strangefellows {
+          background-image: url(/images/2019/vendors/strangefellows.png); }
+        .beer-list li#temporal {
+          background-image: url(/images/2019/vendors/temporal.png); }
+        .beer-list li#tilquin {
+          background-image: url(/images/2019/vendors/tilquin.png); }
+        .beer-list li#twinisland {
+          background-image: url(/images/2019/vendors/twinisland.png); }
+        .beer-list li#twinsails {
+          background-image: url(/images/2019/vendors/twinsails.png); }
+        .beer-list li#upright {
+          background-image: url(/images/2019/vendors/upright.png); }
+        .beer-list li#wildambition {
+          background-image: url(/images/2019/vendors/wildambition.png); }
+        .beer-list li#wildbeer {
+          background-image: url(/images/2019/vendors/wildbeerco.png); } }
   @media (min-width: 1121px) {
     .beer-list {
       width: 960px;
