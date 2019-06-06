@@ -353,6 +353,7 @@ h3 {
   .vendor-list ul {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     padding: 0;
     margin: 0; }
   .vendor-list li {
@@ -368,7 +369,7 @@ h3 {
       width: 960px;
       margin: 3rem auto; }
       .vendor-list li {
-        flex: 0 0 14.2857%;
+        flex: 0 0 16.66667%;
         padding: 0rem 1rem; } }
 
 /*
@@ -524,7 +525,7 @@ h3 {
     .beer-list .pouring li {
       min-width: auto;
       padding: 0 1rem 0 0;
-      margin: 0 0 0.5rem 0;
+      margin: 0.5rem 0 0 0;
       border-width: 0;
       text-align: left; }
       .beer-list .pouring li:nth-child(2n) {
