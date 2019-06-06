@@ -409,7 +409,7 @@ h3 {
   @include screen-medium {
     margin: 0 auto;
     p {
-      width: 480px;
+      width: 520px;
       margin: 0 auto;
     }
   }
@@ -507,7 +507,7 @@ h3 {
   @include screen-large {
     padding: $spacing-unit / 2;
     padding-left: $spacing-unit * 3;
-    margin: -1rem 0 2rem 0;
+    margin: 1rem 0 3rem 0;
     border-radius: 8px;
     min-width: 60%;
 
@@ -610,6 +610,13 @@ h3 {
     &:target {
       padding-top: 2rem;
     }
+
+    &.importer {
+      color: #7fa2a6;
+      h3 {
+        color: #7fa2a6;
+      }
+    }
   }
   h3 {
     display: inline-block;
@@ -659,7 +666,7 @@ h3 {
       display: inline-block;
       margin: 0;
       font-size: $font-size-xsmall;
-      color: $color-blue-light;
+        color: $color-blue-light;
     }
   }
 
@@ -700,16 +707,51 @@ h3 {
   }
   @include screen-large {
     padding-top: 0;
+  }
+  @include screen-xlarge {
+    width: $large;
+    margin: 0 auto;
+    li {
+      padding-top: 2rem;
+      margin-top: 3.5rem;
+    }
+    .pouring {
+      li {
+        flex: 0 1 33%;
+        padding: 0 2rem 0 0;
+        margin: 0 0 1rem 0;
+        &:nth-child(2n) {
+          padding-right: 2rem;
+        }
+        &:nth-child(3n) {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+  @include screen-xxlarge {
+    width: $xlarge;
+    margin: 0 auto;
     li {
       padding-left: 290px;
       background-position: 0 3rem;
       background-repeat: no-repeat;
-      background-size: 220px 220px;
-      min-height: 5.5rem;
+      background-size: 200px 200px;
+      min-height: 16rem;
 
       &#palaterefreshers {
         padding-left: 0;
       }
+
+
+      &#beerthirst {background-image: url(/images/2019/vendors/beerthirst-alt.png);}
+      &#copperandtheory {background-image: url(/images/2019/vendors/copperandtheory-alt.png);}
+      &#liquidart {background-image: url(/images/2019/vendors/liquidart-alt.png);}
+      &#txotx {background-image: url(/images/2019/vendors/txotx-alt.png);}
+      &#untapped {background-image: url(/images/2019/vendors/untapped-alt.png);}
+      &#westbier {background-image: url(/images/2019/vendors/westbier-alt.png);}
+
+
 
       &#aleapothecary {background-image: url(/images/2019/vendors/aleapothecary.png);}
       &#aslan {background-image: url(/images/2019/vendors/aslan.png);}
@@ -772,31 +814,9 @@ h3 {
 
       &#wildbeer {background-image: url(/images/2019/vendors/wildbeerco.png);}
     }
-  }
-  @include screen-xlarge {
-    width: $large;
-    margin: 0 auto;
-    li {
-      padding-top: 2rem;
-      margin-top: 3.5rem;
+    .pouring li {
+      min-height: auto;
     }
-    .pouring {
-      li {
-        flex: 0 1 33%;
-        padding: 0 2rem 0 0;
-        margin: 0 0 1rem 0;
-        &:nth-child(2n) {
-          padding-right: 2rem;
-        }
-        &:nth-child(3n) {
-          padding-right: 0;
-        }
-      }
-    }
-  }
-  @include screen-xxlarge {
-    width: $xlarge;
-    margin: 0 auto;
   }
   @include screen-xxxlarge {
     width: $xxlarge;
