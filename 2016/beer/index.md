@@ -105,8 +105,8 @@ permalink: /2016/beer/
 					{% endif %}
 				{% endif %}
 			{% endfor %}
- -->
 		</ul>
+		-->
 
 
 
