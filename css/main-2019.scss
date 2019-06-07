@@ -21,7 +21,7 @@ html, body {
 */
 
 body {
-  color: $color-blue-light;
+  color: $color-peach;
   background-color: $color-blue-dark;
   background-repeat: repeat;
   background-image: url(/images/2019/site/bg.png);
@@ -33,12 +33,13 @@ body {
   text-align: center;
 
   font-family: $alt-font-family;
-  font-size: $font-size-small;
+  font-size: $font-size-xsmall;
   font-style: $alt-font-style;
   font-weight: $alt-font-weight;
 
   @include screen-small {
     padding: 8px;
+    font-size: $font-size-small;
   }
   @include screen-large {
     padding: 22px;
@@ -79,8 +80,10 @@ a {
 }
 
 p, li {
-  color: $color-peach;
-  line-height: 1.5;
+  line-height: 1.35;
+  @include screen-xsmall {
+    line-height: 1.5;
+  }
 }
 
 h2 {
@@ -108,6 +111,11 @@ h3 {
   @include screen-large {
     font-size: $font-size-xlarge;
   }
+}
+
+.amp {
+  font-family: palatino, $alt-font-family;
+  font-style: italic;
 }
 
 .photo {
@@ -161,7 +169,7 @@ h3 {
   }
   @include screen-xlarge {
     margin: 0 auto;
-    max-width: 960px;
+    width: 960px;
   }
 }
 
@@ -266,11 +274,15 @@ h3 {
 
   .menu-icon, .close-control {
     display: inline-block;
-    margin-top: 4px;
+    margin-top: 0;
     margin-right: 4px;
     line-height: 0;
     transition: opacity 0.25s ease-out;
     @include screen-small {
+      margin-top: 1.5rem;
+      margin-right: 1rem;
+    }
+    @include screen-large {
       margin-top: 2rem;
       margin-right: 2rem;
     }
@@ -388,21 +400,435 @@ h3 {
 
 /*
 
-
   Home Page
 
 */
-
-.home-beer {
+.home-intro {
   text-align: center;
   margin: 0 $spacing-unit;
-  p {
-    @include screen-medium {
-      max-width: 480px;
+  @include screen-medium {
+    margin: $spacing-unit * 2 auto;
+    p {
+      width: 520px;
       margin: 0 auto;
     }
   }
 }
+.vendor-list {
+  text-align: center;
+  margin: 2rem $spacing-unit;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    flex: 0 0 33%;
+    padding: 0 0.5rem;
+    margin: 0;
+    list-style: none;
+  }
+  @include screen-small {
+    li {
+      flex: 0 0 20%;
+    }
+  }
+  @include screen-xlarge {
+    width: $large;
+    margin: 3rem auto;
+    li {
+      flex: 0 0 16.66667%;
+      padding: 0rem 1rem;
+    }
+  }
+}
+
+
+
+
+
+/*
+
+  What's Pouring Page
+
+*/
+.beer-search {
+
+  appearance: none;
+  -webkit-appearance: none;
+  opacity: 0.9;
+
+  padding: $spacing-unit / 4 $spacing-unit / 2;
+  padding-left: $spacing-unit * 2.5;
+  border: solid 1px rgba(0, 0, 0, 0);
+  border-radius: 4px;
+
+  font-family: $base-font-family;
+  font-size: $font-size-med;
+
+  box-shadow: rgba(#0F2123, 1) 0 6px 6px;
+  background-image: url(/images/2019/site/search-light.png);
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position: 12px 11px;
+
+  &:focus {
+    opacity: 1;
+    outline: none;
+    border: solid 1px rgba($color-blue-dark, 0.75);
+    color: $color-blue-dark;
+    background-image: url(/images/2019/site/search.png);
+    box-shadow:
+      0 0 5px 2px rgba($color-blue-light, 0.5),
+      0 0 2px 2px $color-blue-light;
+  }
+
+  &::placeholder {
+    color: #ccc;
+  }
+
+  &.is-hidden {
+    display: none;
+  }
+
+  @media (max-width: $large) {
+    z-index: 201;
+    position: fixed;
+    top: 2.25rem;
+    left: 2.25rem;
+    width: calc(100% - 8rem);
+  }
+  @media (max-width: $small) {
+    top: 0.75rem;
+    left: 0.75rem;
+    width: calc(100% - 5.5rem);
+  }
+  @include screen-large {
+    padding: $spacing-unit / 2;
+    padding-left: $spacing-unit * 3;
+    margin: 1rem 0 3rem 0;
+    border-radius: 8px;
+    min-width: 60%;
+
+    background-size: 20px 20px;
+    background-position: 14px 13px;
+  }
+
+}
+.beer-intro {
+  margin-bottom: -3rem;
+  @include screen-medium {
+    margin-bottom: 0;
+  }
+  @media (max-width: $large) {
+    margin-top: $spacing-unit * 6;
+  }
+  @media (max-width: $small) {
+    margin-top: $spacing-unit * 4;
+  }
+}
+
+.palate-cleansers {
+  display: block;
+  margin: 2rem 0 0 0;
+  font-size: $font-size-small;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.toc {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 0.5rem;
+  margin: 0 auto;
+  li {
+    flex: 0 0 50%;
+    padding: 0 0 0.25rem 0;
+    margin: 0;
+    list-style: none;
+
+    a {
+      font-family: alt-font-family;
+      font-size: $font-size-xsmall;
+      line-height: 1.2;
+      @include screen-xsmall {
+        font-size: $font-size-small;
+      }
+    }
+  }
+
+  @include screen-xsmall {
+    li {
+      flex: 0 0 33%;
+    }
+  }
+  @include screen-medium {
+    li {
+      flex: 0 0 25%;
+    }
+  }
+  @include screen-xlarge {
+    width: $large;
+    li {
+      flex: 0 0 20%;
+    }
+  }
+  @include screen-xxlarge {
+    width: $xlarge;
+    li {
+      flex: 0 0 16.66667%;
+    }
+  }
+
+}
+
+.beer-list {
+  padding: 3rem 0 0 0;
+  margin: 0;
+
+  ul, li {
+    padding: 0;
+    margin: 0;
+  }
+  ul {
+    padding-top: 0.5rem;
+  }
+  li {
+    min-width: 100%;
+    padding: 0 1rem;
+    margin: 2rem 0 0 0;
+    list-style: none;
+    text-align: left;
+    border: solid 4px $color-blue-light;
+    border-width: 4px 0 0 0;
+    border-image-source: url(/images/2019/site/border.png);
+    border-image-slice: 4;
+    border-image-width: 4px 0 0 0;
+    border-image-repeat: round;
+
+    &:target {
+      padding-top: 2rem;
+    }
+
+    &.importer {
+      color: #7fa2a6;
+      h3 {
+        color: #7fa2a6;
+      }
+    }
+  }
+  h3 {
+    display: inline-block;
+    padding: 3rem 0 0 0;
+    margin: 0;
+    font-size: $font-size-med;
+    line-height: 1;
+    color: $color-peach-light;
+  }
+  .geography {
+    display: block;
+    margin: 0 0 0.5rem 0;
+    color: $color-peach-light;
+  }
+  .pouring-at {
+    display: block;
+    margin: -0.5rem 0 1rem 0;
+    font-style: italic;
+    color: $color-blue-light;
+  }
+  .pouring {
+    padding-bottom: 1rem;
+    li {
+      min-width: auto;
+      padding: 0 1rem 0 0;
+      margin: 0.5rem 0 0 0;
+      border-width: 0;
+      text-align: left;
+      &:nth-child(2n) {
+        padding-right: 0;
+      }
+    }
+    h4 {
+      display: inline-block;
+      margin: 0 0.5rem 0 0;
+      color: $color-peach-light;
+    }
+    .desc {
+      display: block;
+      margin: 0;
+      font-size: $font-size-xsmall;
+      &.tbd {
+        font-style: italic;
+      }
+    }
+    .abv {
+      display: inline-block;
+      margin: 0;
+      font-size: $font-size-xsmall;
+        color: $color-blue-light;
+    }
+  }
+
+  @include screen-xsmall {
+    h3 {
+      margin: 0 1rem 0 0;
+      font-size: $font-size-large;
+    }
+    li {
+      border-width: 8px 0 0 0;
+      border-image-slice: 8;
+      border-image-width: 8px 0 0 0;
+      &.importer .pouring li {
+        flex: none;
+      }
+    }
+    .geography {
+      display: inline-block;
+    }
+    .pouring {
+      display: flex;
+      flex-wrap: wrap;
+      li {
+        flex: 1 1 50%;
+      }
+    }
+  }
+  @include screen-medium {
+    li {
+      margin: 2rem 0 0 0;
+      border: solid 8px $color-blue-light;
+      border-width: 8px 0 0 0;
+      border-image-source: url(/images/2019/site/border.png);
+      border-image-slice: 8;
+      border-image-width: 8px 0 0 0;
+      border-image-repeat: round;
+    }
+  }
+  @include screen-large {
+    padding-top: 0;
+  }
+  @include screen-xlarge {
+    width: $large;
+    margin: 0 auto;
+    li {
+      padding-top: 2rem;
+      margin-top: 3.5rem;
+    }
+    .pouring {
+      li {
+        flex: 0 1 33%;
+        padding: 0 2rem 0 0;
+        margin: 0 0 1rem 0;
+        &:nth-child(2n) {
+          padding-right: 2rem;
+        }
+        &:nth-child(3n) {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+  @include screen-xxlarge {
+    width: $xlarge;
+    margin: 0 auto;
+    li {
+      padding-left: 290px;
+      background-position: 0 3rem;
+      background-repeat: no-repeat;
+      background-size: 200px 200px;
+      min-height: 16rem;
+
+      &#palaterefreshers {
+        padding-left: 0;
+      }
+
+
+      &#beerthirst {background-image: url(/images/2019/vendors/beerthirst-alt.png);}
+      &#copperandtheory {background-image: url(/images/2019/vendors/copperandtheory-alt.png);}
+      &#liquidart {background-image: url(/images/2019/vendors/liquidart-alt.png);}
+      &#txotx {background-image: url(/images/2019/vendors/txotx-alt.png);}
+      &#untapped {background-image: url(/images/2019/vendors/untapped-alt.png);}
+      &#westbier {background-image: url(/images/2019/vendors/westbier-alt.png);}
+      &#westcraft {background-image: url(/images/2019/vendors/westcraft-alt.png);}
+
+
+
+      &#aleapothecary {background-image: url(/images/2019/vendors/aleapothecary.png);}
+      &#aslan {background-image: url(/images/2019/vendors/aslan.png);}
+      &#atwood {background-image: url(/images/2019/vendors/atwood.png);}
+      &#bellwoods {background-image: url(/images/2019/vendors/bellwoods.png);}
+      &#bench {background-image: url(/images/2019/vendors/bench.png);}
+
+      &#bereziartua {background-image: url(/images/2019/vendors/bereziartua.png);}
+      &#blackberryfarm {background-image: url(/images/2019/vendors/blackberryfarm.png);}
+      &#blindman {background-image: url(/images/2019/vendors/blindman.png);}
+      &#bloodbrothers {background-image: url(/images/2019/vendors/bloodbrothers.png);}
+
+      &#boombox {background-image: url(/images/2019/vendors/boombox.png);}
+      &#brassneck {background-image: url(/images/2019/vendors/brassneck.png);}
+      &#brekeriet {background-image: url(/images/2019/vendors/brekeriet.png);}
+      &#burdock {background-image: url(/images/2019/vendors/burdock.png);}
+      &#cantillon {background-image: url(/images/2019/vendors/cantillon.png);}
+
+      &#dageraad {background-image: url(/images/2019/vendors/dageraad.png);}
+      &#dominion {background-image: url(/images/2019/vendors/dominion.png);}
+      &#dunham {background-image: url(/images/2019/vendors/dunham.png);}
+      &#e9 {background-image: url(/images/2019/vendors/e9.png);}
+      &#fieldhouse {background-image: url(/images/2019/vendors/fieldhouse.png);}
+
+      &#firestonewalker {background-image: url(/images/2019/vendors/firestonewalker.png);}
+      &#floodland {background-image: url(/images/2019/vendors/floodland.png);}
+      &#fourwinds {background-image: url(/images/2019/vendors/fourwinds.png);}
+      &#gardenpath {background-image: url(/images/2019/vendors/gardenpath.png);}
+      &#gigantic {background-image: url(/images/2019/vendors/gigantic.png);}
+
+      &#graft {background-image: url(/images/2019/vendors/graft.png);}
+      &#greatnotion {background-image: url(/images/2019/vendors/greatnotion.png);}
+      &#holymountain {background-image: url(/images/2019/vendors/holymountain.png);}
+      &#houseoffunk {background-image: url(/images/2019/vendors/houseoffunk.png);}
+      &#ilesauvage {background-image: url(/images/2019/vendors/ilesauvage.png);}
+
+      &#isastegi {background-image: url(/images/2019/vendors/isastegi.png);}
+      &#jesterking {background-image: url(/images/2019/vendors/jesterking.png);}
+      &#lasirene {background-image: url(/images/2019/vendors/lasirene.png);}
+      &#luppolo {background-image: url(/images/2019/vendors/luppolo.png);}
+      &#moderntimes {background-image: url(/images/2019/vendors/moderntimes.png);}
+
+      &#nomad {background-image: url(/images/2019/vendors/nomad.png);}
+      &#oxbow {background-image: url(/images/2019/vendors/oxbow.png);}
+      &#p49 {background-image: url(/images/2019/vendors/p49.png);}
+      &#powell {background-image: url(/images/2019/vendors/powell.png);}
+      &#quebrada {background-image: url(/images/2019/vendors/quebrada.png);}
+
+      &#shacksbury {background-image: url(/images/2019/vendors/shacksbury.png);}
+      &#steeloak {background-image: url(/images/2019/vendors/steelandoak.png);}
+      &#stillwell {background-image: url(/images/2019/vendors/stillwell.png);}
+      &#strangefellows {background-image: url(/images/2019/vendors/strangefellows.png);}
+      &#temporal {background-image: url(/images/2019/vendors/temporal.png);}
+
+      &#tilquin {background-image: url(/images/2019/vendors/tilquin.png);}
+      &#twinisland {background-image: url(/images/2019/vendors/twinisland.png);}
+      &#twinsails {background-image: url(/images/2019/vendors/twinsails.png);}
+      &#upright {background-image: url(/images/2019/vendors/upright.png);}
+      &#wildambition {background-image: url(/images/2019/vendors/wildambition.png);}
+
+      &#wildbeer {background-image: url(/images/2019/vendors/wildbeerco.png);}
+    }
+    .pouring li {
+      min-height: auto;
+    }
+  }
+  @include screen-xxxlarge {
+    width: $xxlarge;
+    margin: 0 auto;
+  }
+
+}
+
+
+
 
 
 
@@ -453,7 +879,7 @@ h3 {
     margin: 0 auto;
   }
   @include screen-large {
-    max-width: 960px;
+    width: 960px;
   }
 
   h2 {

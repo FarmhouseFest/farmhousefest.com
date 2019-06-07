@@ -9,6 +9,7 @@ $("a.close-control").click(function() {
 
 	$(".fhf-nav").toggleClass("is-active");
 	$("ul.menu").toggleClass("is-active");
+	$(".beer-search").toggleClass("is-hidden");
 	return false;
 
 });
@@ -21,6 +22,7 @@ $("a.menu-icon").click(function() {
 
 	$(".fhf-nav").toggleClass("is-active");
 	$("ul.menu").toggleClass("is-active");
+	$(".beer-search").toggleClass("is-hidden");
 	return false;
 
 });
