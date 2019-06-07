@@ -407,7 +407,7 @@ h3 {
   text-align: center;
   margin: 0 $spacing-unit;
   @include screen-medium {
-    margin: 0 auto;
+    margin: $spacing-unit * 2 auto;
     p {
       width: 520px;
       margin: 0 auto;
