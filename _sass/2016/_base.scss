@@ -30,10 +30,15 @@ ul, ol, dl, figure,
 
 */
 body {
-    font-family: $base-font-family;
+    // font-family: $base-font-family;
+
     font-size: $base-font-size;
     line-height: $base-line-height;
-    font-weight: 300;
+
+    font-family: freight-text-pro, serif;
+    font-weight: 400;
+    font-style: normal;
+
     color: $color-grey;
     background-color: $color-tan;
     -webkit-text-size-adjust: 100%;

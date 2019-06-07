@@ -7,7 +7,10 @@
 
 
 // base font
-$base-font-family:      "Mercury SSm A", "Mercury SSm B", georgia, serif;
+$base-font-family:      freight-text-pro, georgia, serif;
+// $base-font-family:      "Mercury SSm A", "Mercury SSm B", georgia, serif;
+// Original site design used Mercury, and HFJ is no longer available on Adobe Fonts
+
 $base-font-size:        1.15rem;
 $small-font-size:       $base-font-size * 0.875;
 $base-line-height:      1.5;
@@ -18,8 +21,10 @@ $title-font-size:       220px;
 
 
 // secondary titles
-$alt-font-family:       "Knockout-HTF46-Flyweight", "Knockout 46 A", "Knockout 46 B", 'Arial Narrow', sans-serif;
-                        // "Knockout-HTF46-Flyweight" not included in the kit
+$alt-font-family:       bureau-grot-compressed, 'Arial Narrow', sans-serif;
+// $alt-font-family:       "Knockout-HTF46-Flyweight", "Knockout 46 A", "Knockout 46 B", 'Arial Narrow', sans-serif;
+// Original site design used Knockout, and HFJ is no longer available on Adobe Fonts
+
 $alt-font-size:         3rem;
 $alt-line-height:       1.5;
 
@@ -169,26 +174,26 @@ $xxxlarge: 1400px;
     &:first-child, &:last-child {
       background-position:
         center center;
-      background-repeat: 
+      background-repeat:
         no-repeat;
-      background-size: 
+      background-size:
         auto 100%;
 
       @include screen-small {
-        background-size: 
-          100% auto;        
+        background-size:
+          100% auto;
       }
     }
-  }  
+  }
 
   @include screen-medium {
     background-position:
       -400% top,
       400% top;
-    background-size: 
+    background-size:
       90% 100%,
       90% 100%;
-    background-repeat: 
+    background-repeat:
       no-repeat,
       no-repeat;
 
@@ -204,7 +209,7 @@ $xxxlarge: 1400px;
     background-position:
       -42% top,
       142% top;
-    background-size: 
+    background-size:
       65% 100%,
       65% 100%;
   }
@@ -213,7 +218,7 @@ $xxxlarge: 1400px;
     background-position:
       -10% top,
       110% top;
-    background-size: 
+    background-size:
       55% 110%,
       55% 110%;
   }
@@ -222,7 +227,7 @@ $xxxlarge: 1400px;
     background-position:
       -10% top,
       110% top;
-    background-size: 
+    background-size:
       55% auto,
       55% auto;
   }

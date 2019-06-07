@@ -32,7 +32,7 @@
       width: 1200px; } }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Knockout-HTF46-Flyweight", "Knockout 46 A", "Knockout 46 B", "Arial Narrow", sans-serif;
+  font-family: bureau-grot-compressed, "Arial Narrow", sans-serif;
   line-height: 1.5;
   font-size: 3rem;
   font-weight: 300;
@@ -65,10 +65,11 @@ ul, ol, dl, figure {
 
 */
 body {
-  font-family: "Mercury SSm A", "Mercury SSm B", georgia, serif;
   font-size: 1.15rem;
   line-height: 1.5;
-  font-weight: 300;
+  font-family: freight-text-pro, serif;
+  font-weight: 400;
+  font-style: normal;
   color: #535351;
   background-color: #eceae2;
   -webkit-text-size-adjust: 100%; }
@@ -94,7 +95,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1; }
 
 .header-alt {
-  font-family: "Mercury SSm A", "Mercury SSm B", georgia, serif;
+  font-family: freight-text-pro, georgia, serif;
   font-size: 1.15rem;
   line-height: 1.5;
   font-weight: 800;
@@ -312,7 +313,7 @@ a {
   border: solid 1px #eceae2;
   border-radius: 2px;
   color: #eceae2;
-  font-family: "Knockout-HTF46-Flyweight", "Knockout 46 A", "Knockout 46 B", "Arial Narrow", sans-serif;
+  font-family: bureau-grot-compressed, "Arial Narrow", sans-serif;
   font-size: 2.25rem;
   line-height: 1;
   text-align: center;
@@ -380,7 +381,7 @@ a {
   list-style: none; }
   .site-nav-item a {
     color: #eceae2;
-    font-family: "Knockout-HTF46-Flyweight", "Knockout 46 A", "Knockout 46 B", "Arial Narrow", sans-serif;
+    font-family: bureau-grot-compressed, "Arial Narrow", sans-serif;
     font-size: 2.5rem;
     text-transform: uppercase;
     white-space: nowrap; }
@@ -557,7 +558,7 @@ a {
   padding-top: 88px; }
 
 .styled {
-  font-family: "Mercury SSm A", "Mercury SSm B", georgia, serif;
+  font-family: freight-text-pro, georgia, serif;
   font-size: 1.725rem;
   line-height: 1.5;
   text-transform: none; }
@@ -678,7 +679,7 @@ a {
     flex: 0 1 auto;
     content: "Fest";
     padding: 0 0 0 1rem;
-    font-family: "Knockout-HTF46-Flyweight", "Knockout 46 A", "Knockout 46 B", "Arial Narrow", sans-serif;
+    font-family: bureau-grot-compressed, "Arial Narrow", sans-serif;
     font-size: 140px;
     letter-spacing: -1px;
     text-transform: uppercase;
@@ -687,7 +688,7 @@ a {
     flex: 1 1 auto;
     padding: 0.7rem 0 0 1rem; }
   .home-intro .panel-right h2, .home-intro .panel-right p {
-    font-family: "Knockout-HTF46-Flyweight", "Knockout 46 A", "Knockout 46 B", "Arial Narrow", sans-serif;
+    font-family: bureau-grot-compressed, "Arial Narrow", sans-serif;
     font-size: 64px;
     white-space: nowrap;
     text-transform: uppercase;
@@ -768,7 +769,7 @@ a {
   .announced .brewery-logo img.logo {
     width: 50%; }
 .announced .beer-name {
-  font-family: "Mercury SSm A", "Mercury SSm B", georgia, serif;
+  font-family: freight-text-pro, georgia, serif;
   font-size: 1rem;
   font-weight: bold;
   text-transform: none; }
