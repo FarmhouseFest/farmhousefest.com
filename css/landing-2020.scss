@@ -136,9 +136,11 @@ body {
 
 // base layout
 html, body {
-    margin: 0;
+  margin: 0;
+  @include screen-small {
     height: 100%;
     min-height: 100%;
+  }
 }
 .wrapper {
     // stacking order
@@ -160,8 +162,11 @@ html, body {
       );
 }
 .form {
-    flex: 0 0 60%;
+    flex: 0 0 80%;
     text-align: center;
+    @include screen-small {
+      flex: 0 0 60%;
+    }
 
     @include screen-large {
         flex: 0 0 40%;
@@ -172,6 +177,7 @@ html, body {
 }
 .fhf-logo {
     text-align: center;
+    padding-top: 3rem;
 
     img {
         display: inline-block;
@@ -181,6 +187,7 @@ html, body {
     }
 
     @include screen-small {
+      padding-top: 0rem;
         img {
             width: 200px;
             margin-bottom: 2rem;
